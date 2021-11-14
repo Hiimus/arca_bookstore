@@ -33,7 +33,7 @@ html {
 }
 
 .logo-font {
-    text-transform: uppercase;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .main-logo-link {
@@ -44,6 +44,12 @@ html {
     background-color: #ffc857;
 }
 
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+    color: #2E4052;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -52,16 +58,6 @@ html {
 
 .btn-black {
     background: black;
-    color: white;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
     color: white;
 }
 
