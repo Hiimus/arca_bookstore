@@ -69,6 +69,21 @@ html {
     border: 1px solid black !important;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+.book-img {
+    max-height: 220px;
+    max-width: 138px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
