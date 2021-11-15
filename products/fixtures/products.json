@@ -1,0 +1,1717 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8532/9781853261589.jpg",
+      "name": "The Little Prince",
+      "author": "Antoine de Saint-Exupery",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 3.19,
+      "currency": "$",
+      "old_price": 5.50,
+      "isbn": 9781853261589,
+      "category": 9,
+      "img_paths": "books_images/0000008.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7515/9780751565355.jpg",
+      "name": "Harry Potter and the Cursed Child - Parts I & II",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 3.5,
+      "price": 15.43,
+      "currency": "$",
+      "old_price": 26.3,
+      "isbn": 9780751565355,
+      "category": 9,
+      "img_paths": "books_images/0000018.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5525/9780552565974.jpg",
+      "name": "Wonder",
+      "author": "R. J. Palacio",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.32,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9780552565974,
+      "category": 9,
+      "img_paths": "books_images/0000028.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1413/9780141340555.jpg",
+      "name": "Roald Dahl's Marvellous Joke Book",
+      "author": "Roald Dahl",
+      "format": "Paperback",
+      "book_depository_stars": 4.0,
+      "price": 5.84,
+      "currency": "$",
+      "old_price": 6.2,
+      "isbn": 9780141340555,
+      "category": 9,
+      "img_paths": "books_images/0000038.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7805/9781780552491.jpg",
+      "name": "Brain Games For Clever Kids",
+      "author": "Gareth Moore",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 4.5,
+      "currency": "$",
+      "old_price": 6.2,
+      "isbn": 9781780552491,
+      "category": 9,
+      "img_paths": "books_images/0000048.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.91,
+      "currency": "$",
+      "old_price": 38.6,
+      "isbn": 9781408845646,
+      "category": 9,
+      "img_paths": "books_images/0000036.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
+      "name": "Fantastic Beasts and Where to Find Them",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 11.05,
+      "currency": "$",
+      "old_price": 21.5,
+      "isbn": 9781408708989,
+      "category": 9,
+      "img_paths": "books_images/0000046.jpg"
+    }
+  }, 
+  { "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/4390/9780439023528.jpg",
+      "name": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 10.96,
+      "currency": "$",
+      "old_price": 12.9,
+      "isbn": 9780439023528,
+      "category": 9,
+      "img_paths": "books_images/0000078.jpg"
+    }
+  },
+  { "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0073/9780007371464.jpg",
+      "name": "Gangsta Granny",
+      "author": "David Walliams",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 7.52,
+      "currency": "$",
+      "old_price": 8.99,
+      "isbn": 9780007371464,
+      "category": 9,
+      "img_paths": "books_images/0000088.jpg"
+    }
+  },
+  { "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408876985.jpg",
+      "name": "Fantastically Great Women Who Changed The World",
+      "author": "Kate Pankhurst",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 7.82,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9781408876985,
+      "category": 9,
+      "img_paths": "books_images/0000098.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5098/9781509858637.jpg",
+      "name": "This is Going to Hurt",
+      "author": "Adam Kay",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 7.6,
+      "currency": "$",
+      "old_price": 11.4,
+      "isbn": 9781509858637,
+      "category": 1,
+      "img_paths": "books_images/0000010.jpg"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1419/9780141986005.jpg",
+      "name": "Good Night Stories for Rebel Girls",
+      "author": "Elena Favilli",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 20.86,
+      "currency": "$",
+      "old_price": 24,
+      "isbn": 9780141986005,
+      "category": 1,
+      "img_paths": "books_images/0000020.jpg"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2413/9780241334140.jpg",
+      "name": "Becoming",
+      "author": "Michelle Obama",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 24.21,
+      "currency": "$",
+      "old_price": 26,
+      "isbn": 9780241334140,
+      "category": 1,
+      "img_paths": "books_images/0000030.jpg"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099511021.jpg",
+      "name": "Educated",
+      "author": "Tara Westover",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.61,
+      "currency": "$",
+      "old_price": 11.5,
+      "isbn": 9780099511021,
+      "category": 1,
+      "img_paths": "books_images/0000040.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784701994.jpg",
+      "name": "When Breath Becomes Air",
+      "author": "Paul Kalanithi",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.05,
+      "currency": "$",
+      "old_price": 11.5,
+      "isbn": 9781784701994,
+      "category": 1,
+      "img_paths": "books_images/0000050.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408878729.jpg",
+      "name": "Lost Connections",
+      "author": "Johann Hari",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.53,
+      "currency": "$",
+      "old_price": 11.5,
+      "isbn": 9781408878729,
+      "category": 1,
+      "img_paths": "books_images/0000060.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
+      "name": "Man's Search For Meaning",
+      "author": "Viktor E. Frankl",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.66,
+      "currency": "$",
+      "old_price": 10.0,
+      "isbn": 9781846041242,
+      "category": 1,
+      "img_paths": "books_images/0000012.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3455/9780345514400.jpg",
+      "name": "I Know Why the Caged Bird Sings",
+      "author": "Maya Angelou",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.07,
+      "currency": "$",
+      "old_price": 7.5,
+      "isbn": 9780345514400,
+      "category": 1,
+      "img_paths": "books_images/0000080.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473695986.jpg",
+      "name": "Brief Answers to the Big Questions",
+      "author": "Stephen Hawking",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 11.64,
+      "currency": "$",
+      "old_price": 18,
+      "isbn": 9781473695986,
+      "category": 1,
+      "img_paths": "books_images/0000090.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473635302.jpg",
+      "name": "Born A Crime",
+      "author": "Trevor Noah",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.3,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781473635302,
+      "category": 1,
+      "img_paths": "books_images.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/9978/9780997895827.jpg",
+      "name": "Goodnight Stories for Rebel Girls 2",
+      "author": "Elena Favilli",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 21.15,
+      "currency": "$",
+      "old_price": 30.9,
+      "isbn": 9780997895827,
+      "category": 1,
+      "img_paths": "books_images/0000011.jpg"
+    }
+  }, 
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7806/9781780674872.jpg",
+      "name": "Enchanted Forest",
+      "author": "Johanna Basford",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 12.23,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781780674872,
+      "category": 2,
+      "img_paths": "books_images/0000001.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7837/9781783705481.jpg",
+      "name": "Harry Potter Colouring Book",
+      "author": "J. K. Rowling",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.52,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781783705481,
+      "category": 2,
+      "img_paths": "books_images/0000011.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7869/9780786965601.jpg",
+      "name": "Dungeons & Dragons Player's Handbook (Dungeons & Dragons Core Rulebooks)",
+      "author": "Wizards of the Coast",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 31.94,
+      "currency": "$",
+      "old_price": 48.4,
+      "isbn": 9780786965601,
+      "category": 2,
+      "img_paths": "books_images/0000061.jpg"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7522/9780752265629.jpg",
+      "name": "The Mindfulness Colouring Book",
+      "author": "Emma Farrarons",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 6.8,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780752265629,
+      "category": 2,
+      "img_paths": "books_images/0000031.jpg"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/8118/9780811870191.jpg",
+      "name": "One Line a Day",
+      "author": "Chronicle Books",
+      "format": "Calendar",
+      "book_depository_stars": 4.5,
+      "price": 9.65,
+      "currency": "$",
+      "old_price": 13.5,
+      "isbn": 9780811870191,
+      "category": 2,
+      "img_paths": "books_images/0000041.jpg"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8499/9781849941679.jpg",
+      "name": "Millie Marotta's Animal Kingdom",
+      "author": "Millie Marotta",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 11.6,
+      "currency": "$",
+      "old_price": 12.9,
+      "isbn": 9781849941679,
+      "category": 2,
+      "img_paths": "books_images/0000051.jpg"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7869/9780786965625.jpg",
+      "name": "Dungeon Master's Guide (Dungeons & Dragons Core Rulebooks)",
+      "author": "Wizards of the Coast",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 32.9,
+      "currency": "$",
+      "old_price": 48.4,
+      "isbn": 9780786965625,
+      "category": 2,
+      "img_paths": "books_images/0000007.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8495/9781849534970.jpg",
+      "name": "52 Things to Do While You Poo",
+      "author": "Hugh Jassburn",
+      "format": "Hardback",
+      "book_depository_stars": 3.5,
+      "price": 7.93,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9781849534970,
+      "category": 2,
+      "img_paths": "books_images/0000071.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7869/9780786965618.jpg",
+      "name": "Monster Manual: A Dungeons & Dragons Core Rulebook",
+      "author": "Wizards of the Coast",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 32.44,
+      "currency": "$",
+      "old_price": 48.4,
+      "isbn": 9780786965618,
+      "category": 2,
+      "img_paths": "books_images/0000081.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7160/9780716022237.jpg",
+      "name": "How to Draw Anything",
+      "author": "Mark Linley",
+      "format": "Paperback",
+      "book_depository_stars": 3.5,
+      "price": 5.26,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9780716022237,
+      "category": 2,
+      "img_paths": "books_images/0000091.jpg"
+    }
+  }, 
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
+      "name": 1984,
+      "author": "George Orwell",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.88,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9780141036144,
+      "category": 3,
+      "img_paths": "books_images/0000002.jpg"
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
+      "name": "Man's Search For Meaning",
+      "author": "Viktor E. Frankl",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.66,
+      "currency": "$",
+      "old_price": 9.9,
+      "isbn": 9781846041242,
+      "category": 3,
+      "img_paths": "books_images/0000012.jpg"
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
+      "name": "Animal Farm",
+      "author": "George Orwell",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.98,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9780141036137,
+      "category": 3,
+      "img_paths": "books_images/0000022.jpg"
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
+      "name": "The Husband's Secret",
+      "author": "Liane Moriarty",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.33,
+      "currency": "$",
+      "old_price": 9.99,
+      "isbn": 9781405911665,
+      "category": 3,
+      "img_paths": "books_images/0000032.jpg"
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7802/9781780221359.jpg",
+      "name": "Gone Girl",
+      "author": "Gillian Flynn",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.55,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9781780221359,
+      "category": 3,
+      "img_paths": "books_images/0000042.jpg"
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099560432.jpg",
+      "name": "Ready Player One",
+      "author": "Ernest Cline",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.82,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780099560432,
+      "category": 3,
+      "img_paths": "books_images/0000052.jpg"
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3491/9780349142111.jpg",
+      "name": "The Dry",
+      "author": "Jane Harper",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.64,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9780349142111,
+      "category": 3,
+      "img_paths": "books_images/0000062.jpg"
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7499/9780749942014.jpg",
+      "name": "Sister",
+      "author": "Rosamund Lupton",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.04,
+      "currency": "$",
+      "old_price": 11.4,
+      "isbn": 9780749942014,
+      "category": 3,
+      "img_paths": "books_images/0000072.jpg"
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/4463/9780446310789.jpg",
+      "name": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.54,
+      "currency": "$",
+      "old_price": 9.0,
+      "isbn": 9780446310789,
+      "category": 3,
+      "img_paths": "books_images/0000082.jpg"
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3305/9780330519021.jpg",
+      "name": "Room",
+      "author": "Emma Donoghue",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.05,
+      "currency": "$",
+      "old_price": 13.39,
+      "isbn": 9780330519021,
+      "category": 3,
+      "img_paths": "books_images/0000092.jpg"
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7850/9781785031168.jpg",
+      "name": "Ottolenghi SIMPLE",
+      "author": "Yotam Ottolenghi",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 28.6,
+      "currency": "$",
+      "old_price": 31.5,
+      "isbn": 9781785031168,
+      "category": 4,
+      "img_paths": "books_images/0000003.jpg"
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718187729.jpg",
+      "name": "5 Ingredients - Quick & Easy Food",
+      "author": "Jamie Oliver",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 25.92,
+      "currency": "$",
+      "old_price": 32.5,
+      "isbn": 9780718187729,
+      "category": 4,
+      "img_paths": "books_images/0000013.jpg"
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718154776.jpg",
+      "name": "Jamie's 30-Minute Meals",
+      "author": "Jamie Oliver",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 27.39,
+      "currency": "$",
+      "old_price": 31.5,
+      "isbn": 9780718154776,
+      "category": 4,
+      "img_paths": "books_images/0000023.jpg"
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157807.jpg",
+      "name": "Jamie's 15-Minute Meals",
+      "author": "Jamie Oliver",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 27.3,
+      "currency": "$",
+      "old_price": 31.5,
+      "isbn": 9780718157807,
+      "category": 4,
+      "img_paths": "books_images/0000033.jpg"
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
+      "name": "The Little Book of Hygge",
+      "author": "Meik Wiking",
+      "format": "Hardback",
+      "book_depository_stars": 3.5,
+      "price": 11.61,
+      "currency": "$",
+      "old_price": 11.99,
+      "isbn": 9780241283912,
+      "category": 4,
+      "img_paths": "books_images/0000009.jpg"
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091933685.jpg",
+      "name": "Plenty",
+      "author": "Yotam Ottolenghi",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.27,
+      "currency": "$",
+      "old_price": 33.11,
+      "isbn": 9780091933685,
+      "category": 4,
+      "img_paths": "books_images/0000053.jpg"
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091924850.jpg",
+      "name": "Annabel Karmel's New Complete Baby & Toddler Meal Planner - 4th Edition",
+      "author": "Annabel Karmel",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 17.11,
+      "currency": "$",
+      "old_price": 19.1,
+      "isbn": 9780091924850,
+      "category": 4,
+      "img_paths": "books_images/0000063.jpg"
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091943745.jpg",
+      "name": "Jerusalem",
+      "author": "Yotam Ottolenghi",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.63,
+      "currency": "$",
+      "old_price": 32.5,
+      "isbn": 9780091943745,
+      "category": 4,
+      "img_paths": "books_images/0000073.jpg"
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091957155.jpg",
+      "name": "Plenty More",
+      "author": "Yotam Ottolenghi",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.7,
+      "currency": "$",
+      "old_price": 32.99,
+      "isbn": 9780091957155,
+      "category": 4,
+      "img_paths": "books_images/0000083.jpg"
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718187767.jpg",
+      "name": "Veg",
+      "author": "Jamie Oliver",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 27.36,
+      "currency": "$",
+      "old_price": 32.5,
+      "isbn": 9780718187767,
+      "category": 4,
+      "img_paths": "books_images/0000093.jpg"
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7303/9780730324218.jpg",
+      "name": "The Barefoot Investor",
+      "author": "Scott Pape",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 14.06,
+      "currency": "$",
+      "old_price": 17.6,
+      "isbn": 9780730324218,
+      "category": 5,
+      "img_paths": "books_images/0000004.jpg"
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3407/9780340733509.jpg",
+      "name": "The Power of Now",
+      "author": "Eckhart Tolle",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.2,
+      "currency": "$",
+      "old_price": 13.9,
+      "isbn": 9780340733509,
+      "category": 5,
+      "img_paths": "books_images/0000014.jpg"
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0624/9780062457714.jpg",
+      "name": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 15.8,
+      "currency": "$",
+      "old_price": 25.2,
+      "isbn": 9780062457714,
+      "category": 5,
+      "img_paths": "books_images/0000024.jpg"
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4391/9781439199190.jpg",
+      "name": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.3,
+      "currency": "$",
+      "old_price": 9.5,
+      "isbn": 9781439199190,
+      "category": 5,
+      "img_paths": "books_images/0000034.jpg"
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141033570.jpg",
+      "name": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 11.5,
+      "currency": "$",
+      "old_price": 15,
+      "isbn": 9780141033570,
+      "category": 5,
+      "img_paths": "books_images/0000044.jpg"
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2419/9780241958223.jpg",
+      "name": "Start With Why",
+      "author": "Simon Sinek",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.9,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9780241958223,
+      "category": 5,
+      "img_paths": "books_images/0000054.jpg"
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8452/9781845298258.jpg",
+      "name": "The Happiness Trap",
+      "author": "Russ Harris",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.34,
+      "currency": "$",
+      "old_price": 13.9,
+      "isbn": 9781845298258,
+      "category": 5,
+      "img_paths": "books_images/0000064.jpg"
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0626/9780062641540.jpg",
+      "name": "The Subtle Art of Not Giving a F*ck",
+      "author": "Mark Manson",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 14.15,
+      "currency": "$",
+      "old_price": 18,
+      "isbn": 9780062641540,
+      "category": 5,
+      "img_paths": "books_images/0000024.jpg"
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408878729.jpg",
+      "name": "Lost Connections",
+      "author": "Johann Hari",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.53,
+      "currency": "$",
+      "old_price": 11.5,
+      "isbn": 9781408878729,
+      "category": 5,
+      "img_paths": "books_images/0000060.jpg"
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5928/9781592858491.jpg",
+      "name": "Gifts Of Imperfection, The:",
+      "author": "Brene Brown",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 11.8,
+      "currency": "$",
+      "old_price": 14.9,
+      "isbn": 9781592858491,
+      "category": 5,
+      "img_paths": "books_images/0000094.jpg"
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5713/9780571334650.jpg",
+      "name": "Normal People",
+      "author": "Sally Rooney",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.93,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780571334650,
+      "category": 6,
+      "img_paths": "books_images/0000005.jpg"
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7864/9781786495259.jpg",
+      "name": "Call Me By Your Name",
+      "author": "Andre Aciman",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 5.08,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9781786495259,
+      "category": 6,
+      "img_paths": "books_images/0000015.jpg"
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157838.jpg",
+      "name": "Me Before You",
+      "author": "Jojo Moyes",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 10.47,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780718157838,
+      "category": 6,
+      "img_paths": "books_images/0000025.jpg"
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099579939.jpg",
+      "name": "Fifty Shades of Grey",
+      "author": "E. L. James",
+      "format": "Paperback",
+      "book_depository_stars": 3.5,
+      "price": 10.11,
+      "currency": "$",
+      "old_price": 10.27,
+      "isbn": 9780099579939,
+      "category": 6,
+      "img_paths": "books_images/0000035.jpg"
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
+      "name": "The Husband's Secret",
+      "author": "Liane Moriarty",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.33,
+      "currency": "$",
+      "old_price": 9.99,
+      "isbn": 9781405911665,
+      "category": 6,
+      "img_paths": "books_images/0000032.jpg"
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7802/9781780221359.jpg",
+      "name": "Gone Girl",
+      "author": "Gillian Flynn",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.55,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9781780221359,
+      "category": 6,
+      "img_paths": "books_images/0000042.jpg"
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3408/9780340896983.jpg",
+      "name": "One Day",
+      "author": "David Nicholls",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.07,
+      "currency": "$",
+      "old_price": 11.4,
+      "isbn": 9780340896983,
+      "category": 6,
+      "img_paths": "books_images/0000065.jpg"
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405916363.jpg",
+      "name": "Big Little Lies",
+      "author": "Liane Moriarty",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.55,
+      "currency": "$",
+      "old_price": 9.8,
+      "isbn": 9781405916363,
+      "category": 6,
+      "img_paths": "books_images/0000075.jpg"
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5713/9780571347292.jpg",
+      "name": "Normal People",
+      "author": "Sally Rooney",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 19.27,
+      "currency": "$",
+      "old_price": 20.0,
+      "isbn": 9780571347292,
+      "category": 6,
+      "img_paths": "books_images/0000085.jpg"
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099579946.jpg",
+      "name": "Fifty Shades Freed",
+      "author": "E. L. James",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 10.21,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780099579946,
+      "category": 6,
+      "img_paths": "books_images/0000095.jpg"
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
+      "name": 1984,
+      "author": "George Orwell",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.88,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9780141036144,
+      "category": 7,
+      "img_paths": "books_images/0000006.jpg"
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784742324.jpg",
+      "name": "The Testaments",
+      "author": "Margaret Atwood",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 20.92,
+      "currency": "$",
+      "old_price": 26.3,
+      "isbn": 9781784742324,
+      "category": 7,
+      "img_paths": "books_images/0000016.jpg"
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
+      "name": "Animal Farm",
+      "author": "George Orwell",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.98,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9780141036137,
+      "category": 7,
+      "img_paths": "books_images/0000003.jpg"
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.91,
+      "currency": "$",
+      "old_price": 38.6,
+      "isbn": 9781408845646,
+      "category": 7,
+      "img_paths": "books_images/0000036.jpg"
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
+      "name": "Fantastic Beasts and Where to Find Them",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 11.05,
+      "currency": "$",
+      "old_price": 21.5,
+      "isbn": 9781408708989,
+      "category": 7,
+      "img_paths": "books_images/0000046.jpg"
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0064/9780006479888.jpg",
+      "name": "A Game of Thrones",
+      "author": "George R. R. Martin",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 10.52,
+      "currency": "$",
+      "old_price": 10.7,
+      "isbn": 9780006479888,
+      "category": 7,
+      "img_paths": "books_images/0000056.jpg"
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4516/9781451690316.jpg",
+      "name": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 6.8,
+      "currency": "$",
+      "old_price": 8.3,
+      "isbn": 9781451690316,
+      "category": 7,
+      "img_paths": "books_images/0000066.jpg"
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099560432.jpg",
+      "name": "Ready Player One",
+      "author": "Ernest Cline",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.82,
+      "currency": "$",
+      "old_price": 10.5,
+      "isbn": 9780099560432,
+      "category": 7,
+      "img_paths": "books_images/0000008.jpg"
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408855652.jpg",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.13,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9781408855652,
+      "category": 7,
+      "img_paths": "books_images/0000036.jpg"
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7475/9780747599876.jpg",
+      "name": "The Tales of Beedle the Bard",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 9.14,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9780747599876,
+      "category": 7,
+      "img_paths": "books_images/0000096.jpg"
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4721/9781472103536.jpg",
+      "name": "Legacy",
+      "author": "James Kerr",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.7,
+      "currency": "$",
+      "old_price": 16,
+      "isbn": 9781472103536,
+      "category": 8,
+      "img_paths": "books_images/0000007.jpg"
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
+      "name": "Born to Run",
+      "author": "Christopher McDougall",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.05,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781861978776,
+      "category": 8,
+      "img_paths": "books_images/0000017.jpg"
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4504/9781450400244.jpg",
+      "name": "Yoga Anatomy",
+      "author": "Leslie Kaminoff",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 17.73,
+      "currency": "$",
+      "old_price": 21.1,
+      "isbn": 9781450400244,
+      "category": 8,
+      "img_paths": "books_images/0000027.jpg"
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091939526.jpg",
+      "name": "The 4-Hour Body",
+      "author": "Timothy Ferriss",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 19.32,
+      "currency": "$",
+      "old_price": 19.6,
+      "isbn": 9780091939526,
+      "category": 8,
+      "img_paths": "books_images/0000037.jpg"
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405937184.jpg",
+      "name": "The Salt Path",
+      "author": "Raynor Winn",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.53,
+      "currency": "$",
+      "old_price": 12.9,
+      "isbn": 9781405937184,
+      "category": 8,
+      "img_paths": "books_images/0000047.jpg"
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4472/9781447200185.jpg",
+      "name": "Into Thin Air",
+      "author": "Jon Krakauer",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.49,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781447200185,
+      "category": 8,
+      "img_paths": "books_images/0000057.jpg"
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099532538.jpg",
+      "name": "What I Talk About When I Talk About Running",
+      "author": "Haruki Murakami",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.33,
+      "currency": "$",
+      "old_price": 10.3,
+      "isbn": 9780099532538,
+      "category": 8,
+      "img_paths": "books_images/0000067.jpg"
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3073/9780307388407.jpg",
+      "name": "Open",
+      "author": "Andre Agassi",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 11.97,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9780307388407,
+      "category": 8,
+      "img_paths": "books_images/0000077.jpg"
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4767/9781476714202.jpg",
+      "name": "Relentless",
+      "author": "Tim S. Grover",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.4,
+      "currency": "$",
+      "old_price": 17,
+      "isbn": 9781476714202,
+      "category": 8,
+      "img_paths": "books_images/0000087.jpg"
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7360/9780736092265.jpg",
+      "name": "Strength Training Anatomy",
+      "author": "Frederic Delavier",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 13.83,
+      "currency": "$",
+      "old_price": 13.99,
+      "isbn": 9780736092265,
+      "category": 8,
+      "img_paths": "books_images/0000097.jpg"
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
+      "name": "The Little Book of Hygge",
+      "author": "Meik Wiking",
+      "format": "Hardback",
+      "book_depository_stars": 3.5,
+      "price": 11.61,
+      "currency": "$",
+      "old_price": 11.99,
+      "isbn": 9780241283912,
+      "category": 10,
+      "img_paths": "books_images/0000043.jpg"
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7475/9780747585664.jpg",
+      "name": "Eat, Pray, Love",
+      "author": "Elizabeth Gilbert",
+      "format": "Paperback",
+      "book_depository_stars": 3.5,
+      "price": 8.86,
+      "currency": "$",
+      "old_price": 11.4,
+      "isbn": 9780747585664,
+      "category": 10,
+      "img_paths": "books_images/0000019.jpg"
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/2500/9781250038821.jpg",
+      "name": "Humans of New York",
+      "author": "Brandon Stanton",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 21.46,
+      "currency": "$",
+      "old_price": 30.4,
+      "isbn": 9781250038821,
+      "category": 10,
+      "img_paths": "books_images/0000029.jpg"
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
+      "name": "Born to Run",
+      "author": "Christopher McDougall",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 9.05,
+      "currency": "$",
+      "old_price": 12.4,
+      "isbn": 9781861978776,
+      "category": 10,
+      "img_paths": "books_images/0000017.jpg"
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405930994.jpg",
+      "name": "Lion",
+      "author": "Saroo Brierley",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.85,
+      "currency": "$",
+      "old_price": 10.8,
+      "isbn": 9781405930994,
+      "category": 10,
+      "img_paths": "books_images/0000049.jpg"
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3303/9780330351690.jpg",
+      "name": "Into the Wild",
+      "author": "Jon Krakauer",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 7.07,
+      "currency": "$",
+      "old_price": 11.4,
+      "isbn": 9780330351690,
+      "category": 10,
+      "img_paths": "books_images/0000059.jpg"
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405937184.jpg",
+      "name": "The Salt Path",
+      "author": "Raynor Winn",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 9.53,
+      "currency": "$",
+      "old_price": 12.9,
+      "isbn": 9781405937184,
+      "category": 10,
+      "img_paths": "books_images/0000007.jpg"
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7823/9781782390626.jpg",
+      "name": "Wild",
+      "author": "Cheryl Strayed",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 8.79,
+      "currency": "$",
+      "old_price": 9.5,
+      "isbn": 9781782390626,
+      "category": 10,
+      "img_paths": "books_images/0000079.jpg"
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8499/9781849905787.jpg",
+      "name": "Rick Stein's India",
+      "author": "Rick Stein",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 29.12,
+      "currency": "$",
+      "old_price": 31.74,
+      "isbn": 9781849905787,
+      "category": 10,
+      "img_paths": "books_images/0000089.jpg"
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7611/9780761169086.jpg",
+      "name": "Atlas Obscura",
+      "author": "Joshua Foer",
+      "format": "Hardback",
+      "book_depository_stars": 4,
+      "price": 26.94,
+      "currency": "$",
+      "old_price": 30.95,
+      "isbn": 9780761169086,
+      "category": 10,
+      "img_paths": "books_images/0000099.jpg"
+    }
+  }
+  
+]
