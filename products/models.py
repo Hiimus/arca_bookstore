@@ -4,6 +4,11 @@ from django.db import models
 
 
 class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories' # Fixes spelling error in admin
+
+
     name = models.CharField(max_length=260)
     friendly_name = models.CharField(max_length=260, null=True, blank=True)
 
