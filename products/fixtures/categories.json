@@ -1,0 +1,98 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "biography",
+        "friendly_name": "Biography"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "childrens_books",
+        "friendly_name": "Childrens Books"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "crafts_hobbies",
+        "friendly_name": "Crafts & Hobbies"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "crime_thriller",
+        "friendly_name": "Crime & Thriller"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "food_drink",
+        "friendly_name": "Food & Drink"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "health",
+        "friendly_name": "Health"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "personal_development",
+        "friendly_name": "Personal Development"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.category",
+      "fields": {
+        "name": "romance",
+        "friendly_name": "Romance"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "science_fiction_fantasy_horror",
+        "friendly_name": "Science Fiction, Fantasy & Horror"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "sport",
+        "friendly_name": "Sport"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.category",
+      "fields": {
+        "name": "teen_young_adult",
+        "friendly_name": "Teen, Young & Adult"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.category",
+      "fields": {
+        "name": "travel_holiday_guides",
+        "friendly_name": "Travel & Holiday Guides"
+      }
+    }
+  ]

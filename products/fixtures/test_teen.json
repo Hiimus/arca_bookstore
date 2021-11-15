@@ -1,0 +1,121 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8532/9781853261589.jpg",
+      "name": "The Little Prince",
+      "author": "Antoine de Saint-Exupery",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 3.19,
+      "currency": "$",
+      "old_price": 5.50,
+      "isbn": 9781853261589,
+      "category": 9,
+      "img_paths": "0000001.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7515/9780751565355.jpg",
+      "name": "Harry Potter and the Cursed Child - Parts I & II",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 3.5,
+      "price": 15.43,
+      "currency": "$",
+      "old_price": 26.3,
+      "isbn": 9780751565355,
+      "category": 9,
+      "img_paths": "0000002.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5525/9780552565974.jpg",
+      "name": "Wonder",
+      "author": "R. J. Palacio",
+      "format": "Paperback",
+      "book_depository_stars": 4.5,
+      "price": 8.32,
+      "currency": "$",
+      "old_price": 8.8,
+      "isbn": 9780552565974,
+      "category": 9,
+      "img_paths": "0000003.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1413/9780141340555.jpg",
+      "name": "Roald Dahl's Marvellous Joke Book",
+      "author": "Roald Dahl",
+      "format": "Paperback",
+      "book_depository_stars": 4.0,
+      "price": 5.84,
+      "currency": "$",
+      "old_price": 6.2,
+      "isbn": 9780141340555,
+      "category": 9,
+      "img_paths": "0000004.jpg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7805/9781780552491.jpg",
+      "name": "Brain Games For Clever Kids",
+      "author": "Gareth Moore",
+      "format": "Paperback",
+      "book_depository_stars": 4,
+      "price": 4.5,
+      "currency": "$",
+      "old_price": 6.2,
+      "isbn": 9781780552491,
+      "category": 9,
+      "img_paths": "0000005.jpg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
+      "name": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 30.91,
+      "currency": "$",
+      "old_price": 38.6,
+      "isbn": 9781408845646,
+      "category": 9,
+      "img_paths": "0000006.jpg"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
+      "name": "Fantastic Beasts and Where to Find Them",
+      "author": "J. K. Rowling",
+      "format": "Hardback",
+      "book_depository_stars": 4.5,
+      "price": 11.05,
+      "currency": "$",
+      "old_price": 21.5,
+      "isbn": 9781408708989,
+      "category": 9,
+      "img_paths": "0000007.jpg"
+    }
+  }
+]
