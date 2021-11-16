@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Book, ArtsAndCraft, Game, Category
 
 # Register your models here.
 
 # Makes the following fields display in admin
-class ProductAdmin(admin.ModelAdmin):
+class BookAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'author',
@@ -16,6 +16,27 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
+class ArtsAndCraftAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'author',
+        'category',
+        'format',
+        'price',
+        'rating',
+        'isbn',
+        'image',
+    )
+
+class GameAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'category',
+        'price',
+        'rating',
+        'image',
+    )
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
@@ -23,5 +44,7 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Product, ProductAdmin)
+admin.site.register(Book, BookAdmin)
+admin.site.register(ArtsAndCraft, ArtsAndCraftAdmin)
+admin.site.register(Game, GameAdmin)
 admin.site.register(Category, CategoryAdmin)

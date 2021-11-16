@@ -94,5 +94,31 @@
         "name": "travel_holiday_guides",
         "friendly_name": "Travel & Holiday Guides"
       }
+    },
+    {
+      "pk": 11,
+      "model": "products.category",
+      "fields": {
+        "name": "pencils",
+        "friendly_name": "Pencils"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.category",
+      "fields": {
+        "name": "paint",
+        "friendly_name": "Paint"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.category",
+      "fields": {
+        "name": "colouring_books",
+        "friendly_name": "Colouring Books"
+      }
     }
   ]
+
+  
