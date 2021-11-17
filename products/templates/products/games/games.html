@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Arts & Crafts</h2>
+                <h2 class="logo-font">Games</h2>
                 <hr class="w-50 mb-1 mx-auto">
             </div>
         </div>
@@ -22,27 +22,27 @@
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
-                    {% for product in products %}
+                    {% for game in games %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 mx-auto">
                             <div class="card h-100 border-0">
-                                {% if product.image %}
-                                <a href="">
-                                    <img class="card-img-top book-img" src="{{ product.img_paths.url }}" alt="{{ product.name }}">
+                                {% if game.image %}
+                                <a href="{% url 'product_detail_games' game.id %}">
+                                    <img class="card-img-top book-img" src="{{ game.img_paths.url }}" alt="{{ game.name }}">
                                 </a>
                                 {% else %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                <a href="{% url 'product_detail_games' game.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ game.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0">{{ game.name }}</p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                            {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                            <p class="lead mb-0 text-left font-weight-bold">${{ game.price }}</p>
+                                            {% if game.rating %}
+                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ game.rating }} / 5</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}

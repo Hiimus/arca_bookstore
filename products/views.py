@@ -12,41 +12,65 @@ def all_books(request):
         'products': products,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/books/products.html', context)
 
 
 def all_arts_and_crafts(request):
     """ A view to show all products """
 
-    products = ArtsAndCraft.objects.all()
+    artsandcrafts = ArtsAndCraft.objects.all()
 
     context = {
-        'products': products,
+        'artsandcrafts': artsandcrafts,
     }
 
-    return render(request, 'products/artsandcraft.html', context)
+    return render(request, 'products/artsandcrafts/artsandcraft.html', context)
 
 
 def all_games(request):
     """ A view to show all products """
 
-    products = Game.objects.all()
+    games = Game.objects.all()
 
     context = {
-        'products': products,
+        'games': games,
     }
 
-    return render(request, 'products/games.html', context)
+    return render(request, 'products/games/games.html', context)
 
 
 def product_detail(request, product_id):
-    """ A view to show individual book details """
+    """ A view to show individual product details """
 
-    product = get_object_or_404(Book, pk=product_id)
+    book = get_object_or_404(Book, pk=product_id)
 
     context = {
-        'product': product,
+        'book': book,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, 'products/product_detail/product_detail.html', context)
+
+
+def product_detail_arts(request, product_id):
+    """ A view to show individual product details """
+
+    artsandcraft = get_object_or_404(ArtsAndCraft, pk=product_id)
+
+    context = {
+        'artsandcraft': artsandcraft,
+    }
+
+    return render(request, 'products/product_detail/product_detail.html', context)
+
+
+def product_detail_games(request, product_id):
+    """ A view to show individual product details """
+
+    game = get_object_or_404(Game, pk=product_id)
+
+    context = {
+        'game': game,
+    }
+
+    return render(request, 'products/product_detail/product_detail.html', context)
 
