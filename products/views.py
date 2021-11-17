@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Book, ArtsAndCraft, Game
 
 # Create your views here.
@@ -37,4 +37,16 @@ def all_games(request):
     }
 
     return render(request, 'products/games.html', context)
+
+
+def product_detail(request, product_id):
+    """ A view to show individual book details """
+
+    product = get_object_or_404(Book, pk=product_id)
+
+    context = {
+        'product': product,
+    }
+
+    return render(request, 'products/product_detail.html', context)
 
