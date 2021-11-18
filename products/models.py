@@ -27,6 +27,7 @@ class Book(models.Model):
     author = models.CharField(max_length=260, null=True, blank=True)
     format = models.CharField(max_length=260, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
+    pages = models.IntegerField(null=True, blank=True)
     book_depository_stars = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
