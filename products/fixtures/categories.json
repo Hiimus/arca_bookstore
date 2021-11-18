@@ -1,140 +1,111 @@
 [
-    {
-      "pk": 1,
-      "model": "products.category",
-      "fields": {
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
         "name": "biography",
         "friendly_name": "Biography"
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.category",
-      "fields": {
-        "name": "childrens_books",
-        "friendly_name": "Childrens Books"
-      }
-    },
-    {
-      "pk": 3,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
         "name": "crafts_hobbies",
         "friendly_name": "Crafts & Hobbies"
-      }
-    },
-    {
-      "pk": 4,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
         "name": "crime_thriller",
         "friendly_name": "Crime & Thriller"
-      }
-    },
-    {
-      "pk": 5,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
         "name": "food_drink",
         "friendly_name": "Food & Drink"
-      }
-    },
-    {
-      "pk": 6,
-      "model": "products.category",
-      "fields": {
-        "name": "health",
-        "friendly_name": "Health"
-      }
-    },
-    {
-      "pk": 7,
-      "model": "products.category",
-      "fields": {
-        "name": "personal_development",
+    }
+}, {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+        "name": "personal-development",
         "friendly_name": "Personal Development"
-      }
-    },
-    {
-      "pk": 8,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
         "name": "romance",
         "friendly_name": "Romance"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.category",
-      "fields": {
-        "name": "science_fiction_fantasy_horror",
-        "friendly_name": "Science Fiction, Fantasy & Horror"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+        "name": "science-fiction-fantasy-horror",
+        "friendly_name": "Science-Fiction, Fantasy & Horror"
+    }
+}, {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
         "name": "sport",
         "friendly_name": "Sport"
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.category",
-      "fields": {
-        "name": "teen_young_adult",
-        "friendly_name": "Teen, Young & Adult"
-      }
-    },
-    {
-      "pk": 10,
-      "model": "products.category",
-      "fields": {
-        "name": "travel_holiday_guides",
+    }
+}, {
+    "model": "products.category",
+    "pk": 9,
+    "fields": {
+        "name": "travel-holiday-guides",
         "friendly_name": "Travel & Holiday Guides"
-      }
-    },
-    {
-      "pk": 11,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 10,
+    "fields": {
+        "name": "teen-young-adult",
+        "friendly_name": "Teen, Young & Adult"
+    }
+}, 
+  {
+    "model": "products.category",
+    "pk": 11,
+    "fields": {
         "name": "pencils",
         "friendly_name": "Pencils"
-      }
-    },
-    {
-      "pk": 12,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 12,
+    "fields": {
         "name": "paint",
         "friendly_name": "Paint"
-      }
-    },
-    {
-      "pk": 13,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 13,
+    "fields": {
         "name": "colouring_books",
         "friendly_name": "Colouring Books"
-      }
-    },
-    {
-      "pk": 14,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 14,
+    "fields": {
         "name": "board_games",
         "friendly_name": "Board Games"
-      }
-    },
-    {
-      "pk": 15,
-      "model": "products.category",
-      "fields": {
+    }
+}, {
+    "model": "products.category",
+    "pk": 15,
+    "fields": {
         "name": "jigsaw_puzzles",
         "friendly_name": "Jigsaw Puzzles"
-      }
     }
-  ]
+}
+]
 
   
