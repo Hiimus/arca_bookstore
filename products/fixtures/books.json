@@ -1,1101 +1,1101 @@
 [
-  {
-    "model": "products.book",
-    "pk": 1,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8532/9781853261589.jpg",
-        "name": "The Little Prince",
-        "author": "Antoine de Saint-Exupery",
-        "format": "Paperback",
-        "description": "Translated by Irene Testot-Ferry.\r\n\r\n\r\nThe Little Prince is a classic tale of equal appeal to children and adults. On one level it is the story of an airman's discovery, in the desert, of a small boy from another planet - the Little Prince of the title - and his stories of intergalactic travel, while on the other hand it is a thought-provoking allegory of the human condition.\r\n\r\n\r\nFirst published in 1943, the year before the author's death in action, this translation contains Saint-Exupery's delightful illustrations.",
-        "pages": 112,
-        "book_depository_stars": "4.50",
-        "price": "3.19",
-        "currency": "$",
-        "old_price": "5.50",
-        "isbn": 9781853261589,
-        "img_paths": "books_images/0000008.jpg"
+    {
+        "model": "products.book",
+        "pk": 1,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8532/9781853261589.jpg",
+            "name": "The Little Prince",
+            "author": "Antoine de Saint-Exupery",
+            "format": "Paperback",
+            "description": "Translated by Irene Testot-Ferry.\r\n\r\n\r\nThe Little Prince is a classic tale of equal appeal to children and adults. On one level it is the story of an airman's discovery, in the desert, of a small boy from another planet - the Little Prince of the title - and his stories of intergalactic travel, while on the other hand it is a thought-provoking allegory of the human condition.\r\n\r\n\r\nFirst published in 1943, the year before the author's death in action, this translation contains Saint-Exupery's delightful illustrations.",
+            "pages": 112,
+            "book_depository_stars": "4.50",
+            "price": "3.19",
+            "currency": "$",
+            "old_price": "5.50",
+            "isbn": 9781853261589,
+            "img_paths": "books_images/0000008.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 2,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7515/9780751565355.jpg",
+            "name": "Harry Potter and the Cursed Child - Parts I & II",
+            "author": "J. K. Rowling",
+            "format": "Hardback",
+            "description": "The Eighth Story. Nineteen Years Later.\r\n\r\nBased on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne.\r\n\r\nBased on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play will receive its world premiere in London’s West End on 30th July 2016. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.",
+            "pages": 352,
+            "book_depository_stars": "3.50",
+            "price": "15.43",
+            "currency": "$",
+            "old_price": "26.30",
+            "isbn": 9780751565355,
+            "img_paths": "books_images/0000018.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 3,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5525/9780552565974.jpg",
+            "name": "Wonder",
+            "author": "R. J. Palacio",
+            "format": "Paperback",
+            "description": "'My name is August. I won't describe what I look like. Whatever you're thinking, it's probably worse.' Auggie wants to be an ordinary ten-year-old. He does ordinary things - eating ice cream, playing on his Xbox. He feels ordinary - inside. But ordinary kids don't make other ordinary kids run away screaming in playgrounds. Ordinary kids aren't stared at wherever they go. Born with a terrible facial abnormality, Auggie has been home-schooled by his parents his whole life. Now, for the first time, he's being sent to a real school - and he's dreading it. All he wants is to be accepted - but can he convince his new classmates that he's just like them, underneath it all? Wonder is a funny, frank, astonishingly moving debut to read in one sitting, pass on to others, and remember long after the final page.",
+            "pages": 320,
+            "book_depository_stars": "4.50",
+            "price": "8.32",
+            "currency": "$",
+            "old_price": "8.80",
+            "isbn": 9780552565974,
+            "img_paths": "books_images/0000028.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 4,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1413/9780141340555.jpg",
+            "name": "Roald Dahl's Marvellous Joke Book",
+            "author": "Roald Dahl",
+            "format": "Paperback",
+            "description": "Which famous writer goes best with a hot dog? Roll Dahl of course!\r\n\r\nLaugh yourself silly with Roald Dahl's Marvellous Joke Book, filled with over 400 hilarious jokes, limericks and riddles, illustrated by Quentin Blake.\r\n\r\nBased on Roald Dahl's most famous characters you will be chortling away with Matilda, Charlie, George, The BFG, James and many more!\r\n\r\nRoald Dahl was full of fun and mischief, and LOVED all kinds of jokes- the sillier the better, like chocolate-covered chickens to grizzly, grouchy grandmas.\r\n\r\nThis side-splitting book includes his own 'knock-knock' jokes, keeping all practising jokesters amused for hours!",
+            "pages": 128,
+            "book_depository_stars": "4.00",
+            "price": "5.84",
+            "currency": "$",
+            "old_price": "6.20",
+            "isbn": 9780141340555,
+            "img_paths": "books_images/0000038.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 5,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7805/9781780552491.jpg",
+            "name": "Brain Games For Clever Kids",
+            "author": "Gareth Moore",
+            "format": "Paperback",
+            "description": "'A super book for children to enjoy as they puzzle their way through the challenges, which get harder as they progress through the book' - Parents in Touch\r\n\r\n___________________\r\n\r\nBrain Games for Clever Kids (R) is a fantastic bestselling puzzle book, brimming with memory, word and number workouts for the cleverest of kids!\r\n\r\nIncluding battleships and mind-bending spot the differences to Japanese puzzles including hanjie, kakuro, futoshiki, sudoku and lots more.\r\n\r\nLet the brain games begin!\r\n\r\nClever Kids is a trade mark of Michael O'Mara Books Limited.\r\n\r\nBy the same author:\r\nBrain Games for Adults - 9781789293821",
+            "pages": 192,
+            "book_depository_stars": "4.00",
+            "price": "4.50",
+            "currency": "$",
+            "old_price": "6.20",
+            "isbn": 9781780552491,
+            "img_paths": "books_images/0000048.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 6,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
+            "name": "Harry Potter and the Philosopher's Stone",
+            "author": "J. K. Rowling",
+            "format": "Hardback",
+            "description": "Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.\r\nHarry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!\r\nThese editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.",
+            "pages": 352,
+            "book_depository_stars": "4.50",
+            "price": "30.91",
+            "currency": "$",
+            "old_price": "38.60",
+            "isbn": 9781408845646,
+            "img_paths": "books_images/0000036.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 7,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
+            "name": "Fantastic Beasts and Where to Find Them",
+            "author": "J. K. Rowling",
+            "format": "Hardback",
+            "description": "J.K. Rowling's screenwriting debut is captured in this exciting hardcover edition of the Fantastic Beasts and Where to Find Them screenplay.\r\nWhen Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone...Fantastic Beasts and Where to Find Them marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. Featuring a cast of remarkable characters, this is epic, adventure-packed storytelling at its very best. Whether an existing fan or new to the wizarding world, this is a perfect addition to any reader's bookshelf.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "11.05",
+            "currency": "$",
+            "old_price": "21.50",
+            "isbn": 9781408708989,
+            "img_paths": "books_images/0000046.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 8,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/4390/9780439023528.jpg",
+            "name": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "format": "Paperback",
+            "description": "Sixteen-year-old Katniss Everdeen regards it as a death sentence when she is forced to represent her district in the annual Hunger Games, a fight to the death on live TV. But Katniss has been close to death before - and survival, for her, is second nature. The Hunger Games is a searing novel set in a future with unsettling parallels to our present. Welcome to the deadliest reality TV show ever...",
+            "pages": 384,
+            "book_depository_stars": "4.50",
+            "price": "10.96",
+            "currency": "$",
+            "old_price": "12.90",
+            "isbn": 9780439023528,
+            "img_paths": "books_images/0000078.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 9,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0073/9780007371464.jpg",
+            "name": "Gangsta Granny",
+            "author": "David Walliams",
+            "format": "Paperback",
+            "description": "Another hilarious and moving novel from bestselling, critically acclaimed author David Walliams, the natural successor to Roald Dahl. A story of prejudice and acceptance, funny lists and silly words, this new book has all the hallmarks of David's previous bestsellers. Our hero Ben is bored beyond belief after he is made to stay at his grandma's house. She's the boringest grandma ever: all she wants to do is to play Scrabble, and eat cabbage soup. But there are two things Ben doesn't know about his grandma. 1) She was once an international jewel thief. 2) All her life, she has been plotting to steal the crown jewels, and now she needs Ben's help...",
+            "pages": 306,
+            "book_depository_stars": "4.50",
+            "price": "7.52",
+            "currency": "$",
+            "old_price": "8.99",
+            "isbn": 9780007371464,
+            "img_paths": "books_images/0000088.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 10,
+        "fields": {
+            "category": 10,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408876985.jpg",
+            "name": "Fantastically Great Women Who Changed The World",
+            "author": "Kate Pankhurst",
+            "format": "Paperback",
+            "description": "",
+            "pages": null,
+            "book_depository_stars": "4.50",
+            "price": "7.82",
+            "currency": "$",
+            "old_price": "8.80",
+            "isbn": 9781408876985,
+            "img_paths": "books_images/0000098.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 11,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1419/9780141986005.jpg",
+            "name": "Good Night Stories for Rebel Girls",
+            "author": "Elena Favilli",
+            "format": "Hardback",
+            "description": "'The definitive book of the year in our house, for both parents and offspring' Maggie O'Farrell, Guardian Books of the Year\r\n\r\n'Absolutely beautiful - get one for yourself and one to inspire a woman in your life' Stylist\r\n*Sunday Times and New York Times bestseller*\r\n*Blackwell's Book of the Year*\r\n*Foyles Children's Book of the Year*\r\n*Shortlisted for Waterstones Book of the Year*\r\n\r\nWhat if the princess didn't marry Prince Charming but instead went on to be an astronaut? What if the jealous step sisters were supportive and kind? And what if the queen was the one really in charge of the kingdom? Illustrated by sixty female artists from every corner of the globe, Good Night Stories for Rebel Girls introduces us to one hundred remarkable women and their extraordinary lives, from Ada Lovelace to Malala, Amelia Earhart to Michelle Obama. Empowering, moving and inspirational, these are true fairy tales for heroines who definitely don't need rescuing.",
+            "pages": 224,
+            "book_depository_stars": "4.50",
+            "price": "20.86",
+            "currency": "$",
+            "old_price": "24.00",
+            "isbn": 9780141986005,
+            "img_paths": "books_images/0000020.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 12,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2413/9780241334140.jpg",
+            "name": "Becoming",
+            "author": "Michelle Obama",
+            "format": "Hardback",
+            "description": "An intimate, powerful, and inspiring memoir; 15 million copies sold worldwide\r\n\r\nTHE NO. 1 BESTSELLER\r\n\r\nBRITISH BOOK AWARDS, NON-FICTION BOOK OF THE YEAR\r\n\r\nTHE SUNDAY TIMES, MEMOIR OF THE YEAR\r\n\r\nBOOKS OF THE YEAR: THE TIMES, OBSERVER, GUARDIAN, EVENING STANDARD\r\n\r\nNow in paperback featuring a new introduction by Michelle Obama, a letter from the author to her younger self, and a book club guide with 20 discussion questions and a 5-question Q&A, the intimate, powerful, and inspiring memoir by the former First Lady of the United States\r\n\r\nIn her memoir, a work of deep reflection and mesmerizing storytelling, Michelle Obama invites readers into her world, chronicling the experiences that have shaped her -- from her childhood on the South Side of Chicago to her years as an executive balancing the demands of motherhood and work, to her time spent at the world's most famous address. With unerring honesty and lively wit, she describes her triumphs and her disappointments, both public and private, telling her full story as she has lived it -- in her own words and on her own terms.\r\n\r\nWarm, wise, and revelatory, Becoming is the deeply personal reckoning of a woman of soul and substance who has steadily defied expectations -- and whose story inspires us to do the same.",
+            "pages": 448,
+            "book_depository_stars": "4.50",
+            "price": "24.21",
+            "currency": "$",
+            "old_price": "26.00",
+            "isbn": 9780241334140,
+            "img_paths": "books_images/0000030.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 13,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099511021.jpg",
+            "name": "Educated",
+            "author": "Tara Westover",
+            "format": "Paperback",
+            "description": "THE MULTI-MILLION COPY BESTSELLER\r\n'An amazing story, and truly inspiring. The kind of book everyone will enjoy. IT'S EVEN BETTER THAN YOU'VE HEARD.' - Bill Gates\r\n\r\nSelected as a book of the year by AMAZON, THE TIMES, SUNDAY TIMES, GUARDIAN, NEW YORK TIMES, ECONOMIST, NEW STATESMAN, VOGUE, IRISH TIMES, IRISH EXAMINER and RED MAGAZINE\r\n\r\nA Book of the Decade, 2010-2020 (Independent)\r\n________________________\r\n\r\nTara Westover and her family grew up preparing for the End of Days but, according to the government, she didn't exist. She hadn't been registered for a birth certificate. She had no school records because she'd never set foot in a classroom, and no medical records because her father didn't believe in hospitals.\r\n\r\nAs she grew older, her father became more radical and her brother more violent. At sixteen, Tara knew she had to leave home. In doing so she discovered both the transformative power of education, and the price she had to pay for it.\r\n________________________\r\n\r\n* From one of TIME magazine's 100 most influential people of 2019\r\n* Shortlisted for the 2018 BAMB Readers' Awards\r\n* Recommended as a summer read by Barack Obama, Antony Beevor, India Knight, Blake Morrison and Nina Stibbe",
+            "pages": 400,
+            "book_depository_stars": "4.50",
+            "price": "9.61",
+            "currency": "$",
+            "old_price": "11.50",
+            "isbn": 9780099511021,
+            "img_paths": "books_images/0000040.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 14,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784701994.jpg",
+            "name": "When Breath Becomes Air",
+            "author": "Paul Kalanithi",
+            "format": "Paperback",
+            "description": "** SUNDAY TIMES NUMBER ONE BESTSELLER**\r\n\r\n'Rattling. Heartbreaking. Beautiful.' Atul Gawande, bestselling author of Being Mortal\r\n\r\nWhat makes life worth living in the face of death?\r\n\r\nAt the age of thirty-six, on the verge of completing a decade's training as a neurosurgeon, Paul Kalanithi was diagnosed with inoperable lung cancer. One day he was a doctor treating the dying, the next he was a patient struggling to live.\r\n\r\nWhen Breath Becomes Air chronicles Kalanithi's transformation from a medical student asking what makes a virtuous and meaningful life into a neurosurgeon working in the core of human identity - the brain - and finally into a patient and a new father.\r\n\r\nPaul Kalanithi died while working on this profoundly moving book, yet his words live on as a guide to us all. When Breath Becomes Air is a life-affirming reflection on facing our mortality and on the relationship between doctor and patient, from a gifted writer who became both.\r\n\r\n'A vital book about dying. Awe-inspiring and exquisite. Obligatory reading for the living' Nigella Lawson",
+            "pages": 256,
+            "book_depository_stars": "4.50",
+            "price": "9.05",
+            "currency": "$",
+            "old_price": "11.50",
+            "isbn": 9781784701994,
+            "img_paths": "books_images/0000050.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 15,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408878729.jpg",
+            "name": "Lost Connections",
+            "author": "Johann Hari",
+            "format": "Paperback",
+            "description": "* Pre-order Johann Hari's new book Stolen Focus now! *\r\n\r\nTHE INTERNATIONAL BESTSELLER\r\n\r\n'A book that could actually make us happy' SIMON AMSTELL\r\n'This amazing book will change your life' ELTON JOHN\r\n'One of the most important texts of recent years' BRITISH JOURNAL OF GENERAL PRACTICE\r\n'Brilliant, stimulating, radical' MATT HAIG\r\n'The more people read this book, the better off the world will be' NAOMI KLEIN\r\n'Wonderful' HILLARY CLINTON\r\n'Eye-opening' GUARDIAN\r\n'Brilliant for anyone wanting a better understanding of mental health' ZOE BALL\r\n'A game-changer' DAVINA MCCALL\r\n'Extraordinary' DR MAX PEMBERTON\r\n'Beautiful' RUSSELL BRAND\r\n\r\nDepression and anxiety are now at epidemic levels. Why? Across the world, scientists have uncovered evidence for nine different causes. Some are in our biology, but most are in the way we are living today.\r\n\r\nLost Connections offers a radical new way of thinking about this crisis. It shows that once we understand the real causes, we can begin to turn to pioneering new solutions - ones that offer real hope.",
+            "pages": 416,
+            "book_depository_stars": "4.50",
+            "price": "8.53",
+            "currency": "$",
+            "old_price": "11.50",
+            "isbn": 9781408878729,
+            "img_paths": "books_images/0000060.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 16,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
+            "name": "Man's Search For Meaning",
+            "author": "Viktor E. Frankl",
+            "format": "Paperback",
+            "description": "A prominent Viennese psychiatrist before the war, Viktor Frankl was uniquely able to observe the way that he and other inmates coped with the experience of being in Auschwitz. He noticed that it was the men who comforted others and who gave away their last piece of bread who survived the longest - and who offered proof that everything can be taken away from us except the ability to choose our attitude in any given set of circumstances.\r\n\r\nThe sort of person the prisoner became was the result of an inner decision and not of camp influences alone. Only those who allowed their inner hold on their moral and spiritual selves to subside eventually fell victim to the camp's degenerating influence - while those who made a victory of those experiences turned them into an inner triumph.\r\n\r\nFrankl came to believe that man's deepest desire is to search for meaning and purpose. This outstanding work offers us all a way to transcend suffering and find significance in the art of living.",
+            "pages": 160,
+            "book_depository_stars": "4.50",
+            "price": "9.66",
+            "currency": "$",
+            "old_price": "10.00",
+            "isbn": 9781846041242,
+            "img_paths": "books_images/0000012.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 17,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3455/9780345514400.jpg",
+            "name": "I Know Why the Caged Bird Sings",
+            "author": "Maya Angelou",
+            "format": "Paperback",
+            "description": "Sent by their mother to live with their devout, self-sufficient grandmother in a small Southern town, Maya and her brother, Bailey, endure the ache of abandonment and the prejudice of the local `powhitetrash.` At eight years old and back at her mother's side in St. Louis, Maya is attacked by a man many times her age-and has to live with the consequences for a lifetime. Years later, in San Francisco, Maya learns about love for herself and the kindness of others, her own strong spirit, and the ideas of great authors (`I met and fell in love with William Shakespeare`) will allow her to be free instead of imprisoned.\r\nPoetic and powerful, I Know Why the Caged Bird Sings is a modern American classic that will touch hearts and change minds for as long as people read.",
+            "pages": 289,
+            "book_depository_stars": "4.00",
+            "price": "7.07",
+            "currency": "$",
+            "old_price": "7.50",
+            "isbn": 9780345514400,
+            "img_paths": "books_images/0000080.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 18,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473695986.jpg",
+            "name": "Brief Answers to the Big Questions",
+            "author": "Stephen Hawking",
+            "format": "Hardback",
+            "description": "THE NO.1 SUNDAY TIMES BESTSELLER\r\n\r\n'A beautiful little book by a brilliant mind' DAILY TELEGRAPH\r\n\r\n'Effortlessly instructive, absorbing, up to the minute and - where it matters - witty' GUARDIAN\r\n\r\nThe world-famous cosmologist and #1 bestselling author of A Brief History of Time leaves us with his final thoughts on the universe's biggest questions in this brilliant posthumous work.\r\n\r\nIs there a God?\r\n\r\nHow did it all begin?\r\n\r\nCan we predict the future?\r\n\r\nWhat is inside a black hole?\r\n\r\nIs there other intelligent life in the universe?\r\n\r\nWill artificial intelligence outsmart us?\r\n\r\nHow do we shape the future?\r\n\r\nWill we survive on Earth?\r\n\r\nShould we colonise space?\r\n\r\nIs time travel possible?\r\n\r\nThroughout his extraordinary career, Stephen Hawking expanded our understanding of the universe and unravelled some of its greatest mysteries. But even as his theoretical work on black holes, imaginary time and multiple histories took his mind to the furthest reaches of space, Hawking always believed that science could also be used to fix the problems on our planet.\r\n\r\nAnd now, as we face potentially catastrophic changes here on Earth - from climate change to dwindling natural resources to the threat of artificial super-intelligence - Stephen Hawking turns his attention to the most urgent issues for humankind.\r\n\r\nWide-ranging, intellectually stimulating, passionately argued, and infused with his characteristic humour, Brief Answers to the Big Questions, the final book from one of the greatest minds in history, is a personal view on the challenges we face as a human race, and where we, as a planet, are heading next.\r\n\r\nA percentage of all royalties will go to charity.",
+            "pages": 272,
+            "book_depository_stars": "4.50",
+            "price": "11.64",
+            "currency": "$",
+            "old_price": "18.00",
+            "isbn": 9781473695986,
+            "img_paths": "books_images/0000090.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 19,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473635302.jpg",
+            "name": "Born A Crime",
+            "author": "Trevor Noah",
+            "format": "Paperback",
+            "description": "WINNER OF THE THURBER PRIZE\r\n\r\nThe compelling, inspiring, (often comic) coming-of-age story of Trevor Noah, set during the twilight of apartheid and the tumultuous days of freedom that followed.\r\n\r\nOne of the comedy world's brightest new voices, Trevor Noah is a light-footed but sharp-minded observer of the absurdities of politics, race and identity, sharing jokes and insights drawn from the wealth of experience acquired in his relatively young life. As host of the US hit show The Daily Show with Trevor Noah, he provides viewers around the globe with their nightly dose of biting satire, but here Noah turns his focus inward, giving readers a deeply personal, heartfelt and humorous look at the world that shaped him.\r\n\r\nNoah was born a crime, son of a white Swiss father and a black Xhosa mother, at a time when such a union was punishable by five years in prison. Living proof of his parents' indiscretion, Trevor was kept mostly indoors for the first years of his life, bound by the extreme and often absurd measures his mother took to hide him from a government that could, at any moment, take him away.\r\n\r\nA collection of eighteen personal stories, Born a Crime tells the story of a mischievous young boy growing into a restless young man as he struggles to find his place in a world where he was never supposed to exist. Born a Crime is equally the story of that young man's fearless, rebellious and fervently religious mother - a woman determined to save her son from the cycle of poverty, violence and abuse that ultimately threatens her own life.\r\n\r\nWhether subsisting on caterpillars for dinner during hard times, being thrown from a moving car during an attempted kidnapping, or just trying to survive the life-and-death pitfalls of dating in high school, Noah illuminates his curious world with an incisive wit and an unflinching honesty. His stories weave together to form a personal portrait of an unlikely childhood in a dangerous time, as moving and unforgettable as the very best memoirs and as funny as Noah's own hilarious stand-up. Born a Crime is a must read.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "8.30",
+            "currency": "$",
+            "old_price": "12.40",
+            "isbn": 9781473635302,
+            "img_paths": "books_images/0000100.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 20,
+        "fields": {
+            "category": 1,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/9978/9780997895827.jpg",
+            "name": "Goodnight Stories for Rebel Girls 2",
+            "author": "Elena Favilli",
+            "format": "Hardback",
+            "description": "Good Night Stories for Rebel Girls 2 is an entirely new collection of 100 more bedtime stories about extraordinary women from all over the world. It boasts a brand new graphic design + 100 incredible new portraits created by the best female artists of our time.\r\nHaving a passionate community that spans across 70+ countries is a great way to discover incredible stories.The stories in Volume 2 are 100% stories you told us about. Now, we can all share them. We can't wait because they truly are breathtaking.",
+            "pages": 224,
+            "book_depository_stars": "4.50",
+            "price": "21.15",
+            "currency": "$",
+            "old_price": "30.90",
+            "isbn": 9780997895827,
+            "img_paths": "books_images/0000011.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 21,
+        "fields": {
+            "category": 2,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7806/9781780674872.jpg",
+            "name": "Enchanted Forest",
+            "author": "Johanna Basford",
+            "format": "Paperback",
+            "description": "Fall under the spell of the #1 New York Times Bestseller, Enchanted Forest!\r\n\r\nThis stunning colouring book by Johanna Basford takes readers on an inky quest through an enchanted forest to discover what lies in the castle at its heart. As well as drawings to complete, colour, and embellish, there are hidden objects to be found along the way. Can you spot the wild flowers, animals, and birds? What about the lanterns, keys, and treasure chests? Beginning at the entrance to the forest, the journey progresses through woodlands, rocky caves, and tree-lined mazes. Colour your way past streams and waterfalls and over treetops, until you finally reach your destination: a secluded, magical castle.\r\n\r\nHidden throughout the book are nine symbols. Readers must find all the symbols to unlock the castle door at the end of the quest and discover what lies within. Additional special features include a gate-folded two-page spread and a colourable jacket.\r\n\r\nPraise for the book and author:\r\n\"The colourists have a queen, and her name is Johanna Basford.\" - New York Magazine\r\n\r\n\"Consider trading in your yoga mat for a set of markers and peruse the gorgeous gardens of Basford's imagination.\" - The Huffington Post\r\n\r\n\"The best colouring book for anxiety.\" - Teen Vogue\"This book celebrates the glory of all things green and nature-y in the best way possible: coloring book form! Even if you don't want to add color, the illustrations themselves are frame-worthy loveliness.\" mdash; Brit+ Co\r\n\r\nOther popular titles by Johanna Basford include:\r\n* Secret Garden\r\n* Johanna Basford's Secret Garden Journal\r\n* Secret Garden: 20 Postcards\r\n* Enchanted Forest: 12 Colour-in Notecards\r\n* Enchanted Forest: 20 Postcards\r\n\r\nFans of Leila Duly, Millie Marotta, and Daisy Fletcher will devour Johanna Basford's intricate scenes of flora and fauna. To learn more about her latest offerings, visit Basford's author website at www.johannabasford.com",
+            "pages": 84,
+            "book_depository_stars": "4.50",
+            "price": "12.23",
+            "currency": "$",
+            "old_price": "12.40",
+            "isbn": 9781780674872,
+            "img_paths": "books_images/0000001.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 22,
+        "fields": {
+            "category": 2,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7837/9781783705481.jpg",
+            "name": "Harry Potter Colouring Book",
+            "author": "J. K. Rowling",
+            "format": "Paperback",
+            "description": "Packed with stunning pieces of artwork from the Warner Bros. archive, this book gives fans the chance to colour in the vivid settings and beloved characters of J.K. Rowling's wizarding world. From the heraldry of the four Hogwarts houses to the extravagant wares of Weasley's Wizard Wheezes, the world of Harry Potter overflows with radiant colour. Filled with intricate illustrations and elaborate designs used in the making of the Harry Potter films, this book invites you to imbue the wizarding world with colour in your own explorations of Hogwarts castle, the Forbidden Forest, and much more. You will also find pages of magical creatures and iconic scenes from the films, from the Sorting Ceremony in Harry's first year, to the unforgettable final battle between Harry and Lord Voldemort, as well as some of the marvellous props used in the movies, such as The Quibbler, Quidditch World Cup posters, and the Triwizard Cup. Unique and interactive, the Harry Potter Colouring Book is a perfect collector's item for fans of the blockbuster saga. For best results, we recommend the use of colouring pencils to colour and create your stunning pictures.",
+            "pages": 80,
+            "book_depository_stars": "4.50",
+            "price": "9.52",
+            "currency": "$",
+            "old_price": "12.40",
+            "isbn": 9781783705481,
+            "img_paths": "books_images/0000011.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 23,
+        "fields": {
+            "category": 2,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7869/9780786965601.jpg",
+            "name": "Dungeons & Dragons Player's Handbook (Dungeons & Dragons Core Rulebooks)",
+            "author": "Wizards of the Coast",
+            "format": "Hardback",
+            "description": "Weave legendary stories in the world's greatest roleplaying game.\r\n\r\nAll you need to run a Dungeons & Dragons game is your imagination, some dice, and this book. The Dungeon Master's Guide teaches you how to how to run D&D adventures for your players-- how to invent monsters for them to fight, mysteries for them to solve, and fantasy worlds for them to explore.\r\n\r\n\"[The Dungeon Master's Guide is] the one book to rule them all, the most comprehensive and powerful set of resources needed to run a game of D&D. . .\"\r\n--Charlie Hall, Polygon.com\r\n\r\n\"D&D acolytes are everywhere...Tech workers from Silicon Valley to Brooklyn have long-running campaigns, and the showrunners and the novelist behind 'Game of Thrones' have all been Dungeon Masters.\"--Neima Jahromi, The New Yorker\r\n\r\n- The Dungeon Master's Guide is one of the three main Dungeons & Dragons books, along with the Player's Handbook and Monster Manual. It's a reference used by the Dungeon Master (the game's narrator) to create adventures--to run Dungeons & Dragons games and fill them with characters and stories.\r\n\r\n- The Dungeon Master's Guide (DMG) is full of tools to help you immerse players in the game. What's the demon lord's secret weakness? Are the orcish invaders a criminal enterprise, or traitorous allies? Dozens of tables throughout the book help inspire your decisions and keep the game flowing smoothly.\r\n\r\n- In the Dungeon Master's Guide (DMG), even the tables tell tales. A legendary sword takes five decades to craft. Who created it, and why? A tavern-crawling gnome has an eye twitch. How did she get it, and when? In every detail is an architecture for narrative--and the Dungeon Master's Guide has all the tools you need to flesh it out with ease.\r\n\r\n- In Dungeons & Dragons, you and your friends coauthor your own legend. Guided by a Dungeon Master, you create characters and play their roles in a story, rolling dice and navigating maps as you unfold a tale as limitless as your imagination.\r\n\r\n- Dungeons & Dragons is the world's greatest roleplaying game. Created in 1974, D&D transformed gaming culture by blending traditional fantasy with miniatures and wargaming.",
+            "pages": 320,
+            "book_depository_stars": "4.50",
+            "price": "31.94",
+            "currency": "$",
+            "old_price": "48.40",
+            "isbn": 9780786965601,
+            "img_paths": "books_images/0000061.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 24,
+        "fields": {
+            "category": 2,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7522/9780752265629.jpg",
+            "name": "The Mindfulness Colouring Book",
+            "author": "Emma Farrarons",
+            "format": "Paperback",
+            "description": "The bestselling adult colouring book!\r\n\r\nWorking with your hands is one of the best ways to soothe anxiety and eliminate stress. This stunning, pocket-sized colouring book offers a practical exercise in mindfulness that draws on your creativity and hones your focus.\r\n\r\nBeautifully illustrated by Emma Farrarons, The Mindfulness Colouring Book is filled with templates for exquisite scenes and intricate, sophisticated patterns, prompting you to meditate on your artwork as you mindfully and creatively fill these pages with colour.\r\n\r\nTake a few minutes out of your day, wherever you are, and colour your way to peace and calm.",
+            "pages": 112,
+            "book_depository_stars": "4.00",
+            "price": "6.80",
+            "currency": "$",
+            "old_price": "10.50",
+            "isbn": 9780752265629,
+            "img_paths": "books_images/0000031.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 25,
+        "fields": {
+            "category": 2,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/8118/9780811870191.jpg",
+            "name": "One Line a Day",
+            "author": "Chronicle Books",
+            "format": "Calendar",
+            "description": "Revisit thoughts and memories with a 5-year journal and memory book\r\n\r\nThis classic memory-keeper is the perfect way to track the ups and downs of life, day by day.\r\n\r\nMore than a daily diary or journal: For those daunted by the idea of keeping a journal or diary, the simple commitment of just One Line a Day is manageable for everyone. Each page of the journal includes an entry for five successive years, allowing users to revisit previous thoughts on a specific day of the year over the span of five years, and reflect on change and progress.\r\n\r\nUse the One Line a Day 5-year journal format to provide an insightful snapshot of your thoughts, memories, change, and progress on each of the 365 days of the year\r\nSee patterns emerge as important events like anniversaries, birthdays, and holidays come and go\r\nAs the pages fill, you'll discover happy coincidences and have a chance to relive forgotten moments\r\n\r\nA valuable alternative to the 5-minute journal format, One Line a Day will appeal to those new to the journaling habit and seasoned journalers alike.\r\n\r\nA great way to begin the day or to put down a final thought before falling asleep at night\r\nDurable and elegantly designed with a ribbon for easily opening to the right page\r\nMakes a great graduation or milestone birthday gift, or for someone starting on a new journey in life\r\nKeepsake diary will enhance the appreciation of life and be a treasure for years to come",
+            "pages": 370,
+            "book_depository_stars": "4.50",
+            "price": "9.65",
+            "currency": "$",
+            "old_price": "13.50",
+            "isbn": 9780811870191,
+            "img_paths": "books_images/0000041.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 31,
+        "fields": {
+            "category": 3,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
+            "name": "1984",
+            "author": "George Orwell",
+            "format": "Paperback",
+            "description": "The perfect edition for any Orwell enthusiasts' collection, discover the classic dystopian masterpiece beautifully reimagined by renowned street artist Shepard Fairey\r\n\r\nWinston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities. Despite the police helicopters that hover and circle overhead, Winston and Julia begin to question the Party; they are drawn towards conspiracy. Yet Big Brother will not tolerate dissent - even in the mind. For those with original thoughts they invented Room 101. . .\r\n\r\nFirst published in 1949, 1984 is George Orwell's terrifying vision of a totalitarian future in which everything and everyone is slave to a tyrannical regime.\r\n\r\n'Right up there among my favourite books . . . I read it again and again' Margaret Atwood\r\n\r\n'More relevant to today than almost any other book that you can think of' Jo Brand\r\n\r\nCOMPLETE THE TRIO WITH SHEPARD FAIREY'S NEW-LOOK ANIMAL FARM AND DOWN AND OUT IN PARIS AND LONDON.",
+            "pages": 336,
+            "book_depository_stars": "4.00",
+            "price": "7.88",
+            "currency": "$",
+            "old_price": "8.80",
+            "isbn": 9780141036144,
+            "img_paths": "books_images/0000002.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 32,
+        "fields": {
+            "category": 3,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
+            "name": "Man's Search For Meaning",
+            "author": "Viktor E. Frankl",
+            "format": "Paperback",
+            "description": "A prominent Viennese psychiatrist before the war, Viktor Frankl was uniquely able to observe the way that he and other inmates coped with the experience of being in Auschwitz. He noticed that it was the men who comforted others and who gave away their last piece of bread who survived the longest - and who offered proof that everything can be taken away from us except the ability to choose our attitude in any given set of circumstances.\r\n\r\nThe sort of person the prisoner became was the result of an inner decision and not of camp influences alone. Only those who allowed their inner hold on their moral and spiritual selves to subside eventually fell victim to the camp's degenerating influence - while those who made a victory of those experiences turned them into an inner triumph.\r\n\r\nFrankl came to believe that man's deepest desire is to search for meaning and purpose. This outstanding work offers us all a way to transcend suffering and find significance in the art of living.",
+            "pages": 160,
+            "book_depository_stars": "4.50",
+            "price": "9.66",
+            "currency": "$",
+            "old_price": "9.90",
+            "isbn": 9781846041242,
+            "img_paths": "books_images/0000012.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 33,
+        "fields": {
+            "category": 3,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
+            "name": "Animal Farm",
+            "author": "George Orwell",
+            "format": "Paperback",
+            "description": "The perfect edition for any Orwell enthusiasts' collection, discover Orwell's classic dystopian masterpiece beautifully reimagined by renowned street artist Shepard Fairey\r\n\r\n'All animals are equal. But some animals are more equal than others.'\r\n\r\nMr Jones of Manor Farm is so lazy and drunken that one day he forgets to feed his livestock. The ensuing rebellion under the leadership of the pigs Napoleon and Snowball leads to the animals taking over the farm. Vowing to eliminate the terrible inequities of the farmyard, the renamed Animal Farm is organised to benefit all who walk on four legs. But as time passes, the ideals of the rebellion are corrupted, then forgotten. And something new and unexpected emerges. . .\r\n\r\nFirst published in 1945, Animal Farm - the history of a revolution that went wrong - is George Orwell's brilliant satire on the corrupting influence of power.\r\n\r\n'Remains our great satire of the darker face of modern history' Malcolm Bradbury\r\n\r\n'A prophet who thought the unthinkable and spoke the unspeakable, even when it offended conventional thought' Daily Express\r\n\r\n'As valid today as it was fifty years ago' Ralph Steadman\r\n\r\nCOMPLETE THE TRIO WITH SHEPARD FAIREY'S NEW-LOOK 1984 AND DOWN AND OUT IN PARIS AND LONDON.",
+            "pages": 112,
+            "book_depository_stars": "4.00",
+            "price": "7.98",
+            "currency": "$",
+            "old_price": "10.30",
+            "isbn": 9780141036137,
+            "img_paths": "books_images/0000022.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 34,
+        "fields": {
+            "category": 3,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
+            "name": "The Husband's Secret",
+            "author": "Liane Moriarty",
+            "format": "Paperback",
+            "description": "His terrible secret. Her life-shattering choice . . . Discover the enthralling story of secrets, family, and the danger of the truth from the bestselling author of HBO sensation BIG LITTLE LIES\r\n\r\n'Another masterclass from the author of Big Little Lies' GRAZIA\r\n_________\r\n\r\nCecilia thought she knew her husband.\r\n\r\nThat is until she finds an envelope with 'to be opened in the event of my death' written in his hand. Unable to resist temptation, she opens it, and learns a shocking truth he has never dared reveal.\r\n\r\nNow Cecilia faces a terrible choice.\r\n\r\nBecause revealing her husband's secret will hurt those she loves the most . . .\r\n\r\nBut could the consequences of staying silent be worse?\r\n_________\r\n\r\n'A staggeringly brilliant novel. It is literally unputdownable' SOPHIE HANNAH\r\n\r\n'Finely wrought tension holds up until the final page' TELEGRAPH\r\n\r\n'A tense, page-turning story which gradually draws everyone together in a devastating climax' MAIL ON SUNDAY\r\n\r\n'Dark and compelling . . . a must read' SUN",
+            "pages": 432,
+            "book_depository_stars": "4.00",
+            "price": "9.33",
+            "currency": "$",
+            "old_price": "9.99",
+            "isbn": 9781405911665,
+            "img_paths": "books_images/0000032.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 35,
+        "fields": {
+            "category": 3,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7802/9781780221359.jpg",
+            "name": "Gone Girl",
+            "author": "Gillian Flynn",
+            "format": "Paperback",
+            "description": "THE ADDICTIVE No.1 BESTSELLER AND INTERNATIONAL PHENOMENON OVER 20 MILLION COPIES SOLD WORLDWIDE THE BOOK THAT DEFINES PSYCHOLOGICAL THRILLER Who are you? What have we done to each other? These are the questions Nick Dunne finds himself asking on the morning of his fifth wedding anniversary, when his wife Amy suddenly disappears. The police suspect Nick. Amy's friends reveal that she was afraid of him, that she kept secrets from him. He swears it isn't true. A police examination of his computer shows strange searches. He says they weren't made by him. And then there are the persistent calls on his mobile phone. So what really did happen to Nick's beautiful wife? 'Flynn is a brilliantly accomplished psychological crime writer and this latest book is so dark, so twisted and so utterly compelling that it actually messes with your mind' DAILY MAIL 'A near-masterpiece. Flynn is an extraordinary writer who, with every sentence, makes words do things that other writers merely dream of' SOPHIE HANNAH, Sunday Express 'You think you're reading a good, conventional thriller and then it grows into a fascinating portrait of one averagely mismatched relationship...Nothing's as it seems - Flynn is a fabulous plotter, and a very sharp observer of modern life in the aftermath of the credit crunch' THE TIMES 'One of the most popular thrillers of the year is also one of the smartest... Flynn's book cleverly outpaces its neo-noir trappings and consistently surprises the reader.' FINANCIAL TIMES",
+            "pages": 512,
+            "book_depository_stars": "4.00",
+            "price": "9.55",
+            "currency": "$",
+            "old_price": "10.50",
+            "isbn": 9781780221359,
+            "img_paths": "books_images/0000042.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 41,
+        "fields": {
+            "category": 4,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7850/9781785031168.jpg",
+            "name": "Ottolenghi SIMPLE",
+            "author": "Yotam Ottolenghi",
+            "format": "Hardback",
+            "description": "The Sunday Times and New York Times Bestseller. Winner at The National Book Awards 2018\r\n\r\nEverything you love about Ottolenghi, made simple.\r\n\r\nYotam Ottolenghi's award-winning recipes are always a celebration: an unforgettable combination of abundance, taste and surprise. Ottolenghi SIMPLE is no different, with 130 brand-new dishes that contain all the inventive elements and flavour combinations that Ottolenghi is loved for, but with minimal hassle for maximum joy.\r\n\r\nBursting with colourful photography, Ottolenghi SIMPLE showcases Yotam's standout dishes that will suit whatever type of cooking you find easy - whether that's getting wonderful food on the table in under 30 minutes, using just one pot to make a delicious meal, or a flavoursome dish that can be prepared ahead and then served when you're ready.\r\n\r\nThese brilliant, flavour-forward dishes are all SIMPLE in at least one (but very often more than one) way:\r\n\r\nS - short on time: less than 30 minutes\r\nI - 10 ingredients or less\r\nM - make ahead\r\nP - pantry\r\nL - lazy\r\nE - easier than you think\r\n\r\nOttolenghi SIMPLE is the stunning new cookbook we have all been wishing for: Yotam Ottolenghi's vibrant food made easy.\r\n\r\nBuy the SIMPLE 10 ingredients at ottolenghi.co.uk",
+            "pages": 320,
+            "book_depository_stars": "4.50",
+            "price": "28.60",
+            "currency": "$",
+            "old_price": "31.50",
+            "isbn": 9781785031168,
+            "img_paths": "books_images/0000003.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 42,
+        "fields": {
+            "category": 4,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718187729.jpg",
+            "name": "5 Ingredients - Quick & Easy Food",
+            "author": "Jamie Oliver",
+            "format": "Hardback",
+            "description": "Discover how easy it is to cook a delicious, healthy meal with just FIVE simple ingredients. Let Jamie Oliver show you how . . .\r\n\r\nINCLUDES ALL THE RECIPES AND MORE FROM JAMIE'S CHANNEL 4 SERIES QUICK & EASY FOOD\r\n\r\n'This is Oliver's best book in years' The Sunday Times\r\n_____________\r\n\r\nWith just FIVE ingredients that have maximum flavour and minimum fuss, you'll be cooking exciting food that's ready in less than 30 minutes . . .\r\n\r\n* MOUTHWATERING WATERMELOM, RADISH AND FETA SALAD\r\n\r\n* ZINGY LEMONY COURGETTE LINGUINE\r\n\r\n* SPEEDY SPICED PRAWN AND BASMATI-RICE SOUP\r\n\r\n* HONEYED STICKY PORK AND CARROT STIR FRY\r\n\r\n* SCRUMPTIOUS CHOCOLATE ORANGE SHORTBREAD\r\n_________\r\n\r\n'Our favourite new recipe book . . . Simple suppers from the nation's favourite chef' Sainsbury's Magazine\r\n\r\n'Jamie Oliver returns with the second series, focussing on easy family-centric cooking . . . he's stripped back to basics and all the better for it.' The Sunday Telegraph",
+            "pages": 320,
+            "book_depository_stars": "4.00",
+            "price": "25.92",
+            "currency": "$",
+            "old_price": "32.50",
+            "isbn": 9780718187729,
+            "img_paths": "books_images/0000013.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 43,
+        "fields": {
+            "category": 4,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718154776.jpg",
+            "name": "Jamie's 30-Minute Meals",
+            "author": "Jamie Oliver",
+            "format": "Hardback",
+            "description": "Whip up delicious three-course meals in no time at all with the bestselling Jamie's 30-Minute Meals\r\n\r\nJamie Oliver will teach you how to make good food super-fast in his game-changing guide to coordinating an entire meal without any fuss.\r\n_________\r\n\r\nWith 50 exciting, seasonal meal ideas, Jamie's 30 Minute Meals provides the essential collection of dishes for putting on the ultimate three-course meal without taking up your time.\r\n\r\nNot only that, Jamie also includes refreshing, light lunch recipes that you can put together in no time at all.\r\n\r\nThese mouth-watering dishes include . . .\r\n- Melt-in-the-mouth SPRING LAMB and CHIANTI GRAVY\r\n- Mushroom risotto with spinach salad - Tender DUCK SALAD\r\n- Moreish LEMON and RASPBERRY CHEESECAKE\r\n- Creamy RICE PUDDING and STEWED FRUIT\r\n\r\nJamie offers a tasty dish for every occasion, with recipes written to help you make the most of every single minute in the kitchen.\r\n\r\nWith the help of Jamie Oliver and Jamie's 30-Minute Meals, you'll be amazed by what you're able to achieve.\r\n\r\nIn Jamie's extensive collection of internationally loved and trusted cookbooks, this is the one about multitasking to cook whole meals, fast.\r\n_________\r\n\r\n'There is only one Jamie Oliver. Great to watch. Great to cook' Delia Smith",
+            "pages": 288,
+            "book_depository_stars": "4.00",
+            "price": "27.39",
+            "currency": "$",
+            "old_price": "31.50",
+            "isbn": 9780718154776,
+            "img_paths": "books_images/0000023.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 44,
+        "fields": {
+            "category": 4,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157807.jpg",
+            "name": "Jamie's 15-Minute Meals",
+            "author": "Jamie Oliver",
+            "format": "Hardback",
+            "description": "Create delicious, nutritionally balanced dishes in just 15 minutes with the revolutionary kitchen companion, Jamie's 15-Minute Meals\r\n\r\n'Far and away the most balanced and exciting everyday cookbook out there' THE TIMES\r\n_________\r\n\r\nPacked with clever, methodical, recipes full of big flavours, Jamie's 15 Minute Meals takes the concept of fast, everyday food to a new level.\r\n\r\nIn this essential collection, Jamie has taken inspiration from all over the world, embracing tastes that we all love and playing on classic chicken, steak, pasta and global street food dishes.\r\n\r\nYou'll be amazed what you can create in just 15 minutes . . .\r\n- CHICKEN TIKKA with lentil, spinach and naan salad\r\n- GLAZED PORK FILLET with Cajun-style pepper rice\r\n- CRAB BOLOGNESE with crunchy fennel salad\r\n- MEXICAN TOMATO SOUP with chilli nachos\r\n- FALAFEL WRAPS with grilled veg and salsa\r\n\r\nWhether you're cooking for your family or grabbing a quick bite, Jamie's 15 Minute Meals has the perfect combination of light snacks and hearty meals to satisfy everyone.\r\n\r\nThese are some of the quickest, easiest meals Jamie's ever done, reliable companion for you and your family.\r\n\r\nIn Jamie's extensive collection of internationally loved and trusted cookbooks, this is the one about cooking good food, fast.\r\n\r\n'Far and away the most balanced and exciting everyday cookbook out there - and if you liked 30-Minute Meals, this will knock your socks off. Jamie should be given the Victoria Cross' The Times",
+            "pages": 288,
+            "book_depository_stars": "4.00",
+            "price": "27.30",
+            "currency": "$",
+            "old_price": "31.50",
+            "isbn": 9780718157807,
+            "img_paths": "books_images/0000033.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 45,
+        "fields": {
+            "category": 4,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
+            "name": "The Little Book of Hygge",
+            "author": "Meik Wiking",
+            "format": "Hardback",
+            "description": "**THE INTERNATIONAL, NEW YORK TIMES and SUNDAY TIMES BESTSELLER, WITH OVER A MILLION COPIES SOLD AROUND THE WORLD**\r\n\r\nDenmark has an international reputation for being one of the happiest nations in the world, and hygge is widely recognised to be the magic ingredient to this happiness.\r\n\r\nHygge has been described as everything from \"cosines of the soul\" to \"the pursuit of everyday pleasures\". The Little Book of Hygge is the book we all need right now, guaranteed to bring warmth and comfort into your life.\r\n\r\nHooga? Hhyooguh? Heurgh? It is not really important how you choose to pronounce or even spell 'hygge'. What is important is that you feel it. Whether you're cuddled up on a sofa with a loved one, or sharing comfort food with your closest friends, hygge is about creating an atmosphere where we can let your guard down.\r\n\r\nThe Little Book of Hygge is the definitive, must-read introduction to hygge, written by Meik Wiking, CEO of the Happiness Research Institute in Copenhagen. The book is packed full of original research on hygge, conducted by Meik and his team, along with beautiful photographs, recipes and ideas to help you add a touch of hygge to your life.\r\n\r\nPRE-ORDER THE HYGGE HOME, THE NEW BOOK FROM MEIK WIKING",
+            "pages": 288,
+            "book_depository_stars": "3.50",
+            "price": "11.61",
+            "currency": "$",
+            "old_price": "11.99",
+            "isbn": 9780241283912,
+            "img_paths": "books_images/0000009.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 51,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7303/9780730324218.jpg",
+            "name": "The Barefoot Investor",
+            "author": "Scott Pape",
+            "format": "Paperback",
+            "description": "** Reviewed and updated for the 2020-2021 financial year**\r\n\r\n\r\nThis is the only money guide you'll ever need\r\n\r\n\r\nThat's a bold claim, given there are already thousands of finance books on the shelves.\r\n\r\n\r\nSo what makes this one different?\r\n\r\n\r\nWell, you won't be overwhelmed with a bunch of 'tips' ... or a strict budget (that youwon't follow).\r\n\r\n\r\nYou'll get a step-by-step formula: open this account, then do this; call this person, and say this; invest money here, and not there. All with a glass of wine in your hand.\r\n\r\n\r\nThis book will show you how to create an entire financial plan that is so simple you can sketch it on the back of a serviette ... and you'll be able to manage your money in 10 minutes a week.\r\n\r\n\r\nYou'll also get the skinny on:\r\n\r\n\r\nSaving up a six-figure house deposit in 20 months\r\n\r\n\r\nDoubling your income using the 'Trapeze Strategy'\r\n\r\n\r\nSaving $78,173 on your mortgage and wiping out 7 years of payments\r\n\r\n\r\nFinding a financial advisor who won't rip you off\r\n\r\n\r\nHanding your kids (or grandkids) a $140,000 cheque on their 21st birthday\r\n\r\n\r\nWhy you don't need $1 million to retire ... with the 'Donald Bradman Retirement Strategy'\r\n\r\n\r\nSound too good to be true? It's not.\r\n\r\n\r\nThis book is full of stories from everyday Aussies - single people, young families, empty nesters, retirees - who have applied the simple steps in this book and achieved amazing, life-changing results.\r\n\r\n\r\nAnd you're next.",
+            "pages": 296,
+            "book_depository_stars": "4.50",
+            "price": "14.06",
+            "currency": "$",
+            "old_price": "17.60",
+            "isbn": 9780730324218,
+            "img_paths": "books_images/0000004.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 52,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3407/9780340733509.jpg",
+            "name": "The Power of Now",
+            "author": "Eckhart Tolle",
+            "format": "Paperback",
+            "description": "**CHOSEN BY OPRAH AS ONE OF HER 'BOOKS THAT HELP ME THROUGH'**\r\n\r\nThe international bestselling spiritual book, now with a new look for its 20th anniversary. Eckhart Tolle demonstrates how to live a healthier, happier, mindful life by living in the present moment.\r\n\r\n************\r\n\r\n'I keep Eckhart's book at my bedside. I think it's essential spiritual teaching. It's one of the most valuable books I've ever read.' Oprah Winfrey\r\n\r\nTo make the journey into The Power of Now we will need to leave our analytical mind and its false created self, the ego, behind. Although the journey is challenging, Eckhart Tolle offers simple language and a question and answer format to show us how to silence our thoughts and create a liberated life.\r\n\r\nSurrender to the present moment, where problems do not exist. It is here we find our joy, are able to embrace our true selves and discover that we are already complete and perfect. If we are able to be fully present and take each step in the Now we will be opening ourselves to the transforming experience of The Power of Now.",
+            "pages": 224,
+            "book_depository_stars": "4.00",
+            "price": "8.20",
+            "currency": "$",
+            "old_price": "13.90",
+            "isbn": 9780340733509,
+            "img_paths": "books_images/0000014.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 53,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0624/9780062457714.jpg",
+            "name": "The Subtle Art of Not Giving a F*ck",
+            "author": "Mark Manson",
+            "format": "Hardback",
+            "description": "New York Times Bestseller In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be \"positive\" all the time so that we can truly become better, happier people. For decades, we've been told that positive thinking is the key to a happy, rich life. \"F**k positivity,\" Mark Manson says. \"Let's be honest, shit is f**ked and we have to live with it.\" In his wildly popular Internet blog, Manson doesn't sugarcoat or equivocate. He tells it like it is-a dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a F**k is his antidote to the coddling, let's-all-feel-good mindset that has infected American society and spoiled a generation, rewarding them with gold medals just for showing up. Manson makes the argument, backed both by academic research and well-timed poop jokes, that improving our lives hinges not on our ability to turn lemons into lemonade, but on learning to stomach lemons better. Human beings are flawed and limited-\"not everybody can be extraordinary, there are winners and losers in society, and some of it is not fair or your fault.\"\r\nManson advises us to get to know our limitations and accept them. Once we embrace our fears, faults, and uncertainties, once we stop running and avoiding and start confronting painful truths, we can begin to find the courage, perseverance, honesty, responsibility, curiosity, and forgiveness we seek. There are only so many things we can give a f**k about so we need to figure out which ones really matter, Manson makes clear. While money is nice, caring about what you do with your life is better, because true wealth is about experience. A much-needed grab-you-by-the-shoulders-and-look-you-in-the-eye moment of real-talk, filled with entertaining stories and profane, ruthless humor, The Subtle Art of Not Giving a F**k is a refreshing slap for a generation to help them lead contented, grounded lives.",
+            "pages": 304,
+            "book_depository_stars": "4.00",
+            "price": "15.80",
+            "currency": "$",
+            "old_price": "25.20",
+            "isbn": 9780062457714,
+            "img_paths": "books_images/0000024.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 54,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4391/9781439199190.jpg",
+            "name": "How to Win Friends and Influence People",
+            "author": "Dale Carnegie",
+            "format": "Paperback",
+            "description": "Since its initial publication eighty years ago, How to Win Friends & Influence People has sold over fifteen million copies worldwide. In his book, Carnegie explains that success comes from the ability to communicate effectively with others. He provides relatable analogies and examples, and teaches you skills to make people want to be in your company, see things your way, and feel wonderful about it. For more than eighty years his advice has helped thousands of successful people in their business and personal lives.",
+            "pages": 304,
+            "book_depository_stars": "4.00",
+            "price": "8.30",
+            "currency": "$",
+            "old_price": "9.50",
+            "isbn": 9781439199190,
+            "img_paths": "books_images/0000034.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 55,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141033570.jpg",
+            "name": "Thinking, Fast and Slow",
+            "author": "Daniel Kahneman",
+            "format": "Paperback",
+            "description": "The phenomenal international bestseller - 2 million copies sold - that will change the way you make decisions\r\n\r\n'A lifetime's worth of wisdom' Steven D. Levitt, co-author of Freakonomics\r\n'There have been many good books on human rationality and irrationality, but only one masterpiece. That masterpiece is Thinking, Fast and Slow' Financial Times\r\n\r\nWhy is there more chance we'll believe something if it's in a bold type face? Why are judges more likely to deny parole before lunch? Why do we assume a good-looking person will be more competent? The answer lies in the two ways we make choices: fast, intuitive thinking, and slow, rational thinking. This book reveals how our minds are tripped up by error and prejudice (even when we think we are being logical), and gives you practical techniques for slower, smarter thinking. It will enable to you make better decisions at work, at home, and in everything you do.",
+            "pages": 512,
+            "book_depository_stars": "4.00",
+            "price": "11.50",
+            "currency": "$",
+            "old_price": "15.00",
+            "isbn": 9780141033570,
+            "img_paths": "books_images/0000044.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 60,
+        "fields": {
+            "category": 5,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5928/9781592858491.jpg",
+            "name": "The Gifts Of Imperfection",
+            "author": "Brene Brown",
+            "format": "Paperback",
+            "description": "Brené Brown's game-changing New York Times bestseller, The Gifts of Imperfection, has sold more than 2 million copies in more than 30 different languages and is celebrating its 10th Anniversary in print. Forbes magazine named Gifts one of the Five Books That Will Actually Change Your Outlook On Life. Through this self-help classic we find courage to overcome paralyzing fear and self-consciousness, strengthening our connection to the world and helping us to believe we are worthy of self-discovery, personal growth, and boundless love.\r\n\r\nA motivational and inspiring guide to wholehearted living, rather than just the average self-help book, with this groundbreaking work Brené Brown, Ph.D., bolsters the self-esteem and personal development process through her characteristic heartfelt, honest storytelling. With original research and plenty of encouragement, she explores the psychology of releasing our definitions of an \"imperfect\" life and embracing living authentically. Brown's \"ten guideposts\" are benchmarks for authenticity that can help anyone establish a practice for a life of honest beauty--a perfectly imperfect life.\r\n\r\nNow more than ever, we all need to cultivate feelings of self-worth, as well as acceptance and love for ourselves. In a world where insults, criticisms, and fears are spread too generously alongside messages of unrealistic beauty, attainment, and expectation, we look for ways to \"dig deep\" and find truth and gratitude in our lives. A new way forward means we can't hold on too tightly to our own self-defeating thoughts or the displaced pain in our world. Instead, we can embrace the imperfection.",
+            "pages": 160,
+            "book_depository_stars": "4.00",
+            "price": "11.80",
+            "currency": "$",
+            "old_price": "14.90",
+            "isbn": 9781592858491,
+            "img_paths": "books_images/0000094.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 61,
+        "fields": {
+            "category": 6,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5713/9780571334650.jpg",
+            "name": "Normal People",
+            "author": "Sally Rooney",
+            "format": "Paperback",
+            "description": "***PRE-ORDER BEAUTIFUL WORLD, WHERE ARE YOU NOW***\r\n\r\n\r\n\r\n'The best young novelist - indeed one of the best novelists - I've read in years.' Olivia Laing\r\n\r\n'Superb . . . a tremendous read, full of insight and sweetness.' Anne Enright\r\n\r\n'One the best novels I have read in years.' Sheila Heti\r\n\r\nConnell and Marianne grow up in the same small town in the west of Ireland, but the similarities end there. In school, Connell is popular and well-liked, while Marianne is a loner. But when the two strike up a conversation - awkward but electrifying - something life-changing begins.\r\n\r\nNormal People is a story of mutual fascination, friendship and love. It takes us from that first conversation to the years beyond, in the company of two people who try to stay apart but find they can't.\r\n\r\nREAD THE BOOK OF THE HIT TV SERIES: THE BBC ADAPTATION OF NORMAL PEOPLE IS NOW AVAILABLE ON BBC IPLAYER AND BBC 1",
+            "pages": 288,
+            "book_depository_stars": "4.00",
+            "price": "8.93",
+            "currency": "$",
+            "old_price": "10.50",
+            "isbn": 9780571334650,
+            "img_paths": "books_images/0000005.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 62,
+        "fields": {
+            "category": 6,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7864/9781786495259.jpg",
+            "name": "Call Me By Your Name",
+            "author": "Andre Aciman",
+            "format": "Paperback",
+            "description": "Now a Major Motion Picture from Director Luca Guadagnino, Starring Armie Hammer and Timothee Chalamet, and Written by James Ivory\r\n\r\nWINNER BEST ADAPTED SCREENPLAY ACADEMY AWARD\r\nNominated for Four Oscars\r\n\r\nA New York Times Bestseller\r\nA USA Today Bestseller\r\nA Los Angeles Times Bestseller\r\nA Vulture Book Club Pick\r\n\r\nAn Instant Classic and One of the Great Love Stories of Our Time\r\n\r\nAndre Aciman's Call Me by Your Name is the story of a sudden and powerful romance that blossoms between an adolescent boy and a summer guest at his parents' cliffside mansion on the Italian Riviera. Each is unprepared for the consequences of their attraction, when, during the restless summer weeks, unrelenting currents of obsession, fascination, and desire intensify their passion and test the charged ground between them. Recklessly, the two verge toward the one thing both fear they may never truly find again: total intimacy. It is an instant classic and one of the great love stories of our time.",
+            "pages": 256,
+            "book_depository_stars": "4.50",
+            "price": "5.08",
+            "currency": "$",
+            "old_price": "10.30",
+            "isbn": 9781786495259,
+            "img_paths": "books_images/0000015.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 63,
+        "fields": {
+            "category": 6,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157838.jpg",
+            "name": "Me Before You",
+            "author": "Jojo Moyes",
+            "format": "Paperback",
+            "description": "Discover the love story that captured 21 million hearts . . . from the author of The Last Letter from Your Lover, now a major motion picture\r\n\r\nThe No. 1 bestselling international phenomenon and major film adaptation.\r\n\r\n'One of the most memorable books of the last decade' Woman & Home\r\n\r\n'A timeless love story' Red\r\n__________\r\n\r\nWill needed Lou as much as she needed him, but will her love be enough to save his life?\r\n\r\nLou Clark knows lots of things. She knows how many footsteps there are between the bus stop and home. She knows she likes working in The Buttered Bun teashop and she knows she might not love her boyfriend Patrick.\r\n\r\nWhat Lou doesn't know is she's about to lose her job or that knowing what's coming is what keeps her sane.\r\n\r\nWill Traynor knows his motorcycle accident took away his desire to live. He knows everything feels very small and rather joyless now and he knows exactly how he's going to put a stop to that.\r\n\r\nWhat Will doesn't know is that Lou is about to burst into his world in a riot of colour. And neither of them knows they're going to change the other for all time.\r\n\r\nIf you fell in love with Lou Clark, find out what she does next in After You and Still Me - out now!\r\n__________\r\n\r\n'You simply have to read it' Closer\r\n\r\n'Magical and heartbreaking . . . Waterproof mascara essential' Marie Claire\r\n\r\n'A triumph' Elle",
+            "pages": 528,
+            "book_depository_stars": "4.50",
+            "price": "10.47",
+            "currency": "$",
+            "old_price": "10.50",
+            "isbn": 9780718157838,
+            "img_paths": "books_images/0000025.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 64,
+        "fields": {
+            "category": 6,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099579939.jpg",
+            "name": "Fifty Shades of Grey",
+            "author": "E. L. James",
+            "format": "Paperback",
+            "description": "Romantic, liberating and totally addictive, `Fifty Shades of Grey` is a novel that will obsess you, possess you, and stay with you forever. When literature student Anastasia Steele interviews successful entrepreneur Christian Grey, she finds him very attractive and deeply intimidating. Convinced that their meeting went badly, she tries to put him out of her mind - until he turns up at the store where she works part-time, and invites her out. Unworldly and innocent, Ana is shocked to find she wants this man. And, when he warns her to keep her distance, it only makes her want him more. But Grey is tormented by inner demons, and consumed by the need to control. As they embark on a passionate love affair, Ana discovers more about her own desires, as well as the dark secrets Grey keeps hidden away from public view...",
+            "pages": 528,
+            "book_depository_stars": "3.50",
+            "price": "10.11",
+            "currency": "$",
+            "old_price": "10.27",
+            "isbn": 9780099579939,
+            "img_paths": "books_images/0000035.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 65,
+        "fields": {
+            "category": 6,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
+            "name": "The Husband's Secret",
+            "author": "Liane Moriarty",
+            "format": "Paperback",
+            "description": "His terrible secret. Her life-shattering choice . . . Discover the enthralling story of secrets, family, and the danger of the truth from the bestselling author of HBO sensation BIG LITTLE LIES\r\n\r\n'Another masterclass from the author of Big Little Lies' GRAZIA\r\n_________\r\n\r\nCecilia thought she knew her husband.\r\n\r\nThat is until she finds an envelope with 'to be opened in the event of my death' written in his hand. Unable to resist temptation, she opens it, and learns a shocking truth he has never dared reveal.\r\n\r\nNow Cecilia faces a terrible choice.\r\n\r\nBecause revealing her husband's secret will hurt those she loves the most . . .\r\n\r\nBut could the consequences of staying silent be worse?\r\n_________\r\n\r\n'A staggeringly brilliant novel. It is literally unputdownable' SOPHIE HANNAH\r\n\r\n'Finely wrought tension holds up until the final page' TELEGRAPH\r\n\r\n'A tense, page-turning story which gradually draws everyone together in a devastating climax' MAIL ON SUNDAY\r\n\r\n'Dark and compelling . . . a must read' SUN",
+            "pages": 432,
+            "book_depository_stars": "4.00",
+            "price": "9.33",
+            "currency": "$",
+            "old_price": "9.99",
+            "isbn": 9781405911665,
+            "img_paths": "books_images/0000032.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 71,
+        "fields": {
+            "category": 7,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
+            "name": "1984",
+            "author": "George Orwell",
+            "format": "Paperback",
+            "description": "The perfect edition for any Orwell enthusiasts' collection, discover the classic dystopian masterpiece beautifully reimagined by renowned street artist Shepard Fairey\r\n\r\nWinston Smith works for the Ministry of Truth in London, chief city of Airstrip One. Big Brother stares out from every poster, the Thought Police uncover every act of betrayal. When Winston finds love with Julia, he discovers that life does not have to be dull and deadening, and awakens to new possibilities. Despite the police helicopters that hover and circle overhead, Winston and Julia begin to question the Party; they are drawn towards conspiracy. Yet Big Brother will not tolerate dissent - even in the mind. For those with original thoughts they invented Room 101. . .\r\n\r\nFirst published in 1949, 1984 is George Orwell's terrifying vision of a totalitarian future in which everything and everyone is slave to a tyrannical regime.\r\n\r\n'Right up there among my favourite books . . . I read it again and again' Margaret Atwood\r\n\r\n'More relevant to today than almost any other book that you can think of' Jo Brand\r\n\r\nCOMPLETE THE TRIO WITH SHEPARD FAIREY'S NEW-LOOK ANIMAL FARM AND DOWN AND OUT IN PARIS AND LONDON.",
+            "pages": 336,
+            "book_depository_stars": "4.00",
+            "price": "7.88",
+            "currency": "$",
+            "old_price": "8.80",
+            "isbn": 9780141036144,
+            "img_paths": "books_images/0000006.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 72,
+        "fields": {
+            "category": 7,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784742324.jpg",
+            "name": "The Testaments",
+            "author": "Margaret Atwood",
+            "format": "Hardback",
+            "description": "The wait is over\r\n\r\nAnd so I step up, into the darkness within; or else the light.\r\n\r\nWhen the van door slammed on Offred’s future at the end of The Handmaid’s Tale, readers had no way of telling what lay ahead for her – freedom, prison or death.\r\n\r\nWith The Testaments, the wait is over.\r\n\r\nMargaret Atwood’s sequel picks up the story 15 years after Offred stepped into the unknown, with the explosive testaments of three female narrators from Gilead.\r\n\r\n‘Dear Readers: Everything you’ve ever asked me about Gilead and its inner workings is the inspiration for this book. Well, almost everything! The other inspiration is the world we’ve been living in.’ Margaret Atwood",
+            "pages": 400,
+            "book_depository_stars": "4.00",
+            "price": "20.92",
+            "currency": "$",
+            "old_price": "26.30",
+            "isbn": 9781784742324,
+            "img_paths": "books_images/0000016.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 73,
+        "fields": {
+            "category": 7,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
+            "name": "Animal Farm",
+            "author": "George Orwell",
+            "format": "Paperback",
+            "description": "The perfect edition for any Orwell enthusiasts' collection, discover Orwell's classic dystopian masterpiece beautifully reimagined by renowned street artist Shepard Fairey\r\n\r\n'All animals are equal. But some animals are more equal than others.'\r\n\r\nMr Jones of Manor Farm is so lazy and drunken that one day he forgets to feed his livestock. The ensuing rebellion under the leadership of the pigs Napoleon and Snowball leads to the animals taking over the farm. Vowing to eliminate the terrible inequities of the farmyard, the renamed Animal Farm is organised to benefit all who walk on four legs. But as time passes, the ideals of the rebellion are corrupted, then forgotten. And something new and unexpected emerges. . .\r\n\r\nFirst published in 1945, Animal Farm - the history of a revolution that went wrong - is George Orwell's brilliant satire on the corrupting influence of power.\r\n\r\n'Remains our great satire of the darker face of modern history' Malcolm Bradbury\r\n\r\n'A prophet who thought the unthinkable and spoke the unspeakable, even when it offended conventional thought' Daily Express\r\n\r\n'As valid today as it was fifty years ago' Ralph Steadman\r\n\r\nCOMPLETE THE TRIO WITH SHEPARD FAIREY'S NEW-LOOK 1984 AND DOWN AND OUT IN PARIS AND LONDON.",
+            "pages": 112,
+            "book_depository_stars": "4.00",
+            "price": "7.98",
+            "currency": "$",
+            "old_price": "10.30",
+            "isbn": 9780141036137,
+            "img_paths": "books_images/0000003.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 74,
+        "fields": {
+            "category": 7,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
+            "name": "Harry Potter and the Philosopher's Stone",
+            "author": "J. K. Rowling",
+            "format": "Hardback",
+            "description": "Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.\r\nHarry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!\r\nThese editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.",
+            "pages": 352,
+            "book_depository_stars": "4.50",
+            "price": "30.91",
+            "currency": "$",
+            "old_price": "38.60",
+            "isbn": 9781408845646,
+            "img_paths": "books_images/0000036.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 75,
+        "fields": {
+            "category": 7,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
+            "name": "Fantastic Beasts and Where to Find Them",
+            "author": "J. K. Rowling",
+            "format": "Hardback",
+            "description": "J.K. Rowling's screenwriting debut is captured in this exciting hardcover edition of the Fantastic Beasts and Where to Find Them screenplay.\r\nWhen Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone...Fantastic Beasts and Where to Find Them marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. Featuring a cast of remarkable characters, this is epic, adventure-packed storytelling at its very best. Whether an existing fan or new to the wizarding world, this is a perfect addition to any reader's bookshelf.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "11.05",
+            "currency": "$",
+            "old_price": "21.50",
+            "isbn": 9781408708989,
+            "img_paths": "books_images/0000046.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 81,
+        "fields": {
+            "category": 8,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4721/9781472103536.jpg",
+            "name": "Legacy",
+            "author": "James Kerr",
+            "format": "Paperback",
+            "description": "Champions do extra. They sweep the sheds. They follow the spearhead. They keep a blue head. They are good ancestors. In Legacy, best-selling author James Kerr goes deep into the heart of the world's most successful sporting team, the legendary All Blacks of New Zealand, to reveal 15 powerful and practical lessons for leadership and business. Legacy is a unique, inspiring handbook for leaders in all fields, and asks: What are the secrets of success - sustained success? How do you achieve world-class standards, day after day, week after week, year after year? How do you handle pressure? How do you train to win at the highest level? What do you leave behind you after you're gone? What will be your legacy?",
+            "pages": 224,
+            "book_depository_stars": "4.00",
+            "price": "9.70",
+            "currency": "$",
+            "old_price": "16.00",
+            "isbn": 9781472103536,
+            "img_paths": "books_images/0000007.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 82,
+        "fields": {
+            "category": 8,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
+            "name": "Born to Run",
+            "author": "Christopher McDougall",
+            "format": "Paperback",
+            "description": "At the heart of Born to Run lies a mysterious tribe of Mexican Indians, the Tarahumara, who live quietly in canyons and are reputed to be the best distance runners in the world; in 1993, one of them, aged 57, came first in a prestigious 100-mile race wearing a toga and sandals. A small group of the world's top ultra-runners (and the awe-inspiring author) make the treacherous journey into the canyons to try to learn the tribe's secrets and then take them on over a course 50 miles long.\r\n\r\nWith incredible energy and smart observation, McDougall tells this story while asking what the secrets are to being an incredible runner. Travelling to labs at Harvard, Nike, and elsewhere, he comes across an incredible cast of characters, including the woman who recently broke the world record for 100 miles and for her encore ran a 2:50 marathon in a bikini, pausing to down a beer at the 20 mile mark.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "9.05",
+            "currency": "$",
+            "old_price": "12.40",
+            "isbn": 9781861978776,
+            "img_paths": "books_images/0000017.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 83,
+        "fields": {
+            "category": 8,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4504/9781450400244.jpg",
+            "name": "Yoga Anatomy",
+            "author": "Leslie Kaminoff",
+            "format": "Paperback",
+            "description": "The best-selling anatomy guide for yoga is now updated, expanded, and better than ever!\r\n\r\nWith more asanas, vinyasas, full-color anatomical illustrations, and in-depth information, the second edition of YogaAnatomy provides you with a deeper understanding of the structures and principles underlying each movement and of yoga itself.\r\n\r\nFrom breathing to inversions to standing poses, see how specific muscles respond to the movements of the joints; how alterations of a pose can enhance or reduce effectiveness; and how the spine, breathing, and body position are all fundamentally linked.\r\n\r\nWhether you are just beginning your journey or have been practicing yoga for years, Yoga Anatomy will be an invaluable resource-one that allows you to see each movement in an entirely new light.\r\n\r\nWith Yoga Anatomy, Second Edition, authors Leslie Kaminoff and Amy Matthews, both internationally recognized experts and teachers in anatomy, breathing, and bodywork, have created the ultimate reference for yoga practitioners, instructors, and enthusiasts alike.",
+            "pages": 288,
+            "book_depository_stars": "4.50",
+            "price": "17.73",
+            "currency": "$",
+            "old_price": "21.10",
+            "isbn": 9781450400244,
+            "img_paths": "books_images/0000027.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 84,
+        "fields": {
+            "category": 8,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091939526.jpg",
+            "name": "The 4-Hour Body",
+            "author": "Timothy Ferriss",
+            "format": "Paperback",
+            "description": "Do you want to lose fat, double testosterone, get the perfect posterior or give your partner a fifteen-minute female orgasm? Whatever your physical goal, The 4-Hour Body eclipses every other health manual by sharing the best kept secrets in the latest science and research to provide new strategies for redesigning the human body.\r\n\r\nAnd you don't need to exhaust yourself. International bestselling author, Timothy Ferriss, helps you reach your true genetic potential in 3-6 months with a commitment of less than four hours per week. You can pick and choose from a menu of options, from simple to extreme, for dramatic body changes.\r\n\r\nBased on over 15 years of research and with personal stories, amazing before and after photos, recipes and sidebars, The 4-Hour Body will give unbelievable results and change the way you look forever.",
+            "pages": 592,
+            "book_depository_stars": "4.00",
+            "price": "19.32",
+            "currency": "$",
+            "old_price": "19.60",
+            "isbn": 9780091939526,
+            "img_paths": "books_images/0000037.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 85,
+        "fields": {
+            "category": 8,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405937184.jpg",
+            "name": "The Salt Path",
+            "author": "Raynor Winn",
+            "format": "Paperback",
+            "description": "Bring nature into your home with the uplifting true story of the couple who lost everything and embarked on a journey of salvation across the windswept South West coastline.\r\n\r\nFROM THE MILLION-COPY BESTSELLING AUTHOR\r\n\r\n'This is what you need right now to muster hope and resilience . . . a beautiful story and a reminder that humans can endure adversity' Stylist\r\n\r\n'A beautiful book, it really lives up to the hype . . . an enjoyable, gentle yet moving read' Pandora Sykes on The High Low\r\n_________\r\n\r\nJust days after Raynor learns that Moth, her husband of 32 years, is terminally ill, their home is taken away and they lose their livelihood. With nothing left and little time, they make the brave and impulsive decision to walk the 630 miles of the sea-swept South West Coast Path, from Somerset to Dorset, via Devon and Cornwall.\r\n\r\nCarrying only the essentials for survival on their backs, they live wild in the ancient, weathered landscape of cliffs, sea and sky. Yet through every step, every encounter and every test along the way, their walk becomes a remarkable journey.\r\n\r\nThe Salt Path is an honest and life-affirming true story of coming to terms with grief and the healing power of the natural world. Ultimately, it is a portrayal of home, and how it can be lost, rebuilt and rediscovered in the most unexpected ways.\r\n_________\r\n\r\nTHE SUNDAY TIMES BESTSELLER, WINNER OF THE ROYAL SOCIETY LITERATURE CHRISTOPHER BLAND PRIZE & SHORTLISTED FOR THE 2018 COSTA BIOGRAPHY AWARD & WAINWRIGHT GOLDEN BEER BOOK PRIZE 2018\r\n\r\nGUARDIAN BEST BOOKS OF SUMMER\r\n\r\n'A beautiful, thoughtful, lyrical story of homelessness, human strength and endurance' Guardian\r\n\r\n'Mesmerising. It is one of the most uplifting, inspiring books that I've ever read' i\r\n\r\n'The most inspirational book of this year' The Times",
+            "pages": 288,
+            "book_depository_stars": "4.00",
+            "price": "9.53",
+            "currency": "$",
+            "old_price": "12.90",
+            "isbn": 9781405937184,
+            "img_paths": "books_images/0000047.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 91,
+        "fields": {
+            "category": 9,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
+            "name": "The Little Book of Hygge",
+            "author": "Meik Wiking",
+            "format": "Hardback",
+            "description": "**THE INTERNATIONAL, NEW YORK TIMES and SUNDAY TIMES BESTSELLER, WITH OVER A MILLION COPIES SOLD AROUND THE WORLD**\r\n\r\nDenmark has an international reputation for being one of the happiest nations in the world, and hygge is widely recognised to be the magic ingredient to this happiness.\r\n\r\nHygge has been described as everything from \"cosines of the soul\" to \"the pursuit of everyday pleasures\". The Little Book of Hygge is the book we all need right now, guaranteed to bring warmth and comfort into your life.\r\n\r\nHooga? Hhyooguh? Heurgh? It is not really important how you choose to pronounce or even spell 'hygge'. What is important is that you feel it. Whether you're cuddled up on a sofa with a loved one, or sharing comfort food with your closest friends, hygge is about creating an atmosphere where we can let your guard down.\r\n\r\nThe Little Book of Hygge is the definitive, must-read introduction to hygge, written by Meik Wiking, CEO of the Happiness Research Institute in Copenhagen. The book is packed full of original research on hygge, conducted by Meik and his team, along with beautiful photographs, recipes and ideas to help you add a touch of hygge to your life.\r\n\r\nPRE-ORDER THE HYGGE HOME, THE NEW BOOK FROM MEIK WIKING",
+            "pages": 288,
+            "book_depository_stars": "3.50",
+            "price": "11.61",
+            "currency": "$",
+            "old_price": "11.99",
+            "isbn": 9780241283912,
+            "img_paths": "books_images/0000043.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 92,
+        "fields": {
+            "category": 9,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7475/9780747585664.jpg",
+            "name": "Eat, Pray, Love",
+            "author": "Elizabeth Gilbert",
+            "format": "Paperback",
+            "description": "It's 3 a.m. and Elizabeth Gilbert is sobbing on the bathroom floor. She's in her thirties, she has a husband, a house, they're trying for a baby - and she doesn't want any of it. A bitter divorce and a turbulent love affair later, she emerges battered and bewildered and realises it is time to pursue her own journey in search of three things she has been missing: pleasure, devotion and balance. So she travels to Rome, where she learns Italian from handsome, brown-eyed identical twins and gains twenty-five pounds, an ashram in India, where she finds that enlightenment entails getting up in the middle of the night to scrub the temple floor, and Bali where a toothless medicine man of indeterminate age offers her a new path to peace: simply sit still and smile. And slowly happiness begins to creep up on her.",
+            "pages": 384,
+            "book_depository_stars": "3.50",
+            "price": "8.86",
+            "currency": "$",
+            "old_price": "11.40",
+            "isbn": 9780747585664,
+            "img_paths": "books_images/0000019.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 93,
+        "fields": {
+            "category": 9,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/2500/9781250038821.jpg",
+            "name": "Humans of New York",
+            "author": "Brandon Stanton",
+            "format": "Hardback",
+            "description": "An instant Number One New York Times bestseller, Humans of New York began in the summer of 2010, when photographer Brandon Stanton set out on an ambitious project: to single-handedly create a photographic census of New York City. Armed with his camera, he began crisscrossing the city, covering thousands of miles on foot, all in his attempt to capture ordinary New Yorkers in the most extraordinary of moments. The result of these efforts was \"Humans of New York,\" a vibrant blog in which he featured his photos alongside quotes and anecdotes. The blog has steadily grown, now boasting nearly a million devoted followers. Humans of New York is the book inspired by the blog. With four hundred colour photos, including exclusive portraits and all-new stories, and a distinctive vellum jacket, Humans of New York is a stunning collection of images that will appeal not just to those who have been drawn in by the outsized personalities of New York, but to anyone interested in the breathtaking scope of humanity it displays. Heartfelt and moving, Humans of New York is a celebration of individuality and a tribute to the spirit of a city.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "21.46",
+            "currency": "$",
+            "old_price": "30.40",
+            "isbn": 9781250038821,
+            "img_paths": "books_images/0000029.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 94,
+        "fields": {
+            "category": 9,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
+            "name": "Born to Run",
+            "author": "Christopher McDougall",
+            "format": "Paperback",
+            "description": "At the heart of Born to Run lies a mysterious tribe of Mexican Indians, the Tarahumara, who live quietly in canyons and are reputed to be the best distance runners in the world; in 1993, one of them, aged 57, came first in a prestigious 100-mile race wearing a toga and sandals. A small group of the world's top ultra-runners (and the awe-inspiring author) make the treacherous journey into the canyons to try to learn the tribe's secrets and then take them on over a course 50 miles long.\r\n\r\nWith incredible energy and smart observation, McDougall tells this story while asking what the secrets are to being an incredible runner. Travelling to labs at Harvard, Nike, and elsewhere, he comes across an incredible cast of characters, including the woman who recently broke the world record for 100 miles and for her encore ran a 2:50 marathon in a bikini, pausing to down a beer at the 20 mile mark.",
+            "pages": 304,
+            "book_depository_stars": "4.50",
+            "price": "9.05",
+            "currency": "$",
+            "old_price": "12.40",
+            "isbn": 9781861978776,
+            "img_paths": "books_images/0000017.jpg"
+        }
+    }, {
+        "model": "products.book",
+        "pk": 95,
+        "fields": {
+            "category": 9,
+            "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405930994.jpg",
+            "name": "Lion",
+            "author": "Saroo Brierley",
+            "format": "Paperback",
+            "description": "NOMINATED FOR SIX OSCARS, INCLUDING BEST PICTURE, SUPPORTING ACTOR AND SUPPORTING ACTRESS . . .\r\n\r\nAged just five, Saroo Brierley lost all contact with his family in India, after waiting at a train station for his brother who never returned.\r\n\r\nDiscover the inspiring, true story behind the film, Lion. This is the heart breaking and original tale of the lost little boy who found his way home twenty-five years later.\r\n\r\n-----------------------------------\r\n\r\nAs a five-year old in India, I got lost on a train. Twenty-five years later, I crossed the world to find my way back home.\r\n\r\nFive-year-old Saroo lived in a poor village in India, in a one-room hut with his mother and three siblings... until the day he boarded a train alone and got lost. For twenty-five years.\r\n\r\nThis is the story of what happened to Saroo in those twenty-five years. How he ended up on the streets of Calcutta. And survived. How he then ended up in Tasmania, living the life of an upper-middle-class Aussie. And how, at thirty years old, with some dogged determination, a heap of good luck and the power of Google Earth, he found his way back home.\r\n\r\nLion is a triumphant true story of survival against all odds and a shining example of the extraordinary feats we can achieve when hope endures.\r\n\r\n-----------------------------------\r\n\r\n'Amazing stuff' The New York Post\r\n\r\n'So incredible that sometimes it reads like a work of fiction' Winnipeg Free Press (Canada)\r\n\r\n'A remarkable story' Sydney Morning Herald Review\r\n\r\n'I literally could not put this book down. Saroo's return journey will leave you weeping with joy and the strength of the human spirit' Manly Daily (Australia)\r\n\r\n'We urge you to step behind the headlines and have a read of this absorbing account...With clear recollections and good old-fashioned storytelling, Saroo...recalls the fear of being lost and the anguish of separation' Weekly Review (Australia)",
+            "pages": 272,
+            "book_depository_stars": "4.00",
+            "price": "8.85",
+            "currency": "$",
+            "old_price": "10.80",
+            "isbn": 9781405930994,
+            "img_paths": "books_images/0000049.jpg"
+        }
     }
-}, {
-    "model": "products.book",
-    "pk": 2,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7515/9780751565355.jpg",
-        "name": "Harry Potter and the Cursed Child - Parts I & II",
-        "author": "J. K. Rowling",
-        "format": "Hardback",
-        "description": "The Eighth Story. Nineteen Years Later.\r\n\r\nBased on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne.\r\n\r\nBased on an original new story by J.K. Rowling, Jack Thorne and John Tiffany, a new play by Jack Thorne, Harry Potter and the Cursed Child is the eighth story in the Harry Potter series and the first official Harry Potter story to be presented on stage. The play will receive its world premiere in London’s West End on 30th July 2016. It was always difficult being Harry Potter and it isn’t much easier now that he is an overworked employee of the Ministry of Magic, a husband, and father of three school-age children. While Harry grapples with a past that refuses to stay where it belongs, his youngest son Albus must struggle with the weight of a family legacy he never wanted. As past and present fuse ominously, both father and son learn the uncomfortable truth: sometimes, darkness comes from unexpected places.",
-        "pages": 352,
-        "book_depository_stars": "3.50",
-        "price": "15.43",
-        "currency": "$",
-        "old_price": "26.30",
-        "isbn": 9780751565355,
-        "img_paths": "books_images/0000018.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 3,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5525/9780552565974.jpg",
-        "name": "Wonder",
-        "author": "R. J. Palacio",
-        "format": "Paperback",
-        "description": "'My name is August. I won't describe what I look like. Whatever you're thinking, it's probably worse.' Auggie wants to be an ordinary ten-year-old. He does ordinary things - eating ice cream, playing on his Xbox. He feels ordinary - inside. But ordinary kids don't make other ordinary kids run away screaming in playgrounds. Ordinary kids aren't stared at wherever they go. Born with a terrible facial abnormality, Auggie has been home-schooled by his parents his whole life. Now, for the first time, he's being sent to a real school - and he's dreading it. All he wants is to be accepted - but can he convince his new classmates that he's just like them, underneath it all? Wonder is a funny, frank, astonishingly moving debut to read in one sitting, pass on to others, and remember long after the final page.",
-        "pages": 320,
-        "book_depository_stars": "4.50",
-        "price": "8.32",
-        "currency": "$",
-        "old_price": "8.80",
-        "isbn": 9780552565974,
-        "img_paths": "books_images/0000028.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 4,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1413/9780141340555.jpg",
-        "name": "Roald Dahl's Marvellous Joke Book",
-        "author": "Roald Dahl",
-        "format": "Paperback",
-        "description": "Which famous writer goes best with a hot dog? Roll Dahl of course!\r\n\r\nLaugh yourself silly with Roald Dahl's Marvellous Joke Book, filled with over 400 hilarious jokes, limericks and riddles, illustrated by Quentin Blake.\r\n\r\nBased on Roald Dahl's most famous characters you will be chortling away with Matilda, Charlie, George, The BFG, James and many more!\r\n\r\nRoald Dahl was full of fun and mischief, and LOVED all kinds of jokes- the sillier the better, like chocolate-covered chickens to grizzly, grouchy grandmas.\r\n\r\nThis side-splitting book includes his own 'knock-knock' jokes, keeping all practising jokesters amused for hours!",
-        "pages": 128,
-        "book_depository_stars": "4.00",
-        "price": "5.84",
-        "currency": "$",
-        "old_price": "6.20",
-        "isbn": 9780141340555,
-        "img_paths": "books_images/0000038.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 5,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7805/9781780552491.jpg",
-        "name": "Brain Games For Clever Kids",
-        "author": "Gareth Moore",
-        "format": "Paperback",
-        "description": "'A super book for children to enjoy as they puzzle their way through the challenges, which get harder as they progress through the book' - Parents in Touch\r\n\r\n___________________\r\n\r\nBrain Games for Clever Kids (R) is a fantastic bestselling puzzle book, brimming with memory, word and number workouts for the cleverest of kids!\r\n\r\nIncluding battleships and mind-bending spot the differences to Japanese puzzles including hanjie, kakuro, futoshiki, sudoku and lots more.\r\n\r\nLet the brain games begin!\r\n\r\nClever Kids is a trade mark of Michael O'Mara Books Limited.\r\n\r\nBy the same author:\r\nBrain Games for Adults - 9781789293821",
-        "pages": 192,
-        "book_depository_stars": "4.00",
-        "price": "4.50",
-        "currency": "$",
-        "old_price": "6.20",
-        "isbn": 9781780552491,
-        "img_paths": "books_images/0000048.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 6,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
-        "name": "Harry Potter and the Philosopher's Stone",
-        "author": "J. K. Rowling",
-        "format": "Hardback",
-        "description": "Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.\r\nHarry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here!\r\nThese editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.",
-        "pages": 352,
-        "book_depository_stars": "4.50",
-        "price": "30.91",
-        "currency": "$",
-        "old_price": "38.60",
-        "isbn": 9781408845646,
-        "img_paths": "books_images/0000036.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 7,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
-        "name": "Fantastic Beasts and Where to Find Them",
-        "author": "J. K. Rowling",
-        "format": "Hardback",
-        "description": "J.K. Rowling's screenwriting debut is captured in this exciting hardcover edition of the Fantastic Beasts and Where to Find Them screenplay.\r\nWhen Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone...Fantastic Beasts and Where to Find Them marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. Featuring a cast of remarkable characters, this is epic, adventure-packed storytelling at its very best. Whether an existing fan or new to the wizarding world, this is a perfect addition to any reader's bookshelf.",
-        "pages": 304,
-        "book_depository_stars": "4.50",
-        "price": "11.05",
-        "currency": "$",
-        "old_price": "21.50",
-        "isbn": 9781408708989,
-        "img_paths": "books_images/0000046.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 8,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/4390/9780439023528.jpg",
-        "name": "The Hunger Games",
-        "author": "Suzanne Collins",
-        "format": "Paperback",
-        "description": "Sixteen-year-old Katniss Everdeen regards it as a death sentence when she is forced to represent her district in the annual Hunger Games, a fight to the death on live TV. But Katniss has been close to death before - and survival, for her, is second nature. The Hunger Games is a searing novel set in a future with unsettling parallels to our present. Welcome to the deadliest reality TV show ever...",
-        "pages": 384,
-        "book_depository_stars": "4.50",
-        "price": "10.96",
-        "currency": "$",
-        "old_price": "12.90",
-        "isbn": 9780439023528,
-        "img_paths": "books_images/0000078.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 9,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0073/9780007371464.jpg",
-        "name": "Gangsta Granny",
-        "author": "David Walliams",
-        "format": "Paperback",
-        "description": "Another hilarious and moving novel from bestselling, critically acclaimed author David Walliams, the natural successor to Roald Dahl. A story of prejudice and acceptance, funny lists and silly words, this new book has all the hallmarks of David's previous bestsellers. Our hero Ben is bored beyond belief after he is made to stay at his grandma's house. She's the boringest grandma ever: all she wants to do is to play Scrabble, and eat cabbage soup. But there are two things Ben doesn't know about his grandma. 1) She was once an international jewel thief. 2) All her life, she has been plotting to steal the crown jewels, and now she needs Ben's help...",
-        "pages": 306,
-        "book_depository_stars": "4.50",
-        "price": "7.52",
-        "currency": "$",
-        "old_price": "8.99",
-        "isbn": 9780007371464,
-        "img_paths": "books_images/0000088.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 10,
-    "fields": {
-        "category": 10,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408876985.jpg",
-        "name": "Fantastically Great Women Who Changed The World",
-        "author": "Kate Pankhurst",
-        "format": "Paperback",
-        "description": "",
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "7.82",
-        "currency": "$",
-        "old_price": "8.80",
-        "isbn": 9781408876985,
-        "img_paths": "books_images/0000098.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 11,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1419/9780141986005.jpg",
-        "name": "Good Night Stories for Rebel Girls",
-        "author": "Elena Favilli",
-        "format": "Hardback",
-        "description": "'The definitive book of the year in our house, for both parents and offspring' Maggie O'Farrell, Guardian Books of the Year\r\n\r\n'Absolutely beautiful - get one for yourself and one to inspire a woman in your life' Stylist\r\n*Sunday Times and New York Times bestseller*\r\n*Blackwell's Book of the Year*\r\n*Foyles Children's Book of the Year*\r\n*Shortlisted for Waterstones Book of the Year*\r\n\r\nWhat if the princess didn't marry Prince Charming but instead went on to be an astronaut? What if the jealous step sisters were supportive and kind? And what if the queen was the one really in charge of the kingdom? Illustrated by sixty female artists from every corner of the globe, Good Night Stories for Rebel Girls introduces us to one hundred remarkable women and their extraordinary lives, from Ada Lovelace to Malala, Amelia Earhart to Michelle Obama. Empowering, moving and inspirational, these are true fairy tales for heroines who definitely don't need rescuing.",
-        "pages": 224,
-        "book_depository_stars": "4.50",
-        "price": "20.86",
-        "currency": "$",
-        "old_price": "24.00",
-        "isbn": 9780141986005,
-        "img_paths": "books_images/0000020.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 12,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2413/9780241334140.jpg",
-        "name": "Becoming",
-        "author": "Michelle Obama",
-        "format": "Hardback",
-        "description": "An intimate, powerful, and inspiring memoir; 15 million copies sold worldwide\r\n\r\nTHE NO. 1 BESTSELLER\r\n\r\nBRITISH BOOK AWARDS, NON-FICTION BOOK OF THE YEAR\r\n\r\nTHE SUNDAY TIMES, MEMOIR OF THE YEAR\r\n\r\nBOOKS OF THE YEAR: THE TIMES, OBSERVER, GUARDIAN, EVENING STANDARD\r\n\r\nNow in paperback featuring a new introduction by Michelle Obama, a letter from the author to her younger self, and a book club guide with 20 discussion questions and a 5-question Q&A, the intimate, powerful, and inspiring memoir by the former First Lady of the United States\r\n\r\nIn her memoir, a work of deep reflection and mesmerizing storytelling, Michelle Obama invites readers into her world, chronicling the experiences that have shaped her -- from her childhood on the South Side of Chicago to her years as an executive balancing the demands of motherhood and work, to her time spent at the world's most famous address. With unerring honesty and lively wit, she describes her triumphs and her disappointments, both public and private, telling her full story as she has lived it -- in her own words and on her own terms.\r\n\r\nWarm, wise, and revelatory, Becoming is the deeply personal reckoning of a woman of soul and substance who has steadily defied expectations -- and whose story inspires us to do the same.",
-        "pages": 448,
-        "book_depository_stars": "4.50",
-        "price": "24.21",
-        "currency": "$",
-        "old_price": "26.00",
-        "isbn": 9780241334140,
-        "img_paths": "books_images/0000030.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 13,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099511021.jpg",
-        "name": "Educated",
-        "author": "Tara Westover",
-        "format": "Paperback",
-        "description": "THE MULTI-MILLION COPY BESTSELLER\r\n'An amazing story, and truly inspiring. The kind of book everyone will enjoy. IT'S EVEN BETTER THAN YOU'VE HEARD.' - Bill Gates\r\n\r\nSelected as a book of the year by AMAZON, THE TIMES, SUNDAY TIMES, GUARDIAN, NEW YORK TIMES, ECONOMIST, NEW STATESMAN, VOGUE, IRISH TIMES, IRISH EXAMINER and RED MAGAZINE\r\n\r\nA Book of the Decade, 2010-2020 (Independent)\r\n________________________\r\n\r\nTara Westover and her family grew up preparing for the End of Days but, according to the government, she didn't exist. She hadn't been registered for a birth certificate. She had no school records because she'd never set foot in a classroom, and no medical records because her father didn't believe in hospitals.\r\n\r\nAs she grew older, her father became more radical and her brother more violent. At sixteen, Tara knew she had to leave home. In doing so she discovered both the transformative power of education, and the price she had to pay for it.\r\n________________________\r\n\r\n* From one of TIME magazine's 100 most influential people of 2019\r\n* Shortlisted for the 2018 BAMB Readers' Awards\r\n* Recommended as a summer read by Barack Obama, Antony Beevor, India Knight, Blake Morrison and Nina Stibbe",
-        "pages": 400,
-        "book_depository_stars": "4.50",
-        "price": "9.61",
-        "currency": "$",
-        "old_price": "11.50",
-        "isbn": 9780099511021,
-        "img_paths": "books_images/0000040.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 14,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784701994.jpg",
-        "name": "When Breath Becomes Air",
-        "author": "Paul Kalanithi",
-        "format": "Paperback",
-        "description": "** SUNDAY TIMES NUMBER ONE BESTSELLER**\r\n\r\n'Rattling. Heartbreaking. Beautiful.' Atul Gawande, bestselling author of Being Mortal\r\n\r\nWhat makes life worth living in the face of death?\r\n\r\nAt the age of thirty-six, on the verge of completing a decade's training as a neurosurgeon, Paul Kalanithi was diagnosed with inoperable lung cancer. One day he was a doctor treating the dying, the next he was a patient struggling to live.\r\n\r\nWhen Breath Becomes Air chronicles Kalanithi's transformation from a medical student asking what makes a virtuous and meaningful life into a neurosurgeon working in the core of human identity - the brain - and finally into a patient and a new father.\r\n\r\nPaul Kalanithi died while working on this profoundly moving book, yet his words live on as a guide to us all. When Breath Becomes Air is a life-affirming reflection on facing our mortality and on the relationship between doctor and patient, from a gifted writer who became both.\r\n\r\n'A vital book about dying. Awe-inspiring and exquisite. Obligatory reading for the living' Nigella Lawson",
-        "pages": 256,
-        "book_depository_stars": "4.50",
-        "price": "9.05",
-        "currency": "$",
-        "old_price": "11.50",
-        "isbn": 9781784701994,
-        "img_paths": "books_images/0000050.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 15,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408878729.jpg",
-        "name": "Lost Connections",
-        "author": "Johann Hari",
-        "format": "Paperback",
-        "description": "* Pre-order Johann Hari's new book Stolen Focus now! *\r\n\r\nTHE INTERNATIONAL BESTSELLER\r\n\r\n'A book that could actually make us happy' SIMON AMSTELL\r\n'This amazing book will change your life' ELTON JOHN\r\n'One of the most important texts of recent years' BRITISH JOURNAL OF GENERAL PRACTICE\r\n'Brilliant, stimulating, radical' MATT HAIG\r\n'The more people read this book, the better off the world will be' NAOMI KLEIN\r\n'Wonderful' HILLARY CLINTON\r\n'Eye-opening' GUARDIAN\r\n'Brilliant for anyone wanting a better understanding of mental health' ZOE BALL\r\n'A game-changer' DAVINA MCCALL\r\n'Extraordinary' DR MAX PEMBERTON\r\n'Beautiful' RUSSELL BRAND\r\n\r\nDepression and anxiety are now at epidemic levels. Why? Across the world, scientists have uncovered evidence for nine different causes. Some are in our biology, but most are in the way we are living today.\r\n\r\nLost Connections offers a radical new way of thinking about this crisis. It shows that once we understand the real causes, we can begin to turn to pioneering new solutions - ones that offer real hope.",
-        "pages": 416,
-        "book_depository_stars": "4.50",
-        "price": "8.53",
-        "currency": "$",
-        "old_price": "11.50",
-        "isbn": 9781408878729,
-        "img_paths": "books_images/0000060.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 16,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
-        "name": "Man's Search For Meaning",
-        "author": "Viktor E. Frankl",
-        "format": "Paperback",
-        "description": "A prominent Viennese psychiatrist before the war, Viktor Frankl was uniquely able to observe the way that he and other inmates coped with the experience of being in Auschwitz. He noticed that it was the men who comforted others and who gave away their last piece of bread who survived the longest - and who offered proof that everything can be taken away from us except the ability to choose our attitude in any given set of circumstances.\r\n\r\nThe sort of person the prisoner became was the result of an inner decision and not of camp influences alone. Only those who allowed their inner hold on their moral and spiritual selves to subside eventually fell victim to the camp's degenerating influence - while those who made a victory of those experiences turned them into an inner triumph.\r\n\r\nFrankl came to believe that man's deepest desire is to search for meaning and purpose. This outstanding work offers us all a way to transcend suffering and find significance in the art of living.",
-        "pages": 160,
-        "book_depository_stars": "4.50",
-        "price": "9.66",
-        "currency": "$",
-        "old_price": "10.00",
-        "isbn": 9781846041242,
-        "img_paths": "books_images/0000012.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 17,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3455/9780345514400.jpg",
-        "name": "I Know Why the Caged Bird Sings",
-        "author": "Maya Angelou",
-        "format": "Paperback",
-        "description": "Sent by their mother to live with their devout, self-sufficient grandmother in a small Southern town, Maya and her brother, Bailey, endure the ache of abandonment and the prejudice of the local `powhitetrash.` At eight years old and back at her mother's side in St. Louis, Maya is attacked by a man many times her age-and has to live with the consequences for a lifetime. Years later, in San Francisco, Maya learns about love for herself and the kindness of others, her own strong spirit, and the ideas of great authors (`I met and fell in love with William Shakespeare`) will allow her to be free instead of imprisoned.\r\nPoetic and powerful, I Know Why the Caged Bird Sings is a modern American classic that will touch hearts and change minds for as long as people read.",
-        "pages": 289,
-        "book_depository_stars": "4.00",
-        "price": "7.07",
-        "currency": "$",
-        "old_price": "7.50",
-        "isbn": 9780345514400,
-        "img_paths": "books_images/0000080.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 18,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473695986.jpg",
-        "name": "Brief Answers to the Big Questions",
-        "author": "Stephen Hawking",
-        "format": "Hardback",
-        "description": "THE NO.1 SUNDAY TIMES BESTSELLER\r\n\r\n'A beautiful little book by a brilliant mind' DAILY TELEGRAPH\r\n\r\n'Effortlessly instructive, absorbing, up to the minute and - where it matters - witty' GUARDIAN\r\n\r\nThe world-famous cosmologist and #1 bestselling author of A Brief History of Time leaves us with his final thoughts on the universe's biggest questions in this brilliant posthumous work.\r\n\r\nIs there a God?\r\n\r\nHow did it all begin?\r\n\r\nCan we predict the future?\r\n\r\nWhat is inside a black hole?\r\n\r\nIs there other intelligent life in the universe?\r\n\r\nWill artificial intelligence outsmart us?\r\n\r\nHow do we shape the future?\r\n\r\nWill we survive on Earth?\r\n\r\nShould we colonise space?\r\n\r\nIs time travel possible?\r\n\r\nThroughout his extraordinary career, Stephen Hawking expanded our understanding of the universe and unravelled some of its greatest mysteries. But even as his theoretical work on black holes, imaginary time and multiple histories took his mind to the furthest reaches of space, Hawking always believed that science could also be used to fix the problems on our planet.\r\n\r\nAnd now, as we face potentially catastrophic changes here on Earth - from climate change to dwindling natural resources to the threat of artificial super-intelligence - Stephen Hawking turns his attention to the most urgent issues for humankind.\r\n\r\nWide-ranging, intellectually stimulating, passionately argued, and infused with his characteristic humour, Brief Answers to the Big Questions, the final book from one of the greatest minds in history, is a personal view on the challenges we face as a human race, and where we, as a planet, are heading next.\r\n\r\nA percentage of all royalties will go to charity.",
-        "pages": 272,
-        "book_depository_stars": "4.50",
-        "price": "11.64",
-        "currency": "$",
-        "old_price": "18.00",
-        "isbn": 9781473695986,
-        "img_paths": "books_images/0000090.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 19,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4736/9781473635302.jpg",
-        "name": "Born A Crime",
-        "author": "Trevor Noah",
-        "format": "Paperback",
-        "description": "WINNER OF THE THURBER PRIZE\r\n\r\nThe compelling, inspiring, (often comic) coming-of-age story of Trevor Noah, set during the twilight of apartheid and the tumultuous days of freedom that followed.\r\n\r\nOne of the comedy world's brightest new voices, Trevor Noah is a light-footed but sharp-minded observer of the absurdities of politics, race and identity, sharing jokes and insights drawn from the wealth of experience acquired in his relatively young life. As host of the US hit show The Daily Show with Trevor Noah, he provides viewers around the globe with their nightly dose of biting satire, but here Noah turns his focus inward, giving readers a deeply personal, heartfelt and humorous look at the world that shaped him.\r\n\r\nNoah was born a crime, son of a white Swiss father and a black Xhosa mother, at a time when such a union was punishable by five years in prison. Living proof of his parents' indiscretion, Trevor was kept mostly indoors for the first years of his life, bound by the extreme and often absurd measures his mother took to hide him from a government that could, at any moment, take him away.\r\n\r\nA collection of eighteen personal stories, Born a Crime tells the story of a mischievous young boy growing into a restless young man as he struggles to find his place in a world where he was never supposed to exist. Born a Crime is equally the story of that young man's fearless, rebellious and fervently religious mother - a woman determined to save her son from the cycle of poverty, violence and abuse that ultimately threatens her own life.\r\n\r\nWhether subsisting on caterpillars for dinner during hard times, being thrown from a moving car during an attempted kidnapping, or just trying to survive the life-and-death pitfalls of dating in high school, Noah illuminates his curious world with an incisive wit and an unflinching honesty. His stories weave together to form a personal portrait of an unlikely childhood in a dangerous time, as moving and unforgettable as the very best memoirs and as funny as Noah's own hilarious stand-up. Born a Crime is a must read.",
-        "pages": 304,
-        "book_depository_stars": "4.50",
-        "price": "8.30",
-        "currency": "$",
-        "old_price": "12.40",
-        "isbn": 9781473635302,
-        "img_paths": "books_images/0000100.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 20,
-    "fields": {
-        "category": 1,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/9978/9780997895827.jpg",
-        "name": "Goodnight Stories for Rebel Girls 2",
-        "author": "Elena Favilli",
-        "format": "Hardback",
-        "description": "Good Night Stories for Rebel Girls 2 is an entirely new collection of 100 more bedtime stories about extraordinary women from all over the world. It boasts a brand new graphic design + 100 incredible new portraits created by the best female artists of our time.\r\nHaving a passionate community that spans across 70+ countries is a great way to discover incredible stories.The stories in Volume 2 are 100% stories you told us about. Now, we can all share them. We can't wait because they truly are breathtaking.",
-        "pages": 224,
-        "book_depository_stars": "4.50",
-        "price": "21.15",
-        "currency": "$",
-        "old_price": "30.90",
-        "isbn": 9780997895827,
-        "img_paths": "books_images/0000011.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 21,
-    "fields": {
-        "category": 2,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7806/9781780674872.jpg",
-        "name": "Enchanted Forest",
-        "author": "Johanna Basford",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "12.23",
-        "currency": "$",
-        "old_price": "12.40",
-        "isbn": 9781780674872,
-        "img_paths": "books_images/0000001.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 22,
-    "fields": {
-        "category": 2,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7837/9781783705481.jpg",
-        "name": "Harry Potter Colouring Book",
-        "author": "J. K. Rowling",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "9.52",
-        "currency": "$",
-        "old_price": "12.40",
-        "isbn": 9781783705481,
-        "img_paths": "books_images/0000011.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 23,
-    "fields": {
-        "category": 2,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7869/9780786965601.jpg",
-        "name": "Dungeons & Dragons Player's Handbook (Dungeons & Dragons Core Rulebooks)",
-        "author": "Wizards of the Coast",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "31.94",
-        "currency": "$",
-        "old_price": "48.40",
-        "isbn": 9780786965601,
-        "img_paths": "books_images/0000061.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 24,
-    "fields": {
-        "category": 2,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7522/9780752265629.jpg",
-        "name": "The Mindfulness Colouring Book",
-        "author": "Emma Farrarons",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "6.80",
-        "currency": "$",
-        "old_price": "10.50",
-        "isbn": 9780752265629,
-        "img_paths": "books_images/0000031.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 25,
-    "fields": {
-        "category": 2,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/8118/9780811870191.jpg",
-        "name": "One Line a Day",
-        "author": "Chronicle Books",
-        "format": "Calendar",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "9.65",
-        "currency": "$",
-        "old_price": "13.50",
-        "isbn": 9780811870191,
-        "img_paths": "books_images/0000041.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 31,
-    "fields": {
-        "category": 3,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
-        "name": "1984",
-        "author": "George Orwell",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "7.88",
-        "currency": "$",
-        "old_price": "8.80",
-        "isbn": 9780141036144,
-        "img_paths": "books_images/0000002.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 32,
-    "fields": {
-        "category": 3,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8460/9781846041242.jpg",
-        "name": "Man's Search For Meaning",
-        "author": "Viktor E. Frankl",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "9.66",
-        "currency": "$",
-        "old_price": "9.90",
-        "isbn": 9781846041242,
-        "img_paths": "books_images/0000012.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 33,
-    "fields": {
-        "category": 3,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
-        "name": "Animal Farm",
-        "author": "George Orwell",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "7.98",
-        "currency": "$",
-        "old_price": "10.30",
-        "isbn": 9780141036137,
-        "img_paths": "books_images/0000022.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 34,
-    "fields": {
-        "category": 3,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
-        "name": "The Husband's Secret",
-        "author": "Liane Moriarty",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "9.33",
-        "currency": "$",
-        "old_price": "9.99",
-        "isbn": 9781405911665,
-        "img_paths": "books_images/0000032.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 35,
-    "fields": {
-        "category": 3,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7802/9781780221359.jpg",
-        "name": "Gone Girl",
-        "author": "Gillian Flynn",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "9.55",
-        "currency": "$",
-        "old_price": "10.50",
-        "isbn": 9781780221359,
-        "img_paths": "books_images/0000042.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 41,
-    "fields": {
-        "category": 4,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7850/9781785031168.jpg",
-        "name": "Ottolenghi SIMPLE",
-        "author": "Yotam Ottolenghi",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "28.60",
-        "currency": "$",
-        "old_price": "31.50",
-        "isbn": 9781785031168,
-        "img_paths": "books_images/0000003.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 42,
-    "fields": {
-        "category": 4,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718187729.jpg",
-        "name": "5 Ingredients - Quick & Easy Food",
-        "author": "Jamie Oliver",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "25.92",
-        "currency": "$",
-        "old_price": "32.50",
-        "isbn": 9780718187729,
-        "img_paths": "books_images/0000013.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 43,
-    "fields": {
-        "category": 4,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718154776.jpg",
-        "name": "Jamie's 30-Minute Meals",
-        "author": "Jamie Oliver",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "27.39",
-        "currency": "$",
-        "old_price": "31.50",
-        "isbn": 9780718154776,
-        "img_paths": "books_images/0000023.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 44,
-    "fields": {
-        "category": 4,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157807.jpg",
-        "name": "Jamie's 15-Minute Meals",
-        "author": "Jamie Oliver",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "27.30",
-        "currency": "$",
-        "old_price": "31.50",
-        "isbn": 9780718157807,
-        "img_paths": "books_images/0000033.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 45,
-    "fields": {
-        "category": 4,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
-        "name": "The Little Book of Hygge",
-        "author": "Meik Wiking",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "3.50",
-        "price": "11.61",
-        "currency": "$",
-        "old_price": "11.99",
-        "isbn": 9780241283912,
-        "img_paths": "books_images/0000009.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 51,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7303/9780730324218.jpg",
-        "name": "The Barefoot Investor",
-        "author": "Scott Pape",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "14.06",
-        "currency": "$",
-        "old_price": "17.60",
-        "isbn": 9780730324218,
-        "img_paths": "books_images/0000004.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 52,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/3407/9780340733509.jpg",
-        "name": "The Power of Now",
-        "author": "Eckhart Tolle",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "8.20",
-        "currency": "$",
-        "old_price": "13.90",
-        "isbn": 9780340733509,
-        "img_paths": "books_images/0000014.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 53,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0624/9780062457714.jpg",
-        "name": "The Subtle Art of Not Giving a F*ck",
-        "author": "Mark Manson",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "15.80",
-        "currency": "$",
-        "old_price": "25.20",
-        "isbn": 9780062457714,
-        "img_paths": "books_images/0000024.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 54,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4391/9781439199190.jpg",
-        "name": "How to Win Friends and Influence People",
-        "author": "Dale Carnegie",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "8.30",
-        "currency": "$",
-        "old_price": "9.50",
-        "isbn": 9781439199190,
-        "img_paths": "books_images/0000034.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 55,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141033570.jpg",
-        "name": "Thinking, Fast and Slow",
-        "author": "Daniel Kahneman",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "11.50",
-        "currency": "$",
-        "old_price": "15.00",
-        "isbn": 9780141033570,
-        "img_paths": "books_images/0000044.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 60,
-    "fields": {
-        "category": 5,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/5928/9781592858491.jpg",
-        "name": "The Gifts Of Imperfection",
-        "author": "Brene Brown",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "11.80",
-        "currency": "$",
-        "old_price": "14.90",
-        "isbn": 9781592858491,
-        "img_paths": "books_images/0000094.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 61,
-    "fields": {
-        "category": 6,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/5713/9780571334650.jpg",
-        "name": "Normal People",
-        "author": "Sally Rooney",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "8.93",
-        "currency": "$",
-        "old_price": "10.50",
-        "isbn": 9780571334650,
-        "img_paths": "books_images/0000005.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 62,
-    "fields": {
-        "category": 6,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7864/9781786495259.jpg",
-        "name": "Call Me By Your Name",
-        "author": "Andre Aciman",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "5.08",
-        "currency": "$",
-        "old_price": "10.30",
-        "isbn": 9781786495259,
-        "img_paths": "books_images/0000015.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 63,
-    "fields": {
-        "category": 6,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7181/9780718157838.jpg",
-        "name": "Me Before You",
-        "author": "Jojo Moyes",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "10.47",
-        "currency": "$",
-        "old_price": "10.50",
-        "isbn": 9780718157838,
-        "img_paths": "books_images/0000025.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 64,
-    "fields": {
-        "category": 6,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0995/9780099579939.jpg",
-        "name": "Fifty Shades of Grey",
-        "author": "E. L. James",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "3.50",
-        "price": "10.11",
-        "currency": "$",
-        "old_price": "10.27",
-        "isbn": 9780099579939,
-        "img_paths": "books_images/0000035.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 65,
-    "fields": {
-        "category": 6,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405911665.jpg",
-        "name": "The Husband's Secret",
-        "author": "Liane Moriarty",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "9.33",
-        "currency": "$",
-        "old_price": "9.99",
-        "isbn": 9781405911665,
-        "img_paths": "books_images/0000032.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 71,
-    "fields": {
-        "category": 7,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036144.jpg",
-        "name": "1984",
-        "author": "George Orwell",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "7.88",
-        "currency": "$",
-        "old_price": "8.80",
-        "isbn": 9780141036144,
-        "img_paths": "books_images/0000006.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 72,
-    "fields": {
-        "category": 7,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/7847/9781784742324.jpg",
-        "name": "The Testaments",
-        "author": "Margaret Atwood",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "20.92",
-        "currency": "$",
-        "old_price": "26.30",
-        "isbn": 9781784742324,
-        "img_paths": "books_images/0000016.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 73,
-    "fields": {
-        "category": 7,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/1410/9780141036137.jpg",
-        "name": "Animal Farm",
-        "author": "George Orwell",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "7.98",
-        "currency": "$",
-        "old_price": "10.30",
-        "isbn": 9780141036137,
-        "img_paths": "books_images/0000003.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 74,
-    "fields": {
-        "category": 7,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4088/9781408845646.jpg",
-        "name": "Harry Potter and the Philosopher's Stone",
-        "author": "J. K. Rowling",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "30.91",
-        "currency": "$",
-        "old_price": "38.60",
-        "isbn": 9781408845646,
-        "img_paths": "books_images/0000036.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 75,
-    "fields": {
-        "category": 7,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4087/9781408708989.jpg",
-        "name": "Fantastic Beasts and Where to Find Them",
-        "author": "J. K. Rowling",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "11.05",
-        "currency": "$",
-        "old_price": "21.50",
-        "isbn": 9781408708989,
-        "img_paths": "books_images/0000046.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 81,
-    "fields": {
-        "category": 8,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4721/9781472103536.jpg",
-        "name": "Legacy",
-        "author": "James Kerr",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "9.70",
-        "currency": "$",
-        "old_price": "16.00",
-        "isbn": 9781472103536,
-        "img_paths": "books_images/0000007.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 82,
-    "fields": {
-        "category": 8,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
-        "name": "Born to Run",
-        "author": "Christopher McDougall",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "9.05",
-        "currency": "$",
-        "old_price": "12.40",
-        "isbn": 9781861978776,
-        "img_paths": "books_images/0000017.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 83,
-    "fields": {
-        "category": 8,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4504/9781450400244.jpg",
-        "name": "Yoga Anatomy",
-        "author": "Leslie Kaminoff",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "17.73",
-        "currency": "$",
-        "old_price": "21.10",
-        "isbn": 9781450400244,
-        "img_paths": "books_images/0000027.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 84,
-    "fields": {
-        "category": 8,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/0919/9780091939526.jpg",
-        "name": "The 4-Hour Body",
-        "author": "Timothy Ferriss",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "19.32",
-        "currency": "$",
-        "old_price": "19.60",
-        "isbn": 9780091939526,
-        "img_paths": "books_images/0000037.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 85,
-    "fields": {
-        "category": 8,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405937184.jpg",
-        "name": "The Salt Path",
-        "author": "Raynor Winn",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "9.53",
-        "currency": "$",
-        "old_price": "12.90",
-        "isbn": 9781405937184,
-        "img_paths": "books_images/0000047.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 91,
-    "fields": {
-        "category": 9,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/2412/9780241283912.jpg",
-        "name": "The Little Book of Hygge",
-        "author": "Meik Wiking",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "3.50",
-        "price": "11.61",
-        "currency": "$",
-        "old_price": "11.99",
-        "isbn": 9780241283912,
-        "img_paths": "books_images/0000043.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 92,
-    "fields": {
-        "category": 9,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9780/7475/9780747585664.jpg",
-        "name": "Eat, Pray, Love",
-        "author": "Elizabeth Gilbert",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "3.50",
-        "price": "8.86",
-        "currency": "$",
-        "old_price": "11.40",
-        "isbn": 9780747585664,
-        "img_paths": "books_images/0000019.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 93,
-    "fields": {
-        "category": 9,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/2500/9781250038821.jpg",
-        "name": "Humans of New York",
-        "author": "Brandon Stanton",
-        "format": "Hardback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "21.46",
-        "currency": "$",
-        "old_price": "30.40",
-        "isbn": 9781250038821,
-        "img_paths": "books_images/0000029.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 94,
-    "fields": {
-        "category": 9,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/8619/9781861978776.jpg",
-        "name": "Born to Run",
-        "author": "Christopher McDougall",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.50",
-        "price": "9.05",
-        "currency": "$",
-        "old_price": "12.40",
-        "isbn": 9781861978776,
-        "img_paths": "books_images/0000017.jpg"
-    }
-}, {
-    "model": "products.book",
-    "pk": 95,
-    "fields": {
-        "category": 9,
-        "image": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/mid/9781/4059/9781405930994.jpg",
-        "name": "Lion",
-        "author": "Saroo Brierley",
-        "format": "Paperback",
-        "description": null,
-        "pages": null,
-        "book_depository_stars": "4.00",
-        "price": "8.85",
-        "currency": "$",
-        "old_price": "10.80",
-        "isbn": 9781405930994,
-        "img_paths": "books_images/0000049.jpg"
-    }
-}
 ]
