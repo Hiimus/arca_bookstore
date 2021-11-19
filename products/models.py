@@ -33,7 +33,7 @@ class Book(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     currency = models.CharField(max_length=260)
     old_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    isbn = models.IntegerField(null=True, blank=True)
+    isbn = models.BigIntegerField(null=True, blank=True)
     img_paths = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -53,7 +53,7 @@ class ArtsAndCraft(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     currency = models.CharField(max_length=260)
     old_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    isbn = models.IntegerField(null=True, blank=True)
+    isbn = models.BigIntegerField(null=True, blank=True)
     img_paths = models.ImageField(null=True, blank=True)
 
     def __str__(self):

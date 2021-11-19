@@ -101,7 +101,7 @@
         "model": "products.game",
         "pk": 8,
         "fields": {
-            "category": 16,
+            "category": 15,
             "image": "https://www.theworks.co.uk/dw/image/v2/BDXF_PRD/on/demandware.static/-/Sites-master-catalog-tws-uk/default/dw059170c3/5052089308619_Z.jpg?sw=400&sh=400&sm=fit",
             "name": "Hill Top View 500 Piece Jigsaw Puzzle",
             "description": "Have hours of fun piecing together this lovely Hill Top View image! This picture perfect puzzle includes 500 high quality pieces.\r\n\r\nA delightful puzzle that is sure to boast a challenge for whoever takes it on, perfect to complete on your own or with friends and family.\r\n\r\nProduct Information:\r\n• Hill Top View\r\n• Brand: Corner Piece\r\n• Jigsaw Puzzle\r\n• Pieces: 500\r\n• Measures: 48cm x 34cm when complete",
@@ -115,7 +115,7 @@
         "model": "products.game",
         "pk": 9,
         "fields": {
-            "category": 16,
+            "category": 15,
             "image": "https://www.theworks.co.uk/dw/image/v2/BDXF_PRD/on/demandware.static/-/Sites-master-catalog-tws-uk/default/dw7eebc681/8005125247875_Z.jpg?sw=400&sh=400&sm=fit",
             "name": "Paw Patrol 2-in-1 60 Piece Jigsaw Puzzle Set",
             "description": "Enjoy piecing together the puzzles that feature some of your favourite Paw Patrol characters, with this fun 2-in-1 jigsaw puzzle set.\r\n\r\nThis puzzle set is the perfect way to teach youngsters problem solving, whilst having fun with their favourite characters.\r\n\r\nProduct Information:\r\n• Jigsaw Puzzle Set\r\n• Paw Patrol\r\n• 2 x 60 piece puzzles \r\n• Brand: Clemetoni\r\n• Ages: 3+\r\n• Completed puzzles: 32  x 22 cm",
