@@ -6,16 +6,16 @@
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
-                <a href="" class="dropdown-item">Biography</a>
-                <a href="" class="dropdown-item">Crafts & Hobbies</a>
-                <a href="" class="dropdown-item">Crime & Thriller</a>
-                <a href="" class="dropdown-item">Food & Drink</a>
-                <a href="" class="dropdown-item">Personal Development</a>
-                <a href="" class="dropdown-item">Romance</a>
-                <a href="" class="dropdown-item">Science-fiction, Fantasy & Horror</a>
-                <a href="" class="dropdown-item">Sport</a>
-                <a href="" class="dropdown-item">Teens, Young and Adult</a>
-                <a href="" class="dropdown-item">Travel and Holiday Guides</a>
+                <a href="{% url 'products' %}?category=biography" class="dropdown-item">Biography</a>
+                <a href="{% url 'products' %}?category=crafts_hobbies" class="dropdown-item">Crafts & Hobbies</a>
+                <a href="{% url 'products' %}?category=crime_thriller" class="dropdown-item">Crime & Thriller</a>
+                <a href="{% url 'products' %}?category=food_drink" class="dropdown-item">Food & Drink</a>
+                <a href="{% url 'products' %}?category=personal-development" class="dropdown-item">Personal Development</a>
+                <a href="{% url 'products' %}?category=romance" class="dropdown-item">Romance</a>
+                <a href="{% url 'products' %}?category=science-fiction-fantasy-horror" class="dropdown-item">Science-fiction, Fantasy & Horror</a>
+                <a href="{% url 'products' %}?category=sport" class="dropdown-item">Sport</a>
+                <a href="{% url 'products' %}?category=teen-young-adult" class="dropdown-item">Teens, Young and Adult</a>
+                <a href="{% url 'products' %}?category=travel-holiday-guides" class="dropdown-item">Travel and Holiday Guides</a>
             </div>
         </li>
 
@@ -25,9 +25,9 @@
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="books-link">
                 <a href="{% url 'artsandcrafts' %}" class="dropdown-item">All Arts & Crafts</a>
-                <a href="" class="dropdown-item">Colouring Books</a>
-                <a href="" class="dropdown-item">Paint</a>
-                <a href="" class="dropdown-item">Pencils</a>
+                <a href="{% url 'artsandcrafts' %}?category=colouring_books" class="dropdown-item">Colouring Books</a>
+                <a href="{% url 'artsandcrafts' %}?category=paint" class="dropdown-item">Paint</a>
+                <a href="{% url 'artsandcrafts' %}?category=pencils" class="dropdown-item">Pencils</a>
             </div>
         </li>
 
@@ -37,8 +37,8 @@
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="draw-and-paint-link">
                 <a href="{% url 'games' %}" class="dropdown-item">All Games</a>
-                <a href="" class="dropdown-item">Jigsaw Puzzles</a>
-                <a href="" class="dropdown-item">Board Games</a>
+                <a href="{% url 'games' %}?category=jigsaw_puzzles" class="dropdown-item">Jigsaw Puzzles</a>
+                <a href="{% url 'games' %}?category=board_games" class="dropdown-item">Board Games</a>
             </div>
         </li>
     </ul>
