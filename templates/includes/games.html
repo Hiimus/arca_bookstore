@@ -1,0 +1,53 @@
+
+
+{% for game in games %}
+    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 mx-auto">
+        <div class="card h-100 border-0">
+            {% if game.image %}
+            <a href="{% url 'product_detail_games' game.id %}">
+                <img class="card-img-top book-img" src="{{ game.img_paths.url }}" alt="{{ game.name }}">
+            </a>
+            {% else %}
+            <a href="{% url 'product_detail_games' game.id %}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ game.name }}">
+            </a>
+            {% endif %}
+            <div class="card-body pb-0">
+                <p class="mb-0">{{ game.name }}</p>
+            </div>
+            <div class="card-footer bg-white pt-0 border-0 text-left">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead mb-0 text-left font-weight-bold">${{ game.price }}</p>
+                        {% if game.rating %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ game.rating }} / 5</small>
+                        {% else %}
+                            <small class="text-muted">No Rating</small>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>                    
+    </div>
+    <!-- Credit to Boutique Ado for applying <hr> when divisible by-->
+    {% if forloop.counter|divisibleby:1 %}
+    <div class="col-12 d-sm-none mb-5">
+        <hr>
+    </div>
+    {% endif %}
+    {% if forloop.counter|divisibleby:2 %}
+        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+            <hr>
+        </div>
+    {% endif %}
+    {% if forloop.counter|divisibleby:3 %}
+        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+            <hr>
+        </div>
+    {% endif %}
+    {% if forloop.counter|divisibleby:5 %}
+        <div class="col-12 d-none d-xl-block mb-5">
+            <hr>
+        </div>
+    {% endif %}
+{% endfor %}
