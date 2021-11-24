@@ -79,12 +79,26 @@ html {
     z-index: -1;
 }
 
+span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
 .book-img {
     max-height: 300px;
     width: auto;
     max-width: 250px;
 }
 
+.dropdown-btn {
+    text-align: end;
+}
+
+.sort-btn:hover,
+.sort-btn:focus {
+    background-color: #2E4052!important;
+    border-color: #2E4052!important;
+}
 
 
 /* -------------------------------- Media Queries */

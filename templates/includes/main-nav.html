@@ -5,7 +5,7 @@
                 Books
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
+                <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides" class="dropdown-item">All Books</a>
                 <a href="{% url 'products' %}?category=biography" class="dropdown-item">Biography</a>
                 <a href="{% url 'products' %}?category=crafts_hobbies" class="dropdown-item">Crafts & Hobbies</a>
                 <a href="{% url 'products' %}?category=crime_thriller" class="dropdown-item">Crime & Thriller</a>
@@ -24,7 +24,7 @@
                 Arts & Crafts
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="books-link">
-                <a href="{% url 'artsandcrafts' %}" class="dropdown-item">All Arts & Crafts</a>
+                <a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils" class="dropdown-item">All Arts & Crafts</a>
                 <a href="{% url 'artsandcrafts' %}?category=colouring_books" class="dropdown-item">Colouring Books</a>
                 <a href="{% url 'artsandcrafts' %}?category=paint" class="dropdown-item">Paint</a>
                 <a href="{% url 'artsandcrafts' %}?category=pencils" class="dropdown-item">Pencils</a>
@@ -36,7 +36,7 @@
                 Games
             </a>
             <div class="dropdown-menu border-3" aria-labelledby="draw-and-paint-link">
-                <a href="{% url 'games' %}" class="dropdown-item">All Games</a>
+                <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games" class="dropdown-item">All Games</a>
                 <a href="{% url 'games' %}?category=jigsaw_puzzles" class="dropdown-item">Jigsaw Puzzles</a>
                 <a href="{% url 'games' %}?category=board_games" class="dropdown-item">Board Games</a>
             </div>

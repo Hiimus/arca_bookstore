@@ -18,6 +18,13 @@
                 <div class="row">
                     <div class="col">
                         <p class="lead mb-0 text-left font-weight-bold">${{ artsandcraft.price }}</p>
+                        {% if artsandcraft.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a href="{% url 'artsandcrafts' %}?category={{ artsandcraft.category.name }}" class="text-muted">
+                                        <i class="fas fa-tag mr-1"></i>{{ artsandcraft.category.friendly_name }}
+                                    </a>
+                                </p>
+                        {% endif %}
                         {% if artsandcraft.rating %}
                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ artsandcraft.rating }} / 5</small>
                         {% else %}
