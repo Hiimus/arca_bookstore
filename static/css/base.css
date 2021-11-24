@@ -82,7 +82,10 @@ html {
 .book-img {
     max-height: 300px;
     width: auto;
+    max-width: 250px;
 }
+
+
 
 /* -------------------------------- Media Queries */
 
@@ -116,5 +119,22 @@ html {
 
     body {
         height: calc(100vh - 130px);
+    }
+}
+
+@media (max-width: 772px) {
+    .book-img {
+        max-height: 300px;
+        width: auto;
+        max-width: 200px;
+    }
+
+    .align-center {
+        align-self: center;
+    }
+
+    .mx-auto-custom {
+        margin-right: auto!important;
+        margin-left: auto!important;
     }
 }

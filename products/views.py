@@ -14,12 +14,11 @@ def search(request):
     products = Book.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
     artsandcrafts = ArtsAndCraft.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
     games = Game.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
-
+    
     context = {
         'products': products,
         'artsandcrafts': artsandcrafts,
         'games': games,
-        'page_name': 'Search Results',
         'q': q
     }
 
@@ -31,59 +30,21 @@ def all_books(request):
     """ A view to show all products """
 
     products = Book.objects.all()
-    query = None
-    categories = None
-
-    if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
-
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
 
     context = {
         'products': products,
-        'search_term': query,
-        'current_categories': categories,
     }
 
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/products_books.html', context)
 
 
 def all_arts_and_crafts(request):
     """ A view to show all products """
 
     artsandcrafts = ArtsAndCraft.objects.all()
-    query = None
-    categories = None
-
-    if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            artsandcrafts = artsandcrafts.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
-
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            artsandcrafts = artsandcrafts.filter(queries)
-
+    
     context = {
         'artsandcrafts': artsandcrafts,
-        'search_term': query,
-        'current_categories': categories,
     }
 
     return render(request, 'products/products_artsandcraft.html', context)
@@ -94,28 +55,8 @@ def all_games(request):
 
     games = Game.objects.all()
 
-    query = None
-    categories = None
-
-    if request.GET:
-        if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            games = games.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
-
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            games = games.filter(queries)
-
     context = {
         'games': games,
-        'search_term': query,
-        'current_categories': categories,
     }
 
     return render(request, 'products/products_games.html', context)
