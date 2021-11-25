@@ -11,7 +11,7 @@ class BookAdmin(admin.ModelAdmin):
         'category',
         'format',
         'price',
-        'book_depository_stars',
+        'rating',
         'isbn',
         'image',
     )
