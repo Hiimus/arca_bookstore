@@ -22,12 +22,12 @@
                             {% if product.category %}
                                 <p class="small mt-1 mb-0">
                                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                        <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        <i class="fas fa-book"></i> {{ product.category.friendly_name }}
                                     </a>
                                 </p>
                             {% endif %}
-                            {% if product.book_depository_stars %}
-                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.book_depository_stars }} / 5</small>
+                            {% if product.rating %}
+                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                             {% else %}
                                 <small class="text-muted">No Rating</small>
                             {% endif %}

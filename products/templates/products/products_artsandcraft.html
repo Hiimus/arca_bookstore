@@ -26,17 +26,6 @@
             </div>
             <div class="row">
                 <div class="product-container col-10 offset-1">
-                    <div class="dropdown dropdown-btn">
-                        <button class="btn btn-secondary dropdown-toggle charcoal-color-bg sort-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort by
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a href="{% url 'artsandcrafts' %}?sort=price&direction=asc" class="dropdown-item">By Price</a></li>
-                        <li><a href="{% url 'artsandcrafts' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a></li>
-                        <li><a href="{% url 'artsandcrafts' %}?sort=category&direction=asc" class="dropdown-item">By Category</a></li>
-                        <li><a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils" class="dropdown-item">All Arts & Crafts</a></li>
-                        </ul>
-                    </div>
                     <div class="row mt-1 mb-2"></div>
                     <div class="row mt-1 mb-2">
                         <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
@@ -69,9 +58,9 @@
                 </div>
             </div>
         </div>
-        <div class="btt-button shadow-sm rounded-0 border border-black">
+        <div class="btt-button shadow-sm">
             <a class="btt-link d-flex h-100">
-                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                <i class="fas fa-chevron-up mx-auto my-auto"></i>
             </a>
         </div>
 

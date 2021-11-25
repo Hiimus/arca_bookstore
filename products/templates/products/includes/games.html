@@ -22,7 +22,7 @@
                         {% if game.category %}
                                 <p class="small mt-1 mb-0">
                                     <a href="{% url 'games' %}?category={{ game.category.name }}" class="text-muted">
-                                        <i class="fas fa-tag mr-1"></i>{{ game.category.friendly_name }}
+                                        <i class="fas fa-dice-d6"></i> {{ game.category.friendly_name }}
                                     </a>
                                 </p>
                         {% endif %}
