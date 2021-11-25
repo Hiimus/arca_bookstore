@@ -116,9 +116,16 @@ html {
     border-radius: 50%;
 }
 
+span.badge {
+    border-radius: 10px;
+    border-color: #2e4052;
+    color: #2e4052;
+}
+
 span.badge:hover {
-    background: #212529 !important;
+    background: #2e4052 !important;
     color: #fff !important;
+    border-radius: 10px;
 }
 
 .product-img {
