@@ -1,11 +1,11 @@
 
 
 {% for game in games %}
-    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2 mx-auto">
+    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto product-card custom-width">
         <div class="card h-100 border-0">
             {% if game.image %}
             <a href="{% url 'product_detail_games' game.id %}" class="align-center">
-                <img class="card-img-top book-img" src="{{ game.img_paths.url }}" alt="{{ game.name }}">
+                <img class="card-img-top product-img" src="{{ game.img_paths.url }}" alt="{{ game.name }}">
             </a>
             {% else %}
             <a href="{% url 'product_detail_games' game.id %}" class="align-center">
@@ -52,7 +52,7 @@
             <hr>
         </div>
     {% endif %}
-    {% if forloop.counter|divisibleby:3 %}
+    {% if forloop.counter|divisibleby:4 %}
         <div class="col-12 d-none d-xl-block mb-5">
             <hr>
         </div>
