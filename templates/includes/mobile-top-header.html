@@ -1,8 +1,10 @@
+{% load static %}
+
 
 <!-- From Boutique Ado -->
 <ul>
-    <li class="list-inline-item">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <li>
+      <a class="charcoal-color nav-link d-block d-lg-none d-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
               <div><i class="fas fa-search fa-lg"></i></div>
               <p class="my-0">Search</p>
@@ -24,9 +26,9 @@
       </div>
   </li>
   <li class="list-inline-item dropdown">
-      <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="charcoal-color nav-link d-md-block d-lg-none d-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
-              <div><i class="fas fa-user fa-lg"></i></div>
+              <div><i class="fas fa-user-circle fa-lg"></i></div>
               <p class="my-0">My Account</p>
           </div>
       </a>
@@ -44,10 +46,10 @@
       </div>
   </li>
   <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}charcoal-color{% endif %} nav-link d-block d-lg-none" href="">
           <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-              <p class="my-0">
+              <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+              <p class="my-0 d-sm-block d-none">
                   {% if grand_total %}
                       ${{ grand_total|floatformat:2 }}
                   {% else %}
@@ -58,3 +60,8 @@
       </a>
     </li>
   </ul>
+
+
+{% block postloadjs %}
+    <script src="{% static 'js/bar_menu.js' %}"></script>
+  {% endblock %}
