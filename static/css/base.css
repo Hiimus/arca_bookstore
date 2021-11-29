@@ -108,6 +108,9 @@ html {
         display: none !important;
     }
 
+    
+    /*----------------------------------------------------------------------*/
+    
     .underline {
         display: inline-block;
     }
@@ -129,8 +132,6 @@ html {
         text-decoration: none;
     }
 
-/*----------------------------------------------------------------------*/
-
 .nav-link,
 .nav-link:hover,
 .nav-link:focus {
@@ -146,6 +147,19 @@ html {
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn.outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white!important;
 }
 
 .text-black {
