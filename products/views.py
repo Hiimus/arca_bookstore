@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Book, ArtsAndCraft, Game, Category
+from .models import Product, Category
 from itertools import chain
 
 
@@ -33,7 +33,7 @@ def search(request):
 def all_books(request):
     """ A view to show all Books """
 
-    products = Book.objects.all()
+    products = Product.objects.all()
 
     categories = None
     sort = None
@@ -73,7 +73,7 @@ def all_books(request):
 def all_arts_and_crafts(request):
     """ A view to show all Arts & Crafts """
 
-    artsandcrafts = ArtsAndCraft.objects.all()
+    artsandcrafts = Product.objects.all()
     categories = None
     sort = None
     direction = None
@@ -111,7 +111,7 @@ def all_arts_and_crafts(request):
 def all_games(request):
     """ A view to show all games """
 
-    games = Game.objects.all()
+    games = Product.objects.all()
     categories = None
     sort = None
     direction = None
