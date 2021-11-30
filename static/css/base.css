@@ -205,7 +205,13 @@ html {
     color: white;
 }
 
-.btt-link {
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+} 
+
+.btt-link{
     cursor: pointer;
     text-decoration: none !important;
     color: white;
