@@ -1,33 +1,33 @@
 
 
-{% for game in games %}
+{% for product in products %}
     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mx-auto product-card custom-width">
         <div class="card h-100 border-0">
-            {% if game.image %}
-            <a href="{% url 'product_detail_games' game.id %}" class="align-center">
-                <img class="card-img-top product-img" src="{{ game.img_paths.url }}" alt="{{ game.name }}">
+            {% if product.image %}
+            <a href="{% url 'product_detail' product.id %}" class="align-center">
+                <img class="card-img-top product-img" src="{{ product.img_paths.url }}" alt="{{ product.name }}">
             </a>
             {% else %}
-            <a href="{% url 'product_detail_games' game.id %}" class="align-center">
-                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ game.name }}">
+            <a href="{% url 'product_detail' product.id %}" class="align-center">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
             </a>
             {% endif %}
             <div class="card-body pb-0 mx-auto-custom">
-                <p class="mb-0">{{ game.name }}</p>
+                <p class="mb-0">{{ product.name }}</p>
             </div>
             <div class="card-footer bg-white pt-0 border-0 text-left mx-auto-custom">
                 <div class="row">
                     <div class="col">
-                        <p class="lead mb-0 text-left font-weight-bold">${{ game.price }}</p>
-                        {% if game.category %}
+                        <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        {% if product.category %}
                                 <p class="small mt-1 mb-0">
                                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                        <i class="fas fa-dice-d6"></i> {{ game.category.friendly_name }}
+                                        <i class="fas fa-dice-d6"></i> {{ product.category.friendly_name }}
                                     </a>
                                 </p>
                         {% endif %}
-                        {% if game.rating %}
-                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ game.rating }} / 5</small>
+                        {% if product.rating %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                         {% else %}
                             <small class="text-muted">No Rating</small>
                         {% endif %}

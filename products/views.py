@@ -73,7 +73,7 @@ def all_books(request):
 def all_arts_and_crafts(request):
     """ A view to show all Arts & Crafts """
 
-    artsandcrafts = Product.objects.all()
+    products = Product.objects.all()
     categories = None
     sort = None
     direction = None
@@ -84,23 +84,23 @@ def all_arts_and_crafts(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                artsandcrafts = artsandcrafts.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            artsandcrafts = artsandcrafts.order_by(sortkey)
+            products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            artsandcrafts = artsandcrafts.filter(category__name__in=categories)
+            products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
     current_sorting = f'{sort}_{direction}'
     
     context = {
-        'artsandcrafts': artsandcrafts,
+        'products': products,
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
@@ -111,7 +111,7 @@ def all_arts_and_crafts(request):
 def all_games(request):
     """ A view to show all games """
 
-    games = Product.objects.all()
+    products = Product.objects.all()
     categories = None
     sort = None
     direction = None
@@ -122,23 +122,23 @@ def all_games(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                games = games.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            games = games.order_by(sortkey)
+            products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            games = games.filter(category__name__in=categories)
+            products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
     
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'games': games,
+        'products': products,
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
@@ -149,35 +149,35 @@ def all_games(request):
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
-    book = get_object_or_404(Book, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'book': book,
+        'product': product,
     }
 
     return render(request, 'products/product_detail/product_detail.html', context)
 
 
-def product_detail_arts(request, product_id):
-    """ A view to show individual product details """
+# def product_detail_arts(request, product_id):
+#     """ A view to show individual product details """
 
-    artsandcraft = get_object_or_404(ArtsAndCraft, pk=product_id)
+#     artsandcraft = get_object_or_404(Product, pk=product_id)
 
-    context = {
-        'artsandcraft': artsandcraft,
-    }
+#     context = {
+#         'artsandcraft': artsandcraft,
+#     }
 
-    return render(request, 'products/product_detail/product_detail.html', context)
+#     return render(request, 'products/product_detail/product_detail.html', context)
 
 
-def product_detail_games(request, product_id):
-    """ A view to show individual product details """
+# def product_detail_games(request, product_id):
+#     """ A view to show individual product details """
 
-    game = get_object_or_404(Game, pk=product_id)
+#     game = get_object_or_404(Product, pk=product_id)
 
-    context = {
-        'game': game,
-    }
+#     context = {
+#         'game': game,
+#     }
 
-    return render(request, 'products/product_detail/product_detail.html', context)
+#     return render(request, 'products/product_detail/product_detail.html', context)
 
