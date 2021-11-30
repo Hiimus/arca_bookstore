@@ -10,23 +10,28 @@ from itertools import chain
 
 # Search bar
 def search(request):
-    q = request.GET['search']
 
-    products = Book.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
-    artsandcrafts = ArtsAndCraft.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
-    games = Game.objects.filter(Q(name__icontains=q) | Q(description__icontains=q))
+    products = Product.objects.all()
+    query = None
 
-    
+    if 'search' in request.GET:
+            query = request.GET['search']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('products'))
+            
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            products = products.filter(queries)
     
     context = {
         'products': products,
-        'artsandcrafts': artsandcrafts,
-        'games': games,
-        'q': q,
-        'result_count': products.count() + artsandcrafts.count() + games.count()
+        'search_term': query,
     }
 
-    return render(request, "products/search_products.html", context)
+    return render(request, "products/products.html", context)
 
 
 
@@ -67,7 +72,7 @@ def all_books(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products_books.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def all_arts_and_crafts(request):
@@ -105,7 +110,7 @@ def all_arts_and_crafts(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products_artsandcraft.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def all_games(request):
@@ -143,7 +148,7 @@ def all_games(request):
         'current_sorting': current_sorting,
     }
 
-    return render(request, 'products/products_games.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def product_detail(request, product_id):
