@@ -3,6 +3,14 @@ html {
     height: 100%;
 }
 
+.custom-green {
+    color: #bdd9bf;
+}
+
+.custom-green-bg {
+    background-color: #bdd9bf;
+}
+
 .charcoal-color {
     color: #2E4052;
 }
