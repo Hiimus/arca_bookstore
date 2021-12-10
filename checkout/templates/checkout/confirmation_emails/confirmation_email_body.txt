@@ -1,0 +1,28 @@
+{% load bag_tools %}
+
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at Arca Bookstore.
+
+Order Date: {{ order.date }}
+Order Number: {{ order.order_number }}
+
+Order Info:  
+{% for item in order.lineitems.all %} 
+    - {{ item.product.name }} x{{ item.quantity }} ${{ item.product.price | calc_subtotal:item.quantity }}
+{% endfor %}
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total ${{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}.
+
+We have registered your phone number as {{ order.phone_number }}.
+
+Please contact {{ contact_email }} if you have any questions.
+
+Have a nice day!
+
+Sincerely,
+
+Arca Bookstore
