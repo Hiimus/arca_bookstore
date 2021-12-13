@@ -223,7 +223,7 @@ STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'arcabookstore@example.com'
-else:   
+else:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
