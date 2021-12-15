@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category
+from profiles.models import UserProfile
 from .forms import ProductForm
 from itertools import chain
 
@@ -232,3 +233,21 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    """ Add a review to a product """
+
+    product = get_object_or_404(Product, pk=product_id)
+
+    username = request.user.get_username()
+
+    form = ProductForm()
+   
+    context = {
+        'product': product,
+        'form': form,
+    }
+
+    return render(request, 'products/add_review.html', context)

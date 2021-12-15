@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+            <div class="col-12 col-md-6">
+                <h2 class="logo-font mb-4">{{ user.get_username }}'s "{{ product.name }}" Review</h2>
+            </div>
+            <div class="col-md-6 float-end">
+                <img class="card-img-top product-img" src="{{ product.img_paths.url }}"
+                alt="{{ product.name }}">
+            </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <form action="">
+                    {% csrf_token %}
+                    {{ form.description }}
+                    <div class="text-right">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Add Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
