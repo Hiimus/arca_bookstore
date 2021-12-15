@@ -38,8 +38,6 @@
                     <h4>No reviews yet..</h4>
                 {% else %}
                     {% for review in reviews %}
-                        <h4>{{ review.user }}</h4>
-                        <h4>{{ review.product }}</h4>
                         <h4>{{ review.review }}</h4>
                         <h4>{{ review.rating }}</h4> 
                         <h4>{{ review.created_at }}</h4>

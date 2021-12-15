@@ -165,7 +165,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
-    reviews = Review.objects.all()
+    reviews = Review.objects.filter(product=product_id)
 
     context = {
         'product': product,
@@ -249,7 +249,9 @@ def add_review(request, product_id):
 
     username = request.user.get_username()
 
-    reviews = Review.objects.all()
+    reviews = Review.objects.filter(product=product_id)
+
+    usernames = Review.objects.filter(user=product_id)
 
     if request.method == "POST":
         form = ReviewForm(request.POST)
@@ -262,11 +264,14 @@ def add_review(request, product_id):
     else:
         form = ReviewForm()
 
+    print(product)
+    
     context = {
         'product': product,
         'form': form,
         'reviews': reviews,
         'username': username,
+        'usernames': usernames,
     }
 
     return render(request, 'products/add_review.html', context)

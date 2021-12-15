@@ -29,6 +29,6 @@ class ReviewForm(forms.ModelForm):
 
         widgets = {
             'review': forms.Textarea(attrs={'class': 'form-control'}),
+            'rating': forms.NumberInput(attrs={'class': 'form-control'}),
         }
-
 
