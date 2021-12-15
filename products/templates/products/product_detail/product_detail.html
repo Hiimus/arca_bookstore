@@ -100,6 +100,16 @@
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% if not reviews %}
+                            <h4>No reviews yet..</h4>
+                            {% else %}
+                            {% for review in reviews %}
+                            <h4>{{ review.review }}</h4>
+                            <h4>{{ review.rating }}</h4>
+                            <h4>{{ review.created_at }}</h4>
+                            {% endfor %}
+                            <a href="{% url 'add_review' product.id %}">Add Review</a>
+                            {% endif %}
                         </div>
                     </form>
                     {% endif %}

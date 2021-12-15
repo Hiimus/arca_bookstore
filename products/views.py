@@ -4,9 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Review
 from profiles.models import UserProfile
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 from itertools import chain
 
 
@@ -46,6 +46,8 @@ def all_books(request):
 
     products = Product.objects.all()
 
+    review = Review.objects.all()
+
     categories = None
     sort = None
     direction = None
@@ -76,6 +78,7 @@ def all_books(request):
         'products': products,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'review': review,
     }
 
     return render(request, 'products/products.html', context)
@@ -162,8 +165,11 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    reviews = Review.objects.all()
+
     context = {
         'product': product,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail/product_detail.html', context)
@@ -243,11 +249,24 @@ def add_review(request, product_id):
 
     username = request.user.get_username()
 
-    form = ProductForm()
-   
+    reviews = Review.objects.all()
+
+    if request.method == "POST":
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            reviews = form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add review, please ensure the form is valid')
+    else:
+        form = ReviewForm()
+
     context = {
         'product': product,
         'form': form,
+        'reviews': reviews,
+        'username': username,
     }
 
     return render(request, 'products/add_review.html', context)
