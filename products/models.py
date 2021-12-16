@@ -42,11 +42,20 @@ class Product(models.Model):
         return self.name
 
 
+RATING_CHOICES = [
+    (1, '1 - Trash'),
+    (2, '2 - Bad'),
+    (3, '3 - OK'),
+    (4, '4 - Good'),
+    (5, '5 - Perfect'),
+]
+
+
 class Review(models.Model):
     user = models.ForeignKey('profiles.UserProfile', null=True, blank=True, on_delete=models.SET_NULL)
     product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
     review = models.TextField(max_length=250, null=True, blank=True)
-    rating = models.IntegerField(default=0)
+    rating = models.PositiveSmallIntegerField(choices=RATING_CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
