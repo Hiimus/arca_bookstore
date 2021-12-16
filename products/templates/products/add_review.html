@@ -29,28 +29,54 @@
                         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Review</button>
                     </div>
+                    <div class="star-wrapper border-black">
+                        <button type="submit" class="my-button fas fa-star s1"></button>
+                        <button type="submit" class="my-button fas fa-star s2"></button>
+                        <button type="submit" class="my-button fas fa-star s3"></button>
+                        <button type="submit" class="my-button fas fa-star s4"></button>
+                        <button type="submit" class="my-button fas fa-star s5"></button>
+                    </div>
                 </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                {% if not reviews %}
-                    <h4>No reviews yet..</h4>
-                    <a href="{% url 'add_review' product.id %}">Add Review</a>
-                {% else %}
-                    {% for review in reviews %}
-                        <h4>{{ review.user }}</h4>
-                        <h4>{{ review.review }}</h4>
-                        <h4>{{ review.rating }}</h4> 
-                        <h4>{{ review.created_at }}</h4>
-                    {% endfor %}
-                        <a href="{% url 'add_review' product.id %}">Add Review</a>
-                {% endif %}
             </div>
         </div>
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.s1').click(function() {
+            $('.fa-star ~ button').css('color', 'gold');
+            $('.s1').css('color', 'gold').addClass('checked');
+        });
+        $('.s2').click(function() {
+            console.log('you clicked rating 2');
+            $('.fa-star ~ button').css('color', 'gold');
+            $('.s1').css('color', 'white');
+        });
+        $('.s3').click(function() {
+            console.log('you clicked rating 3');
+            $('.fa-star ~ button').css('color', 'gold');
+            $('.s1').css('color', 'white');
+            $('.s2').css('color', 'white');
+        });
+        $('.s4').click(function() {
+            console.log('you clicked rating 4');
+            $('.fa-star ~ button').css('color', 'gold');
+            $('.s1').css('color', 'white');
+            $('.s2').css('color', 'white');
+            $('.s3').css('color', 'white');
+        });
+        $('.s5').click(function() {
+            console.log('you clicked rating 5');
+            $('.fa-star ~ button').css('color', 'gold');
+            $('.s1').css('color', 'white');
+            $('.s2').css('color', 'white');
+            $('.s3').css('color', 'white');
+            $('.s4').css('color', 'white');
+        });
+    </script>
+{% endblock %}
 
 
 
