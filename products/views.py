@@ -246,32 +246,31 @@ def add_review(request, product_id):
     """ Add a review to a product """
 
     product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
 
     username = request.user.get_username()
-
     reviews = Review.objects.filter(product=product_id)
-
-    usernames = Review.objects.filter(user=product_id)
 
     if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
-            reviews = form.save()
-            messages.success(request, 'Successfully added product!')
+            review = form.save(commit=False)
+            review.product = product
+            review.user = user
+            review.save()
+
+            messages.success(request, 'Successfully added review!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add review, please ensure the form is valid')
     else:
         form = ReviewForm()
-
-    print(product)
     
     context = {
         'product': product,
         'form': form,
         'reviews': reviews,
         'username': username,
-        'usernames': usernames,
     }
 
     return render(request, 'products/add_review.html', context)

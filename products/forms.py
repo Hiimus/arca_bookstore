@@ -21,7 +21,12 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
 
+
+
 class ReviewForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
 
     class Meta:
         model = Review
@@ -30,5 +35,8 @@ class ReviewForm(forms.ModelForm):
         widgets = {
             'review': forms.Textarea(attrs={'class': 'form-control'}),
             'rating': forms.NumberInput(attrs={'class': 'form-control'}),
+            # 'user': forms.HiddenInput(attrs={'class': 'form-control'}),
+            # 'product': forms.HiddenInput(attrs={'class': 'form-control'}),
+            
         }
 

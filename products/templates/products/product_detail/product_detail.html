@@ -102,8 +102,10 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% if not reviews %}
                             <h4>No reviews yet..</h4>
+                            <a href="{% url 'add_review' product.id %}">Add Review</a>
                             {% else %}
                             {% for review in reviews %}
+                            <h4>{{ review.user }}</h4>
                             <h4>{{ review.review }}</h4>
                             <h4>{{ review.rating }}</h4>
                             <h4>{{ review.created_at }}</h4>
