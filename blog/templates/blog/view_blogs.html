@@ -23,11 +23,11 @@
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="#" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ blog_form.as_p }}
+                    {{ form.as_p }}
                     <div class="text-right">
-                        <a href="#" class="btn btn-outline-black rounded-0">Cancel</a>
+                        <a href="{% url 'view_blog' %}" class="btn btn-outline-black rounded-0">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Blog Post</button>
                     </div>
                 </form>
@@ -35,15 +35,16 @@
                 {% for blog in blogs %}
                     <h1> {{ blog.title }}</h1>
                     <p> {{ blog.body }}</p>
+                    <p> {{ blog.created_by }}</p>
                     <img src="{{ blog.image }}">
                 {% endfor %}
 
-                <form method="POST" action="#" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_comment' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ comment_form.as_p }}
                     <div class="text-right">
-                        <a href="#" class="btn btn-outline-black rounded-0">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Blog Post</button>
+                        <a href="{% url 'view_blog' %}" class="btn btn-outline-black rounded-0">Cancel</a>
+                        <button class="btn btn-black rounded-0" type="submit">Add Comment</button>
                     </div>
                 </form>
 
