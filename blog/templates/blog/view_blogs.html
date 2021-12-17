@@ -16,46 +16,101 @@
             <div class="col-12 col-md-6">
                 <hr>
                 <h2 class="logo-font mb-4">Arca Blog</h2>
-                <h5 class="text-muted">Add a Post</h5>
+                <br>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogPostModal">
+                    Add Blog Post
+                </button>
+                <br>
                 <hr>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <div class="text-right">
-                        <a href="{% url 'view_blog' %}" class="btn btn-outline-black rounded-0">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Blog Post</button>
-                    </div>
-                </form>
-
+            <div class="col-12">
                 {% for blog in blogs %}
                     <h1> {{ blog.title }}</h1>
                     <p> {{ blog.body }}</p>
                     <p> {{ blog.created_by }}</p>
-                    <img src="{{ blog.image }}">
+                    <p> {{ blog.created_at }}</p>
+                    {% if blog.image %}
+                        <img src="{{ blog.image }}">
+                    {% else %}
+                    {% endif %}
+                    <br>
+                    <br>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">
+                        Add Comment
+                    </button>
+                    <br>
+                    <br>            
                 {% endfor %}
+            </div>
+        </div>
 
-                <form method="POST" action="{% url 'add_comment' %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ comment_form.as_p }}
-                    <div class="text-right">
-                        <a href="{% url 'view_blog' %}" class="btn btn-outline-black rounded-0">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Comment</button>
+
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="blogPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Post</button>
                     </div>
                 </form>
+            </div>
+            </div>
+        </div>
 
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <form method="POST" action="{% url 'add_comment' %}" class="form mb-2" enctype="multipart/form-data">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                            {% csrf_token %}
+                            {{ comment_form.as_p }}
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Comment</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-12">
                 {% for comment in comments %}
                     <h1> {{ comment.name }}</h1>
                     <p> {{ comment.comment }}</p>
+                    <p> {{ comment.created_at }}</p>
                 {% endfor %}
-
-
             </div>
         </div>
+        <br>
+        <hr>
+        <br>
     </div>
 {% endblock %}
 

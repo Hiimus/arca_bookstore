@@ -41,6 +41,12 @@
             </div>
         </li>
 
+        <li class="nav-item">
+            <a href="{% url 'view_blog' %}" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="draw-and-paint-link">
+                Blog
+            </a>
+        </li>
+
     {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
             <li class="nav-item dropdown d-lg-none">
