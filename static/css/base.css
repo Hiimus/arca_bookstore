@@ -31,6 +31,10 @@ html {
     background-color: #ffc857;
 }
 
+.dark-purple {
+    background-color: #412234;
+}
+
 
 /* from Bulma, ensures font awesome icons stays centered and have a consistent size */
 .icon {
@@ -361,6 +365,18 @@ span.badge:hover {
 
 
 /* Allauth form formatting */
+
+.allauth-container {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
