@@ -374,6 +374,8 @@ span.badge:hover {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    border-radius: 10px;
+    border: 10px solid #f8f9fa!important;
 }
 
 
@@ -402,15 +404,15 @@ span.badge:hover {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: black;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #bdd9bf;
+    border: 1px solid #bdd9bf;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
