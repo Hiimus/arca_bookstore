@@ -386,8 +386,15 @@ span.badge:hover {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.allauth-form-inner-content input[type='checkbox'] {
+    border: 1px solid black;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -427,6 +434,14 @@ span.badge:hover {
 	color: #fff;
     background-color: #222;
     border-color: #222;
+}
+
+.allauth-form-inner-content button {
+    border-radius: 5px;
+    text-size-adjust: auto;
+    width: 120px;
+    height: 60px;
+    font-size: x-large;
 }
 
 .allauth-form-inner-content a {
