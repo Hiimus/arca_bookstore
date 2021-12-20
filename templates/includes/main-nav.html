@@ -52,6 +52,17 @@
             </a>
         </li>
 
+        <li class="nav-item dropdown">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="help-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Help
+            </a>
+            <div class="dropdown-menu border-3" aria-labelledby="help-link">
+                <a href="{% url 'view_faq' %}" class="dropdown-item underline">FAQ</a>
+                <a href="{% url 'view_policies' %}" class="dropdown-item underline">Policies</a>
+                <a href="{% url 'view_contact' %}" class="dropdown-item underline">Contact</a>
+            </div>
+        </li>
+
     {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
             <li class="nav-item dropdown d-lg-none">
