@@ -10,7 +10,7 @@ from .forms import BlogForm, CommentForm
 def view_blog(request):
     """ A view that renders the blog page """
 
-    blogs = BlogPost.objects.all()
+    blogs = BlogPost.objects.all().order_by('-created_at') # Order by newest post to oldest
     comments = Comment.objects.all()
 
     form = BlogForm()
@@ -24,6 +24,25 @@ def view_blog(request):
     }
 
     return render(request, 'blog/view_blogs.html', context)
+
+
+def blog_info(request, blog_id):
+    """ A view that renders the blog info page """
+
+    blog = get_object_or_404(BlogPost, pk=blog_id)
+    comments = Comment.objects.all()
+
+    form = BlogForm()
+    comment_form = CommentForm()
+
+    context = {
+        'blog': blog,
+        'comments': comments,
+        'form': form,
+        'comment_form': comment_form,
+    }
+
+    return render(request, 'blog/blog_info.html', context)
 
 
 
