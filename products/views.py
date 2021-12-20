@@ -87,9 +87,10 @@ def all_products(request):
 
 
 def all_books(request):
-    """ A view to show all Books """
+    """ A view to show all Books, excludes arts & crafts and games """
 
-    products = Product.objects.all()
+    all_products = Product.objects.all()
+    products = all_products.exclude(category=11).exclude(category=12).exclude(category=13).exclude(category=14).exclude(category=15)
 
     review = Review.objects.all()
 
@@ -132,7 +133,9 @@ def all_books(request):
 def all_arts_and_crafts(request):
     """ A view to show all Arts & Crafts """
 
-    products = Product.objects.all()
+    all_products = Product.objects.all()
+    products = all_products.exclude(category=1).exclude(category=2).exclude(category=3).exclude(category=4).exclude(category=5).exclude(category=6).exclude(category=7).exclude(category=8).exclude(category=9).exclude(category=10).exclude(category=14).exclude(category=15)
+
     categories = None
     sort = None
     direction = None
@@ -170,7 +173,9 @@ def all_arts_and_crafts(request):
 def all_games(request):
     """ A view to show all games """
 
-    products = Product.objects.all()
+    all_products = Product.objects.all()
+    products = all_products.exclude(category=1).exclude(category=2).exclude(category=3).exclude(category=4).exclude(category=5).exclude(category=6).exclude(category=7).exclude(category=8).exclude(category=9).exclude(category=10).exclude(category=11).exclude(category=12).exclude(category=13)
+
     categories = None
     sort = None
     direction = None
