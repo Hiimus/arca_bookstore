@@ -54,12 +54,6 @@ def index(request):
 
 def get_random_books(request):
     """ A view that gets random books based on categories """  
-
-    
-
-
-    
-
     context = {
     }
 

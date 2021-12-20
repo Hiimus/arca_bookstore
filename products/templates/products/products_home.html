@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <h2 class="logo-font text-center">All Products</h2>
+</div>
+<br>
+           
+
+<div class="container">
+    <div class="row product-row">
+        <div class="product-container col-lg-10 col-12 offset-lg-1">
+            <div class="row mt-1 mb-2 text-center">
+                <div class="col">
+                    <br>
+                    <h4 class="logo-font"><a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides">Books</a></h4></div>
+                   
+                </div>
+            <div class="row mt-1 mb-2">
+            </div>
+            <div class="row">
+                {% include 'home/includes/random_books.html' %}
+            </div>
+            
+            <br>
+
+            <div class="row mt-1 mb-2 text-center">
+                <div class="col">
+                    <br>
+                    <h4 class="logo-font"><a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils">Arts & Crafts</a></h4></div>
+            </div>
+            <div class="row">
+                {% include 'home/includes/random_arts_and_crafts.html' %}
+            </div>
+
+            <br>
+
+            <div class="row mt-1 mb-2 text-center">
+                <div class="col">
+                    <br>
+                    <h4 class="logo-font"><a href="{% url 'games' %}?category=jigsaw_puzzles,board_games">Games</a></h4></div>
+            </div>
+            <div class="row">
+                {% include 'home/includes/random_games.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
