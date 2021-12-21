@@ -126,6 +126,15 @@ html {
 
 /*------ Home page ----*/
 
+.homepage-container {
+    border-left: 80px solid #412234;
+    border-right: 80px solid #412234;
+    border-top: 10px solid #412234;
+    border-bottom: 10px solid #412234;
+    padding-right: calc(var(--bs-gutter-x) * .0);
+    padding-left: calc(var(--bs-gutter-x) * .0);
+}
+
 .row-homepage {
     --bs-gutter-x: 0rem!important;
 }
@@ -277,6 +286,7 @@ html {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 .btt-button {
     height: 42px;
@@ -655,6 +665,11 @@ span.badge:hover {
         border-left: 50px solid #412234;
         border-right: 50px solid #412234;
     }
+
+    .homepage-container {
+        border-left: 50px solid #412234;
+        border-right: 50px solid #412234;
+    }
 }
 
 @media (max-width: 772px) {
@@ -674,6 +689,11 @@ span.badge:hover {
     }
 
     .product-container {
+        border-left: 25px solid #412234;
+        border-right: 25px solid #412234;
+    }
+
+    .homepage-container {
         border-left: 25px solid #412234;
         border-right: 25px solid #412234;
     }
