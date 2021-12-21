@@ -164,6 +164,41 @@ html {
     left: 0;
 }
 
+/*---- Footer -----*/
+
+.footer-link {
+    color: #2E4052!important;
+    text-decoration: none!important;
+    background-color: #ffc857!important;
+}
+
+.footer-link:visited, 
+.footer-link:active {
+    color: #2E4052!important;
+    background-color: #ffc857!important;
+}
+
+.footer-icon-twitter,
+.footer-icon-instagram,
+.footer-icon-facebook {
+    color:#2E4052;
+}
+
+.footer-icon-instagram:hover {
+    color:darkred;
+}
+
+.footer-icon-facebook:hover {
+    color: #4267B2;
+}
+
+.footer-icon-twitter:hover {
+    color: #1DA1F2;
+}
+
+.row-copyright {
+    background-color:#f6be49!important;
+}
 
     .underline {
         display: inline-block;

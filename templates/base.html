@@ -155,40 +155,87 @@
   {% block content %}
   {% endblock %}
 
-  {% block footer %}
-  <footer class="maximum-yellow-red-color-bg fixed-bottom">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center">
-          <h2 class="charcoal-color footer-heading logo-font"><a href="#" class="logo">Arca Bookstore</a></h2>
-          <p class="menu">
-            <a href="{% url 'home' %}" class="px-1 logo-font charcoal-color">Home</a>
-            <a href="{% url 'all_products' %}" class="px-1 logo-font charcoal-color">Products</a>
-            <a href="{% url 'profile' %}" class="px-1 logo-font charcoal-color">My Profile</a>
-            <a href="{% url 'view_bag' %}" class="px-1 logo-font charcoal-color">Shopping Cart</a>
-          </p>
+  {% if not '/accounts/' in request.path %}
+  <footer class="maximum-yellow-red-color-bg">
+    <div class="row mt-3">
+      <div class="text-center mt-3">
+        <div class="dropdown dropend menu">
+          <a href="{% url 'all_products' %}" class="px-1 logo-font charcoal-color underline footer-link">Products</a>
+          <a href="{% url 'profile' %}" class="px-1 logo-font charcoal-color underline footer-link">My Profile</a>
+          <a href="{% url 'view_blog' %}" class="px-1 logo-font charcoal-color underline footer-link">Blog</a>
+          
+          <a href="#" class="logo-font charcoal-color font-weight-bold underline footer-link" id="help-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Help <i class="fas fa-chevron-right charcoal-color"></i>
+          </a>
+          <div class="dropdown-menu border-3 footer-link" aria-labelledby="help-link">
+              <a href="{% url 'view_faq' %}" class="footer-link dropdown-item underline">FAQ</a>
+              <a href="{% url 'view_policies' %}" class="footer-link dropdown-item underline">Policies</a>
+              <a href="{% url 'view_contact' %}" class="footer-link dropdown-item underline">Contact</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-12 mt-2 text-center p-2">
           <ul class="d-inline p-0">
-            <li class="d-inline"><a class="d-inline" href="https://www.twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+            <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i
                   class="fab fa-twitter fa-lg"></i></a></li>
-            <li class="d-inline"><a class="d-inline" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram"><i
+            <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram"><i
                   class="fab fa-instagram fa-lg"></i></a></li>
-            <li class="d-inline"><a class="d-inline" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+            <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><i
                   class="fab fa-facebook fa-lg"></i></a></li>
           </ul>
         </div>
+    </div>
+    <div class="row mt-1 row-copyright">
+      <div class="col-md-12 text-center">
+        <span class="copyright charcoal-color align-middle">
+          Copyright &copy;<script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
       </div>
-      <div class="row mt-5">
+    </div>
+</footer>
+  {% else %}
+  <footer class="maximum-yellow-red-color-bg fixed-bottom">
+      <div class="row mt-3">
+        <div class="text-center">
+          <div class="dropdown dropend menu">
+            <a href="{% url 'all_products' %}" class="px-1 logo-font charcoal-color underline footer-link">Products</a>
+            <a href="{% url 'profile' %}" class="px-1 logo-font charcoal-color underline footer-link">My Profile</a>
+            <a href="{% url 'view_blog' %}" class="px-1 logo-font charcoal-color underline footer-link">Blog</a>
+            
+            <a href="#" class="logo-font charcoal-color font-weight-bold underline footer-link" id="help-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Help <i class="fas fa-chevron-right charcoal-color"></i>
+            </a>
+            <div class="dropdown-menu border-3 footer-link" aria-labelledby="help-link">
+                <a href="{% url 'view_faq' %}" class="footer-link dropdown-item underline">FAQ</a>
+                <a href="{% url 'view_policies' %}" class="footer-link dropdown-item underline">Policies</a>
+                <a href="{% url 'view_contact' %}" class="footer-link dropdown-item underline">Contact</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-12 mt-2 text-center p-2">
+            <ul class="d-inline p-0">
+              <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+                    class="fab fa-twitter fa-lg"></i></a></li>
+              <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram"><i
+                    class="fab fa-instagram fa-lg"></i></a></li>
+              <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                    class="fab fa-facebook fa-lg"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="row mt-1 row-copyright">
         <div class="col-md-12 text-center">
-          <p class="copyright charcoal-color">
+          <span class="copyright charcoal-color align-middle">
             Copyright &copy;<script>
               document.write(new Date().getFullYear());
             </script>
-          </p>
+          </span>
         </div>
       </div>
-    </div>
   </footer>
-  {% endblock %}
+  {% endif %}
 
   {% block postloadjs %}
   <script type="text/javascript">
