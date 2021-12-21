@@ -21,9 +21,19 @@
                 {% elif request.path == "/products/games/"%} Games {% endif %}
             </h2>
             {% for c in current_categories %}
+            {% if "/products/books/" in request.path %}
             <a href="{% url 'products' %}?category={{ c.name }}" class="category_badge text-decoration-none">
                 <span class="p-2 mt-2 badge">{{ c.friendly_name }}</span>
             </a>
+            {% elif "/products/arts/" in request.path %}
+            <a href="{% url 'artsandcrafts' %}?category={{ c.name }}" class="category_badge text-decoration-none">
+                <span class="p-2 mt-2 badge">{{ c.friendly_name }}</span>
+            </a>
+            {% elif "/products/games/" in request.path %}
+            <a href="{% url 'games' %}?category={{ c.name }}" class="category_badge text-decoration-none">
+                <span class="p-2 mt-2 badge">{{ c.friendly_name }}</span>
+            </a>
+            {% endif %}
             {% endfor %}
             <hr class="w-50 mb-1 mx-auto">
         </div>
