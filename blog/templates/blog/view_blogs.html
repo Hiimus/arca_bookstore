@@ -17,11 +17,13 @@
                 <hr>
                 <h2 class="logo-font mb-4">Arca Blog</h2>
                 <br>
+                {% if request.user.is_superuser %}
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogPostModal">
                     Add Blog Post
                 </button>
                 <br>
+                {% endif %}
                 <hr>
             </div>
         </div>
@@ -41,11 +43,13 @@
                     </a>
                             <br>
                         <br>
+                        {% if request.user.is_authenticated %}
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">
                             Add Comment
                         </button>
                         <br>
+                        {% endif %}
                         <br>            
                 {% endfor %}
             </div>
