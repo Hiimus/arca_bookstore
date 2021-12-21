@@ -85,28 +85,44 @@
         <div class="product-container col-lg-10 col-12 offset-lg-1">
             <div class="row mt-1 mb-2 text-center">
                 <div class="col">
-                    <h4 class="logo-font">Books</h4></div>
-            </div>
-            <div class="row mt-1 mb-2">
+                    <h4 class="mt-4 logo-font text-decoration-none">Books</h4></div>
             </div>
             <div class="row">
                 {% include 'home/includes/random_books.html' %}
             </div>
+            <div class="row mt-2">
+                <div>
+                    <p class="text-center">Click <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides">here</a>
+                    to see all books.</p>
+                </div>
+            </div>
             
             <div class="row mt-1 mb-2 text-center">
                 <div class="col">
-                    <h4 class="logo-font">Games</h4></div>
+                    <h4 class="mt-4 logo-font">Games</h4></div>
             </div>
             <div class="row">
                 {% include 'home/includes/random_games.html' %}
             </div>
+            <div class="row mt-2">
+                <div>
+                    <p class="text-center">Click <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games">here</a>
+                    to see all games.</p>
+                </div>
+            </div>
 
             <div class="row mt-1 mb-2 text-center">
                 <div class="col">
-                    <h4 class="logo-font">Arts & Crafts</h4></div>
+                    <h4 class="mt-4 logo-font">Arts & Crafts</h4></div>
             </div>
             <div class="row">
                 {% include 'home/includes/random_arts_and_crafts.html' %}
+            </div>
+            <div class="row mt-2">
+                <div>
+                    <p class="text-center">Click <a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils">here</a>
+                    to see all arts & crafts.</p>
+                </div>
             </div>
         </div>
     </div>
