@@ -12,11 +12,39 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Welcome to Contact</h1>
+        <br>
+        <div class="row g-5 justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12 col-sm-10">
+              <h2>Contact Information</h2>
+              <hr>
+              <br>
+              <div class="col lead">
+                  <span class="contact-opt"><i class="fas fa-envelope fa-lg"></i></span>
+                  <span class="ps-3 d-none d-md-inline">Email</span>
+                  <span class="float-end fs-6 d-sm-none">arca.bookstore@example.com</span>
+                  <span class="d-none d-sm-inline float-end">arca.bookstore@example.com</span>
+              </div>
+              <br>
+              <div class="col lead">
+                  <span class="contact-opt"><i class="fas fa-phone-alt fa-lg"></i></span>
+                  <span class="ps-3 d-none d-md-inline">Phone</span>
+                  <span class="float-end fs-6 d-sm-none">+47 12 34 56 78</span>
+                  <span class="d-none d-sm-inline float-end">+47 12 34 56 78</span>
+              </div>
+              <br>
+              <div class="col lead">
+                  <span class="contact-opt"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                  <span class="ps-3 d-none d-md-inline">Address</span>
+                  <span class="float-end fs-6 d-sm-none">MEDITATION LANE, ATKINSON, NH</span>
+                  <span class="d-none d-sm-inline float-end">MEDITATION LANE, ATKINSON, NH</span>
+              </div>
             </div>
-        </div>
+      
+      </div>
+  
+      <div class="container">
+          <img class="img-fluid" src="{{ MEDIA_URL }}help/contact-min.jpg" alt="Contact image">
+      </div>
     </div>
 {% endblock %}
 

@@ -600,6 +600,10 @@ span.badge:hover {
         border-left: 25px solid #412234;
         border-right: 25px solid #412234;
     }
+
+    .contact-info {
+        font-size: 5px!important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -607,7 +611,10 @@ span.badge:hover {
         width: 100%!important;
     }
 
-    }
+    
+
+}
+
 
 @media (min-width: 576px) {
     
