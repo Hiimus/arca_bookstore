@@ -12,24 +12,32 @@
 
 {% block content %}
 
-    <div class="container d-none d-md-block">
-        <div class="row">
-            <div class="col-sm-12 col-md-8">
+    <div class="container d-none d-md-block ">
+        <div class="row row-homepage">
+            <div class="col-sm-12 col-md-8 position-relative hover-effect">
                 <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides">
-                    <img class="books img-fluid"
+                    <img class="books"
                         src="{{ MEDIA_URL }}homepage/pexels.comphotolow-light-photography-of-books-1301585-min.jpg">
+                    <span class="logo-font position-absolute top-50 start-50 translate-middle books-text">Books</span>
                 </a>
             </div>
             <div class="col-sm-6 col-md-4">    
                 <a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils">
-                    <img class="arts img-fluid"
-                        src="{{ MEDIA_URL }}homepage/pexels.comphotoclose-up-photo-of-paintbrush-1666756-min.jpg"
-                        alt="">
+                    <div class="container-arts position-relative hover-effect">
+                        <img class="position-relative arts arts-relative img-fluid"
+                            src="{{ MEDIA_URL }}homepage/pexels.comphotoclose-up-photo-of-paintbrush-1666756-min.jpg"
+                            alt="">
+                        <img class="position-absolute arts img-fluid arts-absolute"
+                            src="{{ MEDIA_URL }}homepage/pexels.comphotoclose-up-photo-of-paintbrush-1666756-min.jpg"
+                            alt="">
+                        <span class="logo-font position-absolute top-50 start-50 translate-middle arts-text">Arts & Crafts</span>
+                    </div>
                 </a>
-                <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games">
+                <a class="position-relative hover-effect" href="{% url 'games' %}?category=jigsaw_puzzles,board_games">
                     <img class="games img-fluid"
                         src="{{ MEDIA_URL }}homepage/pexels.comphotoclose-up-photo-of-monopoly-board-game-1240581-min.jpg"
                         alt="">
+                    <span class="logo-font position-absolute top-50 start-50 translate-middle games-text">Games</span>
                 </a>
             </div>
         </div>
