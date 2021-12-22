@@ -53,7 +53,7 @@ RATING_CHOICES = [
 
 class Review(models.Model):
     user = models.ForeignKey('profiles.UserProfile', null=True, blank=True, on_delete=models.SET_NULL)
-    product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
+    product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL, related_name='ratings')
     review = models.TextField(max_length=250, null=True, blank=True)
     rating = models.PositiveSmallIntegerField(choices=RATING_CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)

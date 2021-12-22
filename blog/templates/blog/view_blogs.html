@@ -36,18 +36,7 @@
                         <p> {{ blog.body }}</p>
                         <p> {{ blog.created_by }}</p>
                         <p> {{ blog.created_at }}</p>
-                        {% if blog.image %}
-                            <img class="img-fluid" src="{{ blog.image }}">
-                            {% else %}
-                            {% endif %}
-                    </a>
-                            <br>
-                        <br>
-                        
-                        <br>            
-                {% endfor %}
-                {% for comment in comments %}
-                <h1> {{ comment.name }}</h1>
+                    </a>        
                 {% endfor %}
             </div>
         </div>
@@ -76,20 +65,7 @@
             </div>
             </div>
         </div>
-
-
-        <hr class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                {% for comment in comments %}
-                    <h1> {{ comment.name }}</h1>
-                    <p> {{ comment.comment }}</p>
-                    <p> {{ comment.created_at }}</p>
-                {% endfor %}
-            </div>
-        </div>
-        <br>
-        <br>
+        
     </div>
 
     <div class="btt-button shadow-sm">

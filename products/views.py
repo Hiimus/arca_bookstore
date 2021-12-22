@@ -238,7 +238,7 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure thje form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
         
@@ -302,14 +302,24 @@ def add_review(request, product_id):
     username = request.user.get_username()
     reviews = Review.objects.filter(product=product_id)
 
-    
     if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
+
             review = form.save(commit=False)
             review.product = product
             review.user = user
             review.save()
+            
+            # Adds new rating to product
+            number_of_ratings = product.ratings.all().count()
+            all_ratings = []
+            for rating in product.ratings.all():
+                all_ratings.append(rating.rating)
+            sum_rating = sum(all_ratings)
+            new_rating = sum_rating / number_of_ratings
+            product.rating = new_rating
+            product.save()
 
             messages.success(request, 'Successfully added review!')
             return redirect(reverse('product_detail', args=[product.id]))
