@@ -609,6 +609,12 @@ span.badge:hover {
     border-radius: 0;
 }
 
+/* Blog */
+
+.container-blog {
+    margin-bottom: 7rem;
+}
+
 
 
 /* -------------------------------- Media Queries */

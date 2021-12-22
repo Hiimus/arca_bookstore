@@ -11,9 +11,9 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div class="container container-blog">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 <hr>
                 <h2 class="logo-font mb-4">Arca Blog</h2>
                 <br>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 {% for blog in blogs %}
                     <a href="{% url 'blog_info' blog.id %}">
                         <h1> {{ blog.title }}</h1>
@@ -37,20 +37,17 @@
                         <p> {{ blog.created_by }}</p>
                         <p> {{ blog.created_at }}</p>
                         {% if blog.image %}
-                            <img src="{{ blog.image }}">
+                            <img class="img-fluid" src="{{ blog.image }}">
                             {% else %}
                             {% endif %}
                     </a>
                             <br>
                         <br>
-                        {% if request.user.is_authenticated %}
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">
-                            Add Comment
-                        </button>
-                        <br>
-                        {% endif %}
+                        
                         <br>            
+                {% endfor %}
+                {% for comment in comments %}
+                <h1> {{ comment.name }}</h1>
                 {% endfor %}
             </div>
         </div>
@@ -80,33 +77,10 @@
             </div>
         </div>
 
-        
-        
-        <!-- Modal -->
-        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <form method="POST" action="{% url 'add_comment' %}" class="form mb-2" enctype="multipart/form-data">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                            {% csrf_token %}
-                            {{ comment_form.as_p }}
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Add Comment</button>
-                    </div>
-                </form>
-            </div>
-            </div>
-        </div>
 
-        <hr>
+        <hr class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                 {% for comment in comments %}
                     <h1> {{ comment.name }}</h1>
                     <p> {{ comment.comment }}</p>
@@ -115,7 +89,6 @@
             </div>
         </div>
         <br>
-        <hr>
         <br>
     </div>
 

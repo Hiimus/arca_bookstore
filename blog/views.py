@@ -11,7 +11,7 @@ def view_blog(request):
     """ A view that renders the blog page """
 
     blogs = BlogPost.objects.all().order_by('-created_at') # Order by newest post to oldest
-    comments = Comment.objects.all()
+    comments = Comment.objects.all().order_by('-created_at')
 
     form = BlogForm()
     comment_form = CommentForm()
@@ -30,7 +30,7 @@ def blog_info(request, blog_id):
     """ A view that renders the blog info page """
 
     blog = get_object_or_404(BlogPost, pk=blog_id)
-    comments = Comment.objects.all()
+    comments = blog.comments.all().order_by('-created_at')
 
     form = BlogForm()
     comment_form = CommentForm()
@@ -71,15 +71,18 @@ def add_post(request):
     return render(request, 'blog/view_blogs.html', context)
 
 
-def add_comment(request):
+def add_comment(request, blog_id):
     """ A view that adds comments on the blog page """
     
-    comments = Comment.objects.all()
+    post = get_object_or_404(BlogPost, pk=blog_id)
+    comments = post.comments.all()
     
     if request.method == "POST":
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid:
-            comment_form.save()
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.save()
             messages.success(request, 'Successfully added comment!')
             return redirect(reverse('view_blog'))
         else:
@@ -90,6 +93,7 @@ def add_comment(request):
     context = {
         'comments': comments,
         'comment_form': comment_form,
+        'post': post,
     }
 
-    return render(request, 'blog/view_blogs.html', context)
+    return render(request, 'blog/comment.html', context)

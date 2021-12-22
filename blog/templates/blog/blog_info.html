@@ -40,12 +40,8 @@
                     <br>
                     <br>
                     {% if request.user.is_authenticated %}
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">
-                        Add Comment
-                    </button>
-                    <br>
-                    <br> 
+                            <a href="{% url 'add_comment' blog.id %}">Add Review</a>
+                        <br>
                     {% endif %}
             </div>
         </div>
@@ -78,10 +74,10 @@
         
         
         <!-- Modal -->
-        <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <form method="POST" action="{% url 'add_comment' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
                     <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -97,7 +93,7 @@
                 </form>
             </div>
             </div>
-        </div>
+        </div> -->
 
         <hr>
         <div class="row">
