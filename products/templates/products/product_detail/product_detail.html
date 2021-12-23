@@ -77,7 +77,9 @@
                                                     </span>
                                                 </button>
                                             </div>
-                                            <input class="form-control qty_input" type="number"
+                                            <input step="1"
+                                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+                                            title="Numbers only" class="form-control qty_input" type="number"
                                             name="quantity" value="1" min="1" max="99" 
                                             data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                             <div class="input-group-append">
