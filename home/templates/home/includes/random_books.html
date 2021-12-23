@@ -13,12 +13,17 @@
             </a>
             {% endif %}
             <div class="card-body pb-0 mx-auto-custom">
-                <p class="mb-0">{{ product.name }}</p>
+                <p class="mb-0 cut-text">{{ product.name }}</p>
             </div>
             <div class="card-footer bg-white pt-0 border-0 text-left mx-auto-custom">
                 <div class="row">
                     <div class="col">
+                        {% if product.old_price %}
+                        <span class="lead mb-0 text-left font-weight-bold">${{ product.price }}</span>
+                        <span class="fs-6 lead mb-0 text-left text-danger font-weight-bold"><s>${{ product.old_price }}</s></span>
+                        {% else %}
                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        {% endif %}
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a href="{% url 'products' %}?category={{ product.category.name }}"
@@ -60,12 +65,17 @@
             </a>
             {% endif %}
             <div class="card-body pb-0 mx-auto-custom">
-                <p class="mb-0">{{ product.name }}</p>
+                <p class="mb-0 cut-text">{{ product.name }}</p>
             </div>
             <div class="card-footer bg-white pt-0 border-0 text-left mx-auto-custom">
                 <div class="row">
                     <div class="col">
+                        {% if product.old_price %}
+                        <span class="lead mb-0 text-left font-weight-bold">${{ product.price }}</span>
+                        <span class="fs-6 lead mb-0 text-left text-danger font-weight-bold"><s>${{ product.old_price }}</s></span>
+                        {% else %}
                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        {% endif %}
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a href="{% url 'products' %}?category={{ product.category.name }}"
@@ -107,12 +117,17 @@
             </a>
             {% endif %}
             <div class="card-body pb-0 mx-auto-custom">
-                <p class="mb-0">{{ product.name }}</p>
+                <p class="mb-0 cut-text">{{ product.name }}</p>
             </div>
             <div class="card-footer bg-white pt-0 border-0 text-left mx-auto-custom">
                 <div class="row">
                     <div class="col">
+                        {% if product.old_price %}
+                        <span class="lead mb-0 text-left font-weight-bold">${{ product.price }}</span>
+                        <span class="fs-6 lead mb-0 text-left text-danger font-weight-bold"><s>${{ product.old_price }}</s></span>
+                        {% else %}
                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        {% endif %}
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a href="{% url 'products' %}?category={{ product.category.name }}"
@@ -154,12 +169,17 @@
             </a>
             {% endif %}
             <div class="card-body pb-0 mx-auto-custom">
-                <p class="mb-0">{{ product.name }}</p>
+                <p class="mb-0 cut-text">{{ product.name }}</p>
             </div>
             <div class="card-footer bg-white pt-0 border-0 text-left mx-auto-custom">
                 <div class="row">
                     <div class="col">
+                        {% if product.old_price %}
+                        <span class="lead mb-0 text-left font-weight-bold">${{ product.price }}</span>
+                        <span class="fs-6 lead mb-0 text-left text-danger font-weight-bold"><s>${{ product.old_price }}</s></span>
+                        {% else %}
                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                        {% endif %}
                         {% if product.category %}
                         <p class="small mt-1 mb-0">
                             <a href="{% url 'products' %}?category={{ product.category.name }}"

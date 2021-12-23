@@ -421,6 +421,22 @@ span.badge:hover {
     border-radius: 10px;
 }
 
+/*-----Product cards ------*/
+
+/*-- how to cut text with dots: https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text?noredirect=1&lq=1--*/
+
+.cut-text { 
+    display: -webkit-box;
+    max-width: auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+
+
+
+
 /*---- Product details ----*/
 
 .keep-shopping-btn {
