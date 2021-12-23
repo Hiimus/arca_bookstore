@@ -648,6 +648,40 @@ span.badge:hover {
     border-color: #2e4052;
 }
 
+.underline-white {
+    display: inline-block;
+}
+
+.underline-white::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: white;
+    transition: 300ms;
+}
+
+.underline-white:hover::after {
+    width: 100%;
+}
+
+.underline-white:visited {
+    text-decoration: none;
+}
+
+.comment-btn-cancel {
+    background-color:#2E4052;
+    color: white;
+}
+
+.comment-btn-cancel:hover {
+    color: white;
+}
+
+.comment-btn-add {
+    background-color: #bdd9bf;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

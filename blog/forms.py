@@ -45,12 +45,12 @@ class CommentForm(forms.ModelForm):
         widgets = {
             'name': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 400px;',
                 'placeholder': 'Name'
                 }),
             'comment': Textarea(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'max-width: 400px;' 'max-height: 200px;',
                 'placeholder': 'Write your comment here...'
                 }),
         }

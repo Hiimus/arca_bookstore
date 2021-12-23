@@ -32,12 +32,25 @@
                     {% endif %}
                     <br>
                     <br>
-                    {% if request.user.is_authenticated %}
-                            <a href="{% url 'add_comment' blog.id %}">Add Review</a>
-                        <br>
-                    {% endif %}
+                    
+                    
             </div>
         </div>
+
+        {% if request.user.is_authenticated %}
+        <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
+                    {% csrf_token %}
+                    {{ comment_form.as_p }}
+                <a href="{% url 'add_comment' blog.id %}" class="comment-btn-cancel btn border underline-white">
+                    <span class="text-uppercase">Cancel</span>
+                </a>
+                <button type="submit" class="comment-btn-add btn underline border text-uppercase">Add Comment</button>
+                </div>
+            </div>
+        </form>
+        {% endif %}
         
         
         <!-- Modal -->

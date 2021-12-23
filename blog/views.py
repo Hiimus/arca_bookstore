@@ -74,17 +74,17 @@ def add_post(request):
 def add_comment(request, blog_id):
     """ A view that adds comments on the blog page """
     
-    post = get_object_or_404(BlogPost, pk=blog_id)
-    comments = post.comments.all()
+    blog = get_object_or_404(BlogPost, pk=blog_id)
+    comments = blog.comments.all()
     
     if request.method == "POST":
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid:
             comment = comment_form.save(commit=False)
-            comment.post = post
+            comment.post = blog
             comment.save()
             messages.success(request, 'Successfully added comment!')
-            return redirect(reverse('view_blog'))
+            return redirect(reverse('blog_info', args=[blog.id]))
         else:
             messages.error(request, 'Failed to add comment, please ensure the form is valid')
     else:
@@ -93,7 +93,7 @@ def add_comment(request, blog_id):
     context = {
         'comments': comments,
         'comment_form': comment_form,
-        'post': post,
+        'blog': blog,
     }
 
-    return render(request, 'blog/comment.html', context)
+    return render(request, 'blog/blog_info.html', context)
