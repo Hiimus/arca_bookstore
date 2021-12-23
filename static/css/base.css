@@ -428,7 +428,12 @@ span.badge:hover {
     border: none;
 }
 
-
+.container-reviews {
+    position: relative;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
 
 
