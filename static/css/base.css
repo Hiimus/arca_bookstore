@@ -637,7 +637,16 @@ span.badge:hover {
     margin-bottom: 7rem;
 }
 
+.custom-image-container {
+    width: 200px;
+    height: 200px;
+}
 
+.btn-blog {
+    color: #fff;
+    background-color: #2e4052;
+    border-color: #2e4052;
+}
 
 /* -------------------------------- Media Queries */
 
