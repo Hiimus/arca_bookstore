@@ -103,12 +103,22 @@
                                     <p class="small mt-1 mb-0">
                                         <a href="{% url 'products' %}?category={{ product.category.name }}"
                                             class="text-muted">
-                                            <i class="fas fa-book"></i> {{ product.category.friendly_name }}
+                                            {% if product.category.friendly_name == "Jigsaw Puzzles" %}
+                                            <i class="fas fa-puzzle-piece charcoal-color me-1"></i> {{ product.category.friendly_name }}
+                                            {% elif product.category.friendly_name == "Board Games"%}
+                                            <i class="fas fa-dice charcoal-color me-1"></i> {{ product.category.friendly_name }}
+                                            {% elif product.category.friendly_name == "Paint"%}
+                                            <i class="fas fa-paint-brush me-1 charcoal-color"></i> {{ product.category.friendly_name }}
+                                            {% elif product.category.friendly_name == "Pencils"%}
+                                            <i class="fas fa-pencil-alt me-1 charcoal-color"></i> {{ product.category.friendly_name }}
+                                            {% else %}
+                                            <i class="fas fa-book charcoal-color me-1"></i> {{ product.category.friendly_name }}
+                                            {% endif %}
                                         </a>
                                     </p>
                                     {% endif %}
                                     {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                    <small class="text-muted"><i class="gold me-1 fas fa-star mr-1"></i>{{ product.rating }} /
                                         5</small>
                                     {% else %}
                                     <small class="text-muted">No Rating</small>

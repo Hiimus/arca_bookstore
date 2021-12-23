@@ -1,5 +1,5 @@
 {% for product in games_1 %}
-    <div class="custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
+    <div class="mb-3 custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
         <div class="card h-100 border-0">
             {% if product.img_paths %}
             <a href="{% url 'product_detail' product.id %}" class="align-center">
@@ -47,7 +47,7 @@
 {% endfor %}
 
 {% for product in games_2 %}
-    <div class="custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
+    <div class="mb-3 custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
         <div class="card h-100 border-0">
             {% if product.img_paths %}
             <a href="{% url 'product_detail' product.id %}" class="align-center">
@@ -95,7 +95,7 @@
 {% endfor %}
 
 {% for product in games_3 %}
-    <div class="custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
+    <div class="mb-3 custom-width col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto product-card">
         <div class="card h-100 border-0">
             {% if product.img_paths %}
             <a href="{% url 'product_detail' product.id %}" class="align-center">
@@ -143,7 +143,7 @@
 {% endfor %}
 
 {% for product in games_4 %}
-    <div class="custom-width col-sm-6 col-md-6 col-lg-3 d-lg-none d-xl-block col-xl-3 mx-auto product-card">
+    <div class="mb-3 custom-width col-sm-6 col-md-6 col-lg-3 d-lg-none d-xl-block col-xl-3 mx-auto product-card">
         <div class="card h-100 border-0">
             {% if product.img_paths %}
             <a href="{% url 'product_detail' product.id %}" class="align-center">
