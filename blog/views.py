@@ -56,7 +56,7 @@ def add_post(request):
         
         if form.is_valid:
             form.save()
-            messages.success(request, 'Successfully added blog post!')
+            messages.info(request, 'Successfully added blog post!')
             return redirect(reverse('view_blog'))
         else:
             messages.error(request, 'Failed to add blog post, please ensure the form is valid')
@@ -83,7 +83,7 @@ def add_comment(request, blog_id):
             comment = comment_form.save(commit=False)
             comment.post = blog
             comment.save()
-            messages.success(request, 'Successfully added comment!')
+            messages.info(request, 'Successfully added comment!')
             return redirect(reverse('blog_info', args=[blog.id]))
         else:
             messages.error(request, 'Failed to add comment, please ensure the form is valid')

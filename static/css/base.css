@@ -693,6 +693,22 @@ span.badge:hover {
   .custom-width {
     width: 23% !important;
     }
+
+
+    .btt-button {
+        right: 11rem;
+    }
+
+    .message-container {
+        right: 130px;
+    }
+}
+
+/* Biggest desktop screens */
+@media (min-width: 1800px) {
+    .message-container {
+        right: 260px;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -716,6 +732,14 @@ span.badge:hover {
     .custom-width {
         width: 32% !important;
         }
+
+    .btt-button {
+        right: 7rem;
+    }
+
+    .message-container {
+        right: 80px;
+    }
 }
 
 /* adds padding to the top when navbar is collapsed on mobile */
@@ -780,7 +804,9 @@ span.badge:hover {
         width: 100%!important;
     }
 
-    
+    .message-container {
+        max-width: 300px;
+    }
 
 }
 
