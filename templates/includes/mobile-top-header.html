@@ -1,7 +1,5 @@
 {% load static %}
 
-
-<!-- From Boutique Ado -->
 <ul>
     <li>
       <a class="charcoal-color nav-link d-block d-lg-none d-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,12 +24,7 @@
       </div>
   </li>
   <li class="list-inline-item dropdown">
-      <a class="charcoal-color nav-link d-md-block d-lg-none d-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="text-center">
-              <div><i class="fas fa-user-circle fa-lg"></i></div>
-              <p class="my-0">My Account</p>
-          </div>
-      </a>
+      
       <div class="dropdown-menu border-0" aria-labelledby="user-options">
           {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
@@ -45,8 +38,9 @@
           {% endif %}
       </div>
   </li>
-  <li class="list-inline-item">
-      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}charcoal-color{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+
+  <!-- <li class="list-inline-item">
+      <a class="{% if grand_total %}charcoal-color font-weight-bold{% else %}charcoal-color{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
           <div class="text-center">
               <div><i class="fas fa-shopping-cart fa-lg"></i></div>
               <p class="my-0 d-sm-block d-none">
@@ -58,7 +52,8 @@
               </p>
           </div>
       </a>
-    </li>
+    </li> -->
+    
   </ul>
 
 

@@ -93,15 +93,13 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}charcoal-color{% endif %} nav-link"
+            <a class="{% if grand_total %}charcoal-color font-weight-bold{% else %}charcoal-color{% endif %} nav-link"
               href="{% url 'view_bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
                   ${{ grand_total|floatformat:2 }}
-                  {% else %}
-                  $0.00
                   {% endif %}
                 </p>
               </div>
@@ -188,7 +186,7 @@
       let option = {
         animation: true,
         autohide: true,
-        delay: 50000,
+        delay: 5000,
       }
       let bsToast = new bootstrap.Toast(toastEl, option)
       bsToast.show();
