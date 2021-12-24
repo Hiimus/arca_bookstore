@@ -20,13 +20,15 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
-                <hr>
+                
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <div class="col-12 col-lg-5 me-4 bg-light rounded">
+                <h2 class="logo-font mt-4 mb-4">Checkout</h2>
+                <hr>
+                <h5 class="mb-4 mt-4">Your order is almost complete!</h5>
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
@@ -69,9 +71,22 @@
                         <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
+                <div class="mt-4 row">
+                    <div class="col-lg-6 offset-lg-3 mt-5 mb-5">
+                        <a href="{% url 'view_bag' %}" class="charcoal-btn btn border underline-white">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="font-weight-bold">Adjust Bag</span>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <h5>Please fill out the form to complete the order <i class="fas fa-hand-point-right fa-lg"></i> 
+                        </h5>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+            <div class="col-12 col-lg-6 order-lg-last bg-light rounded">
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
@@ -111,14 +126,9 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="font-weight-bold">Adjust Bag</span>
-						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+                    <div class="submit-button text-end mt-5 mb-2">                    
+						
+						<button id="submit-button" class="green-btn btn underline border text-uppercase">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
