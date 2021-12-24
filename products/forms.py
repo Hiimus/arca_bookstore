@@ -31,6 +31,8 @@ class ReviewForm(forms.ModelForm):
         fields = ('review', 'rating',)
 
         widgets = {
-            'review': forms.Textarea(attrs={'class': 'form-control'}),
+            'review': forms.Textarea(attrs={
+                'class': 'form-control',
+                'style': 'width: 100%;'}),
         }
 

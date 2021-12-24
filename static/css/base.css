@@ -669,16 +669,16 @@ span.badge:hover {
     text-decoration: none;
 }
 
-.comment-btn-cancel {
+.charcoal-btn {
     background-color:#2E4052;
     color: white;
 }
 
-.comment-btn-cancel:hover {
+.charcoal-btn:hover {
     color: white;
 }
 
-.comment-btn-add {
+.green-btn {
     background-color: #bdd9bf;
 }
 

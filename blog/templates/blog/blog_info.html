@@ -43,10 +43,10 @@
                 <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
                     {% csrf_token %}
                     {{ comment_form.as_p }}
-                <a href="{% url 'add_comment' blog.id %}" class="comment-btn-cancel btn border underline-white">
+                <a href="{% url 'add_comment' blog.id %}" class="charcoal-btn btn border underline-white">
                     <span class="text-uppercase">Cancel</span>
                 </a>
-                <button type="submit" class="comment-btn-add btn underline border text-uppercase">Add Comment</button>
+                <button type="submit" class="green-btn btn underline border text-uppercase">Add Comment</button>
                 </div>
             </div>
         </form>
