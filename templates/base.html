@@ -1,7 +1,7 @@
 {% load static %}
 
 <!doctype html>
-<html class="{% if request.path == '/checkout/' or '/profile/' %} dark-purple {% else %}{% endif %}" lang="en">
+<html class="{% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% else %}{% endif %}" lang="en">
 
 <head>
 
@@ -47,12 +47,12 @@
 </head>
 
 
-<body class="d-flex flex-column {% if '/accounts/' or '/checkout/' or '/profile/' in request.path %}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
+<body class="d-flex flex-column {% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
   <header class="container-fluid fixed-top">
     <div id="topnav" class="row charcoal-color pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font my-0"><strong>Arca</strong> Bookstore</h2>
+        </span><h2 class="logo-font my-0"><strong>Arca</strong> Bookstore<img class="img-fluid w-40 ms-2" src="{{ MEDIA_URL }}book.png" alt="book"><span></span></h2>
         </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -116,7 +116,7 @@
           <span></span>
         </a>
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font my-0 d-lg-none charcoal-color">Arca Bookstore</h2>
+          <h2 class="logo-font my-0 d-lg-none charcoal-color"><strong>Arca</strong> Bookstore<img class="img-fluid w-40 ms-2" src="{{ MEDIA_URL }}book.png" alt="book"><span></span></h2>
         </a>
         {% include 'includes/mobile-top-header.html' %}
         {% include 'includes/main-nav.html' %}

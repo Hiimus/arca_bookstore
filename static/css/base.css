@@ -322,6 +322,10 @@ footer {
     width:auto;
 }
 
+.w-40 {
+    width: 40px;
+}
+
 
 .btt-button:hover {
     color: white;
