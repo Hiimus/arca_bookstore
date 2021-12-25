@@ -5,6 +5,7 @@
 
 #profile-update-form .form-control {
     color: #000;
+    margin-bottom: 8px;
 }
 
 .profile-form-input::placeholder {

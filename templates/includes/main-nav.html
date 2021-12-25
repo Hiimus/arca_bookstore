@@ -5,12 +5,11 @@
                 All Products
             </a>
         </li>
-        <li class="nav-item dropdown d-md-block d-none">
+        <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Books <i class="charcoal-color fas fa-chevron-right"></i>
             </a>
-            <!-- Only for tablets -->
-            <div class="dropdown-menu w-50 border-3" aria-labelledby="all-products-link">
+            <div class="dropdown-menu dropdown-menu-books border-3" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides" class="underline dropdown-item">All Books</a>
                 <a href="{% url 'products' %}?category=biography" class="dropdown-item underline">Biography</a>
                 <a href="{% url 'products' %}?category=crafts_hobbies" class="dropdown-item underline">Crafts & Hobbies</a>
@@ -24,71 +23,30 @@
                 <a href="{% url 'products' %}?category=travel-holiday-guides" class="dropdown-item underline">Travel and Holiday Guides</a>
             </div>
         </li>
-        <li class="nav-item dropdown d-md-none">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Books <i class="charcoal-color fas fa-chevron-right"></i>
-            </a>
-            <!-- Only for mobile -->
-            <div class="dropdown-menu border-3" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides" class="underline dropdown-item">All Books</a>
-                <a href="{% url 'products' %}?category=biography" class="dropdown-item underline">Biography</a>
-                <a href="{% url 'products' %}?category=crafts_hobbies" class="dropdown-item underline">Crafts & Hobbies</a>
-                <a href="{% url 'products' %}?category=crime_thriller" class="dropdown-item underline">Crime & Thriller</a>
-                <a href="{% url 'products' %}?category=food_drink" class="dropdown-item underline">Food & Drink</a>
-                <a href="{% url 'products' %}?category=personal-development" class="dropdown-item underline">Personal Development</a>
-                <a href="{% url 'products' %}?category=romance" class="dropdown-item underline">Romance</a>
-                <a href="{% url 'products' %}?category=science-fiction-fantasy-horror" class="dropdown-item underline">Science-fiction, Fantasy & Horror</a>
-                <a href="{% url 'products' %}?category=sport" class="dropdown-item underline">Sport</a>
-                <a href="{% url 'products' %}?category=teen-young-adult" class="dropdown-item underline">Teens, Young and Adult</a>
-                <a href="{% url 'products' %}?category=travel-holiday-guides" class="dropdown-item underline">Travel and Holiday Guides</a>
-            </div>
-        </li>
-        <!-- Only for tablet -->
-        <li class="nav-item dropdown d-md-block d-none">
+        
+        <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="books-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Arts & Crafts <i class="charcoal-color fas fa-chevron-right"></i>
             </a>
-            <div class="dropdown-menu w-50 border-3" aria-labelledby="books-link">
+            <div class="dropdown-menu dropdown-menu-arts border-3" aria-labelledby="books-link">
                 <a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils" class="dropdown-item underline">All Arts & Crafts</a>
                 <a href="{% url 'artsandcrafts' %}?category=colouring_books" class="dropdown-item underline">Colouring Books</a>
                 <a href="{% url 'artsandcrafts' %}?category=paint" class="dropdown-item underline">Paint</a>
                 <a href="{% url 'artsandcrafts' %}?category=pencils" class="dropdown-item underline">Pencils</a>
             </div>
         </li>
-        <!-- Only for mobile -->
-        <li class="nav-item dropdown d-md-none">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="books-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Arts & Crafts <i class="charcoal-color fas fa-chevron-right"></i>
-            </a>
-            <div class="dropdown-menu border-3" aria-labelledby="books-link">
-                <a href="{% url 'artsandcrafts' %}?category=colouring_books,paint,pencils" class="dropdown-item underline">All Arts & Crafts</a>
-                <a href="{% url 'artsandcrafts' %}?category=colouring_books" class="dropdown-item underline">Colouring Books</a>
-                <a href="{% url 'artsandcrafts' %}?category=paint" class="dropdown-item underline">Paint</a>
-                <a href="{% url 'artsandcrafts' %}?category=pencils" class="dropdown-item underline">Pencils</a>
-            </div>
-        </li>
-        <!-- Only for tablet -->
-        <li class="nav-item dropdown d-md-block d-none">
+        
+        <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="draw-and-paint-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Games <i class="charcoal-color fas fa-chevron-right"></i>
             </a>
-            <div class="dropdown-menu w-50 border-3" aria-labelledby="draw-and-paint-link">
+            <div class="dropdown-menu dropdown-menu-games border-3" aria-labelledby="draw-and-paint-link">
                 <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games" class="dropdown-item underline">All Games</a>
                 <a href="{% url 'games' %}?category=jigsaw_puzzles" class="dropdown-item underline">Jigsaw Puzzles</a>
                 <a href="{% url 'games' %}?category=board_games" class="dropdown-item underline">Board Games</a>
             </div>
         </li>
-        <!-- Only for mobile -->
-        <li class="nav-item dropdown d-md-none">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="draw-and-paint-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Games <i class="charcoal-color fas fa-chevron-right"></i>
-            </a>
-            <div class="dropdown-menu border-3" aria-labelledby="draw-and-paint-link">
-                <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games" class="dropdown-item underline">All Games</a>
-                <a href="{% url 'games' %}?category=jigsaw_puzzles" class="dropdown-item underline">Jigsaw Puzzles</a>
-                <a href="{% url 'games' %}?category=board_games" class="dropdown-item underline">Board Games</a>
-            </div>
-        </li>
+        
         <li class="nav-item">
             <a href="{% url 'view_blog' %}" class="logo-font font-weight-bold nav-link text-black mr-5 underline">
                 Blog
@@ -100,29 +58,17 @@
             </a>
         </li>
         <li><hr class="dropdown-divider"></li>
-        <!-- Only for tablet -->
-        <li class="nav-item dropdown d-md-block d-none">
+        <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="help-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Help <i class="charcoal-color fas fa-chevron-right"></i>
             </a>
-            <div class="dropdown-menu w-50 border-3" aria-labelledby="help-link">
+            <div class="dropdown-menu dropdown-menu-help border-3" aria-labelledby="help-link">
                 <a href="{% url 'view_faq' %}" class="dropdown-item underline">FAQ</a>
                 <a href="{% url 'view_policies' %}" class="dropdown-item underline">Policies</a>
                 <a href="{% url 'view_contact' %}" class="dropdown-item underline">Contact</a>
             </div>
         </li>
-        <!-- Only for mobile -->
-        <li class="nav-item dropdown d-md-none">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5 underline" id="help-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Help <i class="charcoal-color fas fa-chevron-right"></i>
-            </a>
-            <div class="dropdown-menu border-3" aria-labelledby="help-link">
-                <a href="{% url 'view_faq' %}" class="dropdown-item underline">FAQ</a>
-                <a href="{% url 'view_policies' %}" class="dropdown-item underline">Policies</a>
-                <a href="{% url 'view_contact' %}" class="dropdown-item underline">Contact</a>
-            </div>
-        </li>
-
+        
     {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
             <li class="nav-item dropdown d-lg-none">

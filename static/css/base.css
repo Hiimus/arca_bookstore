@@ -66,6 +66,15 @@ footer {
     background-color: #ffc857;
 }
 
+/*-- Main nav --*/
+
+.dropdown-menu-books,
+.dropdown-menu-arts,
+.dropdown-menu-games,
+.dropdown-menu-help {
+    width: 100%;
+}
+
 /*----- Toggle nav menu inspired from https://codepen.io/GeoffreyCrofte/pen/oCBxz from freefrontend.com ---*/
 
 #toggle {
@@ -307,6 +316,10 @@ footer {
     background-color: #2e4052;
     color: white;
     border-radius: 50%;
+}
+
+.w-auto {
+    width:auto;
 }
 
 
@@ -726,6 +739,13 @@ span.badge:hover {
         padding-top: 164px;
     }
 
+    .dropdown-menu-books,
+    .dropdown-menu-arts,
+    .dropdown-menu-games,
+    .dropdown-menu-help {
+        width: auto;
+    }
+
    
 }
 
@@ -815,3 +835,14 @@ span.badge:hover {
 @media (min-width: 576px) {
     
 }
+
+@media only screen and (max-width: 992px) and (min-width: 576px) {
+    .dropdown-menu-books,
+    .dropdown-menu-arts,
+    .dropdown-menu-games,
+    .dropdown-menu-help {
+        width: 50%;
+    }
+    
+}
+

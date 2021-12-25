@@ -25,7 +25,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-5 me-4 bg-light rounded">
+            <div class="col-12 col-xl-5 offset-xl-1 me-4 bg-light rounded">
                 <h2 class="logo-font mt-4 mb-4">Checkout</h2>
                 <hr>
                 <h5 class="mb-4 mt-4">Your order is almost complete!</h5>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="mt-4 row">
-                    <div class="col-lg-6 offset-lg-3 mt-5 mb-5">
+                    <div class="col-lg-12 text-center mt-5 mb-5">
                         <a href="{% url 'view_bag' %}" class="charcoal-btn btn border underline-white">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
@@ -80,14 +80,14 @@
                             <span class="font-weight-bold">Adjust Bag</span>
                         </a>
                     </div>
-                    <div class="col-12">
-                        <h5>Please fill out the form to complete the order <i class="fas fa-hand-point-right fa-lg"></i> 
+                    <div class="mb-5 col-12 text-center text-decoration-underline">
+                        <h5>Please fill out the form to complete the order <i class="d-none d-xl-inline-block fas fa-hand-point-right fa-lg"></i><i class="d-xl-none d-inline-block fas fa-hand-point-down fa-lg"></i> 
                         </h5>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 order-lg-last bg-light rounded">
-                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+            <div class="col-12 col-xl-4 mt-5 mt-xl-0 offset-xl-1 order-lg-last bg-light rounded">
+                <form class="mt-5" action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
