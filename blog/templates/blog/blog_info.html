@@ -16,11 +16,9 @@
             <div class="row row-homepage">
                 <div class="col-sm-12 position-relative hover-effect">
                     <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides">
-                        {% if blog.image %}
-                            <img class="blog-img img-fluid"
-                                src="{{ blog.image }}">
-                        {% else %}
-                        {% endif %}
+                        
+                        <img class="blog-img img-fluid"
+                            src="{{ MEDIA_URL }}blog.jpg">
                     </a>
                 </div>
             </div>
@@ -31,6 +29,10 @@
                         <div class="lead">
                             <p> {{ blog.body|linebreaks }}</p>
                         </div>
+                        {% if blog.image %}
+                            <img class="img-fluid" src="{{ blog.image }}" alt="{{ blog.image }}">
+                        {% else %}
+                        {% endif %}
                         <p> {{ blog.created_by }}</p>
                         <p> {{ blog.created_at }}</p>
                         <br>

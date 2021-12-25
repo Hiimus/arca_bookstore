@@ -73,11 +73,26 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
+            {% if grand_total %}
             <a class="charcoal-color nav-link d-lg-block d-none dropdown-toggle" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
-                  <div><i class="fas fa-user-circle fa-lg"></i></div>
-                  <p class="my-0">My Account</p>
+                <div><i class="fas fa-user-circle fa-lg"></i></div>
+                {% if grand_total %}
+                <p class="my-0">My Account</p>
+                {% endif %}
               </div>
+            </a>
+            {% else %}
+            <a class="charcoal-color nav-link d-lg-block d-none dropdown-toggle" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Profile">
+              <div class="text-center">
+                <div><i class="fas fa-user-circle fa-lg"></i></div>
+                {% if grand_total %}
+                <p class="my-0">My Account</p>
+                {% endif %}
+              </div>
+            </a>
+            {% endif %}
+              
           </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
@@ -193,14 +208,8 @@
     })
   </script>
 
-  <!-- Bootstrap tooltip script -->
-  <script type="text/javascript">
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
-  </script>
+  {{ block.super }}
+  <script src="{% static 'js/tooltip.js' %}"></script>
   {% endblock %}
 
 
