@@ -12,45 +12,50 @@
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
-                    <h1 class="display-5"> {{ blog.title }}</h1>
-                    <div class="lead">
-                        <p> {{ blog.body|linebreaks }}</p>
-                    </div>
-                    <p> {{ blog.created_by }}</p>
-                    <p> {{ blog.created_at }}</p>
-                    {% if blog.image %}
-                        <img class="img-fluid" src="{{ blog.image }}">
-                    {% else %}
-                    {% endif %}
-                    <br>
-                    <br>
-                    
-                    
-            </div>
-        </div>
-
-        {% if request.user.is_authenticated %}
-        <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
-            <div class="row">
-                <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
-                    {% csrf_token %}
-                    {{ comment_form.as_p }}
-                <a href="{% url 'add_comment' blog.id %}" class="charcoal-btn btn border underline-white">
-                    <span class="text-uppercase">Cancel</span>
-                </a>
-                <button type="submit" class="green-btn btn underline border text-uppercase">Add Comment</button>
+        <div class="homepage-container col-lg-10 col-12 offset-lg-1">
+            <div class="row row-homepage">
+                <div class="col-sm-12 position-relative hover-effect">
+                    <a href="{% url 'products' %}?category=biography,crafts_hobbies,crime_thriller,food_drink,personal-development,romance,science-fiction-fantasy-horror,sport,teen-young-adult,travel-holiday-guides">
+                        {% if blog.image %}
+                            <img class="blog-img img-fluid"
+                                src="{{ blog.image }}">
+                        {% else %}
+                        {% endif %}
+                    </a>
                 </div>
             </div>
-        </form>
-        {% endif %}
+
+            <div class="row mt-4">
+                <div class="col-10 offset-1">
+                        <h1 class="display-5"> {{ blog.title }}</h1>
+                        <div class="lead">
+                            <p> {{ blog.body|linebreaks }}</p>
+                        </div>
+                        <p> {{ blog.created_by }}</p>
+                        <p> {{ blog.created_at }}</p>
+                        <br>
+                        <br>
+                        
+                        
+                </div>
+            </div>
+        
+            <hr>
+
+            {% if request.user.is_authenticated %}
+            <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
+                        {% csrf_token %}
+                        {{ comment_form.as_p }}
+                    <a href="{% url 'add_comment' blog.id %}" class="charcoal-btn btn border underline-white">
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                    <button type="submit" class="green-btn btn underline border text-uppercase">Add Comment</button>
+                    </div>
+                </div>
+            </form>
+            {% endif %}
         
         
         <!-- Modal -->
@@ -75,19 +80,28 @@
             </div>
         </div> -->
 
-        <hr class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
-        <div class="row">
-            <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
-                {% for comment in comments %}
-                    <h1 class="display-6"> {{ comment.name }}</h1>
-                    <p> {{ comment.comment|linebreaks }}</p>
-                    <p> {{ comment.created_at }}</p>
-                {% endfor %}
+            <hr>
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h1 class="ms-4 display-6">Comments</h1>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    {% if comments %}
+                        {% for comment in comments %}
+                            <h5> {{ comment.name }}</h5>
+                            <p> {{ comment.comment|linebreaks }}</p>
+                            <p> {{ comment.created_at }}</p>
+                        {% endfor %}
+                    {% else %}
+                        <h5>There are no comments.</h5>
+                    {% endif %}
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
-        <br>
-        <hr class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
-        <br>
     </div>
 {% endblock %}
 
