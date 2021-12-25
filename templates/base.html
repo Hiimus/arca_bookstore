@@ -1,7 +1,7 @@
 {% load static %}
 
 <!doctype html>
-<html class="{% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% else %}{% endif %}" lang="en">
+<html class="{% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% elif '/bag/' in request.path%}dark-purple{% else %}{% endif %}" lang="en">
 
 <head>
 
@@ -47,7 +47,7 @@
 </head>
 
 
-<body class="d-flex flex-column {% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
+<body class="d-flex flex-column {% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% elif '/bag/' in request.path%}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
   <header class="container-fluid fixed-top">
     <div id="topnav" class="row charcoal-color pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -157,11 +157,11 @@
       <div class="row mt-1">
           <div class="col-md-12 mt-2 text-center p-2">
             <ul class="d-inline p-0">
-              <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+              <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i
                     class="fab fa-twitter fa-lg"></i></a></li>
-              <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Instagram"><i
+              <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i
                     class="fab fa-instagram fa-lg"></i></a></li>
-              <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+              <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i
                     class="fab fa-facebook fa-lg"></i></a></li>
             </ul>
           </div>
@@ -191,6 +191,15 @@
       let bsToast = new bootstrap.Toast(toastEl, option)
       bsToast.show();
     })
+  </script>
+
+  <!-- Bootstrap tooltip script -->
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
   </script>
   {% endblock %}
 

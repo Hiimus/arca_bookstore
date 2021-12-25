@@ -12,10 +12,9 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <div class="container mb-2 mt-3 bg-light rounded">
         <div class="row">
-            <div class="col">
-                <hr>
+            <div class="mt-3 col">
                 <h2 class="logo-font mb-4">Shopping Bag</h2>
                 <hr>
             </div>
@@ -25,35 +24,40 @@
             <div class="col">
                 {% if bag_items %}
                     <div class="d-block d-md-none">
+                        {% for item in bag_items %}
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-2">
+                                {% include "bag/product-image.html" %}
+                            </div>
+                            <div class="col-12 col-sm-6 mb-2">
+                                {% include "bag/product-info.html" %}
+                            </div>
+                            <div class="col-sm-3 col-5">
+                                {% include "bag/quantity-form.html" %}
+                            </div>
+                            <div class="col-sm-3 col-4 text-center">
+                                <span class="icon"><i class="fas fa-times fa-lg"></i></span>
+                            </div>
+                            <div class="col">
+                                <span>${{ item.product.price }}</span>
+                            </div>
+                            <div class="col text-center mt-4 mt-sm-0">
+                                <span><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</span>
+                            </div>
+                            
+                        </div>
+                        <div class="row"><div class="col"><hr></div></div>
+                        {% endfor %}
                         <div class="row">
                             <div class="col">
                                 {% include "bag/bag-total.html" %}
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col mt-3 mb-3">
                                 {% include "bag/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">A summary of your bag contents is below</p>
                             </div>
                         </div>
-                        {% for item in bag_items %}
-                            <div class="row">
-                                <div class="col-12 col-sm-6 mb-2">
-                                    {% include "bag/product-image.html" %}
-                                </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    {% include "bag/product-info.html" %}
-                                </div>
-                                <div class="col-12 col-sm-6 order-sm-last">
-                                    <p class="my-0">Price Each: ${{ item.product.price }}</p>
-                                    <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    {% include "bag/quantity-form.html" %}
-                                </div>
-                            </div>
-                            <div class="row"><div class="col"><hr></div></div>
-                        {% endfor %}
                         <div class="btt-button shadow-sm">
                             <a class="btt-link d-flex h-100">
                                 <i class="fas fa-chevron-up mx-auto my-auto"></i>
@@ -66,8 +70,9 @@
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
+                                    <th scope="col" class="text-center">Qty</th>
+                                    <th scope="col"></th>
                                     <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
@@ -80,11 +85,14 @@
                                     <td class="py-3">
                                         {% include "bag/product-info.html" %}
                                     </td>
+                                    <td class="py-3 w-custom">
+                                        {% include "bag/quantity-form.html" %}
+                                    </td>
+                                    <td class="py-3 text-center">
+                                        <span class="icon"><i class="fas fa-times fa-lg"></i></span>
+                                    </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
-                                        {% include "bag/quantity-form.html" %}
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -105,11 +113,11 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <a href="{% url 'all_products' %}" class="btn underline keep-shopping-btn rounded-0 mb-5">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase">Back to products</span>
                     </a>
                 {% endif %}
             </div>

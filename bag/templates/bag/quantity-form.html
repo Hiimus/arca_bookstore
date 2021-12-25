@@ -3,7 +3,7 @@
     <div class="form-group">
         <div class="input-group">
             <div class="input-group-prepend">
-                <button class="decrement-qty btn btn-sm btn-black rounded-0"
+                <button class="decrement-qty btn charcoal-color-bg text-light rounded-0"
                     data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                     <span>
                         <i class="fas fa-minus fa-sm"></i>
@@ -16,7 +16,7 @@
             name="quantity" value="{{ item.quantity }}" min="1" max="99" 
             data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
             <div class="input-group-append">
-                <button class="increment-qty btn btn-sm btn-black rounded-0"
+                <button class="increment-qty btn charcoal-color-bg text-light rounded-0"
                     data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                     <span>
                         <i class="fas fa-plus fa-sm"></i>
@@ -26,6 +26,19 @@
         </div>
     </div>
 </form>
-<a class="update-link text-info"><small>Update</small></a>
-<a id="remove_{{ item.item_id }}" class="remove-item text-danger float-end" 
-    data-size="{{ item.size }}"><small>Remove</small></a>
+<a class="update-link charcoal-color mt-1 me-2 float-end" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Save"><span><i class=" far fa-save fa-lg"></i></span></a>
+<a id="remove_{{ item.item_id }}" class="mt-1 ms-2 remove-item charcoal-color" 
+    data-size="{{ item.size }}" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Remove"><span><i class=" far fa-trash-alt fa-lg"></i></span></a>
+
+
+
+{% block postloadjs %}
+<!-- Bootstrap tooltip script -->
+<script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+{% endblock %}
