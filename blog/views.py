@@ -9,7 +9,6 @@ from .forms import BlogForm, CommentForm
 # Create your views here.
 
 
-
 def view_blog(request):
     """ A view that renders the blog page """
 
