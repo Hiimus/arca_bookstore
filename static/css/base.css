@@ -530,9 +530,11 @@ span.badge:hover {
 
 
 
+
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     color: #6c757d;
+    font-size: x-large;
 }
 
 .allauth-form-inner-content input {
@@ -555,7 +557,13 @@ span.badge:hover {
     color: #aab7c4;
 }
 
+.cancel-btn {
+    background-color: #2e4052!important;
+    border: 1px solid #2e4052!important;
+    color: white!important;
+}
 
+.cancel-btn,
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
@@ -574,24 +582,22 @@ span.badge:hover {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-
+    font-size: x-large;
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.cancel-btn:hover,
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: black!important;
+    background-color: white!important;
+    border: 1px solid black!important;
 }
 
 .allauth-form-inner-content button {
     border-radius: 5px;
     text-size-adjust: auto;
-    width: 120px;
-    height: 60px;
-    font-size: x-large;
 }
 
 .allauth-form-inner-content a {
@@ -760,6 +766,8 @@ span.badge:hover {
         width: auto;
     }
 
+    
+
    
 }
 
@@ -801,6 +809,16 @@ span.badge:hover {
         border-left: 50px solid #412234;
         border-right: 50px solid #412234;
     }
+
+    .allauth-form-inner-content p {
+        font-size: large;
+    }
+
+    .cancel-btn,
+    .allauth-form-inner-content button,
+    .allauth-form-inner-content input[type='submit'] {
+        font-size: large;
+    }
 }
 
 @media (max-width: 772px) {
@@ -841,6 +859,11 @@ span.badge:hover {
 
     .message-container {
         max-width: 300px;
+    }
+
+    .allauth-container {
+        width: 90%;
+        margin-top: 2rem;
     }
 
 }
