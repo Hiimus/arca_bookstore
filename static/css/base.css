@@ -322,7 +322,7 @@ footer {
     width:auto;
 }
 
-.w-40 {
+.book-logo {
     width: 40px;
 }
 
@@ -818,6 +818,10 @@ span.badge:hover {
     .allauth-form-inner-content button,
     .allauth-form-inner-content input[type='submit'] {
         font-size: large;
+    }
+
+    .book-logo {
+        width: 30px;
     }
 }
 
