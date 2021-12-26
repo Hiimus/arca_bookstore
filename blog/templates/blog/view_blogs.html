@@ -30,6 +30,7 @@
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h2 class="logo-font mt-4 mb-4">Arca Blog</h2>
                     <br>
+                    <a href="{% url 'home' %}"><i class="fas fa-chevron-left fa-sm"></i> Back to Home</a>
                     {% if request.user.is_superuser %}
                     <!-- Button trigger modal -->
                     <span><button type="button" class="green-btn btn underline border text-uppercase btn-lg" data-bs-toggle="modal" data-bs-target="#blogPostModal">
