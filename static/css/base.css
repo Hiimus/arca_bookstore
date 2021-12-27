@@ -5,7 +5,7 @@ html {
 
 
 body {
-    min-height: 100vh!important;
+    min-height: 100vh;
 }
 
 footer {
@@ -879,6 +879,10 @@ span.badge:hover {
 
     .hover-effect {
         font-size: 1.1em;
+    }
+
+    .custom-viewport {
+        min-height: 120vh;
     }
 
 }

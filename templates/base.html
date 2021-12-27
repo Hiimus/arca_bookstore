@@ -47,7 +47,7 @@
 </head>
 
 
-<body class="overflow-scroll d-flex flex-column {% if '/accounts/' in request.path %}dark-purple{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% elif '/bag/' in request.path%}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
+<body class="overflow-scroll d-flex flex-column {% if '/accounts/' in request.path %}dark-purple custom-viewport{% elif '/checkout/' in request.path%}dark-purple{% elif '/profile/' in request.path%}dark-purple{% elif '/bag/' in request.path%}dark-purple{% else %}{% endif %}"> <!-- Sets dark purple background to all /accounts/ pages -->
   <header class="container-fluid fixed-top">
     <div id="topnav" class="row charcoal-color pt-lg-2 d-none d-lg-flex justify-content-center">
       <div class="col-12 col-lg-4 col-xl-3 py-1 py-lg-0 text-center text-lg-left">
