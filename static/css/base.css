@@ -168,7 +168,7 @@ footer {
     text-transform: uppercase;
     
     color: #f5f5f5;
-    text-shadow: 10px 0px 10px rgb(0, 0, 0);
+    text-shadow: 2px 2px #000000;
 }
 
 .hover-effect {
@@ -178,7 +178,7 @@ footer {
 }
 
 .hover-effect:hover {
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .arts-relative {
@@ -876,6 +876,10 @@ span.badge:hover {
     .allauth-container {
         width: 90%;
         margin-top: 2rem;
+    }
+
+    .hover-effect {
+        font-size: 1.1em;
     }
 
 }
