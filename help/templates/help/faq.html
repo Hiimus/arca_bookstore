@@ -13,21 +13,20 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-2 mb-4">
+          <div class="col-xl-4 offset-md-2 mb-4">
             <a href="{% url 'home' %}"><i class="fas fa-chevron-left fa-sm"></i> Back to Home</a>
           </div>
         </div>
         <div class="row">
-            <div class="col-md-4 offset-2">
+            <div class="col-md-6 offset-md-2">
                 <h1>Welcome to FAQ</h1>
             </div>
         </div>
-        <hr class="col-3 col-md-4 offset-2">
+        <hr class="col-12 col-md-6 offset-md-2">
 
         <div class="row g-5">
-          <div class="col-md-4 offset-2">
-            <h2>Return and Delivery</h2>
-            <hr>
+          <div class="col-md-4 offset-md-2">
+            <h4>Return and Delivery</h4>
             <br>
             <p>For more information about our return and refund policy, visit <a href="{% url 'view_policies' %}" target="_blank">this</a> link</p>
             <br>
@@ -46,13 +45,13 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownFaq2">
                   <li><span class="dropdown-item-text">All products and orders from Arca Bookstore can be returned for free within 30 days of purchase.</span></li>
                 </ul>
+                <hr>
             </div>
             
           </div>
     
-          <div class="col-md-4">
-            <h2>Guides</h2>
-            <hr>
+          <div class="col-md-4 offset-md-2">
+            <h4>Guides</h4>
             <br>
             <div class="dropdown">
                 <a class="dropdown-toggle" href="#" role="button" id="dropdownFaq3" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,6 +68,7 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownFaq4">
                   <li><span class="dropdown-item-text">At this moment, Arca Bookstore is only a webstore.</span></li>
                 </ul>
+                <hr>
             </div>
           </div>
         </div>
@@ -77,9 +77,8 @@
         <br>
 
         <div class="row g-5 mb-5">
-            <div class="col-md-4 offset-2">
-              <h2>Social</h2>
-              <hr>
+            <div class="col-md-4 offset-md-2">
+              <h4>Social</h4>
               <br>
               <div class="dropdown">
                   <a class="dropdown-toggle" href="#" role="button" id="dropdownFaq5" data-bs-toggle="dropdown" aria-expanded="false">
@@ -97,19 +96,19 @@
                     <li><span class="dropdown-item-text">Arca Bookstore have an active appeareance on social media platforms such as Twitter, Instagram and Facebook. Links to our social accounts is found in the footer/bottom of the page.</a></span></li>
                   </ul>
               </div>
+              <hr>
             </div>
       
-            <div class="col-md-4">
-              <h2>Other</h2>
-              <hr>
+            <div class="col-md-4 offset-md-2">
+              <h4>Other</h4>
               <br>
-              
+              <hr>
             </div>
           </div>
     </div>
 
     <div class="container">
-      <div class="col-8 offset-2">
+      <div class="col-md-8 offset-md-2">
         <img class="img-fluid" src="{{ MEDIA_URL }}help/faq.jpg" alt="FAQ image">
       </div>
     </div>
