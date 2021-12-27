@@ -227,14 +227,9 @@ def product_detail(request, product_id):
 
     reviews = Review.objects.filter(product=product_id)
 
-    user = get_object_or_404(UserProfile, user=request.user)
-
-    username = request.user.get_username()
-
     context = {
         'product': product,
         'reviews': reviews,
-        'username': username,
     }
 
     return render(request, 'products/product_detail/product_detail.html', context)
