@@ -51,7 +51,7 @@
             {% if request.user.is_authenticated %}
             <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
                 <div class="row">
-                    <div class="col-12 col-lg-8 col-xl-6 offset-xl-3 offset-lg-2">
+                    <div class="col-10 offset-1 col-md-8 col-xl-6 offset-xl-3 offset-md-2">
                         {% csrf_token %}
                         {{ comment_form.as_p }}
                     <a href="{% url 'add_comment' blog.id %}" class="charcoal-btn btn border underline-white">
@@ -63,47 +63,27 @@
             </form>
             {% endif %}
         
-        
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                            {% csrf_token %}
-                            {{ comment_form.as_p }}
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Add Comment</button>
-                    </div>
-                </form>
-            </div>
-            </div>
-        </div> -->
 
             <hr>
             <div class="row mb-3">
-                <div class="col-12">
-                    <h1 class="ms-4 display-6">Comments</h1>
+                <div class="col-10 offset-1 col-xl-8 offset-xl-2">
+                    <h1 class="display-6">Comments</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 offset-1">
+                <div class="col-10 offset-1 col-xl-8 offset-xl-2">
                     {% if comments %}
                         {% for comment in comments %}
                             <h5> {{ comment.name }}</h5>{% if request.user.is_superuser %}
-                            <span class="float-end me-5">
+                            <span class="float-end me-md-5">
                                 <a href="{% url 'delete_comment' comment.id %}" class="charcoal-color" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Comment"><i class="far fa-trash-alt fa-lg"></i></a>
                             </span>
                             {% endif %}
                             <p> {{ comment.comment|linebreaks }}</p>
                             <p> {{ comment.created_at }}</p>
+                            <hr>
                         {% endfor %}
+                            
                     {% else %}
                         <h5>There are no comments.</h5>
                     {% endif %}
