@@ -743,6 +743,10 @@ span.badge:hover {
     .message-container {
         right: 260px;
     }
+
+    .custom-container-width {
+        max-width: 50% !important;
+    }
 }
 
 /* fixed top navbar only on medium and up */
