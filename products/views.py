@@ -227,9 +227,14 @@ def product_detail(request, product_id):
 
     reviews = Review.objects.filter(product=product_id)
 
+    user = get_object_or_404(UserProfile, user=request.user)
+
+    username = request.user.get_username()
+
     context = {
         'product': product,
         'reviews': reviews,
+        'username': username,
     }
 
     return render(request, 'products/product_detail/product_detail.html', context)
@@ -346,3 +351,18 @@ def add_review(request, product_id):
     }
 
     return render(request, 'products/add_review.html', context)
+
+
+@login_required
+def delete_review(request, review_id):
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+   
+    review = Review.objects.all().filter(pk=review_id)
+    review.delete()
+
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('all_products'))

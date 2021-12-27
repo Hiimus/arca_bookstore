@@ -142,3 +142,18 @@ def add_comment(request, blog_id):
     }
 
     return render(request, 'blog/blog_info.html', context)
+
+
+@login_required
+def delete_comment(request, comment_id):
+    """ A view that deletes blog post comment"""
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+   
+    comment = Comment.objects.all().filter(pk=comment_id)
+    comment.delete()
+
+    messages.success(request, 'Comment deleted!')
+    return redirect(reverse('view_blog'))
