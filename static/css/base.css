@@ -6,6 +6,7 @@ html {
 
 body {
     min-height: 115vh;
+    font-family: verdana, sans-serif;
 }
 
 footer {
@@ -487,7 +488,7 @@ span.badge:hover {
 }
 
 #sort-selector {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: Verdana, sans-serif;
     color: white;
     background-color: #2e4052;
     border-radius: 4px;
@@ -670,6 +671,10 @@ span.badge:hover {
 
 .underline-white:visited {
     text-decoration: none;
+}
+
+.whitespace-normal {
+    white-space: normal;
 }
 
 
