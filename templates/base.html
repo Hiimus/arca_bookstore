@@ -59,7 +59,7 @@
     <div id="topnav" class="row charcoal-color pt-lg-2 d-none d-lg-flex justify-content-center">
       <div class="col-12 col-lg-4 col-xl-3 py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-        </span><h2 class="logo-font my-0"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo d-none ms-2" src="{{ MEDIA_URL }}homepage/book-min.png" alt="book"><span></span></h2>
+        <h2 class="logo-font my-0"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo d-none ms-2" src="{{ MEDIA_URL }}homepage/book-min.png" alt="book"></h2>
         </a>
       </div>
       <div class="col-12 col-lg-4 col-xl-4 py-1 py-lg-0">
@@ -99,8 +99,6 @@
               </div>
             </a>
             {% endif %}
-              
-          </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
               {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
@@ -144,11 +142,6 @@
         {% include 'includes/main-nav.html' %}
       </nav>
     </div>
-    <!-- <div class="row text-center">
-      <div class="col charcoal-color-bg text-white">
-        <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}</h4>
-      </div>
-    </div> -->
   </header>
 
   {% if messages %}
@@ -200,7 +193,7 @@
   </footer>
 
   {% block postloadjs %}
-  <script type="text/javascript">
+  <script>
     // Javascript for toasts
     // Code used from user "Richard Ash" in Slack chat. 
     let toastElList = [].slice.call(document.querySelectorAll('.toast'))
