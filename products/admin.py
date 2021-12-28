@@ -3,6 +3,7 @@ from .models import Product, Category, Review
 
 # Register your models here.
 
+
 # Makes the following fields display in admin
 class ProductAdmin(admin.ModelAdmin):
     list_display = (

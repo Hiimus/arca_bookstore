@@ -56,9 +56,3 @@ class CommentForm(forms.ModelForm):
                 'placeholder': 'Write your comment here...'
                 }),
         }
-        
-        
-
-
-
-

@@ -16,6 +16,3 @@ def view_policies(request):
 def view_contact(request):
     """ A view that renders the Contact page """
     return render(request, 'help/contact.html')
-
-
-

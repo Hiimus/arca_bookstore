@@ -7,7 +7,6 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Review
 from profiles.models import UserProfile
 from .forms import ProductForm, ReviewForm
-from itertools import chain
 
 import random
 
@@ -21,17 +20,17 @@ def search(request):
     query = None
 
     if 'search' in request.GET:
-            query = request.GET['search']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
+        query = request.GET['search']
+        if not query:
+            messages.error(request, "You didn't enter any search criteria!")
+            return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
-    
+        queries = Q(name__icontains=query) | Q(description__icontains=query)
+        products = products.filter(queries)
+
+        queries = Q(name__icontains=query) | Q(description__icontains=query)
+        products = products.filter(queries)
+
     context = {
         'products': products,
         'search_term': query,
@@ -40,10 +39,10 @@ def search(request):
     return render(request, "products/products.html", context)
 
 
-
 def all_products(request):
-    """ Home page with a randomized sample of products in differents categories """
-    # Code inspired by https://stackoverflow.com/questions/22816704/django-get-a-random-object/23755881#23755881
+    """ Home page with a randomized sample of products """
+    # Code inspired by:
+    # https://stackoverflow.com/questions/22816704/django-get-a-random-object/23755881#23755881
     # Get objects by categories
     book_1 = list(Product.objects.filter(category=1))
     book_2 = list(Product.objects.filter(category=2))
@@ -59,7 +58,7 @@ def all_products(request):
     game_2 = list(Product.objects.filter(category=15))
     game_3 = list(Product.objects.filter(category=14))
     game_4 = list(Product.objects.filter(category=15))
-    
+
     # Get a random sample
     # change 1 to how many random items you want
     books_1 = random.sample(book_1, 1)
@@ -95,12 +94,13 @@ def all_products(request):
     return render(request, 'products/products_home.html', context)
 
 
-
 def all_books(request):
     """ A view to show all Books, excludes arts & crafts and games """
 
     all_products = Product.objects.all()
-    products = all_products.exclude(category=11).exclude(category=12).exclude(category=13).exclude(category=14).exclude(category=15)
+    products = all_products.exclude(
+        category=11).exclude(category=12).exclude(category=13).exclude(
+            category=14).exclude(category=15)
 
     review = Review.objects.all()
 
@@ -144,7 +144,19 @@ def all_arts_and_crafts(request):
     """ A view to show all Arts & Crafts """
 
     all_products = Product.objects.all()
-    products = all_products.exclude(category=1).exclude(category=2).exclude(category=3).exclude(category=4).exclude(category=5).exclude(category=6).exclude(category=7).exclude(category=8).exclude(category=9).exclude(category=10).exclude(category=14).exclude(category=15)
+    products = all_products.exclude(
+        category=1).exclude(
+            category=2).exclude(
+                category=3).exclude(
+                    category=4).exclude(
+                        category=5).exclude(
+                            category=6).exclude(
+                                category=7).exclude(
+                                    category=8).exclude(
+                                        category=9).exclude(
+                                            category=10).exclude(
+                                                category=14).exclude(
+                                                    category=15)
 
     categories = None
     sort = None
@@ -170,7 +182,7 @@ def all_arts_and_crafts(request):
             categories = Category.objects.filter(name__in=categories)
 
     current_sorting = f'{sort}_{direction}'
-    
+
     context = {
         'products': products,
         'current_categories': categories,
@@ -184,7 +196,20 @@ def all_games(request):
     """ A view to show all games """
 
     all_products = Product.objects.all()
-    products = all_products.exclude(category=1).exclude(category=2).exclude(category=3).exclude(category=4).exclude(category=5).exclude(category=6).exclude(category=7).exclude(category=8).exclude(category=9).exclude(category=10).exclude(category=11).exclude(category=12).exclude(category=13)
+    products = all_products.exclude(
+        category=1).exclude(
+            category=2).exclude(
+                category=3).exclude(
+                    category=4).exclude(
+                        category=5).exclude(
+                            category=6).exclude(
+                                category=7).exclude(
+                                    category=8).exclude(
+                                        category=9).exclude(
+                                            category=10).exclude(
+                                                category=11).exclude(
+                                                    category=12).exclude(
+                                                        category=13)
 
     categories = None
     sort = None
@@ -208,7 +233,7 @@ def all_games(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-    
+
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -232,7 +257,8 @@ def product_detail(request, product_id):
         'reviews': reviews,
     }
 
-    return render(request, 'products/product_detail/product_detail.html', context)
+    return render(
+        request, 'products/product_detail/product_detail.html', context)
 
 
 @login_required
@@ -246,13 +272,15 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.info(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to add product. \
+                    Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     form = ProductForm()
     template = 'products/add_product.html'
     context = {
@@ -268,7 +296,7 @@ def edit_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -277,7 +305,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update product. \
+                    Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -287,7 +317,7 @@ def edit_product(request, product_id):
         'form': form,
         'product': product,
     }
-    
+
     return render(request, template, context)
 
 
@@ -297,7 +327,7 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
@@ -323,7 +353,7 @@ def add_review(request, product_id):
             review.product = product
             review.user = user
             review.save()
-            
+
             # Adds new rating to product
             number_of_ratings = product.ratings.all().count()
             all_ratings = []
@@ -337,10 +367,12 @@ def add_review(request, product_id):
             messages.info(request, 'Successfully added review!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add review, please ensure the form is valid')
+            messages.error(
+                request, 'Failed to add review, \
+                    please ensure the form is valid')
     else:
         form = ReviewForm()
-    
+
     context = {
         'product': product,
         'form': form,
@@ -358,7 +390,6 @@ def delete_review(request, review_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-   
     review = Review.objects.all().filter(pk=review_id)
     review.delete()
 

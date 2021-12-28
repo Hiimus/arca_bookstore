@@ -12,7 +12,7 @@ from .forms import BlogForm, CommentForm
 def view_blog(request):
     """ A view that renders the blog page """
 
-    blogs = BlogPost.objects.all().order_by('-created_at') # Order by newest post to oldest
+    blogs = BlogPost.objects.all().order_by('-created_at')
     comments = Comment.objects.all().order_by('-created_at')
 
     form = BlogForm()
@@ -55,13 +55,15 @@ def add_post(request):
 
     if request.method == "POST":
         form = BlogForm(request.POST)
-        
+
         if form.is_valid:
             form.save()
             messages.info(request, 'Successfully added blog post!')
             return redirect(reverse('view_blog'))
         else:
-            messages.error(request, 'Failed to add blog post, please ensure the form is valid')
+            messages.error(
+                request, 'Failed to add blog post, \
+                    please ensure the form is valid')
     else:
         form = BlogForm()
 
@@ -79,7 +81,7 @@ def delete_post(request, blog_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('view_blog'))
-        
+
     blog = get_object_or_404(BlogPost, pk=blog_id)
     blog.delete()
     messages.success(request, 'Post deleted!')
@@ -92,7 +94,7 @@ def edit_post(request, blog_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('view_blog'))
-        
+
     blog = get_object_or_404(BlogPost, pk=blog_id)
     if request.method == 'POST':
         form = BlogForm(request.POST, request.FILES, instance=blog)
@@ -101,7 +103,9 @@ def edit_post(request, blog_id):
             messages.info(request, 'Successfully updated blog post!')
             return redirect(reverse('view_blog'))
         else:
-            messages.error(request, 'Failed to update post. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to update post.\
+                    Please ensure the form is valid.')
     else:
         form = BlogForm(instance=blog)
         messages.info(request, f'You are editing {blog.title}')
@@ -111,17 +115,17 @@ def edit_post(request, blog_id):
         'form': form,
         'blog': blog,
     }
-    
+
     return render(request, template, context)
 
 
 @login_required
 def add_comment(request, blog_id):
     """ A view that adds comments on the blog page """
-    
+
     blog = get_object_or_404(BlogPost, pk=blog_id)
     comments = blog.comments.all()
-    
+
     if request.method == "POST":
         comment_form = CommentForm(request.POST)
         if comment_form.is_valid:
@@ -131,7 +135,8 @@ def add_comment(request, blog_id):
             messages.info(request, 'Successfully added comment!')
             return redirect(reverse('blog_info', args=[blog.id]))
         else:
-            messages.error(request, 'Failed to add comment, please ensure the form is valid')
+            messages.error(request, 'Failed to add comment,\
+                please ensure the form is valid')
     else:
         comment_form = CommentForm()
 
@@ -151,7 +156,6 @@ def delete_comment(request, comment_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-   
     comment = Comment.objects.all().filter(pk=comment_id)
     comment.delete()
 

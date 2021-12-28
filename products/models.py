@@ -1,6 +1,5 @@
 from django.db import models
 
-from profiles.models import UserProfile
 
 # Create your models here.
 
@@ -8,8 +7,7 @@ from profiles.models import UserProfile
 class Category(models.Model):
 
     class Meta:
-        verbose_name_plural = 'Categories' # Fixes spelling error in admin
-
+        verbose_name_plural = 'Categories'  # Fixes spelling error in admin
 
     name = models.CharField(max_length=260)
     friendly_name = models.CharField(max_length=260, null=True, blank=True)
@@ -34,7 +32,8 @@ class Product(models.Model):
         max_digits=6, decimal_places=2, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     currency = models.CharField(max_length=260)
-    old_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    old_price = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
     isbn = models.BigIntegerField(null=True, blank=True)
     img_paths = models.ImageField(null=True, blank=True)
 
@@ -52,8 +51,13 @@ RATING_CHOICES = [
 
 
 class Review(models.Model):
-    user = models.ForeignKey('profiles.UserProfile', null=True, blank=True, on_delete=models.SET_NULL)
-    product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL, related_name='ratings')
+    user = models.ForeignKey(
+        'profiles.UserProfile',
+        null=True, blank=True, on_delete=models.SET_NULL)
+    product = models.ForeignKey(
+        'Product',
+        null=True,
+        blank=True, on_delete=models.SET_NULL, related_name='ratings')
     review = models.TextField(max_length=250, null=True, blank=True)
     rating = models.PositiveSmallIntegerField(choices=RATING_CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)

@@ -393,6 +393,8 @@ input[name='q']::placeholder {
 
 .custom-toast {
     overflow: visible;
+    min-height:auto;
+    font-size: small;
 }
 
 .toast-capper {

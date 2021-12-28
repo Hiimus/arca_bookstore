@@ -9,7 +9,8 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
 
-    img_paths = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    img_paths = forms.ImageField(
+        label='Image', required=False, widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -21,10 +22,9 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded'
 
 
-
-
 class ReviewForm(forms.ModelForm):
-    rating: forms.ChoiceField(choices=RATING_CHOICES, widget=forms.Select(), required=True)
+    rating: forms.ChoiceField(
+        choices=RATING_CHOICES, widget=forms.Select(), required=True)
 
     class Meta:
         model = Review
@@ -35,4 +35,3 @@ class ReviewForm(forms.ModelForm):
                 'class': 'form-control',
                 'style': 'width: 100%;'}),
         }
-

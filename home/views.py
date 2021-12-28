@@ -5,9 +5,11 @@ import random
 
 # Create your views here.
 
+
 def index(request):
-    """ Home page with a randomized sample of products in differents categories """
-    # Code inspired by https://stackoverflow.com/questions/22816704/django-get-a-random-object/23755881#23755881
+    """ Home page with a randomized sample of products """
+    # Code inspired by:
+    # https://stackoverflow.com/questions/22816704/django-get-a-random-object/23755881#23755881
     # Get objects by categories
     book_1 = list(Product.objects.filter(category=1))
     book_2 = list(Product.objects.filter(category=2))
@@ -23,7 +25,7 @@ def index(request):
     game_2 = list(Product.objects.filter(category=15))
     game_3 = list(Product.objects.filter(category=14))
     game_4 = list(Product.objects.filter(category=15))
-    
+
     # Get a random sample
     # change 1 to how many random items you want
     books_1 = random.sample(book_1, 1)
