@@ -98,7 +98,7 @@ def edit_post(request, blog_id):
         form = BlogForm(request.POST, request.FILES, instance=blog)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated blog post!')
+            messages.info(request, 'Successfully updated blog post!')
             return redirect(reverse('view_blog'))
         else:
             messages.error(request, 'Failed to update post. Please ensure the form is valid.')
@@ -155,5 +155,5 @@ def delete_comment(request, comment_id):
     comment = Comment.objects.all().filter(pk=comment_id)
     comment.delete()
 
-    messages.success(request, 'Comment deleted!')
+    messages.info(request, 'Comment deleted!')
     return redirect(reverse('view_blog'))

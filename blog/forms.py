@@ -13,22 +13,22 @@ class BlogForm(forms.ModelForm):
         widgets = {
             'title': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'width: 100%;',
                 'placeholder': 'Title'
                 }),
             'body': Textarea(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'width: 100%;',
                 'placeholder': 'Write your blog post here...'
                 }),
             'image': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'width: 100%;',
                 'placeholder': 'Image URL - Optional'
                 }),
             'created_by': TextInput(attrs={
                 'class': "form-control",
-                'style': 'max-width: 300px;',
+                'style': 'width: 100%;',
                 'placeholder': 'Created by:'
                 }),
         }
