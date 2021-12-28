@@ -699,6 +699,10 @@ span.badge:hover {
     .message-container {
         right: 130px;
     }
+
+    .bag-container {
+        width: auto;
+    }
 }
 
 
