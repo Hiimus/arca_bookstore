@@ -516,7 +516,7 @@ span.badge:hover {
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     color: #6c757d;
-    font-size: x-large;
+    font-size: large;
 }
 
 .allauth-form-inner-content input {
@@ -564,7 +564,7 @@ span.badge:hover {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-    font-size: x-large;
+    font-size: large;
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -702,6 +702,7 @@ span.badge:hover {
 
     .bag-container {
         width: auto;
+        min-width: 40%;
     }
 }
 
