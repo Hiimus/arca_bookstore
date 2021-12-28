@@ -11,6 +11,8 @@ import json
 import time
 
 
+# From Boutique Ado
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 

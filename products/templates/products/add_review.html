@@ -20,6 +20,7 @@
                 <img class="img-fluid" src="{{ product.img_paths.url }}"
                 alt="{{ product.name }}">
             </div>
+            <!-- Add review form for large devices and up-->
             <div class="col-4 d-none d-lg-block">
                 <form class="review-form" method="POST" action="{% url 'add_review' product.id %}">
                     {% csrf_token %}
@@ -37,6 +38,7 @@
             alt="{{ product.name }}">
         </div>
         <br>
+        <!-- Add review form for smaller devices-->
         <div class="row d-lg-none">
             <div class="col-12 col-md-8 offset-md-2">
                 <form class="review-form" method="POST" action="{% url 'add_review' product.id %}">

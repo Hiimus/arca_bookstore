@@ -3,6 +3,7 @@ from .models import BlogPost, Comment
 from django.forms import TextInput, Textarea
 
 
+# Blog form
 class BlogForm(forms.ModelForm):
 
     class Meta:
@@ -33,6 +34,7 @@ class BlogForm(forms.ModelForm):
         }
 
 
+# Comment form
 class CommentForm(forms.ModelForm):
 
     class Meta:

@@ -10,6 +10,7 @@
                     </span>
                 </button>
             </div>
+            <!-- Makes the quantity input field only allow whole numbers -->
             <input step="1"
             onkeypress='return event.charCode >= 48 && event.charCode <= 57'
             title="Numbers only" class="form-control form-control-sm qty_input" type="number"
@@ -33,12 +34,5 @@
 
 
 {% block postloadjs %}
-<!-- Bootstrap tooltip script -->
-<script type="text/javascript">
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
 
-</script>
 {% endblock %}

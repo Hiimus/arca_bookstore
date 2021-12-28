@@ -11,12 +11,9 @@
 
 {% block content %}
     <div class="overlay"></div>
-
-    
-        
-
     <div class="container container-blog">
         <div class="homepage-container col-lg-10 col-12 offset-lg-1">
+            <!-- Blog image -->
                 <div class="row row-homepage">
                     <div class="col-sm-12 position-relative hover-effect">
                         <a href="{% url 'view_blog' %}">
@@ -25,7 +22,7 @@
                         </a>
                     </div>
                 </div>
-
+            <!-- Page header, back to home link and Add blog post button -->
             <div class="row">
                 <div class="col-10 offset-1 col-lg-8 offset-lg-2">
                     <h2 class="logo-font mt-4 mb-1">Arca Blog</h2>
@@ -44,7 +41,7 @@
                     {% endif %}
                 </div>
             </div>
-
+            <!-- Blog posts -->
             <div class="row">
                 {% for blog in blogs %}
                 <div class="border border-1 rounded mt-3 col-10 offset-1 col-lg-8 offset-lg-2">
@@ -67,14 +64,9 @@
                             </small>
                         {% endif %}      
                     </div>
-
                 {% endfor %}
             </div>
-
-
-            
-            
-            <!-- Modal -->
+            <!-- Modal for adding blog post -->
             <div class="modal fade" id="blogPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
@@ -97,7 +89,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Back to top button -->
     <div class="btt-button shadow-sm">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-chevron-up mx-auto my-auto"></i>

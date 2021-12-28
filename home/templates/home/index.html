@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-
+    <!-- Homepage hero images on medium devices and up -->
     <div class="container d-none d-md-block ">
         <div class="row product-row row-homepage">
             <div class="homepage-container col-lg-10 col-12 offset-lg-1">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Homepage hero images on smallest devices -->
     <div class="container d-md-none">
         <div class="homepage-container col-lg-10 col-12 offset-lg-1">
         <div class="row row-homepage">
@@ -78,11 +78,11 @@
         </div>
     </div>
     </div>
-           
 
 <div class="container">
     <div class="row product-row row-homepage">
         <div class="product-container col-lg-10 col-12 offset-lg-1">
+            <!-- Sample of random books -->
             <div class="row mt-1 mb-2 text-center">
                 <div class="col">
                     <h4 class="mt-4 logo-font text-decoration-none">Books</h4></div>
@@ -96,25 +96,8 @@
                     to see all books.</p>
                 </div>
             </div>
-
             <hr>
-            
-            <div class="row mt-1 mb-2 text-center">
-                <div class="col">
-                    <h4 class="mt-4 logo-font">Games</h4></div>
-            </div>
-            <div class="row">
-                {% include 'home/includes/random_games.html' %}
-            </div>
-            <div class="row mt-2">
-                <div>
-                    <p class="text-center">Click <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games">here</a>
-                    to see all games.</p>
-                </div>
-            </div>
-
-            <hr>
-
+            <!-- Sample of random arts and crafts -->
             <div class="row mt-1 mb-2 text-center">
                 <div class="col">
                     <h4 class="mt-4 logo-font">Arts & Crafts</h4></div>
@@ -128,10 +111,25 @@
                     to see all arts & crafts.</p>
                 </div>
             </div>
+            <!-- Sample of random games -->
+            <div class="row mt-1 mb-2 text-center">
+                <div class="col">
+                    <h4 class="mt-4 logo-font">Games</h4></div>
+            </div>
+            <div class="row">
+                {% include 'home/includes/random_games.html' %}
+            </div>
+            <div class="row mt-2">
+                <div>
+                    <p class="text-center">Click <a href="{% url 'games' %}?category=jigsaw_puzzles,board_games">here</a>
+                    to see all games.</p>
+                </div>
+            </div>
+            <hr>
         </div>
     </div>
 </div>
-
+<!-- Back to top button -->
 <div class="btt-button shadow-sm">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-chevron-up mx-auto my-auto"></i>

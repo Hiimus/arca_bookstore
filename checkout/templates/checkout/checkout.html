@@ -34,7 +34,7 @@
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
                     </div>
-                    <div class="col-3 text-right">
+                    <div class="col-3">
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
@@ -53,13 +53,13 @@
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
-                        <div class="col-3 text-right">
+                        <div class="col-3">
                             <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
                 <hr class="my-0">
-                <div class="row text-black text-right">
+                <div class="row text-black">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
@@ -119,15 +119,12 @@
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
-
                         <!-- Used to display form errors -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <!-- Pass the client secret to the view so we can get the payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-
-                    <div class="submit-button text-end mt-5 mb-2">                    
-						
+                    <div class="submit-button text-end mt-5 mb-2">       
 						<button id="submit-button" class="green-btn btn underline border text-uppercase">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">

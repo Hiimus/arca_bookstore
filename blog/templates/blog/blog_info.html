@@ -13,18 +13,16 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="homepage-container col-lg-10 col-12 offset-lg-1">
+            <!-- Blog image -->
             <div class="row row-homepage">
                 <div class="col-sm-12 position-relative hover-effect">
                     <a href="{% url 'view_blog' %}">
-                        
                         <img class="blog-img img-fluid"
                             src="{{ MEDIA_URL }}homepage/blog.jpg">
                     </a>
                 </div>
             </div>
-
-
-            
+            <!-- Blog Post -->
             <div class="row mt-4">
                 <div class="col-10 offset-1">
                     <a href="{% url 'view_blog' %}"><i class="fas fa-chevron-left fa-sm"></i> Back to Blog</a>
@@ -41,13 +39,10 @@
                     <p> {{ blog.created_at }}</p>
                     <br>
                     <br>
-                        
-                        
                 </div>
             </div>
-        
             <hr>
-
+            <!-- Add Comment form -->
             {% if request.user.is_authenticated %}
             <form method="POST" action="{% url 'add_comment' blog.id %}" class="form mb-2" enctype="multipart/form-data">
                 <div class="row">
@@ -62,9 +57,8 @@
                 </div>
             </form>
             {% endif %}
-        
-
             <hr>
+            <!-- Blog post comments -->
             <div class="row mb-3">
                 <div class="col-10 offset-1 col-xl-8 offset-xl-2">
                     <h1 class="display-6">Comments</h1>
@@ -83,7 +77,6 @@
                             <p> {{ comment.created_at }}</p>
                             <hr>
                         {% endfor %}
-                            
                     {% else %}
                         <h5>There are no comments.</h5>
                     {% endif %}

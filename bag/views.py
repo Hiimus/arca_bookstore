@@ -4,7 +4,8 @@ from django.contrib import messages
 
 from products.models import Product
 
-# Create your views here.
+# Shopping bag logic is mostly from Boutique Ado
+
 
 def view_bag(request):
     """ A view that renders the bag contents page """
@@ -13,7 +14,7 @@ def view_bag(request):
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag/cart """
+    """ Add a quantity of the specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -43,7 +44,7 @@ def adjust_bag(request, item_id):
         messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
     else:
         bag.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
+        messages.success(request, f'Removed {product.name} from your bag')
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
@@ -57,7 +58,7 @@ def remove_from_bag(request, item_id):
         bag = request.session.get('bag', {})
 
         bag.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your cart')
+        messages.success(request, f'Removed {product.name} from your bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)

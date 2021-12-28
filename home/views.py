@@ -57,13 +57,3 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
-
-
-
-
-def get_random_books(request):
-    """ A view that gets random books based on categories """  
-    context = {
-    }
-
-    return render(request, 'home/index.html', context)
