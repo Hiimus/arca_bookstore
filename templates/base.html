@@ -84,18 +84,14 @@
             <a class="charcoal-color nav-link d-lg-block d-none dropdown-toggle" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <div class="text-center">
                 <div><i class="fas fa-user-circle fa-lg"></i></div>
-                {% if grand_total %}
                 <p class="my-0">My Account</p>
-                {% endif %}
               </div>
             </a>
             {% else %}
-            <a class="charcoal-color nav-link d-lg-block d-none dropdown-toggle" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Profile">
+            <a class="charcoal-color nav-link d-lg-block d-none dropdown-toggle" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-placement="bottom" title="My Profile">
               <div class="text-center">
                 <div><i class="fas fa-user-circle fa-lg"></i></div>
-                {% if grand_total %}
                 <p class="my-0">My Account</p>
-                {% endif %}
               </div>
             </a>
             {% endif %}
@@ -120,6 +116,8 @@
                 <p class="my-0">
                   {% if grand_total %}
                   ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                  $ 0.00
                   {% endif %}
                 </p>
               </div>
