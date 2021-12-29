@@ -17,8 +17,13 @@
         </div>
         <div class="row">
             <div class="col-3 offset-2 d-none d-lg-block">
-                <img class="img-fluid" src="{{ product.img_paths.url }}"
+                {% if product.img_paths %}
+                    <img class="img-fluid" src="{{ product.img_paths.url }}"
                 alt="{{ product.name }}">
+                {% else %}
+                    <img class="img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                alt="{{ product.name }}">
+                {% endif %}
             </div>
             <!-- Add review form for large devices and up-->
             <div class="col-4 d-none d-lg-block">
@@ -33,10 +38,10 @@
             </div>
         </div>
         </div>
-        <div class="text-center d-lg-none">
+        <!-- <div class="text-center d-lg-none">
             <img class="img-fluid" src="{{ product.img_paths.url }}"
             alt="{{ product.name }}">
-        </div>
+        </div> -->
         <br>
         <!-- Add review form for smaller devices-->
         <div class="row d-lg-none">

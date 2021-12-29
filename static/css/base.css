@@ -679,6 +679,10 @@ span.badge:hover {
     white-space: normal;
 }
 
+.overflow-break {
+    overflow-wrap: break-word;
+}
+
 
 
 /* -------------------------------- Media Queries -----------------*/

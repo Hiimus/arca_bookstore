@@ -24,7 +24,7 @@
             </div>
             <!-- Blog Post -->
             <div class="row mt-4">
-                <div class="col-10 offset-1">
+                <div class="col-10 offset-1 overflow-break">
                     <a href="{% url 'view_blog' %}"><i class="fas fa-chevron-left fa-sm"></i> Back to Blog</a>
                     <hr>
                     <h1 class="display-5"> {{ blog.title }}</h1>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 offset-1 col-xl-8 offset-xl-2">
+                <div class="col-10 offset-1 col-xl-8 offset-xl-2 overflow-break">
                     {% if comments %}
                         {% for comment in comments %}
                             <h5> {{ comment.name }}</h5>{% if request.user.is_superuser %}
