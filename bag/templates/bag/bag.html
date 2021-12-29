@@ -125,7 +125,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     // Back to top button
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
@@ -133,7 +133,7 @@
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
