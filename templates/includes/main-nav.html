@@ -72,7 +72,7 @@
     {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
             <li class="nav-item dropdown d-lg-none">
-                <a href="{% url 'add_product' %}" class="logo-font font-weight-bold nav-link text-black mr-5 underline">Product Management</a>
+                <a href="{% url 'add_product' %}" class="logo-font font-weight-bold nav-link text-black mr-5 underline">Add a Product</a>
             </li>
         {% endif %}
         <li class="nav-item dropdown d-lg-none">
