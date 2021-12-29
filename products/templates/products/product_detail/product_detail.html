@@ -121,7 +121,7 @@
                                                 <li class="text-muted">{{ review.created_at }}</li>
                                                 {% if request.user.is_superuser %}
                                                 <span class="float-end me-5">
-                                                    <a href="{% url 'delete_review' review.id %}" class="charcoal-color" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Review"><i class="far fa-trash-alt fa-lg"></i></a>
+                                                    <a href="{% url 'delete_review' review.id %}" class="charcoal-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Review"><i class="far fa-trash-alt fa-lg"></i></a>
                                                 </span>
                                                 {% endif %}
                                                 <li class="mt-1"><strong>{{ review.user }}</strong> rated it

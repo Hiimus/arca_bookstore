@@ -18,7 +18,7 @@
                     <div class="col-sm-12 position-relative hover-effect">
                         <a href="{% url 'view_blog' %}">
                             <img class="blog-img img-fluid"
-                                src="{{ MEDIA_URL }}homepage/blog.jpg">
+                                src="{{ MEDIA_URL }}homepage/blog.jpg" alt="blog image">
                         </a>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                             <p class="lead cut-text"> {{ blog.body|linebreaks }}</p>
                             {% if blog.image %}
                             <div class="custom-image-container">
-                                <img class="img-fluid" src="{{ blog.image }}">
+                                <img class="img-fluid" src="{{ blog.image }}" alt="blog post image">
                             </div>
                             {% else %}
                             {% endif %}
