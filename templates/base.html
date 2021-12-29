@@ -59,7 +59,7 @@
     <div id="topnav" class="row charcoal-color pt-lg-2 d-none d-lg-flex justify-content-center">
       <div class="col-12 col-lg-4 col-xl-3 py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-        <h2 class="logo-font my-0"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo d-none ms-2" src="{{ MEDIA_URL }}homepage/book-min.png" alt="book"></h2>
+        <h2 class="logo-font my-0"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo d-none ms-2" alt="small red book" src="{{ MEDIA_URL }}homepage/book-min.png"></h2>
         </a>
       </div>
       <div class="col-12 col-lg-4 col-xl-4 py-1 py-lg-0">
@@ -136,7 +136,7 @@
           <span></span>
         </a>
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font my-0 d-lg-none charcoal-color"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo ms-2" src="{{ MEDIA_URL }}homepage/book-min.png" alt="book"><span></span></h2>
+          <h2 class="logo-font my-0 d-lg-none charcoal-color"><strong>Arca</strong> Bookstore<img class="img-fluid book-logo ms-2" alt="small red book" src="{{ MEDIA_URL }}homepage/book-min.png"><span></span></h2>
         </a>
         {% include 'includes/mobile-top-header.html' %}
         {% include 'includes/main-nav.html' %}
@@ -169,18 +169,28 @@
   {% endblock %}
   
   <footer class="mt-auto maximum-yellow-red-color-bg">
-      <div class="row mt-1">
+    <div class="row d-flex justify-content-center">
+      <span class="text-center p-2">
+        <a class="footer-icon-twitter pe-4" href="https://www.twitter.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i
+        class="fab fa-twitter fa-lg"></i></a></li>
+        <a class="footer-icon-instagram" href="https://www.instagram.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i
+          class="fab fa-instagram fa-lg"></i></a></li>
+        <a class="footer-icon-facebook ps-4" href="https://www.facebook.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i
+          class="fab fa-facebook fa-lg"></i></a></li>
+      </span>
+    </div>
+      <!-- <div class="row mt-1">
           <div class="col-md-12 mt-2 text-center p-2">
             <ul class="d-inline p-0">
-              <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i
+              <li class="d-inline"><a class="footer-icon-twitter d-inline" href="https://www.twitter.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Twitter"><i
                     class="fab fa-twitter fa-lg"></i></a></li>
-              <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i
+              <li class="d-inline"><a class="footer-icon-instagram d-inline" href="https://www.instagram.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Instagram"><i
                     class="fab fa-instagram fa-lg"></i></a></li>
-              <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i
+              <li class="d-inline"><a class="footer-icon-facebook d-inline" href="https://www.facebook.com/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook"><i
                     class="fab fa-facebook fa-lg"></i></a></li>
             </ul>
           </div>
-      </div>
+      </div> -->
       <div class="row mt-1 row-copyright">
         <div class="col-md-12 text-center">
           <span class="copyright charcoal-color align-middle">
