@@ -19,7 +19,10 @@
             <h2 class="logo-font">
                 {% if request.path == "/products/books/" %} Books
                 {% elif request.path == "/products/arts/"%} Arts & Crafts
-                {% elif request.path == "/products/games/"%} Games {% endif %}
+                {% elif request.path == "/products/games/"%} Games 
+                {% else %}
+                Product(s)
+                {% endif %}
             </h2>
             {% for c in current_categories %}
             {% if "/products/books/" in request.path %}
