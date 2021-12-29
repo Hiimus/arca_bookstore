@@ -193,16 +193,16 @@
   <script>
     // Javascript for toasts
     // Code used from user "Richard Ash" in Slack chat. 
-    let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    let toastElList = [].slice.call(document.querySelectorAll('.toast'));
     let toastList = toastElList.map(function (toastEl) {
       let option = {
         animation: true,
         autohide: true,
         delay: 5000,
-      }
-      let bsToast = new bootstrap.Toast(toastEl, option)
+      };
+      let bsToast = new bootstrap.Toast(toastEl, option);
       bsToast.show();
-    })
+    });
   </script>
 
   {{ block.super }}
