@@ -139,68 +139,73 @@ Image of login with remember me:
 
 After registering and loggin in the user can access their own account page. This page contains their default delivery information and their order history. 
 
-- This will be blank, since they haven't filled it out yet, but the first time they do it, there will be an option to save this information so that they don't need to do it again. From the profile page the user can update this information by clicking on the "Update Information" button.
+- This will be blank, since they haven't filled it out yet, but the first time they fill it out, there will be an option to save this information so that they don't need to do it again. From the profile page the user can update this information by clicking on the "Update Information" button.
+
+### Shopping Bag Page
+
+- There are two ways the user can access the shopping bag. One way is to just click the shopping bag icon in the navbar or dropdown, the other way is by clicking the "Checkout" button in the message box that appears when adding items in the bag.
 
 ![user-journey4](readme_img/user_journey/user-journey4.JPG)
 
-- The order history display some information about the order, but there is also a hyperlink the user can click on in order to see all the orders information.
+- Once on the shopping bag page, the user will see an overview of the items that the bag contains, with costs. From here the user can either keep shopping by clicking the "Keep Shopping" button, or proceed to checkout by clicking the "Secure Checkout" button.
 
-Order history from profiles page:
 ![user-journey4](readme_img/user_journey/user-journey4.JPG)
 
-Order history page:
+### Checkout Page
+
+- On the checkout page the user will see the products in the order summary with total costs. The user can choose to click the "Adjust Bag" button to make changes to the order, or continue the checkout by filling out the delivery information form. As mentioned earlier, the delivery information can be saved, but only if the user is registered. 
+
 ![user-journey4](readme_img/user_journey/user-journey4.JPG)
 
+- After filling in necessary card information, the user can complete the order by clicking the "Complete Order" button. Then, an order confirmation page with an overview of the order and delivery information will be displayed. On this page there is a "Back to Home" button that will send the user back to the home page.
 
-### Viewing a Recipe
-When clicking on a recipe card, the user will be directed to a new page, displaying more information about the recipe. On this page there is an arrow that will revert the user back to the home page, and there is a large container that displays all information about the recipe that was chosen. 
-Which icons that are being displayed depends on the state of the user. If the user is not logged in, the green heart button will be displayed. If the user is logged in the heart button will either be green if the user has not liked it, or red if the user already likes it. When the user is the author of a recipe, the user will have the ability to delete and/or edit the recipe. 
+![user-journey4](readme_img/user_journey/user-journey4.JPG)
 
-![user-journey7](readme_img/user_journey/user-journey7.JPG)
-
-If the user clicks on the delete button, the user will have to confirm this by clicking "Yes" in a modal that pops up. 
-If the user clicks on the edit button, the user will be directed to the editing page.
-
-### Edit Recipe Page
-On the edit page, the user will see that all information that is currently used on the recipe is already filled in. Here the user can change and edit what they want. Once the user is finished on this page, the user can either click on the "Save Changes" button if they want, or click the "Cancel" button, which directs the user back to the Home page. 
-
-![user-journey8](readme_img/user_journey/user-journey8.JPG)
-
-### Adding a Recipe
-When the user is logged in, the user can click on the "Add Recipe" link either in the navbar/sidebar or in the footer. 
-The user will be presented with an empty form, where the user can provide information. The user has the option to add an image url link, but this is optional. If no link is added, a default image will be chosen. On both the ingredients and instructions fields, there are buttons for adding extra fields. 
-When the user is happy with the information provided, clicking "Add Recipe" will submit the form, creating a new recipe. The user will be directed to the home page, and a flash message will display at the top of the page, saying "Recipe Successfully Added".
-
-![user-journey9](readme_img/user_journey/user-journey9.JPG)
 
 ## User Stories
 
-The users of this site will be first time visitors and site members.
-### First Time Visitor
-- As a first time visitor, I want to browse recipes, so that I can easily find recipes I want to read more about.
-- As a first time visitor, I want to see images of the meal so that I can see what the dish looks like.
-- As a first time visitor, I want to see some sort of rating system, so that I can see what others think about them.
-- As a first time visitor, I want to see all the ingredients needed so that I know what is needed in order to make the dish.
-- As a first time visitor, I want to see instructions on how to use the ingredients, so that I know how to make the dish.
-- As a first time visitor, I want to be able to search for recipes, so that I can search instead of browse for recipes.
-- As a first time visitor, I want to know if the dish is easy, medium or hard to make, so that I know the difficulty level of the dish.
-### Site Members
-All the features mentioned for the first time users also apply to the site members.
-- As a site member, I want to be able to store recipes, so that I can save the recipes I'm more interested in.
-- As a site member, I want to add recipes, so that I can share my own recipes to the site.
-- As a site member, I want to be able to edit my recipes, so that I can change it if I want to.
-- As a site member, I want to be able to delete my recipes, so that I can remove added recipes if I want to.
+Users of this site will be non-registered users, registered users and superusers. 
+### Non-Registered Users
+- As a non-registered user I want to browse multiple products so that I can look without narrowing down a search.
+- As a non-registered user I want to view more details of a product so that I can get more information about the product.
+- As a non-registered user I want to be able to do a search so that I can find the product I am looking for.
+- As a non-registered user I want to add products to a shopping bag/cart so that I can select multiple products and view them in the bag.
+- As a non-registered user I want to view to see the total prize of the products in the bag so that I can have control of my spendings.
+- As a non-registered user I want to select categories so that I can find multiple products within a category.
+### Registered Users
+- As a registered user I want to view my order history so that I can see my previous orders.
+- As a registered user I want to be able to edit my personal information and shipping information so that I can change it if I want to.
+- As a registered user I want to reset my password so that I can change it or enter a new one if I forget the old password.
+### Superusers
+- As a superuser I want to add products so that I can display a product on the site.
+- As a superuser I want to edit a product so that I can change or add something if I want to. 
+- As a superuser I want to delete a product so that I can remove the product if I want to.
 
 ## Design
 ### Colors
-There are mainly three colors used on this site, which is pistachio, raisin black, orange crayola and white. Standard Materialize colours (red, green) were used on most buttons. 
+I have just about used five different colors, and the "Maximum Yellow Red", "Dark Purple" and white color make up most of the site. I decided on these colors by just clicking on the color palette generator from [LINK TO https://coolors.co/]. When I landed on these colors I just liked them, and I figured I would go with those.
 
+Color palette:
 ![colour-scheme](readme_img/colour-scheme.JPG)
 
-- The green pistachio colour is the most used colour. The reason behind this is because vegetables are often associated with this color. I also think the standard materialize green colour was better suited for the buttons, and not across the whole site. 
-- The black raisin colour is used in the product section, and I think it is a nice contrast to the pistachio color. This color is also used on the login and register button
-- The Orange Crayola colour is only used when hovering over areas where the color black raisin is used. These colors go well together and were inspired from this [Free Frontend card](https://codepen.io/fatihtakey/pen/eyyWVr).
-- The white color is used throughout the site, and in my opinion works great due to the high contrast against the pistachio and raisin black.
+Dark purple container:
+![colour-scheme](readme_img/colour-scheme.JPG)
+(A sentence about why you like this color)
+
+Yellow navbar:
+![colour-scheme](readme_img/colour-scheme.JPG)
+(A sentence about why you like this color)
+
+Charcoal buttons and back to top button:
+![colour-scheme](readme_img/colour-scheme.JPG)
+(A sentence about why you like this color)
+
+green buttons:
+![colour-scheme](readme_img/colour-scheme.JPG)
+(A sentence about why you like this color)
+
+
+
 ### Fonts
 There are two different fonts used on this site: 'Leckerli One' and 'muli'. 
 Both of these fonts were found when I was browsing [Free Frontend](https://freefrontend.com/). 
