@@ -466,31 +466,34 @@ This is the features I would like to implement in the future:
 - [Gitpod](https://www.gitpod.io/) used as an IDE.
 - [GitHub](https://github.com/) used to store and share repositories.
 - [Git](https://git-scm.com/) for version control.
+- [Stripe](https://stripe.com/) - Used for card payments
 - [Balsamiq](https://balsamiq.com/) for creating wireframes.
-- [dbdiagram](https://dbdiagram.io/) for creating a database diagram of Veggie Time.
+- [dbdiagram](https://dbdiagram.io/) for creating a database diagram of Arca Bookstore.
 - [Lucid](https://lucid.app/) for creating an overview of how the user can navigate the site.
 - [Microsoft Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) for resizing images.
 - [Am I Responsive](http://ami.responsivedesign.is/), a tool that views the site on various devices.
-- [CompressJPEG](https://compressjpeg.com/) was used to compress jpeg files.
-- [PurePNG](https://purepng.com/) was used to download images of vegetable chopper and a broccoli image. 
+- [CompressJPEG](https://compressjpeg.com/) was used to compress jpeg and png files.
+- [PurePNG](https://purepng.com/) was used to download the red png image that is used next to the logo and as a favicon. 
 - [Favicon](https://favicon.io/) was used to create a favicon for this project.
 
-## Libraries:
-- [jQuery](https://jquery.com/) a JavaScript library.
-- [Materializecss](https://materializecss.com/) for a quick page structure, components and colours.
-- [Font Awesome](https://fontawesome.com/) as a provider of icons.
-- [Google Fonts](https://fonts.google.com/) as a provider of fonts.
 
 ## Languages:
 
 [HTML5](https://en.wikipedia.org/wiki/HTML5),  [CSS3](https://en.wikipedia.org/wiki/CSS), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [Python](https://en.wikipedia.org/wiki/Python_(programming_language)).
 
-## Frameworks and Packages
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/) is a microframework that was used to provide libraries, technologies and tools for the app.
-- [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) was used as a templating language for Python.
-- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) was used for password hashing, authentication and authorization.
+## Frameworks and Libraries
+- [Django](https://www.djangoproject.com/) was used as the main python framework.
 - [Heroku](https://heroku.com/) was used as a platform to deploy the app.
-- [MongoDB](https://mongodb.com) was used as a cloud database.
+- [jQuery](https://jquery.com/) a JavaScript library.
+- [Bootstrap 5](https://https://getbootstrap.com/docs/5.0/getting-started/introduction/) for a quick page structure, components and colours.
+- [Font Awesome](https://fontawesome.com/) as a provider of icons.
+- [Google Fonts](https://fonts.google.com/) as a provider of fonts.
+
+## Databases
+
+- [SQlite3](https://docs.python.org/3/library/sqlite3.html) - Used as the development database
+- [PostgreSQL](https://www.postgresql.org/) - Used as the deployed database
+- [AWS S3](https://aws.amazon.com/) - Amazon Web Services, used for hosting images and static files
 
 
 # Testing
