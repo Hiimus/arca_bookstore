@@ -113,9 +113,14 @@ I have had a frustrating time with the footer to behave on all pages. The issue 
 ### Shopping Bag
 In the shopping bag page the site would crash if not whole numbers was added, i.e 1.5. This [Stack overflow](https://stackoverflow.com/questions/37043867/how-to-avoid-decimal-values-in-input-type-number) thread helped me solve it by adding some JavaScript that only allow whole numbers.
 
+### Favicon
+The favicon generated errors in the console in production mode, but not on the deployed site. I found a helpful fix for it that removed the error. I just needed to add crossorigin="use-credentials" in the html link. This removed the error in the console in production mode, but made the error appear in the deployed version. I concluded that deployed version is what is important, so I removed the "fix". This might issue might also be under the section of "Unsolved Bugs", but it doesn't bother me if the favicon actually works and doesn't raise any errors in the console.
+
 
 ### Screen Flickering
 For some reason, on some pages the screen was flickering when hovering over elements that had a hover effect. This [Github](https://github.com/jackmoore/autosize/issues/307) thread helped me fix it by adding `overlfow: scroll` to the body in the base.html.
 
 ## Unsolved Bugs
 
+### Login
+On the login page, there is an option to use the "Remember me" checkbox. This works in production, but not on the deployed site. I noticed this just before the deadline and I didn't find a solution to the problem.
