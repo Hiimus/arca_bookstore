@@ -651,13 +651,13 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 ---
 
-### Generating A Bucket Policy
+### Bucket Policy
 
-1. Click on the “Policy Generator” button. This will open a new window. 
+1. After setting permission, you need to generate a bucket policy. Click on the “Policy Generator” button. This will open a new page where you can do this. 
 
-2. Within that new window will be a series of steps. For step one, you will need to select “S3 Bucket Policy from the dropdown list.
+2. First, select “S3 Bucket Policy from the dropdown list.
 
-3. In step two, you will need the following options set;
+3. Second, ensure you have these options set:
 
     - Effect – Allow
     - Principle - *
@@ -672,25 +672,25 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 ### Access Control List (ACL)
 
-1. Staying in the permissions tab, click edit under the “Access Control List (ACL)” section. 
+1. Still in the permissions tab, scroll down to the Access control list(ACL) and click the edit button. 
 
-2. You will be shown a series of options and tick boxes. Navigate to “Everyone (public access)” and tick the box on the left, “List” under the “Objects” heading. You will need to agree that you understand the effects before you can save, so tick that, then click on “Save Changes”.
+2. From here, navigate to “Everyone (public access)” and tick the left box "List". Make sure to tick the checkbox below that you understand the effects of the changes. Click "Save changes".
 
 ---
 
 ### IAM - Creating A Group and Policy
 
-1. Next, search for IAM in the search bar at the top, and click on it to set up a group policy.
+1. Next, search for IAM in the search bar at the top, and click on it. You will now set up a group policy.
 
-2. Under “Access Management” on the left hand side, click on “User Groups” and create a new group.
+2. Click on the "User Groups" subcategory, under "Access Management" on the left side.
 
-3. Give the group a name and click “Create Group”. 
+3. Once on this page, click the create a group button and give the group a name.
 
 4. This will take you back to the IAM dashboard. Go back to the “Access Management” section on the left hand side, and click on “Policies”. 
 
-5. Click “Create Policy” and head over to the JSON tab, and select “Import Managed Policy”. 
+5. Click “Create Policy” and in the JSON tab, select “Import Managed Policy”. 
 
-6. Search for and click on “AmazonS3FullAccess” then “Import”.
+6. Search for “AmazonS3FullAccess”, select it, then click on the “Import” button.
 
 7. Copy your ARN and place it in the code so that it looks like the below;
 
@@ -719,34 +719,33 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 ### Group Policy
 
-1. Next, you will need to attach the Policy to the Group created.
+1. Next, you will need to attach the AmazonS3FullAccess Policy to the Group created.
 
 2. Go to “User Groups” on the left hand side menu, under “Access Management”.
 
-3. Click on the your newly created group and go over to the “Permissions” tab.
+3. Once on this page, you will find your created group. Click on it and head to the “Permissions” tab.
 
-4. Click on the “Add Permissions” button, and select “Attach Policy”.
+4. Click on the “Add Permissions” dropdown, and select “Attach Policy”.
 
-5. Search for and click on the checkbox next to the policy you have just created, then click “Add Permissions”.
+5. Search for and tick the checkbox next to the policy you have just created, then click “Add Permissions”.
 
 ---
 
 ### IAM - Create User
 
-1. Back at the IAM dashboard, click on “Users” on the left hand side menu, then “Add User”.
+1. Back at the IAM dashboard (you can click on the link in the top left corner), click on “Users” on the left hand side menu, then the “Add User” button.
 
-2. Choose a name and tick the checkbox to give the user access, then click “Next: Permissions”.
+2. Choose a name i.e "app-name-staticfiles-user" and tick the checkbox to give the user access, then click “Next: Permissions”.
 
 3. Select the group to put the user in and keep clicking the next buttons until the very end and click “Create user”.
 
-4. Click on “Download .csv” file and make sure you save this somewhere you remember, as you will not have access to this page again! This file will contain information such as your access codes (shown above in the Heroku Deployment section).
+4. IMPORTANT: Click on “Download .csv” file and make sure you save this mindfully because you will not have access to this page again! The .csv file will contain information such as your access codes (shown above in the Heroku Deployment section).
 
 ---
 
 ### **Important!**
 
-Make sure to also update your settings.py file to reflect the changes to the database! It should look something like this;
-
+Make sure to add this to your settings.py file:
 ```
 if 'USE_AWS' in os.environ:
     AWS_STORAGE_BUCKET_NAME = 'your_bucket_name'
@@ -762,13 +761,11 @@ if 'USE_AWS' in os.environ:
 
 If you need to save images to your S3 bucket, you will need to do the following;
 
-1. Go back to the S3 dashboard, and click on your bucket. 
+1. Search for S3 in the search bar, click it and access your bucket.
 
-2. Click “Create Folder”, call it ‘media’ and confirm with the second “Create Folder” button.
+2. Now create a new folder by clicking the "Create folder" button, name the folder name i.e "media", then click the "Create folder" button. 
 
-3. When you are in this folder, click “Upload”, then “Add Files” or “Add Folder”, then “Upload”.
-
-
+3. Now you can access the "media" folder you just created, and you can upload images by clicking the "Upload" button, and choosing either to add files or folders. When you have selected the files/folder you want, click the "Upload" button. 
 
 
 # Credits
@@ -789,6 +786,8 @@ My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/
 The Code Institute [Slack](https://slack.com/) channel for having discussion, questions and answers that contribute to my project. Also a lot of similar projects are posted in the slack channel, which contributed to the planning of my project. 
 
 Thanks to Sean from tutor support. He helped me with the add to favorite function.
+
+Credit to [taybro23](https://github.com/taybro23/AboveBoard_MS4#deployment)'s MS4 README. I used his section on deployment as inspiration for my own README.
 
 [Stack Overflow](https://stackoverflow.com/) for helping me understand and solving issues along the way.
 
