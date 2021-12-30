@@ -102,29 +102,20 @@ Browser test:
 
 
 
-# Resolved Issues
+# Bugs
 
-## Migrations
+## Solved Bugs
 
-After I had deployed my project to Heroku, I was getting issues with my migrations not being pushed to Heroku correctly. I reset my migrations, but I didn't do this correctly the first time which lead to me needing to do it twice. 
+### Footer
 
-To successfully reset my migrations, I deleted all previous migrations and the `db.sqlite3` file from GitPod. I then re-ran migrations on GitPod and Heroku, and this fixed the issue I was having. 
+I have had a frustrating time with the footer to behave on all pages. The issue was when there was much vs little content on the page. The footer would cover some content, and it would suddenly stick to the top of the page. A [Stack overflow](https://stackoverflow.com/questions/2744690/preventing-fixed-footer-from-overlapping-content) thread helped me fix the issue with overlapping content. 
 
-# Unresolved Issues
+### Shopping Bag
+In the shopping bag page the site would crash if not whole numbers was added, i.e 1.5. This [Stack overflow](https://stackoverflow.com/questions/37043867/how-to-avoid-decimal-values-in-input-type-number) thread helped me solve it by adding some JavaScript that only allow whole numbers.
 
-## Product reviews linked to product ratings
 
-I have implemented product reviews on my site, however I was unable to figure out a way to link these up to display as an average rating for the product the reviews are for. I attempted this by following tutorials but was unable to make this work.
+### Screen Flickering
+For some reason, on some pages the screen was flickering when hovering over elements that had a hover effect. This [Github](https://github.com/jackmoore/autosize/issues/307) thread helped me fix it by adding `overlfow: scroll` to the body in the base.html.
 
-## Product Fixtures
+## Unsolved Bugs
 
-As I wanted to display each shoe brand separately I created them as separate categories. This made some future developments rather difficult to navigate on my site as I essentially need to rebuild my fixtures, but did not want to edit them at a late stage in my project.
--	Pagination :- This was not something I could implement on Products pages due to the set up of my fixtures. I followed a few tutorials (which successfully worked for my Help & Guidance section) but they were not successful on my product pages
-
-## Keep Shopping buttons
-
-I would like these buttons to take the user back by one page, but could not find a fix for this.
-
-## 500 Error
-
-If a new product is added to the site, added to the basket then deleted, it causes an error and the entire site crashes. If the cookies are cleared, the site works again as expected. I'm not 100% sure what is causing this error or how to fix it, so it is being left as unresolved. 
