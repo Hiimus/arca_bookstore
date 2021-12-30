@@ -409,7 +409,7 @@ When clicking on a post, the blog info page for that post will open. The blog in
 
 ![overview of site](readme_img/overview.JPG)
 
-- Comment section that displays all comments with name, comment and date created. The author of the comment will be able to delete their own posts, and superusers are able to delete all posts.
+- Comment section that displays all comments with name, comment and date created. Superusers are able to delete posts and comments.
 
 ![overview of site](readme_img/overview.JPG)
 
@@ -449,6 +449,8 @@ The third Help option is the Contact page.
 ## Features Left to Implement:
 
 This is the features I would like to implement in the future:
+
+- Letting registered users have the option to edit and delete their own reviews and comments. For now that is only possible for the superuser. This is high priority as this is an important feature.
 
 - Pagination. As more products are added, it will be poor user experience to have not have pagination when there are alot of products. This will also reduce loading time.
 
