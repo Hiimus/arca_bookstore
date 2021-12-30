@@ -46,146 +46,27 @@
 checkout/webhooks.py:33:5: F841 local variable 'e' is assigned to but never used: This I choose to ignore because I can't seem to fix it and [PEP8](http://pep8online.com/) says it's fine.  
 
 
-*Please Note - Warnings and errors were given on most pages due to template logic being used in this project. Certain Python files also failed PEP8 checks due to base code set by Django.*
-
-# Functionality
-
-## Security Testing
-All pages were tested with a non-admin account to make sure that no access was given to those users that should not have access. This was tested by me copying the links, accessing them on an incognito browser in Google Chrome that I was not logged into, then logging into it with a non-admin user, and trying the links again. The error pops up correctly and advises the user that only admins and site owners can view that page.
 
 ## Responsiveness
-The responsiveness of the site was tested using Google Chrome on a windows laptop, Safari on an Apple MacBook Pro, Google Chrome on a Samsung Galaxy S20 and S21, and Safari on an iPhone 13. I found no issues with any elements of the site when testing this.
+Responsiveness was tested with [Responsive Design Checker](https://responsivedesignchecker.com/) and [Google Devtools](https://google.com/). Various devices and screen sizes was tested. Note:
 
-## General Functionality Testing
+- Throughout the project I have adjusted the screen size in one of the window corners for a quick responsiveness check. See below for an overview of responsiveness testing:
 
-### Navbar
--	Navbar is positioned at the top of the screen, and is fixed so that it is visible even when the user has scrolled down the page 
--	All links have been tested and navigate to the correct area of the site
--	When the navigation links are hovered over, they change colour as intended, and the dropdowns appear
--	Dropdown hover colours are all correct and links work 
--	Navbar correctly collapses on smaller screens including mobile view. This has been tested both on Google Chrome devtools and mobile phones
--	Overall collapsed layout is consistent with rest of the site
--	Search bar toggle works correctly
--	Site Logo displays on mobile view and is correctly hidden when on larger screens
+#### Testing for smartphones:
+![user-journey1](readme_img/user_journey/user-journey1.JPG)
+#### Testing for tablets:
+![user-journey1](readme_img/user_journey/user-journey1.JPG)
+#### Testing for desktops:
+![user-journey1](readme_img/user_journey/user-journey1.JPG)
 
-### Navbar Search Bar
--	Focus and hover colours work correctly
--	When searching for a product on the site, it brings up all relevant products. This has been tested by using keywords for products, product categories, brands and keywords that are not relevant to products on the site
--	All correct alerts and errors are shown based on search query
+## Browser Compatibility and Functional Testing
 
-### Footer
--	Footer is fixed to the bottom of all content
--	Menu links work correctly
--	Social Links open a new tab and take the user to the correct site
+The site's features such as adding products, ordering, buying products, adding reviews, commenting, deleting, editing was tested on all browsers. Registering, logging in, signing out and forgot password was also tested. All links, 404 and 500 pages were also tested. 
 
-### Home 
--	Carousel Images and text/button overlays are nicely responsive on desktop and mobile views
--	Buttons on carousel images work correctly and navigate the user to the correct pages. They also position correctly depending on screen size
--	Featured Brand section works correctly, and all products that are under that brand are displayed when the option is clicked. This has been tested by adding and editing products with those set brands and making sure the products displayed were all correct
+Browser test:
+![user-journey1](readme_img/user_journey/user-journey1.JPG)
 
-### Products
--	Main product page images only display on certain larger screen sizes, and this has been tested by viewing the site on small screens and mobile views
--	Correct titles are displayed when the categories are selected
--	Correct sub-category buttons are displayed under each main category, and when the sub-category has been selected, the correct button shows
--	All button effects including hover have been fully tested and work correctly
--	Sort By option dropdown works correctly and I have tested all options to make sure the order of products changed depending on the criteria
--	Product displays are all correct, and should a product not have an image, the correct default image is displayed
--	Category tag links, and edit/delete links for admins all work as intended
--	When the image is clicked, the user is taken to that products individual detail page. All products work
 
-### Product Detail
--	Breadcrumb links work as they should, and I have tested this on a range of categories to make sure it is consistent
--	Product images are all correct, and should a product not have an image, the correct default image is displayed
--	Product information is correctly shown to the user, such as price, description etc.
--	Edit/Delete links for admins work and direct admin to the correct pages
--	Size dropdown box (if applicable) works correctly and if user adds that product to the bag will see the size they have selected. I have checked every product to make sure that no products show as having sizes when they shouldn’t, and vice versa
--	Quantity selector works correctly, by changing the amount of the product using the up/down arrows within the box, at the sides of the box and by using the up/down arrow keys on the users keyboard. Focus colours work as intended
--	Keep Shopping button hover works, and takes the user back to the products page
--	Add To Bag button adds the product to the users shopping bag in the correct size (if applicable) and quantity that the user has selected. This is displayed to the user by way of an on screen alert, showing a mini view of the users shopping bag. This was tested using a range of products with different sizes and quantities selected
--	Reviews section shows reviews that users have left, and allows both the user who submitted the review and the admin to edit the review
--	If user is logged in, a review form is displayed with the submit button below to submit the review form once they are done
--	If form is not filled in correctly, a warning will show on the section of the form that is not correct. This was tested by leaving sections of the form blank and trying to submit. All input focus colours are correct
--	If the user is not logged in, text is displayed asking the user to register or log in to leave a review. This has been tested by viewing the site in Google Chromes Incognito mode
-
-### Shopping Bag
--	Product details are correctly displayed, including size and quantity chosen
--	Quantity selector works correctly and when the update button is clicked, the quantity updates
--	Subtotal updates based on quantity
--	Clicking the remove button removes the item successfully from the shopping bag, and updates the total cost of the shopping bag contents
--	Delivery costs are correctly amended based on shopping bag contents
--	Pricing was tested by adding and removing multiple products in the shopping bag and triggering delivery charges
--	Keep Shopping button sends the user back to the products page when clicked, and hover colours work well
--	Secure Checkout button takes the user to the Checkout page, and correctly shows products that are in the shopping bag. This includes updated quantities. Hover colours work as intended
-
-### Checkout
--	Order Summary is correctly displayed, and shows the products that were in the shopping bag
--	Checkout form is correctly displayed to the user
--	If the user is logged in, checkbox is displayed for the user to save this address to their profile. If they click this checkbox and the order is completed, the delivery details are added to the profile page
--	If user is not logged in, options to register or log in are displayed instead. These links work
--	I have tested this by creating new accounts, checking this box and checking the profile page after completing the order
--	Stripe default card number used for payments. No payment issues found
--	If incorrect card details are entered, an error is displayed to the user
--	If part of the form is left empty the order will not process and takes the user to the empty section of the form
--	Back to bag button works as intended. Hover colour works and if clicked, takes the user back to the shopping bag
--	Complete Order Securely button works and processes the order and payment for the user. Button colours are correct and hover effects work
-
-### Checkout Success/Order History
--	Order information is displayed correctly
--	If user has reached this page from the checkout, a button to view other products will be displayed. This navigates the user to the products page
--	If user has reached this page from their profile, a back to profile button will instead be displayed. Again this works fully
-
-### Sign Up
--	Sign Up page allows a user to register an account using their email address
--	It will then send the user an email to confirm their email address and complete the registration process
--	Once the user has confirmed their email, they can log in and use the site as a registered user
--	I have tested this by creating a number of accounts with different email addresses, all worked as predicted
-
-### Sign In
--	Allows the user to sign in using the email address or username they signed up with and the password they chose
--	A checkbox can be ticked that will save the users information for future visits
--	If a user has forgotten their password, the option is there for them to click it, and run through the forgotten password journey that allows them to reset it. This has been tested with multiple accounts and works
--	If no user exists with those details, an error will display above the log in form to inform the user of that
-
-### Profile
--	Order history display is correct and shows a preview of past orders
--	If the order number is clicked, it takes the user to the Order History page
--	Default Delivery Information form works as intended, and auto-fills if it has been selected in the checkout process
--	Updating the address works correctly, and is reflected both on the profile page and the checkout
-
-### Product Add/Edit
--	Crispy form correctly displays all inputs
--	If editing a product, form is correctly pre-filled with existing information
--	Removing an image works as intended
--	Adding an image works as intended
--	Cancel button hover colour is correct, and takes admin back to the products page
--	Add product button successfully adds a product to the site, and auto directs the admin to the product details page of the product they have just added
--	Edit product button successfully amends the product information and/or image, directs the admin to the product details page and displays the edited information 
-
-### Help & Guidance
--	Add Post button is correct style, and if clicked, directs the admin to the add post page
--	Post displays are all correct, and should a post not have an image, the correct default image is displayed
--	View Post button directs the user to the correct post details page
--	If the image is clicked, it also directs the user to the post details
--	Pagination is used in this part of the site, and works as intended. I have tested this by creating many posts and checking that the pagination works
-
-### Help & Guidance Post Detail
--	Post displays are all correct, and should a post not have an image, the correct default image is displayed
--	Edit/Delete links for admins work correctly and take the admin to the edit page/delete the post from the site
--	Back button takes the user back to the main Help & Guidance page
-
-### Help & Guidance Add/Edit Post
--	When adding a post, form is correctly displayed empty and allows the user to input the relevant information
--	If editing a post, form is correctly pre-filled with existing information
--	Adding and removing images works as intended
--	Cancel button hover colour is correct, and takes admin back to the posts page
--	Add post button successfully adds a post to the site, and auto directs the admin to the post details page of the post they have just added
--	Edit post button successfully amends the post information and/or image, directs the admin to the post details page and displays the edited information 
-
-### 404/500 Pages
--	I have tested these pages by initiating the error codes
--	The page displays as it should, with the correct text depending on the error
--	Back To Home button directs the user back to the home page
--	Image displays correctly
 
 # User Stories Testing
 
