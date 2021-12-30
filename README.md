@@ -498,71 +498,279 @@ This is the features I would like to implement in the future:
 
 # Testing
 The testing of this project can be found as a separate [TESTING.md](TESTING.md) file.
+
+
 # Deployment
-### Requirements
-- Heroku account
--MongoDB account
-- Github account
-- Python3
-### How to clone this project
-In order to make a local clone of this project:
-1. Log in to Github and go to the repository.
-2. Click on the button with the text "Code".
-3. Click on the field with the text "Open with Github Desktop".
-4. Follow the steps provided by Github Desktop Application or follow the instruction from this [link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
-## Working with the local copy
-Once you have performed the steps above do the following in your IDE:
-1. Make sure you install all the requirements in a requirements.txt file. In the terminal window, type: 
+
+This will be an explanation of the process involved in how to deploy the site using [Heroku], and to set up and store images and static files using [Amazon Web Services].
+
+Note: Credit to Code Institute Boutique Ado videos on how to deploy using heroku and AWS.
+
+## Heroku
+
+•	Go to [Heroku](https://www.heroku.com)
+
+•	Register a new account, if you already have an account, log in. 
+
+•	Create a new app. When choosing an app name, make sure to use only lower case letters and no spaces.
+
+•	Choose the region closest to you and select “Create App”
+
+---
+
+•	When you have created the app, click on the “Resources” tab to add the Postgres database
+
+•	Type “Heroku Postgres” and select it from the dropdown list
+
+•	By selecting Postgres, Heroku will automatically create a DATABASE_URL variable stored in the Heroku Config Vars. The config variables can be found by clicking on the “Settings” tab, and clicking the “Reveal Config Vars” button.
+
+•	Click on the Deploy tab, and scroll down to the Deployment method. Click on the “GitHub” tab and search for your repository. Click on your repo name.
+
+•	After you have linked the repository, enable automatic deployment by clicking "Enable automatic deployments".
+
+---
+
+•	In order to use the Postgres database, open your IDE and install `dj_database_url` and `psycopg2-binary`.
+
+•	Then, in your `settings.py` file, comment out the database thats currently being used as a default(sqlite) and instead add the following;
 ```
-pip3 install -r requirements.txt.
+DATABASES = {
+	‘default’ = dj_database_url.parse(‘database_url')
+}
 ```
-2. Create a MongoDB database.
-3. Sign up to your MongoDB account, and create a cluster and a database.
-4. Create these four collections in the database: categories, recipes, users and difficulties.
-5. Add keys and values for the collections, copy the projects <a href="#information-architecture">Information architecture</a> so you get the same keys and values.
-6. Create environment variables:
-- Create a .gitignore file in the root directory to hide confidential files.
-- Create a env.py file that will contain all environment variables
-```
-    Import os
-    os.environ.setdefault("IP", "Added by developer")
-    os.environ.setdefault("PORT", "Added by developer")
-    os.environ.setdefault("SECRET_KEY", "Added by developer")
-    os.environ.setdefault("MONGO_URI", "Added by developer")
-    os.environ.setdefault("MONGO_DBNAME", "Added by developer")
-```
-- Add the env.py file in the .gitignore file.
-7. Now run the app. In your terminal window, type:
-``` 
-python3 app.py.
-```
-### Heroku Deployment
-1. Set up the local workspace for Heroku
-- Make sure Heroku know which files to  install by typing the following in your terminal: 
+
+---
+
+- If you already have data in the sqlite database that you want to store as a JSON file, you can type `python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json`. This will store the data you already have to a db.json file.
+
+•	Now that the settings are set to, login to Heroku via the CLI in your IDE by typing `heroku login –i`
+
+- Provide your email and password, login.
+
+•	Once logged in, you have to run migrations to migrate your models to Postgres.
+
+•	In the CLI, enter `heroku run python3 manage.py migrate --plan`. This will not migrate the models, but will give you the plan of the migration. If you are pleased with this plan, run  `heroku run python3 manage.py migrate` and enter.
+
+•	In order to load data to Postgres and heroku, you need fixtures in JSON format. Either use the data you imported from the existing database and/or load other fixtures you want to use. Note: If you have categories that are related to the products, load these first. This can be done by typing the following in the CLI:
+
+`heroku run python3 manage.py loaddata categories`
+
+`heroku run python3 manage.py loaddata products`
+
+•	You would need to create a superuser in order to access the django admin page. This is done by typing `python3 manage.py createsuperuser` in the CLI. 
+
+- In the CLI install `gunicorn`
+
+•	You will also have to create a `requirements.txt` file and a `Procfile`. Create the requirements.txt file by typing `pip3 freeze > requirements.txt` in CLI and create the Procfile with right click --> new file and simply name it `Procfile`.
+
+- In the Procfile write `web: gunicorn name_of_your_app.wsgi:application`.
+
+• IMPORTANT! Before committing and pushing these changes to GitHub, make sure you uncomment your DATABASES code in settings.py and amend your code to ensure your database url doesn’t get accidentally committed to GitHub!
+
+•	Once this is done, `add`, `commit` and `push` your changes to GitHub
+
+---
+
+IMPORTANT!
+
+You need to make sure you have config variables that are up to date on Heroku such as any secret keys to ensure your app works as intended! Your Config variables should look something similar to the table below. Note: The variables listed also include the ones for AWS which the following section will explain.
+
+| Key                   | Value                    |
+| --------------------- |--------------------------|
+| AWS_ACCESS_KEY_ID     | `aws_access_key`         |
+| AWS_SECRET_ACCESS_KEY | `aws_secret_access_key`  |
+| DATABASE_URL          | `auto-generated`         |
+| EMAIL_HOST_PASS       | `email_key`              |
+| EMAIL_HOST_USER       | `your_email`             |
+| SECRET_KEY            | `secret_key`             |
+| STRIPE_PUBLIC_KEY     | `your_stripe_public_key` |
+| STRIPE_SECRET_KEY     | `your_stripe_secret_key` |
+| STRIPE_WH_SECRET      | `stripe_webhook_key`     |
+| USE_AWS               | `True`                   |
+
+---
+
+## AWS
+
+### Setting Up
+
+1. Go to [Amazon Web Services] and register for an account if you don’t already have one. You will need to provide credit/debit card details, you should not exceed the free limit, but keep an eye on the usage to avoid any surprises. 
+
+2. Sign in to AWS, and find S3 by searching for it in the search bar.
+
+3. Now you should create a new bucket by clicking on the “Create Bucket” button. 
+
+4. When creating a new bucket, make sure the Heroku name matches the bucket name. Remember to select the region closest to you.
+
+5. Now scroll down to “Block Public Access settings for this bucket”, uncheck the box, and confirm. 
+
+6. Scroll to the bottom of the page and click the "Create Bucket" button. 
+
+---
+
+### Bucket Properties
+
+1. Click on the “Properties” tab and scroll down to the bottom of the page, where you will find a “Static website hosting” section. Click on the edit button.
+
+2. The top section will allow you to choose between “Disable” or “Enable”, and you will want to select “Enable” to enable static website hosting. 
+
+3. The section below is “Hosting Type”. Select “Host a static website” and scroll down to the “Index Document” inputs. 
+
+4. It will first ask you to specify the home or default page, which is `index.html`
+
+5. It will then give you the option of entering an error link for if an error occurs. In the input, type `error.html`
+
+6. Leave the Redirection rules blank, and click the orange “Save Changes”. 
+
+---
+
+### Setting Permissions
+
+1. Next, click on the “Permissions” tab, scroll to the bottom of the page and click edit in the “Cross-origin resource sharing (CORS)” section. 
+
+2. Add in the following code, making sure to use correct indentation;
 
 ```
-pip3 freeze --local > requirements.txt
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
 ```
-- You also need a Procfile, which is a list of the process types Heroku looks for. Type the following: 
-```
-python app.py > Procfile
-```
-2. Sign up to Heroku
--Sign up to Heroku, select your region and create a new app.
-3. Deployment using the Github deployment method
-- Click on the deploy  tab, and then click on "connect to Github".
-- Search for your repository and connect to it.
-- Go to the settings tab and click on Reveal Config Vars further down the page.
-- Enter the variables that are contained in your env.pr file. Your env.py file should contain the info mentioned above (IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME).
-4. Now you can add, commit and push the Procfile and requirements.txt.
-```
-    $ git add requirements.txt
-    $ git commit -m "Add requirements.txt"
 
-    $ git add Procfile 
-    $ git commit -m "Add Procfile"
+3. Click on the orange “Save Changes” button and navigate to the “Bucket Policy” section which will be near the top of the page, and click edit. 
+
+---
+
+### Generating A Bucket Policy
+
+1. Click on the “Policy Generator” button. This will open a new window. 
+
+2. Within that new window will be a series of steps. For step one, you will need to select “S3 Bucket Policy from the dropdown list.
+
+3. In step two, you will need the following options set;
+
+    - Effect – Allow
+    - Principle - *
+    - Actions – GetObject, GetObjectAcl, PutObject, PutObjectAcl and DeleteObject
+    - Amazon Resource Name (ARN) – This will be found on the previous page, under “Bucket ARN”. Copy this and paste it into this box
+
+4. After these have been entered, click “Add Statement” then “Generate Policy”.
+
+5. Copy the policy into the bucket policy editor, adding `/*` onto the end, the click “Save Changes”.
+
+---
+
+### Access Control List (ACL)
+
+1. Staying in the permissions tab, click edit under the “Access Control List (ACL)” section. 
+
+2. You will be shown a series of options and tick boxes. Navigate to “Everyone (public access)” and tick the box on the left, “List” under the “Objects” heading. You will need to agree that you understand the effects before you can save, so tick that, then click on “Save Changes”.
+
+---
+
+### IAM - Creating A Group and Policy
+
+1. Next, search for IAM in the search bar at the top, and click on it to set up a group policy.
+
+2. Under “Access Management” on the left hand side, click on “User Groups” and create a new group.
+
+3. Give the group a name and click “Create Group”. 
+
+4. This will take you back to the IAM dashboard. Go back to the “Access Management” section on the left hand side, and click on “Policies”. 
+
+5. Click “Create Policy” and head over to the JSON tab, and select “Import Managed Policy”. 
+
+6. Search for and click on “AmazonS3FullAccess” then “Import”.
+
+7. Copy your ARN and place it in the code so that it looks like the below;
+
 ```
-5. Finally, click on the deploy tab in Heroku. Scroll down and click on Automatic Deployments. Choose Enable Automatic Deploys. For manual deployment, see the field "Manual deploy" and click on Deploy Branch.
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::YOUR-ARN",
+                "arn:aws:s3:::YOUR-ARN/*"
+            ]
+        }
+    ]
+}
+```
+
+8. Click on “Next: Tags”, “Next: Review”, put in a name and click on “Create Policy”. 
+
+---
+
+### Group Policy
+
+1. Next, you will need to attach the Policy to the Group created.
+
+2. Go to “User Groups” on the left hand side menu, under “Access Management”.
+
+3. Click on the your newly created group and go over to the “Permissions” tab.
+
+4. Click on the “Add Permissions” button, and select “Attach Policy”.
+
+5. Search for and click on the checkbox next to the policy you have just created, then click “Add Permissions”.
+
+---
+
+### IAM - Create User
+
+1. Back at the IAM dashboard, click on “Users” on the left hand side menu, then “Add User”.
+
+2. Choose a name and tick the checkbox to give the user access, then click “Next: Permissions”.
+
+3. Select the group to put the user in and keep clicking the next buttons until the very end and click “Create user”.
+
+4. Click on “Download .csv” file and make sure you save this somewhere you remember, as you will not have access to this page again! This file will contain information such as your access codes (shown above in the Heroku Deployment section).
+
+---
+
+### **Important!**
+
+Make sure to also update your settings.py file to reflect the changes to the database! It should look something like this;
+
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'your_bucket_name'
+    AWS_S3_REGION_NAME = 'eu-west-2'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+
+---
+
+### Saving Images To S3 Bucket
+
+If you need to save images to your S3 bucket, you will need to do the following;
+
+1. Go back to the S3 dashboard, and click on your bucket. 
+
+2. Click “Create Folder”, call it ‘media’ and confirm with the second “Create Folder” button.
+
+3. When you are in this folder, click “Upload”, then “Add Files” or “Add Folder”, then “Upload”.
+
+
+
+
 # Credits
 ## Contents
 [SANwebCORNER](https://www.sanwebcorner.com/2017/02/dynamically-generate-form-fields-using.html) for helping me to create a new field when clicking the add ingredient and add instruction step in add recipes page.
