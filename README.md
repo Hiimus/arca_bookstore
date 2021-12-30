@@ -788,10 +788,9 @@ If you need to save images to your S3 bucket, you will need to do the following;
 - I downloaded a return and refund policy from [termsfeed.com](https://www.termsfeed.com/blog/sample-return-policy-ecommerce-stores/#Sample_Return_Refund_Policy_Template_Full_Text_Download
 )
 
+- I copied text and an image from [A Little Blog of Books](https://alittleblogofbooks.com/2012/08/28/the-rise-of-ebooks-evil-or-essential/) that I used as a blog post.
 
-[SANwebCORNER](https://www.sanwebcorner.com/2017/02/dynamically-generate-form-fields-using.html) for helping me to create a new field when clicking the add ingredient and add instruction step in add recipes page.
-[JorisPaarde's app My Vegan Recipies](https://my-veganrecipes.herokuapp.com/) for how to make flash messages appear for a short while.
-[mozillazg](https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9) for how to implement pagination on my all recipes page.
+
 ## Media
 
 - As mentioned in the Image section of this README, images for Arts & Crafts and Games was downloaded from [theworks.co.uk](https://www.theworks.co.uk/). 
