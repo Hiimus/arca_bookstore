@@ -378,18 +378,89 @@ When clicking on a product, the user will be directed to the product details pag
 ![overview of site](readme_img/overview.JPG)
 
 ### Blog Page
-- 
+
+When clicking on the Blog link in the navbar/main nav, the blog page will appear. This page has the following features:
+
+- Blog image
+
+- "Back to Home" hyperlink that directs to homepage.
+
+- "Add Blog Post" button that opens a model were a blog post can be written. (Only for superusers)
+
+- Blog posts with a limited amount of the post displayed, small version of the blog image, date added, the creator and edit/delete buttons (Only accessible for superusers).
+
+![overview of site](readme_img/overview.JPG)
+
+### Blog Info Page
+
+When clicking on a post, the blog info page for that post will open. The blog info page has the following features:
+
+- A blog image in the top of the container that can be clicked and will reverse the user back to the blog page.
+
+- A "Back to blog" button that reverse the user back to the blog page.
+
+- The actual posts heading, body, image and date added.
+
+![overview of site](readme_img/overview.JPG)
+
+- A comment form that all registered users can use to comment on the blog post.
+
+![overview of site](readme_img/overview.JPG)
+
+- Comment section that displays all comments with name, comment and date created. The author of the comment will be able to delete their own posts, and superusers are able to delete all posts.
+
+![overview of site](readme_img/overview.JPG)
+
+### FAQ Page
+
+When clicking on the Help link in the navbar/main nav, there are three options: FAQ, Policies and Contact. This is the features on the FAQ page:
+
+- A link to Arca Bookstore's email address (Opens up a link to gmail).
+
+- A "Back to Home" button.
+
+- FAQ sections with different categories that displays hyperlinked questions. Clicking a hyperlink will reveal an answer.
+
+![overview of site](readme_img/overview.JPG)
+
+- An FAQ image at the bottom.
+
+### Policies Page
+
+By clicking on the second option; Policies, the Return and Refund Policy page opens.
+
+- A return and refund policy email addresses where neccesary and a link to the contact page at the bottom.
+
+### Contact Page
+
+The third Help option is the Contact page.
+
+- Icons that helps to explain the contact method of email, phone and address.
+
+- Contact Image
+
+![overview of site](readme_img/overview.JPG)
+
+
 
 
 ## Features Left to Implement:
-- Having the option to select different portions, so that the ingredients will adjust accordingly.
-- Have the option to upload images, not just from image address.
-- Adding an email to registration. 
-- Adding news/notifications that the user could choose to receive on their registered mail.
-- Adding a field for servings when adding a recipe.
-- Improve design. I was really inspired by the cool designs on Free Frontend, so I think it can always get better.
-- Adding a superuser/admin with full access that can delete or edit all recipes, so that I don't have to do it through MongoDB.
-- Adding pagination to "My Profile".
+
+This is the features I would like to implement in the future:
+
+- Pagination. As more products are added, it will be poor user experience to have not have pagination when there are alot of products. This will also reduce loading time.
+
+- More content on pages that looks to empty, i.e an empty shopping bag, or when no results are found after searching. The same goes with styling. More use of container or images could fill up the page, making it more appealing.
+
+- Currently there are no warnings when the superuser deletes a product, a blog post, review or a comment. This is an easy fix, it's just that I didn't have time to implement it. An important feature which will be high on the priority list.
+
+- Breadcrumbs. I really like when websites provide links to the path you have taken, so can easily click yourself back to where you want to.
+
+- In general just more product, reviews and quality blog posts.
+
+- Letting the registered users have the option to choose a profile image that will also appear when commenting or reviewing.
+
+
 # Technologies Used
 ## Tools:
 - [Gitpod](https://www.gitpod.io/) used as an IDE.
