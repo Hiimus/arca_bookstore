@@ -769,25 +769,47 @@ If you need to save images to your S3 bucket, you will need to do the following;
 
 
 # Credits
+## Code
+
+- The walkthrough project Boutique Ado from Code Institute helped me alot. I coded along, and learned many things about how to use the Django framework, how to implement Stripe payment system, and many other things. My checkout app heavily relies on the code from this walktrough project. Since I made an e-commerce store similar to the one in Boutique Ado, I had the perfect resources to help me through my own project.
+
+- I learned how to user from this [stack overflow](https://stackoverflow.com/questions/20095936/add-rich-text-format-functionality-to-django-textfield) thread.
+
+- The underline text decoration I got from this [stack overflow](https://stackoverflow.com/questions/30352431/css-transition-not-working-with-underline) thread.
+
+- In the shopping bag the site would crash if not whole numbers was added, i.e 1.5. This [Stack overflow](https://stackoverflow.com/questions/37043867/how-to-avoid-decimal-values-in-input-type-number) thread helped me solve it by adding some JavaScript that only allow whole numbers.
+
+- For some reason, on some pages the screen was flickering when hovering over elements that had a hover effect. This [Github](https://github.com/jackmoore/autosize/issues/307) thread helped me fix it by adding `overlfow: scroll` to the body in the base.html.
+
+
+
 ## Contents
+
+- I downloaded a return and refund policy from [termsfeed.com](https://www.termsfeed.com/blog/sample-return-policy-ecommerce-stores/#Sample_Return_Refund_Policy_Template_Full_Text_Download
+)
+
+
 [SANwebCORNER](https://www.sanwebcorner.com/2017/02/dynamically-generate-form-fields-using.html) for helping me to create a new field when clicking the add ingredient and add instruction step in add recipes page.
 [JorisPaarde's app My Vegan Recipies](https://my-veganrecipes.herokuapp.com/) for how to make flash messages appear for a short while.
 [mozillazg](https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9) for how to implement pagination on my all recipes page.
 ## Media
-The vegetable chopper is an image downloaded from [PurePNG](https://purepng.com/). A broccoli image was also downloaded from this site, used as a favicon. 
-Default recipe image by Engin Akyurt from [Pexels](https://www.pexels.com/photo/flat-lay-photography-of-variety-of-vegetables-1435904/)
-Background image of product by Mark Stebnicki from [Pexels](https://www.pexels.com/photo/selective-focus-photo-of-plants-2749165/)
-Background image on desktop by Yaroslav Shuraev from [Pexels](https://www.pexels.com/photo/fresh-vegetables-and-fruits-on-the-table-8844888/).
-Background image on mobile and tablet by Nadine Primeau from [Unsplash](https://unsplash.com/photos/wpoKpJqOsKE)
+
+- As mentioned in the Image section of this README, images for Arts & Crafts and Games was downloaded from [theworks.co.uk](https://www.theworks.co.uk/). 
+
+- All product images for the books was downloaded from [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset).
+
+- All other images was downloaded from [Pexels](https://pexels.com/) and [freepik](https://www.freepik.com/).
+
+- The book used in the logo on small devices and as a favicon was downloaded from [PurePNG](https://purepng.com/).
 
 ## Acknowledgements
 My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for guiding, supporting and pointing me in the right direction.
 
 The Code Institute [Slack](https://slack.com/) channel for having discussion, questions and answers that contribute to my project. Also a lot of similar projects are posted in the slack channel, which contributed to the planning of my project. 
 
-Thanks to Sean from tutor support. He helped me with the add to favorite function.
+Thanks to Sean, Igor and Kevin from tutor support. They helped me figure out how to work with models, querying, fixtures and to fix the gitpod issue that affected my workspace.
 
-Credit to [taybro23](https://github.com/taybro23/AboveBoard_MS4#deployment)'s MS4 README. I used his section on deployment as inspiration for my own README.
+Credit to [taybro23](https://github.com/taybro23/AboveBoard_MS4#deployment)'s MS4 README. I used his section on deployment as inspiration for my own deployment section.
 
 [Stack Overflow](https://stackoverflow.com/) for helping me understand and solving issues along the way.
 
@@ -795,6 +817,6 @@ Credit to [taybro23](https://github.com/taybro23/AboveBoard_MS4#deployment)'s MS
 
 This project is meant for educational purposes only. Please contact me if there are any problems or issues.
 
-- When adding a recipe, the user can choose to insert the image url. These images might not be royalty free.
 
-<a href="#veggie-time">BACK TO TOP</a>
+
+<a href="#arca-bookstore">BACK TO TOP</a>
