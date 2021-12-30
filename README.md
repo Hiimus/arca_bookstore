@@ -775,13 +775,9 @@ If you need to save images to your S3 bucket, you will need to do the following;
 
 - The walkthrough project Boutique Ado from Code Institute helped me alot. I coded along, and learned many things about how to use the Django framework, how to implement Stripe payment system, and many other things. My checkout app heavily relies on the code from this walktrough project. Since I made an e-commerce store similar to the one in Boutique Ado, I had the perfect resources to help me through my own project.
 
-- I learned how to user from this [stack overflow](https://stackoverflow.com/questions/20095936/add-rich-text-format-functionality-to-django-textfield) thread.
+- I learned how to add linebreaks in forms from this [stack overflow](https://stackoverflow.com/questions/20095936/add-rich-text-format-functionality-to-django-textfield) thread.
 
 - The underline text decoration I got from this [stack overflow](https://stackoverflow.com/questions/30352431/css-transition-not-working-with-underline) thread.
-
-- In the shopping bag the site would crash if not whole numbers was added, i.e 1.5. This [Stack overflow](https://stackoverflow.com/questions/37043867/how-to-avoid-decimal-values-in-input-type-number) thread helped me solve it by adding some JavaScript that only allow whole numbers.
-
-- For some reason, on some pages the screen was flickering when hovering over elements that had a hover effect. This [Github](https://github.com/jackmoore/autosize/issues/307) thread helped me fix it by adding `overlfow: scroll` to the body in the base.html.
 
 
 
