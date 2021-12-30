@@ -610,25 +610,25 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 ### Bucket Properties
 
-1. Click on the “Properties” tab and scroll down to the bottom of the page, where you will find a “Static website hosting” section. Click on the edit button.
+1. After you clicked the "Create Bucket" button, you will be directed to your bucket dashboard. One here, click on the “Properties” tab and scroll down to the bottom of the page. Once on the “Static website hosting” section, click on the edit button.
 
-2. The top section will allow you to choose between “Disable” or “Enable”, and you will want to select “Enable” to enable static website hosting. 
+2. On the top section, "Enable" static website hosting. 
 
-3. The section below is “Hosting Type”. Select “Host a static website” and scroll down to the “Index Document” inputs. 
+3. On the section below, select “Host a static website” and scroll down to the “Index Document” inputs. 
 
-4. It will first ask you to specify the home or default page, which is `index.html`
+4. Specify the home or default page, which should be `index.html`.
 
 5. It will then give you the option of entering an error link for if an error occurs. In the input, type `error.html`
 
-6. Leave the Redirection rules blank, and click the orange “Save Changes”. 
+6. Leave the Redirection rules blank, and click the “Save Changes” button. 
 
 ---
 
 ### Setting Permissions
 
-1. Next, click on the “Permissions” tab, scroll to the bottom of the page and click edit in the “Cross-origin resource sharing (CORS)” section. 
+1. Once you have set the bucket properties, it's time to set permissions. Click on the “Permissions” tab and scroll to the bottom of the page and click edit in the “Cross-origin resource sharing (CORS)” section. 
 
-2. Add in the following code, making sure to use correct indentation;
+2. Add in the following code:
 
 ```
 [
@@ -647,7 +647,7 @@ You need to make sure you have config variables that are up to date on Heroku su
 ]
 ```
 
-3. Click on the orange “Save Changes” button and navigate to the “Bucket Policy” section which will be near the top of the page, and click edit. 
+3. Click on the “Save Changes” button and navigate to the “Bucket Policy” section and click edit.
 
 ---
 
