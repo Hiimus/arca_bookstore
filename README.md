@@ -1,4 +1,4 @@
-# Veggie Time
+# Arca Bookstore
 
 ![Am I responsive image](readme_img/veggie-time-devices.JPG)
 
