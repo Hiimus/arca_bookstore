@@ -4,6 +4,8 @@
 
 ### Arca Bookstore is a web store that sells mainly books, but also arts & crafts, games and puzzles. On this site the user can search, read about and buy products, while also having the opportunity to rate and write reviews on them. The user can also comment blog posts written by the admin. 
 To visit the deployed website, click [here](https://hiimus-arca-bookstore.herokuapp.com/).
+
+Disclaimer: This project is meant for educational purposes only. The images for arts & crafts and games are not my own, see the credits. Please contact me if there are any problems or issues. 
 # Table of Contents
  - <a href="#ux">1. User Experience (UX)</a>
     - <a href="#project-goals">1.1. Project goals</a>
