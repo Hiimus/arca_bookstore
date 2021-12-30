@@ -72,89 +72,35 @@ Browser test:
 
 ## Common User Stories
 
-*To be able to easily navigate through the site on any size screen*
--	Full responsiveness has been tested thoroughly and all screen sizes are fully working
+#### Non-Registered Users
+- As a non-registered user I want to browse multiple products so that I can look without narrowing down a search.
+    - A non-registered user can browse multiple product either from the home page, where the user can see a sample of products from different categories. From here the non-registered user have many options on browsing multiple products. The user can either click on the products links in the navbar/main nav, click on the "Click here to see all books" hyperlink, or click on one of the category images.
+     ![user-journey1](readme_img/user_journey/user-journey1.JPG)
+- As a non-registered user I want to view more details of a product so that I can get more information about the product.
+    - A non-registered user can view more details of a product by clicking a product card. Once clicked, the user will be directed to the product details page of that product. Here the user will find much more detailed information about the product.
+- As a non-registered user I want to be able to do a search so that I can find the product I am looking for.
+    - A non-registered user is able to do a search from the search bar in the navbar/main nav.
+- As a non-registered user I want to add products to a shopping bag/cart so that I can select multiple products and view them in the bag.
+    - A non-registered user can add products to a shopping bag from the product details page. From here the user can view the shopping bag either from clicking on the message container on the top right corner, or by clicking on the shopping bag icon from the navbar/main nav.
+- As a non-registered user I want to view to see the total price of the products in the bag so that I can have control of my spendings.
+    - A non-registered user is able to see the total price of the products on the shopping bag page, and also on the checkout page.
+- As a non-registered user I want to select categories so that I can find multiple products within a category.
+#### Registered Users
+- As a registered user I want to view my order history so that I can see my previous orders.
+    - A registered user is able to view the order history by clicking on the profiles page from the navbar/main nav. Once on this page the registered user can see all orders. Also, by clicking on the hyperlink order number, the registered user can view all information about the order, including delivery information.
+- As a registered user I want to be able to edit my personal information and shipping information so that I can change it if I want to.
+    - A registered can edit their personal information from the profile page. The registered user can simply type in the input fields and click on the green "Update Information" button.
+- As a registered user I want to reset my password so that I can change it or enter a new one if I forget the old password.
+    - A registered user can reset the password by clicking "Log in" in the navbar/main nav and then click the "Forgot Password?" link. Once on this page, the registered user must provide the email address linked to Arca Bookstore and then click on the "Reset My Password" button.
+#### Superusers
+- As a superuser I want to add products so that I can display a product on the site.
+    - A superuser can add products by first logging in, and then click "My Account" in the navbar/main nav, then "Add a Product". From this page, simply fill out the required fields, and click on the green "Add Product" button.
+- As a superuser I want to edit a product so that I can change or add something if I want to. 
+    - A superuser can edit a product from the homepage, all products page, all product pages and on the product details page. Once the superuser is logged in, an "Edit" link is displayed on each product card. The superuser can click this link and will be directed to the edit page. Once on this page, all the product information currently saved to that product will already be filled out. Once the superuser has made changes, simply click on the "Update Product" button to save the changes.
+- As a superuser I want to delete a product so that I can remove the product if I want to.
+    - A superuser can delete a product by accessing the same pages as when editing a prodcuct. The only difference is the superuser must click on the red "Delete" link instead.
 
-*Search for products*
--	Search bar can be used for searching by product name, category or keyword
--	This has been tested by using all of the above to search for set products. All products came up as expected
 
-*Sort products by Price, Name etc.*
--	Sort By dropdown works and correctly displays products in the order the user has selected
-
-*View product details*
--	Each product has a set product detail page. This shows all product information including description of product, and product reviews left by users
-
-*Ability to choose quantity of items, and size if applicable*
--	Size dropdown displayed on all relevant products, and works correctly when product is added to the shopping bag
--	Product quantity works correctly and when product is added to the shopping bag, quantity is reflected
-
-*Able to purchase products without an account*
--	Users are allowed to go through the entire site purchase process without the need for an account, although it is suggested at different stages to create an account
-
-*View their shopping bag and amend their order*
--	Shopping Bag icon is always displayed on the navbar, even on a collapsed view so that users have easy access to the shopping bag at all stages of the site
-
-*View Posts in Help & Guidance section*
--	Posts are displayed in the Help & Guidance section, and are displayed from newest post to oldest. Pagination is put to use here in case there are many posts to save users from having to scroll through many posts without knowing when they end
-
-*Contact the company with any queries or if an issue occurs*
--	Contact number, email and address are provided in the footer of the site which is displayed on every page
-
-## First Time Users
-
-*Understand the purpose of the site*
--	Users are shown an About Above Board section on the home page 
--	There is a brief version of this in the footer
-
-*See the reasons behind registering for an account*
--	This is also explained in the About Above Board section on the home page
-
-*Being able to easily sign up for an account*
--	Sign in flows easily and it takes very little time to set up a secure account
-
-## Returning Users
-
-*Ability to securely log into their account*
--	Account log in is set up by Django and is extremely secure
--	Log in process is very quick, and allows a user to save their log in details for next time
-
-*View their past orders and order confirmations*
--	When a user is logged in, if they navigate to the profile page they will be given their Order History
--	It will be a brief overview of the users past orders, but if they click on the order number it will take them to the order confirmation page
--	This is a historic order confirmation page, but displays all the necessary information that a user would need
-
-*Purchase products and have their orders saved to their profile*
--	All users, regardless of logged in status, will be able to purchase products through the site
--	If a user is logged in when they process an order, it will be displayed on their profile order history
-
-*Receive their order confirmations directly to their email inbox*
--	When a user completes an order, they will receive an email to confirm said order
--	This goes directly to the email address provided
--	I have tested this by using different email addresses from different providers, and all worked
-
-*Leave reviews of products*
--	Logged in users are able to leave product reviews
--	On the product details page, reviews are displayed below the main product information display
--	User reviews are displayed at the top, and the review form is below them
-
-## Site Owner/Admin
-
-*Provide a clean, simple e-commerce store so that users can easily find what they’re looking for*
--	I have tested this by asking friends and family to view the site with no direction, and the feedback I have received has been positive
--	Users were easily able to search for what they wanted, find from product lists what they wanted, and successfully purchase products
-
-*Have the ability to add, edit/update and delete products/posts*
--	Add, Edit/Update and Delete functions all work correctly with no errors
--	After editing, correct information is displayed on the site
--	Deleting a product deletes it from the site entirely, including reviews that have been left, and removing it from the admin view
-
-*Keep the site secure by only allowing authorised users access certain areas of the site*
--	Full site authorisation has been implemented by using Djangos `@login_required`
--	This has been tested extensively to make sure no unauthorised access is given at any stage of the site
-
-*Securely store user information in case an error occurs*
--	User information is stored securely using Django. Only information provided is kept, but does not include passwords for security reasons
 
 # Resolved Issues
 
