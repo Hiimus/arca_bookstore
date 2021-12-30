@@ -5,7 +5,7 @@ from django.db import models
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=50)
-    body = models.TextField(max_length=1000)
+    body = models.TextField(max_length=10000)
     image = models.URLField(max_length=200, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     created_by = models.CharField(max_length=50)
