@@ -207,33 +207,76 @@ green buttons:
 
 
 ### Fonts
-There are two different fonts used on this site: 'Leckerli One' and 'muli'. 
-Both of these fonts were found when I was browsing [Free Frontend](https://freefrontend.com/). 
-The Leckerli One font was inspired from [this page]( https://codepen.io/tsimenis/pen/xVPLjp). I think this font looks great for my project, and gives a playful image.
-The muli font was found from [this page](https://codepen.io/fatihtakey/pen/eyyWVr). This font looked so good I just had to use it. This font is cleaner than Leckerli One, so where that font is not used, I have chosen muli.
-Note: Google has renamed the name muli to mulish.
+There are two different fonts used on this site: 'Gloria Hallelujah' from google fonts and 'Verdana'. 
+Due to the fact that the store sells books, crafts and games, I felt the store needed a font that is playful, artistic and almost as if it was written by hand with a thin brush. That is why I landed on the 'Gloria Hallelujah' font. Considering readability, this font works best when the text isn't too small, so thats why I have used 'Verdana' on smaller text. Also, the pages that display things like order history, grand total or return policy should have a more formal font than 'Gloria Hallelujah', and so 'Verdana' have been used here also.
 
 ![Leckerli One Font](readme_img/fonts/leckerli-font.JPG) ![Muli font](readme_img/fonts/muli-font.JPG)
 
 ## Icons
-All icons used on this project are provided by [Font Awesome](https://fontawesome.com/). The icons serve as buttons that have functions, example is the heart button which adds to favorites.
+All icons used on this project are provided by [Font Awesome](https://fontawesome.com/). The icons serve as buttons or links that have functions, see below for examples of some icons used.
+
+Image of different icons
+![colour-scheme](readme_img/colour-scheme.JPG)
+![colour-scheme](readme_img/colour-scheme.JPG)
+![colour-scheme](readme_img/colour-scheme.JPG)
+![colour-scheme](readme_img/colour-scheme.JPG)
+
 ## Images
-All images are royalty free and are downloaded from [Pexels](https://pexels.com/), [Unsplash](https://unsplash.com/) and [PurePNG](https://purepng.com/). If users add images to their recipes, they have to copy the image address. This is mentioned in the disclaimer.
+Most of the images used on this website is product images. 
+
+- All the book images have been downloaded as a dataset from [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset). This dataset provides 33 book categories and each contains close to 1k images. I have just picked a few categories, and some of the images from them.
+
+Note: Regarding the product images for arts & crafts and games, I struggled to find good images from royalty free sites, so I found them on other web stores. These will be mentioned in the acknowledgments and on the top of this readme. Since this project is only for educational purposes, I think mentioning this as a disclaimer and acknowledging them is okay. that those I could not find on royalty free sites, so those are downloaded from [The Works](https://www.theworks.co.uk/).
+
+- All product images for the arts & crafts, and games pages are from [The Works](https://www.theworks.co.uk/).
+
+Other than having product images, I also have category images on the homepage, a blog image on the blog page, 404 and 500 error images, FAQ and contact images. I also have a red book next to the logo and as a favicon. 
+
+- The category images and blog image are from [pexels](https://www.pexels.com/).
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+- Images for 404, 500, FAQ and contact are downloaded from [freepik](https://www.freepik.com/).
+![colour-scheme](readme_img/colour-scheme.JPG)
+
 ## Defensive design
-The users can only like recipes when they have registered, and logged in. Once logged in, the user can only edit and delete their own recipes.
-When deleting a recipe, the user has to confirm this by  clicking one more time on a pop up modal. 
-When adding or editing a recipe, the user is required to enter data in the input fields, and the user can maximum have ten fields of ingredients/instructions. The user also has to provide valid characters.
-The user has to make sure the username has between 5-20 characters. The password needs to be at least eight characters, and have at least one letter and one number. If the username and password provided already exists, the user will get a warning about this.
+
+- Products can only be reviewed and rated if a user is registered. The same goes with commenting on blog posts. Trying to access these pages in the url will only redirect the user to the login page, because I have added the "@login_required" decorator on the view.
+[VIS KODE MED DECORATOR]
+
+- Only superusers can add/edit/delete products. If a normal user tries to access the "products/add", "products/edit" or "products/delete" page, a message will let the user know that only store owners can do that. 
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+- Only superusers can write a blog post. A normal user simply will not see the "Add Blog Post" button.
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+- When registering, there are certain requirements that have to be met, and this is provided by django allauth. An example is choosing a password that is too similar to the username. Another example is that django allauth requires that the user must very the account via email.
+![colour-scheme](readme_img/colour-scheme.JPG)
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+
+- Allauth will let the user know if the username or password is wrong.
+
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+- All accounts pages are made with allauth. Trying to access "accounts/logout" when not logged in, will only render the user back to the home page. Trying to "accounts/signup" when already signed in, will just render the user to the homepage.
+
+
+- When adding items to the bag, the user will not be able to use anything else than whole numbers. Previously, adding i.e 1.5 to the bag, would break the site. I then added this code, and that prevents the user from breaking the site.
+
+[CODE THAT PREVENTS .,]
+
+- If the user tries to access a page that doesn't exist, a custom 404 page will appear with a link back to home.
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+- If the site experience a 500 error, a custom 500 error page will appear, with a link back to home.
+![colour-scheme](readme_img/colour-scheme.JPG)
+
+
 ## Interactive Design
-- The website is easy to navigate for the user. Below is an overview of how the user can navigate.
+- Below is an overview of how the user can navigate this site.
 
 ![overview of site](readme_img/overview.JPG)
 
-
-## Information Architecture
-This project uses MongoDB as a database, and is using four collections. See database structure below:
-
-![db diagram](readme_img/db-diagram.JPG)
 
 ## Wireframes
 To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.com/).
@@ -242,9 +285,14 @@ To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.
 
 - All pages have the same navbar/sidebar and footer.
 
+
+### Page Specific Features
+
 ### Home page
 
 - Navbar/sidebar with links to all pages within the app.
+
+- Messages and Toasts are used when executing certain actions on the site, such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for admin actions too like adding and editing products.
 
 - Hero background/image that greets the users.
 
