@@ -283,77 +283,104 @@ To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.
 # Features
 ## Existing Features:
 
-- All pages have the same navbar/sidebar and footer.
+- Navbar with links to all pages on the site, including the logo, a search bar, "My account" icon and the shopping bag. On smaller devices the main navigation is a hamburger menu.
 
+![overview of site](readme_img/overview.JPG)
+![overview of site](readme_img/overview.JPG)
+
+- A Back to top button
+
+![overview of site](readme_img/overview.JPG)
+
+- Footer with social links to twitter, instagram and facebook.
+
+![overview of site](readme_img/overview.JPG)
+
+- Messages/toasts that appear on the top right when the user perform actions such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for superusers actions like adding and editing products/blog posts.
 
 ### Page Specific Features
 
 ### Home page
 
-- Navbar/sidebar with links to all pages within the app.
+- Category images with hovering effect and links to the category mentioned.
 
-- Messages and Toasts are used when executing certain actions on the site, such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for admin actions too like adding and editing products.
+- A randomized product samples section that displays products of different categories and subcategories.
 
-- Hero background/image that greets the users.
+- Links to show all products within the category.
 
-- Product section displaying a vegetable chopper. Contains a fake link to amazon.com.
-
-- A search bar below the product section. Here the user can search for words that exist in the recipes. Clicking the red X will reset the search bar. Pressing enter or clicking the green search button will do a search.
-
-- Category buttons that can be clicked. Clicking a category will sort and search for recipes within that category. A flash message will appear on the top of the page, giving feedback to the user on which category was selected.
-
-- Recipe cards are well organized and display an image, a heart button, the recipe title, description and the creator of the recipe.
-
-- A heart button works as an add to favorite button. Selecting this will store the recipe in the users profile.
-
-- There is a link below the last row of cards that says "Click here to see all the recipes". This link will direct users to the all recipes page.
-
-- Footer with links to all pages within the app and a link to Github.
-
-### All Recipes
-
-- Also has the search bar and the category buttons.
-
-- Pagination at the bottom will let the user click on the next page. Each page displays nine recipes.
+- Product cards with hover effect that display product image, product title, price, subcategory, and rating.
 
 
-### View Recipe
+### Products Page
 
-- On the view recipe page, there is an arrow button on the top left. This button will direct the user back to the home page.
+All the products pages(books, arts & crafts, games) are the same, except for the actual products.
 
-- There is a container that holds all information about the recipe.
+- The products page have a heading, stating what category is being viewed, and all the subcategories listed below the heading. These subcategories can be clicked, to view all products withing that subcategory.
+![overview of site](readme_img/overview.JPG)
 
-- From this page, the user has three buttons: like, delete and edit.
+- On the products pages there is a sort selector on the right side that have different options for sorting, and a product counter to the left side, with a link to all products next to it.
+![overview of site](readme_img/overview.JPG)
 
-    - If the user is logged in and is the creator of the recipe, all buttons will appear.
+- Edit/Delete buttons for superusers to edit or delete products.
 
-    - If the user is not logged in, the like button will appear.
+### Product Details
+
+When clicking on a product, the user will be directed to the product details page.
+
+![overview of site](readme_img/overview.JPG)
+
+- Edit/Delete buttons for superusers.
+
+- On the product details page there is a larger image of the product, and a full description of the product, including pages and format. 
+
+- A quantity selector to select the amount of items
+
+- Button for "Keep Shopping" that directs to all products page.
+
+- Button for "Add to bag" that adds the amount selected in the quantity selector.
+
+- A hyperlink for "Add Review" for logged in users to add a review of the product.
+
+- A Customer Reviews section with reviews displaying the date it was added, the username of the author, the rating and the review.
 
 
-- If clicking the delete button, the user has to confirm a pop up modal.
+### Shopping Bag 
 
-- If the edit button is clicked, the user will be directed to the edit recipe page.
+- Quantity selector with remove and update icon buttons 
+![overview of site](readme_img/overview.JPG)
 
-### Edit Recipe 
+- A free delivery notice below the grand total
 
-- Contains a form where the user can edit all fields.
+- Buttons for "Keep Shopping" and "Secure Checkout" where the latter directs to checkout page.
 
-- All fields are prefilled with current stored information.
+### Checkout
 
-- Ingredients and Instructions have a button that adds a new line.
+- Order summary
+![overview of site](readme_img/overview.JPG)
 
-- Users can click the "Cancel" button to cancel the editing and be directed to the home page.
+- Button for "Adjust Bag" that reverse the user to the shopping bag.
 
-- Users can click the "Save changes" button to save the changes and edit a recipe.
+- A delivery details form with a save option.
+![overview of site](readme_img/overview.JPG)
 
-- A flash message will let the user know the editing was successful.
+- A buttton for "Complete Order" that initates a full screen loading spinner.
+![overview of site](readme_img/overview.JPG)
 
 
-### Register, Login and Logout
-- Users can create their own account.
-- Users can log in and out of the account.
-- When the user logs in, a flash message will welcome the user.
--When the user logs out, a flash message will let the user know he/she successfully logged out.
+### Profile page 
+- Order history with a hyperlink on the order number that directs to a more informative order info page.
+![overview of site](readme_img/overview.JPG)
+![overview of site](readme_img/overview.JPG)
+
+- Delivery information with saved information if used.
+
+- An "Update Information" button that updates the delivery information.
+![overview of site](readme_img/overview.JPG)
+
+### Blog Page
+- 
+
+
 ## Features Left to Implement:
 - Having the option to select different portions, so that the ingredients will adjust accordingly.
 - Have the option to upload images, not just from image address.
