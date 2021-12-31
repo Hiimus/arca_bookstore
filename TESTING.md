@@ -1,5 +1,4 @@
-# Taylor Brookes - Milestone Project 4
-## Above Board Testing Document
+# Testing
 
 # Table Of Contents
 
@@ -53,18 +52,34 @@ Responsiveness was tested with [Responsive Design Checker](https://responsivedes
 - Throughout the project I have adjusted the screen size in one of the window corners for a quick responsiveness check. See below for an overview of responsiveness testing:
 
 #### Testing for smartphones:
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+
+<details>
+  <summary>Smartphone test</summary>
+  <img src="readme/images/testing/smartphone.JPG">
+</details>
+
 #### Testing for tablets:
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+
+<details>
+  <summary>Tablet test</summary>
+  <img src="readme/images/testing/tablets.JPG">
+</details>
+
 #### Testing for desktops:
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+
+<details>
+  <summary>Desktop test</summary>
+  <img src="readme/images/testing/desktops.JPG">
+</details>
 
 ## Browser Compatibility and Functional Testing
 
 The site's features such as adding products, ordering, buying products, adding reviews, commenting, deleting, editing was tested on all browsers. Registering, logging in, signing out and forgot password was also tested. All links, 404 and 500 pages were also tested. 
 
-Browser test:
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+<details>
+  <summary>Browser test</summary>
+  <img src="readme/images/testing/browser-test.JPG">
+</details>
 
 
 
@@ -75,28 +90,107 @@ Browser test:
 #### Non-Registered Users
 - As a non-registered user I want to browse multiple products so that I can look without narrowing down a search.
     - A non-registered user can browse multiple product either from the home page, where the user can see a sample of products from different categories. From here the non-registered user have many options on browsing multiple products. The user can either click on the products links in the navbar/main nav, click on the "Click here to see all books" hyperlink, or click on one of the category images.
-     ![user-journey1](readme_img/user_journey/user-journey1.JPG)
+     
+<details>
+  <summary>Browsing Products</summary>
+  <img src="readme/images/all-products.JPG">
+</details>
+
 - As a non-registered user I want to view more details of a product so that I can get more information about the product.
     - A non-registered user can view more details of a product by clicking a product card. Once clicked, the user will be directed to the product details page of that product. Here the user will find much more detailed information about the product.
+
+<details>
+  <summary>View more details of a product</summary>
+  <img src="readme/images/product-details-1.JPG">
+</details>
+
 - As a non-registered user I want to be able to do a search so that I can find the product I am looking for.
     - A non-registered user is able to do a search from the search bar in the navbar/main nav.
+
+<details>
+  <summary>Searching from the navbar</summary>
+  <img src="readme/images/navbar.JPG">
+</details>
+
+<details>
+  <summary>Searching from the hamburger menu</summary>
+  <img src="readme/images/hamburger-menu.JPG">
+</details>
+
 - As a non-registered user I want to add products to a shopping bag/cart so that I can select multiple products and view them in the bag.
     - A non-registered user can add products to a shopping bag from the product details page. From here the user can view the shopping bag either from clicking on the message container on the top right corner, or by clicking on the shopping bag icon from the navbar/main nav.
+
+<details>
+  <summary>Adding products to a bag</summary>
+  <img src="readme/images/product-details-2.JPG">
+</details>
+
 - As a non-registered user I want to view to see the total price of the products in the bag so that I can have control of my spendings.
     - A non-registered user is able to see the total price of the products on the shopping bag page, and also on the checkout page.
+
+<details>
+  <summary>See the price in the shopping bag</summary>
+  <img src="readme/images/shopping-bag.JPG">
+</details>
+
 - As a non-registered user I want to select categories so that I can find multiple products within a category.
+    - A non-registered can select categories from the products page.
+
+<details>
+  <summary>Select a category</summary>
+  <img src="readme/images/sort-category.JPG">
+</details>
+
 #### Registered Users
 - As a registered user I want to view my order history so that I can see my previous orders.
     - A registered user is able to view the order history by clicking on the profiles page from the navbar/main nav. Once on this page the registered user can see all orders. Also, by clicking on the hyperlink order number, the registered user can view all information about the order, including delivery information.
+
+<details>
+  <summary>View order history</summary>
+  <img src="readme/images/order-history.JPG">
+</details>
+
 - As a registered user I want to be able to edit my personal information and shipping information so that I can change it if I want to.
     - A registered can edit their personal information from the profile page. The registered user can simply type in the input fields and click on the green "Update Information" button.
+
+<details>
+  <summary>Edit personal information</summary>
+  <img src="readme/images/order-history.JPG">
+</details>
+
 - As a registered user I want to reset my password so that I can change it or enter a new one if I forget the old password.
     - A registered user can reset the password by clicking "Log in" in the navbar/main nav and then click the "Forgot Password?" link. Once on this page, the registered user must provide the email address linked to Arca Bookstore and then click on the "Reset My Password" button.
+
+<details>
+  <summary>Reset the password step.1</summary>
+  <img src="readme/images/reset-password.JPG">
+</details>
+<details>
+  <summary>Reset the password step.2</summary>
+  <img src="readme/images/reset-password-2.JPG">
+</details>
+<details>
+  <summary>Reset the password step.3</summary>
+  <img src="readme/images/reset-password-3.JPG">
+</details>
+
 #### Superusers
 - As a superuser I want to add products so that I can display a product on the site.
     - A superuser can add products by first logging in, and then click "My Account" in the navbar/main nav, then "Add a Product". From this page, simply fill out the required fields, and click on the green "Add Product" button.
+
+<details>
+  <summary>Adding a product</summary>
+  <img src="readme/images/adding-a-product.JPG">
+</details>
+
 - As a superuser I want to edit a product so that I can change or add something if I want to. 
     - A superuser can edit a product from the homepage, all products page, all product pages and on the product details page. Once the superuser is logged in, an "Edit" link is displayed on each product card. The superuser can click this link and will be directed to the edit page. Once on this page, all the product information currently saved to that product will already be filled out. Once the superuser has made changes, simply click on the "Update Product" button to save the changes.
+
+<details>
+  <summary>Editing a product</summary>
+  <img src="readme/images/editing-a-product.JPG">
+</details>
+
 - As a superuser I want to delete a product so that I can remove the product if I want to.
     - A superuser can delete a product by accessing the same pages as when editing a prodcuct. The only difference is the superuser must click on the red "Delete" link instead.
 
