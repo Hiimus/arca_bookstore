@@ -1,6 +1,6 @@
 # Arca Bookstore
 
-![Am I responsive image](readme_img/veggie-time-devices.JPG)
+![Am I responsive image](readme/images/amiresponsive.JPG)
 
 ### Arca Bookstore is a web store that sells mainly books, but also arts & crafts, games and puzzles. On this site the user can search, read about and buy products, while also having the opportunity to rate and write reviews on them. The user can also comment blog posts written by the admin. 
 To visit the deployed website, click [here](https://hiimus-arca-bookstore.herokuapp.com/).
@@ -13,6 +13,7 @@ Disclaimer: This project is meant for educational purposes only. The images for 
     - <a href="#user-stories">1.2 User stories</a>
     - <a href="#design">1.3 Design</a>
     - <a href="#information-architecture">1.4 Information architecture</a>
+    - <a href="#database-schema">1.4 Database Schema</a>
     - <a href="#wireframes">1.5 wireframes</a>
 - <a href="#features">2. Features</a>
     - <a href="#existing-features">2.1 Existing features</a>
@@ -39,19 +40,30 @@ Disclaimer: This project is meant for educational purposes only. The images for 
 - Create engagement where users can rate, write reviews and comment.
 - Create a book store site where the user can browse books and other related products with ease.
 ## User Journey
+
+Note: for the user journey I have chose desktop view.
 ### Home
 
 - When accessing this website, the user will see a navbar on the top where they can search for products, check the shopping bag, view the profile account or navigate through all the other pages the store provides.
 
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+<details>
+  <summary>Navbar</summary>
+  <img src="readme/images/navbar.JPG">
+</details>
 
 - The homepage will show a purple container with two sections. The top section has three images, with text related to the images. When hovering the text will become larger and the cursor will turn into a pointer, giving the user a good idea that these images are links to these different products.
 
-![user-journey1](readme_img/user_journey/user-journey1.JPG)
+<details>
+  <summary>Category Images</summary>
+  <img src="readme/images/category-images.JPG">
+</details>
 
 - In the next section of the container the user will be presented with a sample of products the store provides. These are randomized so everytime the page reloads, there will be new products. On each of the product samples there is a hyperlink the user can click on in order to see all products within that genre.
 
-![user-journey2](readme_img/user_journey/user-journey2.JPG) ![user-journey3](readme_img/user_journey/user-journey3.JPG)
+<details>
+  <summary>Sample Products</summary>
+  <img src="readme/images/random-products.JPG">
+</details>
 
 - On the bottom of the home page, and on every page, there is a footer. This footer is simple, displaying the three social links for twitter, instagram and facebook.
 
@@ -62,39 +74,59 @@ The products are separated to their respective genre. The genres are books, arts
 
 - If the user clicks the "All Products" link in the navbar, there will be displayed the randomized sample, similar to the home page.
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>All Products Page</summary>
+  <img src="readme/images/all-products.JPG">
+</details>
 
 - If the the user access the products with the other methods mentioned, the genre will appear as a heading, with all the available categories underneath. Here the user can see how many products there are and a sorting selector.
 
-Image of books, arts & crafts and games
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
 
-Image of sorting selector
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Books Page</summary>
+  <img src="readme/images/books-page.JPG">
+</details>
+<details>
+  <summary>Arts & Crafts Page</summary>
+  <img src="readme/images/arts-and-crafts-page.JPG">
+</details>
+<details>
+  <summary>Games Page</summary>
+  <img src="readme/images/games-page.JPG">
+</details>
+
 
 ### Product Details Page
 
 - When clicking on a product, the product details page for that product will open. Here, the user can read more about the product, such as description, format and pages. 
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-
+<details>
+  <summary>Product Details Page</summary>
+  <img src="readme/images/product-details-1.JPG">
+</details>
 
 - If the user wish to buy the product, the user can easily choose the amount, and add the product to the shopping bag. This action will be displayed in the top right corner of the page. 
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Adding to Bag</summary>
+  <img src="readme/images/product-details-2.JPG">
+</details>
 
 - There is also a section for customer reviews, where the user can see reviews and ratings. If the user wishes to write a review themselves, they would need to register first.
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-
+<details>
+  <summary>Review</summary>
+  <img src="readme/images/review.JPG">
+</details>
 
 ### Blog Page
 
 - The blog page also uses the purple container to organise a blog image in the top, a heading and the blog posts below. 
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Blog Page</summary>
+  <img src="readme/images/blog-page.JPG">
+</details>
 
 Only superusers/admin can add blog posts. However, registered users can comment these blogs posts. By clicking on a post, the user can read all its content and comment.
 
@@ -105,36 +137,55 @@ The site have three help pages; FAQ, Contact and Policies. All these pages can b
 
 - The FAQ page displays questions with answers, organised in their category. If the user wishes to ask a question, the user can click on the email link below the header (this link only opens a gmail page).
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>FAQ Page</summary>
+  <img src="readme/images/faq.JPG">
+</details>
 
 - The Return and Refund Policy page can also be accessed from the FAQ page under the Return and Delivery section. Note: This is just a downloaded template were some fields have been modified.
 
-- Arca Bookstore has a contact page with fake contact information.
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Policies Page</summary>
+  <img src="readme/images/policies.JPG">
+</details>
 
+- The contact page is a simple page with contact information.
+
+<details>
+  <summary>Contact Page</summary>
+  <img src="readme/images/contact.JPG">
+</details>
 
 ### Registration Pages
 - In order to use all features, the user needs to register. This page can be accessed from the "My account button"
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+
+<details>
+  <summary>Registration Page</summary>
+  <img src="readme/images/sign-up.JPG">
+</details>
 
 - On this page the user must provide an email, username and password.
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+
 
 - When clicking on the "Sign Up" button, the user will then have to click on the link that was sent to the registered email and verify the account 
-Image of email:
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-Image of verification page:
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+
+<details>
+  <summary>Verifying Email</summary>
+  <img src="readme/images/confirm-email.JPG">
+  </details>
+<details>
+  <summary>Email Confirmation</summary>
+  <img src="readme/images/confirm-email2.JPG">
+</details>
 
 ### Login and Forgot Password Page 
 
 - After registering, the user can sign in. Here the user must provide either the username or the registered email address and their password. If the user has forgotten their password, they can click the link on the bottom left corner. A "remember me" practical checkbox is available if the user want the login information to be remembered.
 
-Image of forgot password:
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-
-Image of login with remember me:
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Forgot Password</summary>
+  <img src="readme/images/reset-password.JPG">
+</details>
 
 
 ### Profile Page
@@ -143,26 +194,39 @@ After registering and loggin in the user can access their own account page. This
 
 - This will be blank, since they haven't filled it out yet, but the first time they fill it out, there will be an option to save this information so that they don't need to do it again. From the profile page the user can update this information by clicking on the "Update Information" button.
 
+<details>
+  <summary>Profile Page</summary>
+  <img src="readme/images/profile-page.JPG">
+</details>
+
 ### Shopping Bag Page
 
 - There are two ways the user can access the shopping bag. One way is to just click the shopping bag icon in the navbar or dropdown, the other way is by clicking the "Checkout" button in the message box that appears when adding items in the bag.
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+
 
 - Once on the shopping bag page, the user will see an overview of the items that the bag contains, with costs. From here the user can either keep shopping by clicking the "Keep Shopping" button, or proceed to checkout by clicking the "Secure Checkout" button.
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Shopping Bag</summary>
+  <img src="readme/images/shopping-bag.JPG">
+</details>
 
 ### Checkout Page
 
 - On the checkout page the user will see the products in the order summary with total costs. The user can choose to click the "Adjust Bag" button to make changes to the order, or continue the checkout by filling out the delivery information form. As mentioned earlier, the delivery information can be saved, but only if the user is registered. 
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
+<details>
+  <summary>Checkout Page</summary>
+  <img src="readme/images/checkout.JPG">
+</details>
 
 - After filling in necessary card information, the user can complete the order by clicking the "Complete Order" button. Then, an order confirmation page with an overview of the order and delivery information will be displayed. On this page there is a "Back to Home" button that will send the user back to the home page.
 
-![user-journey4](readme_img/user_journey/user-journey4.JPG)
-
+<details>
+  <summary>Checkout Success</summary>
+  <img src="readme/images/checkout-success.JPG">
+</details>
 
 ## User Stories
 
@@ -185,10 +249,10 @@ Users of this site will be non-registered users, registered users and superusers
 
 ## Design
 ### Colors
-I have just about used five different colors, and the "Maximum Yellow Red", "Dark Purple" and white color make up most of the site. I decided on these colors by just clicking on the color palette generator from [LINK TO https://coolors.co/]. When I landed on these colors I just liked them, and I figured I would go with those.
+I have just about used five different colors, and the "Maximum Yellow Red", "Dark Purple" and white color make up most of the site. I decided on these colors by just clicking on the color palette generator from [coolors](https://coolors.co/). When I landed on these colors I just liked them, and I figured I would go with those.
 
 Color palette:
-![colour-scheme](readme_img/colour-scheme.JPG)
+![colour-palette](readme/images/color-palette.JPG)
 
 Dark purple container:
 ![colour-scheme](readme_img/colour-scheme.JPG)
@@ -274,8 +338,12 @@ Other than having product images, I also have category images on the homepage, a
 ![colour-scheme](readme_img/colour-scheme.JPG)
 
 
-## Interactive Design
+## Information architecture
 - Below is an overview of how the user can navigate this site.
+
+## Database Schema
+
+![Database schema](readme/images/database-schema.png)
 
 ![overview of site](readme_img/overview.JPG)
 
