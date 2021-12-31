@@ -251,24 +251,10 @@ Users of this site will be non-registered users, registered users and superusers
 ### Colors
 I have just about used five different colors, and the "Maximum Yellow Red", "Dark Purple" and white color make up most of the site. I decided on these colors by just clicking on the color palette generator from [coolors](https://coolors.co/). When I landed on these colors I just liked them, and I figured I would go with those.
 
-Color palette:
-![colour-palette](readme/images/color-palette.JPG)
-
-Dark purple container:
-![colour-scheme](readme_img/colour-scheme.JPG)
-(A sentence about why you like this color)
-
-Yellow navbar:
-![colour-scheme](readme_img/colour-scheme.JPG)
-(A sentence about why you like this color)
-
-Charcoal buttons and back to top button:
-![colour-scheme](readme_img/colour-scheme.JPG)
-(A sentence about why you like this color)
-
-green buttons:
-![colour-scheme](readme_img/colour-scheme.JPG)
-(A sentence about why you like this color)
+<details>
+  <summary>Color Palette</summary>
+  <img src="readme/images/color-palette.JPG">
+</details>
 
 
 
@@ -276,16 +262,28 @@ green buttons:
 There are two different fonts used on this site: 'Gloria Hallelujah' from google fonts and 'Verdana'. 
 Due to the fact that the store sells books, crafts and games, I felt the store needed a font that is playful, artistic and almost as if it was written by hand with a thin brush. That is why I landed on the 'Gloria Hallelujah' font. Considering readability, this font works best when the text isn't too small, so thats why I have used 'Verdana' on smaller text. Also, the pages that display things like order history, grand total or return policy should have a more formal font than 'Gloria Hallelujah', and so 'Verdana' have been used here also.
 
-![Leckerli One Font](readme_img/fonts/leckerli-font.JPG) ![Muli font](readme_img/fonts/muli-font.JPG)
+<details>
+  <summary>Gloria Hallelujah Font</summary>
+  <img src="readme/images/font.JPG">
+</details>
 
 ## Icons
 All icons used on this project are provided by [Font Awesome](https://fontawesome.com/). The icons serve as buttons or links that have functions, see below for examples of some icons used.
 
-Image of different icons
-![colour-scheme](readme_img/colour-scheme.JPG)
-![colour-scheme](readme_img/colour-scheme.JPG)
-![colour-scheme](readme_img/colour-scheme.JPG)
-![colour-scheme](readme_img/colour-scheme.JPG)
+
+<details>
+  <summary>Footer Icons</summary>
+  <img src="readme/images/icons-1.JPG">
+</details>
+<details>
+  <summary>Contact Icons</summary>
+  <img src="readme/images/icons-2.JPG">
+</details>
+<details>
+  <summary>Product Category Icons</summary>
+  <img src="readme/images/icons-3.JPG">
+</details>
+
 
 ## Images
 Most of the images used on this website is product images. 
@@ -298,11 +296,25 @@ Note: Regarding the product images for arts & crafts and games, I struggled to f
 
 Other than having product images, I also have category images on the homepage, a blog image on the blog page, 404 and 500 error images, FAQ and contact images. I also have a red book next to the logo and as a favicon. 
 
+<details>
+  <summary>Red Book beside logo and as favicon</summary>
+  <img src="readme/images/red-book.JPG">
+</details>
+
 - The category images and blog image are from [pexels](https://www.pexels.com/).
 ![colour-scheme](readme_img/colour-scheme.JPG)
 
 - Images for 404, 500, FAQ and contact are downloaded from [freepik](https://www.freepik.com/).
 ![colour-scheme](readme_img/colour-scheme.JPG)
+
+<details>
+  <summary>404 Image</summary>
+  <img src="readme/images/404.jpg">
+</details>
+<details>
+  <summary>500 Image</summary>
+  <img src="readme/images/500.jpg">
+</details>
 
 ## Defensive design
 
@@ -310,19 +322,31 @@ Other than having product images, I also have category images on the homepage, a
 [VIS KODE MED DECORATOR]
 
 - Only superusers can add/edit/delete products. If a normal user tries to access the "products/add", "products/edit" or "products/delete" page, a message will let the user know that only store owners can do that. 
-![colour-scheme](readme_img/colour-scheme.JPG)
+
+<details>
+  <summary>Defensive Design</summary>
+  <img src="readme/images/not-allowed.JPG">
+</details>
 
 - Only superusers can write a blog post. A normal user simply will not see the "Add Blog Post" button.
-![colour-scheme](readme_img/colour-scheme.JPG)
+
+<details>
+  <summary>Blog Page for normal users</summary>
+  <img src="readme/images/blog-normal-user.JPG">
+</details>
+<details>
+  <summary>Blog Page for superusers</summary>
+  <img src="readme/images/blog-superuser.JPG">
+</details>
 
 - When registering, there are certain requirements that have to be met, and this is provided by django allauth. An example is choosing a password that is too similar to the username. Another example is that django allauth requires that the user must very the account via email.
-![colour-scheme](readme_img/colour-scheme.JPG)
-![colour-scheme](readme_img/colour-scheme.JPG)
 
+<details>
+  <summary>Validation Feedback</summary>
+  <img src="readme/images/example-password.JPG">
+</details>
 
 - Allauth will let the user know if the username or password is wrong.
-
-![colour-scheme](readme_img/colour-scheme.JPG)
 
 - All accounts pages are made with allauth. Trying to access "accounts/logout" when not logged in, will only render the user back to the home page. Trying to "accounts/signup" when already signed in, will just render the user to the homepage.
 
@@ -332,10 +356,9 @@ Other than having product images, I also have category images on the homepage, a
 [CODE THAT PREVENTS .,]
 
 - If the user tries to access a page that doesn't exist, a custom 404 page will appear with a link back to home.
-![colour-scheme](readme_img/colour-scheme.JPG)
 
 - If the site experience a 500 error, a custom 500 error page will appear, with a link back to home.
-![colour-scheme](readme_img/colour-scheme.JPG)
+
 
 
 ## Information architecture
@@ -343,13 +366,60 @@ Other than having product images, I also have category images on the homepage, a
 
 ## Database Schema
 
-![Database schema](readme/images/database-schema.png)
+<details>
+  <summary>Database Schema</summary>
+  <img src="readme/images/database-schema.png">
+</details>
 
-![overview of site](readme_img/overview.JPG)
 
 
 ## Wireframes
 To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.com/).
+
+<details>
+  <summary>Wireframes for desktops</summary>
+  <img src="readme/images/wireframes/desktop-1.JPG">
+
+  <img src="readme/images/wireframes/desktop-2.JPG">
+
+  <img src="readme/images/wireframes/desktop-3.JPG">
+
+  <img src="readme/images/wireframes/desktop-4.JPG">
+
+  <img src="readme/images/wireframes/desktop-5.JPG">
+
+  <img src="readme/images/wireframes/desktop-6.JPG">
+</details>
+  
+<details>
+  <summary>Wireframes for tablets</summary>
+  <img src="readme/images/wireframes/tablet-1.JPG">
+
+  <img src="readme/images/wireframes/tablet-2.JPG">
+
+  <img src="readme/images/wireframes/tablet-3.JPG">
+
+  <img src="readme/images/wireframes/tablet-4.JPG">
+
+  <img src="readme/images/wireframes/tablet-5.JPG">
+
+  <img src="readme/images/wireframes/tablet-6.JPG">
+</details>
+<details>
+  <summary>Wireframes for mobiles</summary>
+  <img src="readme/images/wireframes/mobile-1.JPG">
+
+  <img src="readme/images/wireframes/mobile-2.JPG">
+
+  <img src="readme/images/wireframes/mobile-3.JPG">
+
+  <img src="readme/images/wireframes/mobile-4.JPG">
+
+  <img src="readme/images/wireframes/mobile-5.JPG">
+
+  <img src="readme/images/wireframes/mobile-6.JPG">
+</details>
+
 # Features
 ## Existing Features:
 
