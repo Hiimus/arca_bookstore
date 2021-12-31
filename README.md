@@ -2,7 +2,7 @@
 
 ![Am I responsive image](readme/images/amiresponsive.JPG)
 
-### Arca Bookstore is a web store that sells mainly books, but also arts & crafts, games and puzzles. On this site the user can search, read about and buy products, while also having the opportunity to rate and write reviews on them. The user can also comment blog posts written by the admin. 
+### Arca Bookstore is a web store that sells mainly books, but also arts & crafts, games and puzzles. On this site the user can search, read about and buy products, while also having the opportunity to rate and write reviews on them. The user can also comment on blog posts written by the admin. 
 To visit the deployed website, click [here](https://hiimus-arca-bookstore.herokuapp.com/).
 
 Disclaimer: This project is meant for educational purposes only. The images for arts & crafts and games are not my own, see the credits. Please contact me if there are any problems or issues. 
@@ -40,7 +40,7 @@ Disclaimer: This project is meant for educational purposes only. The images for 
 - Create a book store site where the user can browse books and other related products with ease.
 ## User Journey
 
-Note: for the user journey I have chose desktop view.
+Note: for the user journey I have chosen desktop view.
 ### Home
 
 - When accessing this website, the user will see a navbar on the top where they can search for products, check the shopping bag, view the profile account or navigate through all the other pages the store provides.
@@ -69,16 +69,16 @@ Note: for the user journey I have chose desktop view.
 
 ### Product Pages
 
-The products are separated to their respective genre. The genres are books, arts & crafts and games. The user may access products from the navbar, from searching or simply clicking the images or hyperlinks on the home page. 
+The products are separated into their respective genre. The genres are books, arts & crafts and games. The user may access products from the navbar, from searching or simply clicking the images or hyperlinks on the home page. 
 
-- If the user clicks the "All Products" link in the navbar, there will be displayed the randomized sample, similar to the home page.
+- If the user clicks the "All Products" link in the navbar, there will be a randomized sample, similar to the home page.
 
 <details>
   <summary>All Products Page</summary>
   <img src="readme/images/all-products.JPG">
 </details>
 
-- If the the user access the products with the other methods mentioned, the genre will appear as a heading, with all the available categories underneath. Here the user can see how many products there are and a sorting selector.
+- If the user accesses the products with the other methods mentioned, the genre will appear as a heading, with all the available categories underneath. Here the user can see how many products there are and a sorting selector.
 
 
 <details>
@@ -104,7 +104,7 @@ The products are separated to their respective genre. The genres are books, arts
   <img src="readme/images/product-details-1.JPG">
 </details>
 
-- If the user wish to buy the product, the user can easily choose the amount, and add the product to the shopping bag. This action will be displayed in the top right corner of the page. 
+- If the user wishes to buy the product, the user can easily choose the amount, and add the product to the shopping bag. This action will be displayed in the top right corner of the page. 
 
 <details>
   <summary>Adding to Bag</summary>
@@ -127,12 +127,12 @@ The products are separated to their respective genre. The genres are books, arts
   <img src="readme/images/blog-page.JPG">
 </details>
 
-Only superusers/admin can add blog posts. However, registered users can comment these blogs posts. By clicking on a post, the user can read all its content and comment.
+Only superusers/admin can add blog posts. However, registered users can comment on these blog posts. By clicking on a post, the user can read all its content and comment.
 
 
 ### Help Pages
 
-The site have three help pages; FAQ, Contact and Policies. All these pages can be accessed from the navbar.
+The site has three help pages; FAQ, Contact and Policies. All these pages can be accessed from the navbar.
 
 - The FAQ page displays questions with answers, organised in their category. If the user wishes to ask a question, the user can click on the email link below the header (this link only opens a gmail page).
 
@@ -141,7 +141,7 @@ The site have three help pages; FAQ, Contact and Policies. All these pages can b
   <img src="readme/images/faq.JPG">
 </details>
 
-- The Return and Refund Policy page can also be accessed from the FAQ page under the Return and Delivery section. Note: This is just a downloaded template were some fields have been modified.
+- The Return and Refund Policy page can also be accessed from the FAQ page under the Return and Delivery section. Note: This is just a downloaded template where some fields have been modified.
 
 <details>
   <summary>Policies Page</summary>
@@ -179,7 +179,7 @@ The site have three help pages; FAQ, Contact and Policies. All these pages can b
 
 ### Login and Forgot Password Page 
 
-- After registering, the user can sign in. Here the user must provide either the username or the registered email address and their password. If the user has forgotten their password, they can click the link on the bottom left corner. A "remember me" practical checkbox is available if the user want the login information to be remembered.
+- After registering, the user can sign in. Here the user must provide either the username or the registered email address and their password. If the user has forgotten their password, they can click the link on the bottom left corner. A "remember me" practical checkbox is available if the user wants the login information to be remembered.
 
 <details>
   <summary>Forgot Password</summary>
@@ -189,7 +189,7 @@ The site have three help pages; FAQ, Contact and Policies. All these pages can b
 
 ### Profile Page
 
-After registering and loggin in the user can access their own account page. This page contains their default delivery information and their order history. 
+After registering and logging in the user can access their own account page. This page contains their default delivery information and their order history. 
 
 - This will be blank, since they haven't filled it out yet, but the first time they fill it out, there will be an option to save this information so that they don't need to do it again. From the profile page the user can update this information by clicking on the "Update Information" button.
 
@@ -235,7 +235,7 @@ Users of this site will be non-registered users, registered users and superusers
 - As a non-registered user I want to view more details of a product so that I can get more information about the product.
 - As a non-registered user I want to be able to do a search so that I can find the product I am looking for.
 - As a non-registered user I want to add products to a shopping bag/cart so that I can select multiple products and view them in the bag.
-- As a non-registered user I want to view to see the total prize of the products in the bag so that I can have control of my spendings.
+- As a non-registered user I want to view the total price of the products in the bag so that I can have control of my spendings.
 - As a non-registered user I want to select categories so that I can find multiple products within a category.
 ### Registered Users
 - As a registered user I want to view my order history so that I can see my previous orders.
@@ -261,7 +261,7 @@ I have just about used five different colors, and the "Maximum Yellow Red", "Dar
 
 ### Fonts
 There are two different fonts used on this site: 'Gloria Hallelujah' from google fonts and 'Verdana'. 
-Due to the fact that the store sells books, crafts and games, I felt the store needed a font that is playful, artistic and almost as if it was written by hand with a thin brush. That is why I landed on the 'Gloria Hallelujah' font. Considering readability, this font works best when the text isn't too small, so thats why I have used 'Verdana' on smaller text. Also, the pages that display things like order history, grand total or return policy should have a more formal font than 'Gloria Hallelujah', and so 'Verdana' have been used here also.
+Due to the fact that the store sells books, crafts and games, I felt the store needed a font that is playful, artistic and almost as if it was written by hand with a thin brush. That is why I landed on the 'Gloria Hallelujah' font. Considering readability, this font works best when the text isn't too small, so that's why I have used 'Verdana' on smaller text. Also, the pages that display things like order history, grand total or return policy should have a more formal font than 'Gloria Hallelujah', and so 'Verdana' have been used here also.
 
 <details>
   <summary>Gloria Hallelujah Font</summary>
@@ -287,11 +287,11 @@ All icons used on this project are provided by [Font Awesome](https://fontawesom
 
 
 ## Images
-Most of the images used on this website is product images. 
+Most of the images used on this website are product images. 
 
 - All the book images have been downloaded as a dataset from [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset). This dataset provides 33 book categories and each contains close to 1k images. I have just picked a few categories, and some of the images from them.
 
-Note: Regarding the product images for arts & crafts and games, I struggled to find good images from royalty free sites, so I found them on other web stores. These will be mentioned in the acknowledgments and on the top of this readme. Since this project is only for educational purposes, I think mentioning this as a disclaimer and acknowledging them is okay. that those I could not find on royalty free sites, so those are downloaded from [The Works](https://www.theworks.co.uk/).
+Note: Regarding the product images for arts & crafts and games, I struggled to find good images from royalty free sites, so I found them on other web stores. These will be mentioned in the acknowledgments and on the top of this readme. Since this project is only for educational purposes, I think mentioning this as a disclaimer and acknowledging them is okay. that Those I could not find on royalty free sites, so those are downloaded from [The Works](https://www.theworks.co.uk/).
 
 - All product images for the arts & crafts, and games pages are from [The Works](https://www.theworks.co.uk/).
 
@@ -320,7 +320,6 @@ Other than having product images, I also have category images on the homepage, a
 ## Defensive design
 
 - Products can only be reviewed and rated if a user is registered. The same goes with commenting on blog posts. Trying to access these pages in the url will only redirect the user to the login page, because I have added the "@login_required" decorator on the view.
-[VIS KODE MED DECORATOR]
 
 - Only superusers can add/edit/delete products. If a normal user tries to access the "products/add", "products/edit" or "products/delete" page, a message will let the user know that only store owners can do that. 
 
@@ -340,7 +339,7 @@ Other than having product images, I also have category images on the homepage, a
   <img src="readme/images/blog-superuser.JPG">
 </details>
 
-- When registering, there are certain requirements that have to be met, and this is provided by django allauth. An example is choosing a password that is too similar to the username. Another example is that django allauth requires that the user must very the account via email.
+- When registering, there are certain requirements that have to be met, and this is provided by django allauth. An example is choosing a password that is too similar to the username. Another example is that django allauth requires that the user must change the account via email.
 
 <details>
   <summary>Validation Feedback</summary>
@@ -358,7 +357,7 @@ Other than having product images, I also have category images on the homepage, a
 
 - If the user tries to access a page that doesn't exist, a custom 404 page will appear with a link back to home.
 
-- If the site experience a 500 error, a custom 500 error page will appear, with a link back to home.
+- If the site experiences a 500 error, a custom 500 error page will appear, with a link back to home.
 
 
 
@@ -462,7 +461,7 @@ Note: In order to not duplicate images I will not be attaching images to every s
 
 - Footer with social links to twitter, instagram and facebook.
 
-- Messages/toasts that appear on the top right when the user perform actions such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for superusers actions like adding and editing products/blog posts.
+- Messages/toasts that appear on the top right when the user performs actions such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for superusers actions like adding and editing products/blog posts.
 
 ### Page Specific Features
 
@@ -479,11 +478,11 @@ Note: In order to not duplicate images I will not be attaching images to every s
 
 ### Products Page
 
-All the products pages(books, arts & crafts, games) are the same, except for the actual products.
+All the product pages(books, arts & crafts, games) are the same, except for the actual products.
 
-- The products page have a heading, stating what category is being viewed, and all the subcategories listed below the heading. These subcategories can be clicked, to view all products withing that subcategory.
+- The products page has a heading, stating what category is being viewed, and all the subcategories listed below the heading. These subcategories can be clicked, to view all products within that subcategory.
 
-- On the products pages there is a sort selector on the right side that have different options for sorting, and a product counter to the left side, with a link to all products next to it.
+- On the products pages there is a sort selector on the right side that has different options for sorting, and a product counter to the left side, with a link to all products next to it.
 
 
 - Edit/Delete buttons for superusers to edit or delete products.
@@ -498,7 +497,7 @@ When clicking on a product, the user will be directed to the product details pag
 
 - A quantity selector to select the amount of items
 
-- Button for "Keep Shopping" that directs to all products page.
+- Button for "Keep Shopping" that directs to all products pages.
 
 - Button for "Add to bag" that adds the amount selected in the quantity selector.
 
@@ -513,17 +512,17 @@ When clicking on a product, the user will be directed to the product details pag
 
 - A free delivery notice below the grand total
 
-- Buttons for "Keep Shopping" and "Secure Checkout" where the latter directs to checkout page.
+- Buttons for "Keep Shopping" and "Secure Checkout" where the latter directs to the checkout page.
 
 ### Checkout
 
 - Order summary
 
-- Button for "Adjust Bag" that reverse the user to the shopping bag.
+- Button for "Adjust Bag" that reverses the user to the shopping bag.
 
 - A delivery details form with a save option.
 
-- A buttton for "Complete Order" that initates a full screen loading spinner.
+- A button for "Complete Order" that initiates a full screen loading spinner.
 
 
 ### Profile page 
@@ -539,9 +538,9 @@ When clicking on the Blog link in the navbar/main nav, the blog page will appear
 
 - Blog image
 
-- "Back to Home" hyperlink that directs to homepage.
+- "Back to Home" hyperlink that directs to the homepage.
 
-- "Add Blog Post" button that opens a model were a blog post can be written. (Only for superusers)
+- "Add Blog Post" button that opens a model where a blog post can be written. (Only for superusers)
 
 - Blog posts with a limited amount of the post displayed, small version of the blog image, date added, the creator and edit/delete buttons (Only accessible for superusers).
 
@@ -552,7 +551,7 @@ When clicking on a post, the blog info page for that post will open. The blog in
 
 - A blog image in the top of the container that can be clicked and will reverse the user back to the blog page.
 
-- A "Back to blog" button that reverse the user back to the blog page.
+- A "Back to blog" button that reverts the user back to the blog page.
 
 - The actual posts heading, body, image and date added.
 
@@ -571,7 +570,7 @@ When clicking on the Help link in the navbar/main nav, there are three options: 
 
 - A "Back to Home" button.
 
-- FAQ sections with different categories that displays hyperlinked questions. Clicking a hyperlink will reveal an answer.
+- FAQ sections with different categories that display hyperlinked questions. Clicking a hyperlink will reveal an answer.
 
 
 - An FAQ image at the bottom.
@@ -580,13 +579,13 @@ When clicking on the Help link in the navbar/main nav, there are three options: 
 
 By clicking on the second option; Policies, the Return and Refund Policy page opens.
 
-- A return and refund policy email addresses where neccesary and a link to the contact page at the bottom.
+- A return and refund policy email addresses where necessary and a link to the contact page at the bottom.
 
 ### Contact Page
 
 The third Help option is the Contact page.
 
-- Icons that helps to explain the contact method of email, phone and address.
+- Icons that help to explain the contact method of email, phone and address.
 
 - Contact Image
 
@@ -595,19 +594,19 @@ The third Help option is the Contact page.
 
 This is the features I would like to implement in the future:
 
-- Letting registered users have the option to edit and delete their own reviews and comments. For now that is only possible for the superuser. This is high priority as this is an important feature.
+- Let registered users have the option to edit and delete their own reviews and comments. For now that is only possible for the superuser. This is a high priority as this is an important feature.
 
-- Pagination. As more products are added, it will be poor user experience to have not have pagination when there are alot of products. This will also reduce loading time.
+- Pagination. As more products are added, it will be poor user experience to not have pagination when there are alot of products. This will also reduce loading time.
 
-- More content on pages that looks to empty, i.e an empty shopping bag, or when no results are found after searching. The same goes with styling. More use of container or images could fill up the page, making it more appealing.
+- More content on pages that look too empty, i.e an empty shopping bag, or when no results are found after searching. The same goes with styling. More use of containers or images could fill up the page, making it more appealing.
 
 - Currently there are no warnings when the superuser deletes a product, a blog post, review or a comment. This is an easy fix, it's just that I didn't have time to implement it. An important feature which will be high on the priority list.
 
-- Breadcrumbs. I really like when websites provide links to the path you have taken, so can easily click yourself back to where you want to.
+- Breadcrumbs. I really like when websites provide links to the path you have taken, so you can easily click yourself back to where you want to.
 
-- In general just more product, reviews and quality blog posts.
+- In general just more product reviews and quality blog posts.
 
-- Letting the registered users have the option to choose a profile image that will also appear when commenting or reviewing.
+- Let the registered users have the option to choose a profile image that will also appear when commenting or reviewing.
 
 
 <a href="#arca-bookstore">BACK TO TOP</a>
@@ -685,7 +684,7 @@ Note: Credit to Code Institute Boutique Ado videos on how to deploy using heroku
 
 •	In order to use the Postgres database, open your IDE and install `dj_database_url` and `psycopg2-binary`.
 
-•	Then, in your `settings.py` file, comment out the database thats currently being used as a default(sqlite) and instead add the following;
+•	Then, in your `settings.py` file, comment out the database that's currently being used as a default(sqlite) and instead add the following;
 ```
 DATABASES = {
 	‘default’ = dj_database_url.parse(‘database_url')
@@ -763,11 +762,11 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 ### Bucket Properties
 
-1. After you clicked the "Create Bucket" button, you will be directed to your bucket dashboard. One here, click on the “Properties” tab and scroll down to the bottom of the page. Once on the “Static website hosting” section, click on the edit button.
+1. After you click the "Create Bucket" button, you will be directed to your bucket dashboard. One here, click on the “Properties” tab and scroll down to the bottom of the page. Once on the “Static website hosting” section, click on the edit button.
 
 2. On the top section, "Enable" static website hosting. 
 
-3. On the section below, select “Host a static website” and scroll down to the “Index Document” inputs. 
+3. In the section below, select “Host a static website” and scroll down to the “Index Document” inputs. 
 
 4. Specify the home or default page, which should be `index.html`.
 
@@ -819,7 +818,7 @@ You need to make sure you have config variables that are up to date on Heroku su
 
 4. After these have been entered, click “Add Statement” then “Generate Policy”.
 
-5. Copy the policy into the bucket policy editor, adding `/*` onto the end, the click “Save Changes”.
+5. Copy the policy into the bucket policy editor, adding `/*` To the end, click “Save Changes”.
 
 ---
 
@@ -927,9 +926,9 @@ If you need to save images to your S3 bucket, you will need to do the following;
 # Credits
 ## Code
 
-- The walkthrough project Boutique Ado from Code Institute helped me alot. I coded along, and learned many things about how to use the Django framework, how to implement Stripe payment system, and many other things. My checkout app heavily relies on the code from this walktrough project. Since I made an e-commerce store similar to the one in Boutique Ado, I had the perfect resources to help me through my own project.
+- The walkthrough project Boutique Ado from Code Institute helped me alot. I coded along, and learned many things about how to use the Django framework, how to implement Stripe payment system, and many other things. My checkout app heavily relies on the code from this walkthrough project. Since I made an e-commerce store similar to the one in Boutique Ado, I had the perfect resources to help me through my own project.
 
-- I learned how to add linebreaks in forms from this [stack overflow](https://stackoverflow.com/questions/20095936/add-rich-text-format-functionality-to-django-textfield) thread.
+- I learned how to add line breaks in forms from this [stack overflow](https://stackoverflow.com/questions/20095936/add-rich-text-format-functionality-to-django-textfield) thread.
 
 - The underline text decoration I got from this [stack overflow](https://stackoverflow.com/questions/30352431/css-transition-not-working-with-underline) thread.
 
@@ -945,11 +944,11 @@ If you need to save images to your S3 bucket, you will need to do the following;
 
 ## Media
 
-- As mentioned in the Image section of this README, images for Arts & Crafts and Games was downloaded from [theworks.co.uk](https://www.theworks.co.uk/). 
+- As mentioned in the Image section of this README, images for Arts & Crafts and Games were downloaded from [theworks.co.uk](https://www.theworks.co.uk/). 
 
-- All product images for the books was downloaded from [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset).
+- All product images for the books were downloaded from [Kaggle](https://www.kaggle.com/lukaanicin/book-covers-dataset).
 
-- All other images was downloaded from [Pexels](https://pexels.com/) and [freepik](https://www.freepik.com/).
+- All other images were downloaded from [Pexels](https://pexels.com/) and [freepik](https://www.freepik.com/).
 
 - The book used in the logo on small devices and as a favicon was downloaded from [PurePNG](https://purepng.com/).
 
@@ -971,3 +970,4 @@ This project is meant for educational purposes only. Please contact me if there 
 
 
 <a href="#arca-bookstore">BACK TO TOP</a>
+
