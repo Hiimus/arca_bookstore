@@ -20,9 +20,8 @@ Disclaimer: This project is meant for educational purposes only. The images for 
     - <a href="#features-left-to-implement">2.2 Features left to implement</a>
 - <a href="#technologies-used">3. Technologies used</a>
     - <a href="#tools">3.1 Tools</a>
-    - <a href="#libraries">3.3 Libraries</a>
-    - <a href="#languages">3.4 Languages</a>
-    - <a href="#frameworks-and-packages">3.4 Frameworks and Packages</a>
+    - <a href="#languages">3.2 Languages</a>
+    - <a href="#frameworks-and-libraries">3.3 Frameworks and Libraries</a>
 - <a href="#testing">4. Testing</a>
 - <a href="#deployment">5. Deployment</a>
 - <a href="#credits">6. Credits</a>
@@ -248,6 +247,8 @@ Users of this site will be non-registered users, registered users and superusers
 - As a superuser I want to delete a product so that I can remove the product if I want to.
 
 ## Design
+
+
 ### Colors
 I have just about used five different colors, and the "Maximum Yellow Red", "Dark Purple" and white color make up most of the site. I decided on these colors by just clicking on the color palette generator from [coolors](https://coolors.co/). When I landed on these colors I just liked them, and I figured I would go with those.
 
@@ -362,7 +363,18 @@ Other than having product images, I also have category images on the homepage, a
 
 
 ## Information architecture
-- Below is an overview of how the user can navigate this site.
+
+Heroku PostgreSQL is used to host the backend database for this site.
+
+Arca Bookstore contains these Django apps:
+
+Blog
+Bag
+Checkout
+Help
+Home
+Products
+Profiles
 
 ## Database Schema
 

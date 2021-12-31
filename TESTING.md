@@ -42,7 +42,6 @@
 - /checkout/apps.py:8:9: F401 'checkout.signals' imported but unused: This I choose to ignore because it was added by following Boutique Ado, and I think removing this will break the site. Also, I checked it with the [PEP8](http://pep8online.com/), and it was fine.
 checkout/webhooks.py:33:5: F841 local variable 'e' is assigned to but never used: This I choose to ignore because I can't seem to fix it and [PEP8](http://pep8online.com/) says it's fine.  
 
-<a href="#arca-bookstore">BACK TO TOP</a>
 
 # Responsiveness
 Responsiveness was tested with [Responsive Design Checker](https://responsivedesignchecker.com/) and [Google Devtools](https://google.com/). Various devices and screen sizes was tested. Note:
@@ -70,7 +69,6 @@ Responsiveness was tested with [Responsive Design Checker](https://responsivedes
   <img src="readme/images/testing/desktops.JPG">
 </details>
 
-<a href="#arca-bookstore">BACK TO TOP</a>
 
 # Browser Compatibility and Functional Testing
 
@@ -81,7 +79,6 @@ The site's features such as adding products, ordering, buying products, adding r
   <img src="readme/images/testing/browser-test.JPG">
 </details>
 
-<a href="#arca-bookstore">BACK TO TOP</a>
 
 # User Stories Testing
 
@@ -219,4 +216,3 @@ For some reason, on some pages the screen was flickering when hovering over elem
 ### Login
 On the login page, there is an option to use the "Remember me" checkbox. This works in production, but not on the deployed site. I noticed this just before the deadline and I didn't find a solution to the problem.
 
-<a href="#arca-bookstore">BACK TO TOP</a>
