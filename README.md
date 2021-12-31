@@ -421,20 +421,31 @@ To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.
 </details>
 
 # Features
+
+Note: In order to not duplicate images I will not be attaching images to every single feature in this section. Please refer to the images in the user journey.
+
 ## Existing Features:
 
 - Navbar with links to all pages on the site, including the logo, a search bar, "My account" icon and the shopping bag. On smaller devices the main navigation is a hamburger menu.
 
-![overview of site](readme_img/overview.JPG)
-![overview of site](readme_img/overview.JPG)
+<details>
+  <summary>Navbar</summary>
+  <img src="readme/images/navbar.JPG">
+</details>
+
+<details>
+  <summary>Hamburger menu</summary>
+  <img src="readme/images/hamburger-menu.JPG">
+</details>
 
 - A Back to top button
 
-![overview of site](readme_img/overview.JPG)
+<details>
+  <summary>Back to Top button</summary>
+  <img src="readme/images/back-to-top.JPG">
+</details>
 
 - Footer with social links to twitter, instagram and facebook.
-
-![overview of site](readme_img/overview.JPG)
 
 - Messages/toasts that appear on the top right when the user perform actions such as logging in and out, adding and removing products from the shopping bag, completing a transaction, and for superusers actions like adding and editing products/blog posts.
 
@@ -456,18 +467,15 @@ To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.
 All the products pages(books, arts & crafts, games) are the same, except for the actual products.
 
 - The products page have a heading, stating what category is being viewed, and all the subcategories listed below the heading. These subcategories can be clicked, to view all products withing that subcategory.
-![overview of site](readme_img/overview.JPG)
 
 - On the products pages there is a sort selector on the right side that have different options for sorting, and a product counter to the left side, with a link to all products next to it.
-![overview of site](readme_img/overview.JPG)
+
 
 - Edit/Delete buttons for superusers to edit or delete products.
 
 ### Product Details
 
 When clicking on a product, the user will be directed to the product details page.
-
-![overview of site](readme_img/overview.JPG)
 
 - Edit/Delete buttons for superusers.
 
@@ -487,7 +495,6 @@ When clicking on a product, the user will be directed to the product details pag
 ### Shopping Bag 
 
 - Quantity selector with remove and update icon buttons 
-![overview of site](readme_img/overview.JPG)
 
 - A free delivery notice below the grand total
 
@@ -496,26 +503,20 @@ When clicking on a product, the user will be directed to the product details pag
 ### Checkout
 
 - Order summary
-![overview of site](readme_img/overview.JPG)
 
 - Button for "Adjust Bag" that reverse the user to the shopping bag.
 
 - A delivery details form with a save option.
-![overview of site](readme_img/overview.JPG)
 
 - A buttton for "Complete Order" that initates a full screen loading spinner.
-![overview of site](readme_img/overview.JPG)
 
 
 ### Profile page 
 - Order history with a hyperlink on the order number that directs to a more informative order info page.
-![overview of site](readme_img/overview.JPG)
-![overview of site](readme_img/overview.JPG)
 
 - Delivery information with saved information if used.
 
 - An "Update Information" button that updates the delivery information.
-![overview of site](readme_img/overview.JPG)
 
 ### Blog Page
 
@@ -529,7 +530,6 @@ When clicking on the Blog link in the navbar/main nav, the blog page will appear
 
 - Blog posts with a limited amount of the post displayed, small version of the blog image, date added, the creator and edit/delete buttons (Only accessible for superusers).
 
-![overview of site](readme_img/overview.JPG)
 
 ### Blog Info Page
 
@@ -541,15 +541,12 @@ When clicking on a post, the blog info page for that post will open. The blog in
 
 - The actual posts heading, body, image and date added.
 
-![overview of site](readme_img/overview.JPG)
 
 - A comment form that all registered users can use to comment on the blog post.
 
-![overview of site](readme_img/overview.JPG)
 
 - Comment section that displays all comments with name, comment and date created. Superusers are able to delete posts and comments.
 
-![overview of site](readme_img/overview.JPG)
 
 ### FAQ Page
 
@@ -561,7 +558,6 @@ When clicking on the Help link in the navbar/main nav, there are three options: 
 
 - FAQ sections with different categories that displays hyperlinked questions. Clicking a hyperlink will reveal an answer.
 
-![overview of site](readme_img/overview.JPG)
 
 - An FAQ image at the bottom.
 
@@ -578,10 +574,6 @@ The third Help option is the Contact page.
 - Icons that helps to explain the contact method of email, phone and address.
 
 - Contact Image
-
-![overview of site](readme_img/overview.JPG)
-
-
 
 
 ## Features Left to Implement:
@@ -611,12 +603,12 @@ This is the features I would like to implement in the future:
 - [Stripe](https://stripe.com/) - Used for card payments
 - [Balsamiq](https://balsamiq.com/) for creating wireframes.
 - [dbdiagram](https://dbdiagram.io/) for creating a database diagram of Arca Bookstore.
-- [Lucid](https://lucid.app/) for creating an overview of how the user can navigate the site.
 - [Microsoft Paint](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9) for resizing images.
 - [Am I Responsive](http://ami.responsivedesign.is/), a tool that views the site on various devices.
 - [CompressJPEG](https://compressjpeg.com/) was used to compress jpeg and png files.
 - [PurePNG](https://purepng.com/) was used to download the red png image that is used next to the logo and as a favicon. 
 - [Favicon](https://favicon.io/) was used to create a favicon for this project.
+- [Djecrety](https://djecrety.ir/) was used to make a Django secret key.
 
 
 ## Languages:
