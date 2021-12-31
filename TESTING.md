@@ -191,7 +191,6 @@ The site's features such as adding products, ordering, buying products, adding r
 - As a superuser I want to delete a product so that I can remove the product if I want to.
     - A superuser can delete a product by accessing the same pages as when editing a product. The only difference is the superuser must click on the red "Delete" link instead.
 
-<a href="#arca-bookstore">BACK TO TOP</a>
 
 # Bugs
 
