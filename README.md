@@ -420,6 +420,9 @@ To make [wireframes](readme_img/wireframes), I used [Balsamiq](https://balsamiq.
   <img src="readme/images/wireframes/mobile-6.JPG">
 </details>
 
+
+<a href="#arca-bookstore">BACK TO TOP</a>
+
 # Features
 
 Note: In order to not duplicate images I will not be attaching images to every single feature in this section. Please refer to the images in the user journey.
@@ -595,6 +598,8 @@ This is the features I would like to implement in the future:
 - Letting the registered users have the option to choose a profile image that will also appear when commenting or reviewing.
 
 
+<a href="#arca-bookstore">BACK TO TOP</a>
+
 # Technologies Used
 ## Tools:
 - [Gitpod](https://www.gitpod.io/) used as an IDE.
@@ -632,6 +637,8 @@ This is the features I would like to implement in the future:
 
 # Testing
 The testing of this project can be found as a separate [TESTING.md](TESTING.md) file.
+
+<a href="#arca-bookstore">BACK TO TOP</a>
 
 
 # Deployment
@@ -900,6 +907,9 @@ If you need to save images to your S3 bucket, you will need to do the following;
 2. Now create a new folder by clicking the "Create folder" button, name the folder name i.e "media", then click the "Create folder" button. 
 
 3. Now you can access the "media" folder you just created, and you can upload images by clicking the "Upload" button, and choosing either to add files or folders. When you have selected the files/folder you want, click the "Upload" button. 
+
+
+<a href="#arca-bookstore">BACK TO TOP</a>
 
 
 # Credits

@@ -3,13 +3,11 @@
 # Table Of Contents
 
 1. [Code Validation](#code-validation)
-2. [Functionality](#functionality)
-    * [Security Testing](#security-testing)
-    * [Responsiveness](#responsiveness)
-    * [General Functionality Testing](#general-functionality-testing)
-3. [User Stories Testing](#user-stories-testing)
-4. [Resolved Issues](#resolved-issues)
-5. [Unresolved Issues](#unresolved-issues)
+2. [Responsiveness](#responsiveness)
+3. [Browser Compatibility and Functional Testing](#browser-compatibility-and-functional-testing)
+4. [User Stories Testing](#user-stories-testing)
+5. [Solved Bugs](#solved-bugs)
+6. [Unsolved Bugs](#unsolved-bugs)
 
 # Code Validation
 
@@ -44,35 +42,37 @@
 - /checkout/apps.py:8:9: F401 'checkout.signals' imported but unused: This I choose to ignore because it was added by following Boutique Ado, and I think removing this will break the site. Also, I checked it with the [PEP8](http://pep8online.com/), and it was fine.
 checkout/webhooks.py:33:5: F841 local variable 'e' is assigned to but never used: This I choose to ignore because I can't seem to fix it and [PEP8](http://pep8online.com/) says it's fine.  
 
+<a href="#arca-bookstore">BACK TO TOP</a>
 
-
-## Responsiveness
+# Responsiveness
 Responsiveness was tested with [Responsive Design Checker](https://responsivedesignchecker.com/) and [Google Devtools](https://google.com/). Various devices and screen sizes was tested. Note:
 
 - Throughout the project I have adjusted the screen size in one of the window corners for a quick responsiveness check. See below for an overview of responsiveness testing:
 
-#### Testing for smartphones:
+### Testing for smartphones:
 
 <details>
   <summary>Smartphone test</summary>
   <img src="readme/images/testing/smartphone.JPG">
 </details>
 
-#### Testing for tablets:
+### Testing for tablets:
 
 <details>
   <summary>Tablet test</summary>
   <img src="readme/images/testing/tablets.JPG">
 </details>
 
-#### Testing for desktops:
+### Testing for desktops:
 
 <details>
   <summary>Desktop test</summary>
   <img src="readme/images/testing/desktops.JPG">
 </details>
 
-## Browser Compatibility and Functional Testing
+<a href="#arca-bookstore">BACK TO TOP</a>
+
+# Browser Compatibility and Functional Testing
 
 The site's features such as adding products, ordering, buying products, adding reviews, commenting, deleting, editing was tested on all browsers. Registering, logging in, signing out and forgot password was also tested. All links, 404 and 500 pages were also tested. 
 
@@ -81,7 +81,7 @@ The site's features such as adding products, ordering, buying products, adding r
   <img src="readme/images/testing/browser-test.JPG">
 </details>
 
-
+<a href="#arca-bookstore">BACK TO TOP</a>
 
 # User Stories Testing
 
@@ -194,7 +194,7 @@ The site's features such as adding products, ordering, buying products, adding r
 - As a superuser I want to delete a product so that I can remove the product if I want to.
     - A superuser can delete a product by accessing the same pages as when editing a prodcuct. The only difference is the superuser must click on the red "Delete" link instead.
 
-
+<a href="#arca-bookstore">BACK TO TOP</a>
 
 # Bugs
 
@@ -218,3 +218,5 @@ For some reason, on some pages the screen was flickering when hovering over elem
 
 ### Login
 On the login page, there is an option to use the "Remember me" checkbox. This works in production, but not on the deployed site. I noticed this just before the deadline and I didn't find a solution to the problem.
+
+<a href="#arca-bookstore">BACK TO TOP</a>
