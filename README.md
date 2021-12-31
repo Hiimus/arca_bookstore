@@ -67,6 +67,11 @@ Note: for the user journey I have chosen desktop view.
 - On the bottom of the home page, and on every page, there is a footer. This footer is simple, displaying the three social links for twitter, instagram and facebook.
 
 
+<details>
+  <summary>Footer</summary>
+  <img src="readme/images/footer.JPG">
+</details>
+
 ### Product Pages
 
 The products are separated into their respective genre. The genres are books, arts & crafts and games. The user may access products from the navbar, from searching or simply clicking the images or hyperlinks on the home page. 
@@ -303,10 +308,8 @@ Other than having product images, I also have category images on the homepage, a
 </details>
 
 - The category images and blog image are from [pexels](https://www.pexels.com/).
-![colour-scheme](readme_img/colour-scheme.JPG)
 
 - Images for 404, 500, FAQ and contact are downloaded from [freepik](https://www.freepik.com/).
-![colour-scheme](readme_img/colour-scheme.JPG)
 
 <details>
   <summary>404 Image</summary>
@@ -351,9 +354,8 @@ Other than having product images, I also have category images on the homepage, a
 - All accounts pages are made with allauth. Trying to access "accounts/logout" when not logged in, will only render the user back to the home page. Trying to "accounts/signup" when already signed in, will just render the user to the homepage.
 
 
-- When adding items to the bag, the user will not be able to use anything else than whole numbers. Previously, adding i.e 1.5 to the bag, would break the site. I then added this code, and that prevents the user from breaking the site.
+- When adding items to the bag, the user will not be able to use anything else than whole numbers. 
 
-[CODE THAT PREVENTS .,]
 
 - If the user tries to access a page that doesn't exist, a custom 404 page will appear with a link back to home.
 
@@ -367,15 +369,17 @@ Heroku PostgreSQL is used to host the backend database for this site.
 
 Arca Bookstore contains these Django apps:
 
-Blog
-Bag
-Checkout
-Help
-Home
-Products
-Profiles
+- Blog
+- Bag
+- Checkout
+- Help
+- Home
+- Products
+- Profiles
 
 ## Database Schema
+
+Note: I could not manage to make the connections where I wanted them so I just drew them myself.
 
 <details>
   <summary>Database Schema</summary>
@@ -654,7 +658,7 @@ The testing of this project can be found as a separate [TESTING.md](TESTING.md) 
 
 # Deployment
 
-This will be an explanation of the process involved in how to deploy the site using [Heroku], and to set up and store images and static files using [Amazon Web Services].
+This will be an explanation of the process involved in how to deploy the site using [Heroku](https://heroku.com), and to set up and store images and static files using [Amazon Web Services](https://aws.amazon.com/).
 
 Note: Credit to Code Institute Boutique Ado videos on how to deploy using heroku and AWS.
 
