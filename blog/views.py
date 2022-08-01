@@ -82,10 +82,19 @@ def delete_post(request, blog_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('view_blog'))
 
-    blog = get_object_or_404(BlogPost, pk=blog_id)
-    blog.delete()
-    messages.success(request, 'Post deleted!')
-    return redirect(reverse('view_blog'))
+    if request.method == 'POST':
+        blog = get_object_or_404(BlogPost, pk=blog_id)
+        blog.delete()
+        messages.success(request, 'Post deleted!')
+        return redirect(reverse('view_blog'))
+    return render(request, 'delete_blog.html')
+
+# def delete_items(request, pk):
+# 	queryset = Stock.objects.get(id=pk)
+# 	if request.method == 'POST':
+# 		queryset.delete()
+# 		return redirect('/list_items')
+# 	return render(request, 'delete_items.html')
 
 
 @login_required
