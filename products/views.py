@@ -251,7 +251,6 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
     reviews = Review.objects.filter(product=product_id)
-
     context = {
         'product': product,
         'reviews': reviews,
@@ -390,8 +389,12 @@ def delete_review(request, review_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    review = Review.objects.all().filter(pk=review_id)
-    review.delete()
+    if request.method == 'POST':
+        review = Review.objects.all().filter(pk=review_id)
+        review.delete()
+        return redirect(reverse('all_products'))
 
     messages.success(request, 'Review deleted!')
-    return redirect(reverse('all_products'))
+    return render(request, 'delete_review.html')
+    
+    
