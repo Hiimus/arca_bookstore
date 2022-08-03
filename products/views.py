@@ -385,16 +385,25 @@ def add_review(request, product_id):
 @login_required
 def delete_review(request, review_id):
     """ Delete a review to a product """
-    if not request.user.is_superuser:
+    product_review = get_object_or_404(Review, pk=review_id)
+    current_user = request.user
+
+    if not request.user.is_superuser or not product_review.user==current_user:
         messages.error(request, 'Sorry, only store owners can do that.')
+        print(current_user)
+        print(product_review.user)
         return redirect(reverse('home'))
 
-    if request.method == 'POST':
-        review = Review.objects.all().filter(pk=review_id)
-        review.delete()
-        return redirect(reverse('all_products'))
-
-    messages.success(request, 'Review deleted!')
+        if request.method == 'POST':
+            review = Review.objects.all().filter(pk=review_id)
+            
+            print(product_review.user)
+            review.delete()
+            messages.success(request, 'Review deleted!')
+            
+            print(current_user)
+            return redirect(reverse('all_products'))
+    
     return render(request, 'delete_review.html')
     
     

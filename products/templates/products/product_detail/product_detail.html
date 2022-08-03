@@ -126,7 +126,7 @@
                                             <br>
                                             <ul>
                                                 <li class="text-muted">{{ review.created_at }}</li>
-                                                {% if request.user.is_superuser %}
+                                                {% if request.user.is_superuser or product_review.user == current_user %}
                                                 <span class="float-end me-5">
                                                     <a href="">Edit</a> |
                                                     <a href="{% url 'delete_review' review.id %}" class="charcoal-color" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Review"><i class="far fa-trash-alt fa-lg"></i></a>
