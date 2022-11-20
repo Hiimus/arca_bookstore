@@ -22,7 +22,10 @@ urlpatterns = [
         'delete/<int:product_id>/', views.delete_product, name='delete_product'
         ),
     path('review/<int:product_id>/', views.add_review, name='add_review'),
+    # path(
+    #     'deleterev/<int:review_id>/', views.delete_review, name='delete_review'
+    #     ),
     path(
-        'deleterev/<int:review_id>/', views.delete_review, name='delete_review'
-        ),
+    'deleterev/<int:review_id>/', views.delete_review_author, name='delete_review_author'
+    ),
 ]

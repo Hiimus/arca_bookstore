@@ -1,1 +1,0 @@
-web: gunicorn arca_bookstore.wsgi:application
